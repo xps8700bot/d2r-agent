@@ -1,0 +1,66 @@
+# Warlock strategy sources manifest (slow & clean)
+# 用途：限定“允许抽取”的页面与章节，避免把导航/免责声明/水文抓进 strategy_cards。
+# 维护方式：每次新增/调整时，更新 allowed_sections，并在 roadmap 里记录变更。
+
+version: 1
+updated_at: 2026-03-01
+
+# Priority order (A -> C -> B)
+priority:
+  - leveling
+  - gearing
+  - endgame
+
+sources:
+  # A) Leveling (1-75)
+  # 用户选择：优先 Summoner 路径。注意：Maxroll 的 Summoner 页面是 Endgame Guide，但其「Skills」段落包含可用于 1-75 的技能加点顺序与早期玩法。
+  - id: warlock_summoner_leveling_from_guide_s13
+    category: leveling
+    site: maxroll.gg
+    url: https://maxroll.gg/d2/guides/summoner-warlock-guide
+    tags: [maxroll, strategy, warlock, 术士, summoner, 召唤, leveling, season13]
+    allowed_sections:
+      - Skills
+      - Gameplay
+      - Essentials
+      - Summary
+
+  # 备用（后续再补齐 allowed_sections）：
+  - id: warlock_fire_leveling_s13
+    category: leveling
+    site: maxroll.gg
+    url: https://maxroll.gg/d2/guides/fire-warlock-leveling-build-guide
+    tags: [maxroll, strategy, warlock, 术士, leveling, season13]
+    allowed_sections: []
+
+  - id: warlock_abyss_leveling_s13
+    category: leveling
+    site: maxroll.gg
+    url: https://maxroll.gg/d2/guides/abyss-warlock-leveling-build-guide
+    tags: [maxroll, strategy, warlock, 术士, leveling, season13]
+    allowed_sections: []
+
+  # C) Gearing / priorities
+  - id: warlock_overview
+    category: gearing
+    site: maxroll.gg
+    url: https://maxroll.gg/d2/resources/warlock-overview
+    tags: [maxroll, strategy, warlock, 术士, overview, gearing]
+    allowed_sections:
+      - Gearing Priorities
+      - Attributes
+
+  # B) Endgame (later)
+  - id: warlock_echoing_strike_endgame_s13
+    category: endgame
+    site: maxroll.gg
+    url: https://maxroll.gg/d2/guides/echoing-strike-warlock-guide
+    tags: [maxroll, strategy, warlock, 术士, endgame, season13]
+    allowed_sections: []
+
+  - id: warlock_summoner_endgame_s13
+    category: endgame
+    site: maxroll.gg
+    url: https://maxroll.gg/d2/guides/summoner-warlock-guide
+    tags: [maxroll, strategy, warlock, 术士, endgame, season13]
+    allowed_sections: []

@@ -1,0 +1,53 @@
+- id: format_contract
+  query: "谜团(Enigma)符文之语怎么做？"
+  must_contain:
+    - "Assumptions"
+    - "TL;DR"
+    - "Evidence"
+    - "Options"
+    - "Next step"
+
+- id: build_advice_no_numbers
+  query: "单机SC，预算低，想玩冰法快速刷安姐，怎么配？"
+  must_contain:
+    - "Assumptions"
+    - "Next step"
+
+- id: cn_build_compare_insight_vs_spirit_act1_hell
+  query: "地狱第一幕死灵法师开荒，眼光还是精神？"
+  must_contain:
+    - "Assumptions"
+    - "Evidence"
+    - "- (none)"
+    - "Next step"
+    - "给自己用"
+    - "佣兵"
+  assert_trace:
+    intent_not: "drop_rate"
+    intent_in: ["build_compare", "build_advice"]
+    retrieval_needed_is: false
+    evidence_count_is: 0
+    memory_written_empty: true
+
+- id: mechanics_claim_warlock_passive_levitate_onehand_twohand
+  query: "Warlock passive 能不能 levitate？另外能不能把 two-handed weapon in one hand？"
+  must_contain:
+    - "levitate"
+    - "two-handed weapon in one hand"
+  assert_trace:
+    intent_is: "mechanics_claim"
+    memory_written_empty: true
+
+- id: warlock_build_compare_strategy_plus_skills_priority
+  query: "Warlock 开荒：+skills 和 FCR 哪个更优先？"
+  must_contain:
+    - "[Strategy]"
+    - "+skills"
+  assert_trace:
+    intent_in: ["build_compare", "build_advice"]
+
+- id: runeword_question_uses_basin_fact_kb
+  query: "Spirit(精神) 符文之语顺序是什么？"
+  must_contain:
+    - "theamazonbasin.com"
+    - "Evidence"
