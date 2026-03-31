@@ -1,0 +1,427 @@
+{
+  "debug": [
+    {
+      "name": "Breath of the Dying",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Breath_of_the_Dying",
+      "debug_rows": {
+        "item_type": [
+          "Weapon"
+        ],
+        "sockets": [
+          "6"
+        ],
+        "min_rlvl": [
+          "69"
+        ],
+        "rune_order_and_modifiers": "Vex + Hel + El + Eld + Zod + Eth",
+        "rune_word_modifiers": [
+          {
+            "stat": "ed_percent",
+            "value": "(350-400)%",
+            "raw": "(350-400)% Enhanced Damage"
+          },
+          {
+            "stat": "raw",
+            "value": "+125% Damage to Undead",
+            "raw": "+125% Damage to Undead"
+          },
+          {
+            "stat": "life_stolen",
+            "value": "(12-15)%",
+            "raw": "(12-15)% Life Stolen"
+          },
+          {
+            "stat": "raw",
+            "value": "per hit",
+            "raw": "per hit"
+          },
+          {
+            "stat": "raw",
+            "value": "Prevent Monster Heal",
+            "raw": "Prevent Monster Heal"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Call to Arms",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Call_to_Arms",
+      "debug_rows": {
+        "item_type": [
+          "Weapon"
+        ],
+        "sockets": [
+          "5"
+        ],
+        "min_rlvl": [
+          "57"
+        ],
+        "rune_order_and_modifiers": "Amn + Ral + Mal + Ist + Ohm",
+        "rune_word_modifiers": [
+          {
+            "stat": "raw",
+            "value": "(200-240)% Enhanced Damage",
+            "raw": "(200-240)% Enhanced Damage"
+          },
+          {
+            "stat": "battle_command",
+            "value": "+(2-6)",
+            "raw": "+(2-6) Battle Command"
+          },
+          {
+            "stat": "raw",
+            "value": "(",
+            "raw": "("
+          },
+          {
+            "stat": "raw",
+            "value": "oskill",
+            "raw": "oskill"
+          },
+          {
+            "stat": "raw",
+            "value": ")",
+            "raw": ")"
+          },
+          {
+            "stat": "battle_orders",
+            "value": "+(1-6)",
+            "raw": "+(1-6) Battle Orders"
+          },
+          {
+            "stat": "raw",
+            "value": "(oskill)",
+            "raw": "(oskill)"
+          },
+          {
+            "stat": "battle_cry",
+            "value": "+(1-4)",
+            "raw": "+(1-4) Battle Cry"
+          },
+          {
+            "stat": "raw",
+            "value": "(oskill)",
+            "raw": "(oskill)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fortitude",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Fortitude",
+      "debug_rows": {
+        "item_type": [
+          "Body armor",
+          "Body armor"
+        ],
+        "sockets": [
+          "4",
+          "4"
+        ],
+        "min_rlvl": [
+          "59",
+          "59"
+        ],
+        "rune_order_and_modifiers": "El + Sol + Dol + Lo",
+        "rune_word_modifiers": [
+          {
+            "stat": "ed_percent",
+            "value": "300%",
+            "raw": "300% Enhanced Damage"
+          },
+          {
+            "stat": "enhanced_defense",
+            "value": "200%",
+            "raw": "200% Enhanced Defense"
+          },
+          {
+            "stat": "life_(based_on_character_level)",
+            "value": "+ lvl*(8-12)/8",
+            "raw": "+ lvl*(8-12)/8 Life (Based on Character Level)"
+          },
+          {
+            "stat": "raw",
+            "value": "All Resistances",
+            "raw": "All Resistances"
+          },
+          {
+            "stat": "raw",
+            "value": "+(25-30)",
+            "raw": "+(25-30)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hand of Justice",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Hand_of_Justice",
+      "debug_rows": {
+        "item_type": [
+          "Weapon"
+        ],
+        "sockets": [
+          "4"
+        ],
+        "min_rlvl": [
+          "67"
+        ],
+        "rune_order_and_modifiers": "Sur + Cham + Amn + Lo",
+        "rune_word_modifiers": [
+          {
+            "stat": "holy_fire",
+            "value": "Level 16",
+            "raw": "Level 16 Holy Fire"
+          },
+          {
+            "stat": "raw",
+            "value": "Aura When Equipped",
+            "raw": "Aura When Equipped"
+          },
+          {
+            "stat": "increased_attack_speed",
+            "value": "33",
+            "raw": "33 Increased Attack Speed"
+          },
+          {
+            "stat": "ed_percent",
+            "value": "(280-330)%",
+            "raw": "(280-330)% Enhanced Damage"
+          },
+          {
+            "stat": "raw",
+            "value": "Ignore Target's Defense",
+            "raw": "Ignore Target's Defense"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mania",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Mania",
+      "debug_rows": {
+        "item_type": [
+          "Weapon"
+        ],
+        "sockets": [
+          "3"
+        ],
+        "min_rlvl": [
+          "39"
+        ],
+        "rune_order_and_modifiers": "Shael + Ko + Eld",
+        "rune_word_modifiers": [
+          {
+            "stat": "raw",
+            "value": "10 Increased Attack Speed",
+            "raw": "10 Increased Attack Speed"
+          },
+          {
+            "stat": "ed_percent",
+            "value": "(180-200)%",
+            "raw": "(180-200)% Enhanced Damage"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Passion",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Passion",
+      "debug_rows": {
+        "item_type": [
+          "Weapon"
+        ],
+        "sockets": [
+          "4"
+        ],
+        "min_rlvl": [
+          "43"
+        ],
+        "rune_order_and_modifiers": "Dol + Ort + Eld + Lem",
+        "rune_word_modifiers": [
+          {
+            "stat": "ar_percent",
+            "value": "(50-80)",
+            "raw": "(50-80) % Bonus to Attack Rating"
+          },
+          {
+            "stat": "berserk",
+            "value": "+1",
+            "raw": "+1 Berserk"
+          },
+          {
+            "stat": "raw",
+            "value": "(",
+            "raw": "("
+          },
+          {
+            "stat": "raw",
+            "value": "oskill",
+            "raw": "oskill"
+          },
+          {
+            "stat": "raw",
+            "value": ")",
+            "raw": ")"
+          },
+          {
+            "stat": "zeal",
+            "value": "+1",
+            "raw": "+1 Zeal"
+          },
+          {
+            "stat": "raw",
+            "value": "(oskill)",
+            "raw": "(oskill)"
+          },
+          {
+            "stat": "raw",
+            "value": "Hit Blinds Target",
+            "raw": "Hit Blinds Target"
+          },
+          {
+            "stat": "raw",
+            "value": "+10",
+            "raw": "+10"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Phoenix",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Phoenix",
+      "debug_rows": {
+        "item_type": [
+          "Weapon",
+          "Weapon"
+        ],
+        "sockets": [
+          "4",
+          "4"
+        ],
+        "min_rlvl": [
+          "65",
+          "65"
+        ],
+        "rune_order_and_modifiers": "Vex + Lo + Jah",
+        "rune_word_modifiers": [
+          {
+            "stat": "redemption",
+            "value": "Level (10-15)",
+            "raw": "Level (10-15) Redemption"
+          },
+          {
+            "stat": "raw",
+            "value": "Aura When Equipped",
+            "raw": "Aura When Equipped"
+          },
+          {
+            "stat": "ed_percent",
+            "value": "(350-400)%",
+            "raw": "(350-400)% Enhanced Damage"
+          },
+          {
+            "stat": "enemy_fire_resistance",
+            "value": "-28%",
+            "raw": "-28% Enemy Fire Resistance"
+          },
+          {
+            "stat": "defense_vs_missile",
+            "value": "+(350-400)",
+            "raw": "+(350-400) Defense vs Missile"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Silence",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Silence",
+      "debug_rows": {
+        "item_type": [
+          "Weapon"
+        ],
+        "sockets": [
+          "6"
+        ],
+        "min_rlvl": [
+          "55"
+        ],
+        "rune_order_and_modifiers": "Dol + Eld + Hel + Ist + Tir + Vex",
+        "rune_word_modifiers": [
+          {
+            "stat": "fhr",
+            "value": "20",
+            "raw": "20 Faster Hit Recovery"
+          },
+          {
+            "stat": "ed_percent",
+            "value": "200%",
+            "raw": "200% Enhanced Damage"
+          },
+          {
+            "stat": "hit_blinds_target",
+            "value": "4% Mana Stolen per hit",
+            "raw": "4% Mana Stolen per hit Hit Blinds Target"
+          },
+          {
+            "stat": "raw",
+            "value": "+33",
+            "raw": "+33"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Venom (Rune Word)",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Venom_%28Rune_Word%29",
+      "debug_rows": {
+        "item_type": [
+          "Weapon"
+        ],
+        "sockets": [
+          "3"
+        ],
+        "min_rlvl": [
+          "49"
+        ],
+        "rune_order_and_modifiers": "Tal + Dol + Mal",
+        "rune_word_modifiers": [
+          {
+            "stat": "mana_stolen",
+            "value": "7%",
+            "raw": "7% Mana Stolen"
+          },
+          {
+            "stat": "raw",
+            "value": "per hit",
+            "raw": "per hit"
+          },
+          {
+            "stat": "poison_nova",
+            "value": "Level 13",
+            "raw": "Level 13 Poison Nova"
+          },
+          {
+            "stat": "charges",
+            "value": "(11/11",
+            "raw": "(11/11 Charges"
+          },
+          {
+            "stat": "raw",
+            "value": ")",
+            "raw": ")"
+          },
+          {
+            "stat": "poison_explosion",
+            "value": "Level 15",
+            "raw": "Level 15 Poison Explosion"
+          },
+          {
+            "stat": "raw",
+            "value": "(27/27 Charges)",
+            "raw": "(27/27 Charges)"
+          }
+        ]
+      }
+    }
+  ]
+}

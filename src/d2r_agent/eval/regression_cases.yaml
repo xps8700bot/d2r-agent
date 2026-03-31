@@ -1,0 +1,110 @@
+- id: format_contract
+  query: "谜团(Enigma)符文之语怎么做？"
+  must_contain:
+    - "Assumptions"
+    - "TL;DR"
+    - "Evidence"
+    - "Options"
+    - "Next step"
+
+- id: build_advice_no_numbers
+  query: "单机SC，预算低，想玩冰法快速刷安姐，怎么配？"
+  must_contain:
+    - "Assumptions"
+    - "Next step"
+
+- id: cn_build_compare_insight_vs_spirit_act1_hell
+  query: "地狱第一幕死灵法师开荒，眼光还是精神？"
+  must_contain:
+    - "Assumptions"
+    - "Evidence"
+    - "- (none)"
+    - "Next step"
+    - "给自己用"
+    - "佣兵"
+  assert_trace:
+    intent_not: "drop_rate"
+    intent_in: ["build_compare", "build_advice"]
+    retrieval_needed_is: false
+    evidence_count_is: 0
+    memory_written_empty: true
+
+- id: mechanics_claim_warlock_passive_levitate_onehand_twohand
+  query: "Warlock passive 能不能 levitate？另外能不能把 two-handed weapon in one hand？"
+  must_contain:
+    - "levitate"
+    - "two-handed weapon in one hand"
+  assert_trace:
+    intent_is: "mechanics_claim"
+    memory_written_empty: true
+
+- id: warlock_build_compare_strategy_plus_skills_priority
+  query: "Warlock 开荒：+skills 和 FCR 哪个更优先？"
+  must_contain:
+    - "[Strategy]"
+    - "FCR"
+  assert_trace:
+    intent_in: ["build_compare", "build_advice"]
+  # Note: "+skills" was removed from must_contain because maxroll.gg renders +X modifiers
+  # as HTML icons that get dropped during text extraction; "FCR" is a reliable proxy.
+
+- id: runeword_question_uses_basin_fact_kb
+  query: "Spirit(精神) 符文之语顺序是什么？"
+  must_contain:
+    - "theamazonbasin.com"
+    - "Evidence"
+
+# ----------------------------
+# Mechanics (Phase 0 MVP) — new regression cases
+# ----------------------------
+
+- id: mechanics_mf_does_not_affect_base_item
+  query: "MF 会不会提高掉更高级底材的概率？"
+  must_contain:
+    - "Assumptions"
+    - "Next step"
+  assert_trace:
+    intent_in: ["magic_find_rule", "mechanics_explain", "mechanics_claim"]
+    mechanics_fact_hits_min: 1
+    source_tiers_used_contains: ["tierA"]
+    output_sections_must_contain: ["Answer", "Why", "Formula / Rule", "Evidence"]
+
+- id: mechanics_tc_order_tc_then_base_then_quality
+  query: "TC 和物品品质选择哪个先发生？"
+  must_contain:
+    - "Assumptions"
+  assert_trace:
+    intent_in: ["treasure_class_rule", "mechanics_explain"]
+    mechanics_fact_hits_min: 1
+    rules_applied_min: 1
+    source_tiers_used_contains: ["tierA"]
+    output_sections_must_contain: ["Answer", "Why", "Evidence"]
+
+- id: mechanics_affix_alvl_possible_or_needs_inputs
+  query: "某个词缀(affix) 能不能出现在 ilvl 88 的项链上？"
+  must_contain:
+    - "Assumptions"
+  assert_trace:
+    intent_in: ["affix_rule", "affix_level_rule"]
+    followup_fields_requested_contains_any: ["ilvl", "base_item", "qlvl", "affix"]
+    output_sections_must_contain: ["Needed inputs"]
+
+- id: mechanics_craft_amulet_why_93
+  query: "为什么 craft 项链常说角色要 93 级？"
+  must_contain:
+    - "Assumptions"
+  assert_trace:
+    intent_is: "crafting_rule"
+    mechanics_fact_hits_min: 1
+    formulas_used_contains_any: ["craft", "ilvl"]
+    source_tiers_used_contains_any: ["tierA", "tierB"]
+    output_sections_must_contain: ["Formula / Rule", "Evidence"]
+
+- id: mechanics_baal_gc_45_life
+  query: "为什么 Baal GC 可以出 45 life？"
+  must_contain:
+    - "Assumptions"
+  assert_trace:
+    intent_in: ["charm_rule", "affix_level_rule", "mechanics_explain"]
+    mechanics_fact_hits_min: 1
+    output_sections_must_contain: ["Why", "Formula / Rule", "Conditions / Exceptions", "Evidence"]

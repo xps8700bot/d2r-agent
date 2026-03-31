@@ -1,0 +1,73 @@
+{
+  "runewords": [
+    {
+      "name": "Spirit",
+      "variants": [
+        {
+          "item_type": "Sword",
+          "sockets": 4,
+          "min_rlvl": 25,
+          "rune_order_and_modifiers": "Tal + Thul + Ort + Amn",
+          "runeword_modifiers": [
+            {
+              "stat": "fhr",
+              "value": "55",
+              "raw": "55 Faster Hit Recovery"
+            },
+            {
+              "stat": "defense_vs_missile",
+              "value": "+250",
+              "raw": "+250 Defense vs Missile"
+            },
+            {
+              "stat": "vitality",
+              "value": "+22",
+              "raw": "+22 Vitality"
+            },
+            {
+              "stat": "mana",
+              "value": "+(89-112)",
+              "raw": "+(89-112) Mana"
+            }
+          ]
+        },
+        {
+          "item_type": "Shield",
+          "sockets": 4,
+          "min_rlvl": 25,
+          "rune_order_and_modifiers": "Tal + Thul + Ort + Amn",
+          "runeword_modifiers": [
+            {
+              "stat": "fhr",
+              "value": "55",
+              "raw": "55 Faster Hit Recovery"
+            },
+            {
+              "stat": "defense_vs_missile",
+              "value": "+250",
+              "raw": "+250 Defense vs Missile"
+            },
+            {
+              "stat": "vitality",
+              "value": "+22",
+              "raw": "+22 Vitality"
+            },
+            {
+              "stat": "mana",
+              "value": "+(89-112)",
+              "raw": "+(89-112) Mana"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Spirit",
+          "extracted_at": "2026-03-17T20:42:27.971655+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:42:27.971655+00:00"
+    }
+  ]
+}

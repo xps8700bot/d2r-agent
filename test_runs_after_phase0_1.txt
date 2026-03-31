@@ -1,0 +1,13 @@
+OK   format_contract
+OK   build_advice_no_numbers
+OK   cn_build_compare_insight_vs_spirit_act1_hell
+OK   mechanics_claim_warlock_passive_levitate_onehand_twohand
+OK   warlock_build_compare_strategy_plus_skills_priority
+OK   runeword_question_uses_basin_fact_kb
+FAIL mechanics_mf_does_not_affect_base_item: ['trace.mechanics_fact_hits should be >= 1 (got 0)', 'trace.source_tiers_used should contain tierA (got [])']
+FAIL mechanics_tc_order_tc_then_base_then_quality: ['trace.mechanics_fact_hits should be >= 1 (got 0)', 'trace.source_tiers_used should contain tierA (got [])']
+OK   mechanics_affix_alvl_possible_or_needs_inputs
+OK   mechanics_craft_amulet_why_93
+FAIL mechanics_baal_gc_45_life: ["trace.intent should be in ['charm_rule', 'affix_level_rule', 'mechanics_explain'] (got general)", 'trace.mechanics_fact_hits should be >= 1 (got 0)', 'output should contain section header: Why', 'output should contain section header: Formula / Rule', 'output should contain section header: Conditions / Exceptions']
+
+pass: 8/11

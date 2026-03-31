@@ -1,0 +1,50 @@
+maxroll:
+  overview: https://maxroll.gg/d2/resources/warlock-overview
+  seed_urls:
+    # Warlock (S13) — original set
+    - https://maxroll.gg/d2/resources/warlock-overview
+    - https://maxroll.gg/d2/guides/fire-warlock-leveling-build-guide
+    - https://maxroll.gg/d2/guides/abyss-warlock-leveling-build-guide
+    - https://maxroll.gg/d2/guides/summoner-warlock-guide
+    - https://maxroll.gg/d2/guides/echoing-strike-warlock-guide
+    # Paladin (S13)
+    - https://maxroll.gg/d2/guides/paladin-leveling
+    - https://maxroll.gg/d2/guides/blessed-hammer-paladin
+    - https://maxroll.gg/d2/guides/fist-of-the-heavens-paladin
+    - https://maxroll.gg/d2/guides/smite-paladin
+    - https://maxroll.gg/d2/guides/zeal-paladin
+    # Sorceress (S13)
+    - https://maxroll.gg/d2/guides/sorceress-leveling
+    - https://maxroll.gg/d2/guides/blizzard-sorceress
+    - https://maxroll.gg/d2/guides/frozen-orb-sorceress
+    - https://maxroll.gg/d2/guides/nova-sorceress-guide
+    # Amazon
+    - https://maxroll.gg/d2/resources/amazon-overview
+    - https://maxroll.gg/d2/guides/lightning-fury-amazon-guide
+    - https://maxroll.gg/d2/guides/lightning-strike-amazon
+    - https://maxroll.gg/d2/guides/poison-javelin-amazon
+    # Druid
+    - https://maxroll.gg/d2/resources/druid-overview
+    - https://maxroll.gg/d2/guides/druid-leveling
+    - https://maxroll.gg/d2/guides/fissure-druid
+    - https://maxroll.gg/d2/guides/summon-druid
+    # Necromancer
+    - https://maxroll.gg/d2/resources/necromancer-overview
+    - https://maxroll.gg/d2/guides/necromancer-leveling
+    - https://maxroll.gg/d2/guides/bone-spear-necromancer
+    - https://maxroll.gg/d2/guides/summoner-necromancer-guide
+    - https://maxroll.gg/d2/guides/corpse-explosion-necromancer
+    - https://maxroll.gg/d2/guides/poison-nova-necromancer
+    # Barbarian
+    - https://maxroll.gg/d2/resources/barbarian-overview
+    - https://maxroll.gg/d2/guides/barbarian-leveling
+    - https://maxroll.gg/d2/guides/frenzy-barbarian
+    - https://maxroll.gg/d2/guides/berserk-barbarian
+    # Assassin
+    - https://maxroll.gg/d2/resources/assassin-overview
+    - https://maxroll.gg/d2/guides/assassin-leveling
+    - https://maxroll.gg/d2/guides/lightning-sentry-assassin
+    - https://maxroll.gg/d2/guides/dragon-talon-assassin
+    - https://maxroll.gg/d2/guides/whirlwind-assassin
+    - https://maxroll.gg/d2/guides/fire-blast-assassin
+    - https://maxroll.gg/d2/guides/dragon-tail-assassin

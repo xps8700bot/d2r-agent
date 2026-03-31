@@ -1,0 +1,13 @@
+FAIL format_contract: ['Evidence']
+OK   build_advice_no_numbers
+FAIL cn_build_compare_insight_vs_spirit_act1_hell: ['Evidence', '- (none)']
+OK   mechanics_claim_warlock_passive_levitate_onehand_twohand
+OK   warlock_build_compare_strategy_plus_skills_priority
+FAIL runeword_question_uses_basin_fact_kb: ['theamazonbasin.com', 'Evidence']
+FAIL mechanics_mf_does_not_affect_base_item: ["trace.intent should be in ['magic_find_rule', 'mechanics_explain', 'mechanics_claim'] (got drop_rate)", 'trace.mechanics_fact_hits missing', 'trace.source_tiers_used should contain tierA (got [])', 'output should contain section header: Answer', 'output should contain section header: Why', 'output should contain section header: Formula / Rule', 'output should contain section header: Evidence']
+FAIL mechanics_tc_order_tc_then_base_then_quality: ["trace.intent should be in ['treasure_class_rule', 'mechanics_explain'] (got general)", 'trace.mechanics_fact_hits missing', 'trace.rules_applied missing', 'trace.source_tiers_used should contain tierA (got [])', 'output should contain section header: Answer', 'output should contain section header: Why', 'output should contain section header: Evidence']
+FAIL mechanics_affix_alvl_possible_or_needs_inputs: ["trace.intent should be in ['affix_rule', 'affix_level_rule'] (got mechanics_claim)", "trace.followup_fields_requested should contain any of ['ilvl', 'base_item', 'qlvl', 'affix'] (got [])", 'output should contain section header: Needed inputs']
+FAIL mechanics_craft_amulet_why_93: ['trace.intent should be crafting_rule (got cube_recipe)', 'trace.mechanics_fact_hits missing', "trace.source_tiers_used should contain any of ['tierA', 'tierB'] (got [])", "trace.formulas_used should contain any of ['craft', 'ilvl'] (got [])", 'output should contain section header: Formula / Rule', 'output should contain section header: Evidence']
+FAIL mechanics_baal_gc_45_life: ["trace.intent should be in ['charm_rule', 'affix_level_rule', 'mechanics_explain'] (got general)", 'trace.mechanics_fact_hits missing', 'output should contain section header: Why', 'output should contain section header: Formula / Rule', 'output should contain section header: Conditions / Exceptions', 'output should contain section header: Evidence']
+
+pass: 3/11

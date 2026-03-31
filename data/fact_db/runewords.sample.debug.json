@@ -1,0 +1,46 @@
+{
+  "debug": [
+    {
+      "name": "Spirit",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Spirit",
+      "debug_rows": {
+        "item_type": [
+          "Sword",
+          "Sword",
+          "Shield"
+        ],
+        "sockets": [
+          "4",
+          "4"
+        ],
+        "min_rlvl": [
+          "25",
+          "25"
+        ],
+        "rune_order_and_modifiers": "Tal + Thul + Ort + Amn",
+        "rune_word_modifiers": [
+          {
+            "stat": "fhr",
+            "value": "55",
+            "raw": "55 Faster Hit Recovery"
+          },
+          {
+            "stat": "defense_vs_missile",
+            "value": "+250",
+            "raw": "+250 Defense vs Missile"
+          },
+          {
+            "stat": "vitality",
+            "value": "+22",
+            "raw": "+22 Vitality"
+          },
+          {
+            "stat": "mana",
+            "value": "+(89-112)",
+            "raw": "+(89-112) Mana"
+          }
+        ]
+      }
+    }
+  ]
+}

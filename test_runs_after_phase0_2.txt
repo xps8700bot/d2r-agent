@@ -1,0 +1,13 @@
+OK   format_contract
+OK   build_advice_no_numbers
+OK   cn_build_compare_insight_vs_spirit_act1_hell
+OK   mechanics_claim_warlock_passive_levitate_onehand_twohand
+OK   warlock_build_compare_strategy_plus_skills_priority
+OK   runeword_question_uses_basin_fact_kb
+OK   mechanics_mf_does_not_affect_base_item
+OK   mechanics_tc_order_tc_then_base_then_quality
+OK   mechanics_affix_alvl_possible_or_needs_inputs
+OK   mechanics_craft_amulet_why_93
+OK   mechanics_baal_gc_45_life
+
+pass: 11/11

@@ -1,0 +1,98 @@
+{
+  "debug": [
+    {
+      "name": "Insight",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Insight",
+      "debug_rows": {
+        "item_type": [
+          "Polearm"
+        ],
+        "sockets": [
+          "4"
+        ],
+        "min_rlvl": [
+          "27"
+        ],
+        "rune_order_and_modifiers": "Ral + Tir + Tal + Sol",
+        "rune_word_modifiers": [
+          {
+            "stat": "ed_percent",
+            "value": "(200-260)%",
+            "raw": "(200-260)% Enhanced Damage"
+          },
+          {
+            "stat": "ar_percent",
+            "value": "(180-250)",
+            "raw": "(180-250) % Bonus to Attack Rating"
+          },
+          {
+            "stat": "all_attributes",
+            "value": "+5",
+            "raw": "+5 All Attributes"
+          },
+          {
+            "stat": "critical_strike",
+            "value": "+(1-6)",
+            "raw": "+(1-6) Critical Strike"
+          },
+          {
+            "stat": "raw",
+            "value": "(",
+            "raw": "("
+          },
+          {
+            "stat": "raw",
+            "value": "oskill",
+            "raw": "oskill"
+          },
+          {
+            "stat": "raw",
+            "value": ")",
+            "raw": ")"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spirit",
+      "source_url": "https://www.theamazonbasin.com/wiki/index.php/Spirit",
+      "debug_rows": {
+        "item_type": [
+          "Sword",
+          "Sword"
+        ],
+        "sockets": [
+          "4",
+          "4"
+        ],
+        "min_rlvl": [
+          "25",
+          "25"
+        ],
+        "rune_order_and_modifiers": "Tal + Thul + Ort + Amn",
+        "rune_word_modifiers": [
+          {
+            "stat": "fhr",
+            "value": "55",
+            "raw": "55 Faster Hit Recovery"
+          },
+          {
+            "stat": "defense_vs_missile",
+            "value": "+250",
+            "raw": "+250 Defense vs Missile"
+          },
+          {
+            "stat": "vitality",
+            "value": "+22",
+            "raw": "+22 Vitality"
+          },
+          {
+            "stat": "mana",
+            "value": "+(89-112)",
+            "raw": "+(89-112) Mana"
+          }
+        ]
+      }
+    }
+  ]
+}

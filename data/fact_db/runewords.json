@@ -1,0 +1,5529 @@
+{
+  "runewords": [
+    {
+      "name": "Ancients' Pledge",
+      "variants": [
+        {
+          "item_type": "Shield",
+          "sockets": 3,
+          "min_rlvl": 21,
+          "rune_order_and_modifiers": "Ral + Ort + Tal",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "All Resistances",
+              "raw": "All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+13",
+              "raw": "+13"
+            },
+            {
+              "stat": "mana",
+              "value": "10%",
+              "raw": "10% Damage Taken Goes to Mana"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Ancients%27_Pledge",
+          "extracted_at": "2026-03-17T20:43:30.173814+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:43:30.173814+00:00"
+    },
+    {
+      "name": "Authority",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 29,
+          "rune_order_and_modifiers": "Hel + Shael + Ral",
+          "runeword_modifiers": [
+            {
+              "stat": "warlock_skills",
+              "value": "+2",
+              "raw": "+2 Warlock Skills"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(40-60)%",
+              "raw": "(40-60)% Enhanced Damage"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Authority",
+          "extracted_at": "2026-03-17T20:43:35.454387+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:43:35.454387+00:00"
+    },
+    {
+      "name": "Beast",
+      "variants": [
+        {
+          "item_type": "Axe",
+          "sockets": 5,
+          "min_rlvl": 63,
+          "rune_order_and_modifiers": "Ber + Tir + Um + Mal + Lum",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "(240-270)%",
+              "raw": "(240-270)% Enhanced Damage"
+            },
+            {
+              "stat": "werebear",
+              "value": "+3",
+              "raw": "+3 Werebear"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            },
+            {
+              "stat": "lycanthropy",
+              "value": "+3",
+              "raw": "+3 Lycanthropy"
+            },
+            {
+              "stat": "raw",
+              "value": "(oskill)",
+              "raw": "(oskill)"
+            },
+            {
+              "stat": "strength",
+              "value": "+(25-40)",
+              "raw": "+(25-40) Strength"
+            }
+          ]
+        },
+        {
+          "item_type": "Scepter",
+          "sockets": 5,
+          "min_rlvl": 63,
+          "rune_order_and_modifiers": "Ber + Tir + Um + Mal + Lum",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "(240-270)%",
+              "raw": "(240-270)% Enhanced Damage"
+            },
+            {
+              "stat": "werebear",
+              "value": "+3",
+              "raw": "+3 Werebear"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            },
+            {
+              "stat": "lycanthropy",
+              "value": "+3",
+              "raw": "+3 Lycanthropy"
+            },
+            {
+              "stat": "raw",
+              "value": "(oskill)",
+              "raw": "(oskill)"
+            },
+            {
+              "stat": "strength",
+              "value": "+(25-40)",
+              "raw": "+(25-40) Strength"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Beast",
+          "extracted_at": "2026-03-17T20:43:40.907695+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:43:40.907695+00:00"
+    },
+    {
+      "name": "Black",
+      "variants": [
+        {
+          "item_type": "Club",
+          "sockets": 3,
+          "min_rlvl": 35,
+          "rune_order_and_modifiers": "Thul + Io + Nef",
+          "runeword_modifiers": [
+            {
+              "stat": "attack_rating",
+              "value": "+200",
+              "raw": "+200 Attack Rating"
+            },
+            {
+              "stat": "crushing_blow",
+              "value": "40% Chance of",
+              "raw": "40% Chance of Crushing Blow"
+            },
+            {
+              "stat": "raw",
+              "value": "Magic Damage Reduced",
+              "raw": "Magic Damage Reduced"
+            },
+            {
+              "stat": "raw",
+              "value": "by 2",
+              "raw": "by 2"
+            },
+            {
+              "stat": "corpse_explosion",
+              "value": "Level 4",
+              "raw": "Level 4 Corpse Explosion"
+            },
+            {
+              "stat": "charges",
+              "value": "(12/12",
+              "raw": "(12/12 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        },
+        {
+          "item_type": "Mace",
+          "sockets": 3,
+          "min_rlvl": 35,
+          "rune_order_and_modifiers": "Thul + Io + Nef",
+          "runeword_modifiers": [
+            {
+              "stat": "attack_rating",
+              "value": "+200",
+              "raw": "+200 Attack Rating"
+            },
+            {
+              "stat": "crushing_blow",
+              "value": "40% Chance of",
+              "raw": "40% Chance of Crushing Blow"
+            },
+            {
+              "stat": "raw",
+              "value": "Magic Damage Reduced",
+              "raw": "Magic Damage Reduced"
+            },
+            {
+              "stat": "raw",
+              "value": "by 2",
+              "raw": "by 2"
+            },
+            {
+              "stat": "corpse_explosion",
+              "value": "Level 4",
+              "raw": "Level 4 Corpse Explosion"
+            },
+            {
+              "stat": "charges",
+              "value": "(12/12",
+              "raw": "(12/12 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Black",
+          "extracted_at": "2026-03-17T20:43:46.283659+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:43:46.283659+00:00"
+    },
+    {
+      "name": "Bone",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 47,
+          "rune_order_and_modifiers": "Sol + Um",
+          "runeword_modifiers": [
+            {
+              "stat": "necromancer_skill_levels",
+              "value": "+2",
+              "raw": "+2 Necromancer Skill Levels"
+            },
+            {
+              "stat": "mana",
+              "value": "+(100-150)",
+              "raw": "+(100-150) Mana"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Bone",
+          "extracted_at": "2026-03-17T20:43:51.702146+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:43:51.702146+00:00"
+    },
+    {
+      "name": "Bramble",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 4,
+          "min_rlvl": 61,
+          "rune_order_and_modifiers": "Ral + Ohm + Sur + Eth",
+          "runeword_modifiers": [
+            {
+              "stat": "poison_skill_damage",
+              "value": "+(25-50)%",
+              "raw": "+(25-50)% Poison Skill Damage"
+            },
+            {
+              "stat": "defense",
+              "value": "+300",
+              "raw": "+300 Defense"
+            },
+            {
+              "stat": "raw",
+              "value": "Poison Resist",
+              "raw": "Poison Resist"
+            },
+            {
+              "stat": "raw",
+              "value": "+100%",
+              "raw": "+100%"
+            },
+            {
+              "stat": "life_after_each_kill",
+              "value": "+13",
+              "raw": "+13 Life After Each Kill"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Bramble",
+          "extracted_at": "2026-03-17T20:43:57.032415+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:43:57.032415+00:00"
+    },
+    {
+      "name": "Brand",
+      "variants": [
+        {
+          "item_type": "Missile weapon",
+          "sockets": 4,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Jah + Lo + Mal + Gul",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "Fires Explosive Arrows or Bolts",
+              "raw": "Fires Explosive Arrows or Bolts"
+            },
+            {
+              "stat": "exploding_arrow",
+              "value": "(Level 15",
+              "raw": "(Level 15 Exploding Arrow"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(260-340)%",
+              "raw": "(260-340)% Enhanced Damage"
+            },
+            {
+              "stat": "damage_to_demons",
+              "value": "+(280-330)%",
+              "raw": "+(280-330)% Damage to Demons"
+            },
+            {
+              "stat": "raw",
+              "value": "Knockback",
+              "raw": "Knockback"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Brand",
+          "extracted_at": "2026-03-17T20:44:02.384679+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:44:02.384679+00:00"
+    },
+    {
+      "name": "Breath of the Dying",
+      "variants": [
+        {
+          "item_type": "Weapon",
+          "sockets": 6,
+          "min_rlvl": 69,
+          "rune_order_and_modifiers": "Vex + Hel + El + Eld + Zod + Eth",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "(350-400)%",
+              "raw": "(350-400)% Enhanced Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "+125% Damage to Undead",
+              "raw": "+125% Damage to Undead"
+            },
+            {
+              "stat": "life_stolen",
+              "value": "(12-15)%",
+              "raw": "(12-15)% Life Stolen"
+            },
+            {
+              "stat": "raw",
+              "value": "per hit",
+              "raw": "per hit"
+            },
+            {
+              "stat": "raw",
+              "value": "Prevent Monster Heal",
+              "raw": "Prevent Monster Heal"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Breath_of_the_Dying",
+          "extracted_at": "2026-03-17T20:44:07.919529+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:44:07.919529+00:00"
+    },
+    {
+      "name": "Bulwark",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 35,
+          "rune_order_and_modifiers": "Shael + Io + Sol",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "Increase",
+              "raw": "Increase"
+            },
+            {
+              "stat": "raw",
+              "value": "Maximum Life",
+              "raw": "Maximum Life"
+            },
+            {
+              "stat": "replenish_life",
+              "value": "5%",
+              "raw": "5% Replenish Life"
+            },
+            {
+              "stat": "physical_damage_received_reduced",
+              "value": "+30",
+              "raw": "+30 Physical Damage Received Reduced"
+            },
+            {
+              "stat": "raw",
+              "value": "by 15%",
+              "raw": "by 15%"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Bulwark",
+          "extracted_at": "2026-03-17T20:44:13.336164+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:44:13.336164+00:00"
+    },
+    {
+      "name": "Call to Arms",
+      "variants": [
+        {
+          "item_type": "Weapon",
+          "sockets": 5,
+          "min_rlvl": 57,
+          "rune_order_and_modifiers": "Amn + Ral + Mal + Ist + Ohm",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "(200-240)% Enhanced Damage",
+              "raw": "(200-240)% Enhanced Damage"
+            },
+            {
+              "stat": "battle_command",
+              "value": "+(2-6)",
+              "raw": "+(2-6) Battle Command"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            },
+            {
+              "stat": "battle_orders",
+              "value": "+(1-6)",
+              "raw": "+(1-6) Battle Orders"
+            },
+            {
+              "stat": "raw",
+              "value": "(oskill)",
+              "raw": "(oskill)"
+            },
+            {
+              "stat": "battle_cry",
+              "value": "+(1-4)",
+              "raw": "+(1-4) Battle Cry"
+            },
+            {
+              "stat": "raw",
+              "value": "(oskill)",
+              "raw": "(oskill)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Call_to_Arms",
+          "extracted_at": "2026-03-17T20:44:18.952227+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:44:18.952227+00:00"
+    },
+    {
+      "name": "Chains of Honor",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 4,
+          "min_rlvl": 63,
+          "rune_order_and_modifiers": "Dol + Um + Ber + Ist",
+          "runeword_modifiers": [
+            {
+              "stat": "damage_to_undead",
+              "value": "+100%",
+              "raw": "+100% Damage to Undead"
+            },
+            {
+              "stat": "life_stolen",
+              "value": "8%",
+              "raw": "8% Life Stolen"
+            },
+            {
+              "stat": "raw",
+              "value": "per hit",
+              "raw": "per hit"
+            },
+            {
+              "stat": "enhanced_defense",
+              "value": "70%",
+              "raw": "70% Enhanced Defense"
+            },
+            {
+              "stat": "strength",
+              "value": "+20",
+              "raw": "+20 Strength"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Chains_of_Honor",
+          "extracted_at": "2026-03-17T20:44:24.355377+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:44:24.355377+00:00"
+    },
+    {
+      "name": "Chaos",
+      "variants": [
+        {
+          "item_type": "Claw",
+          "sockets": 3,
+          "min_rlvl": 57,
+          "rune_order_and_modifiers": "Fal + Ohm + Um",
+          "runeword_modifiers": [
+            {
+              "stat": "increased_attack_speed",
+              "value": "35",
+              "raw": "35 Increased Attack Speed"
+            },
+            {
+              "stat": "raw",
+              "value": "(240-290)% Enhanced Damage",
+              "raw": "(240-290)% Enhanced Damage"
+            },
+            {
+              "stat": "magic_damage",
+              "value": "Adds 216-471",
+              "raw": "Adds 216-471 Magic Damage"
+            },
+            {
+              "stat": "whirlwind",
+              "value": "+1",
+              "raw": "+1 Whirlwind"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Chaos",
+          "extracted_at": "2026-03-17T20:44:29.660858+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:44:29.660858+00:00"
+    },
+    {
+      "name": "Coven",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 51,
+          "rune_order_and_modifiers": "Ist + Ral + Io",
+          "runeword_modifiers": [
+            {
+              "stat": "fcr",
+              "value": "20",
+              "raw": "20 Faster Cast Rate"
+            },
+            {
+              "stat": "enhanced_defense",
+              "value": "(30-50)%",
+              "raw": "(30-50)% Enhanced Defense"
+            },
+            {
+              "stat": "life_after_each_kill",
+              "value": "+(1-5)",
+              "raw": "+(1-5) Life After Each Kill"
+            },
+            {
+              "stat": "better_chance_of_getting_magic_items",
+              "value": "(1-15)%",
+              "raw": "(1-15)% Better Chance of Getting Magic Items"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Coven",
+          "extracted_at": "2026-03-17T20:44:35.049332+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:44:35.049332+00:00"
+    },
+    {
+      "name": "Crescent Moon (Rune Word)",
+      "variants": [
+        {
+          "item_type": "Axe",
+          "sockets": 3,
+          "min_rlvl": 47,
+          "rune_order_and_modifiers": "Shael + Um + Tir",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "(180-220)%",
+              "raw": "(180-220)% Enhanced Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "Ignore Target's Defense",
+              "raw": "Ignore Target's Defense"
+            },
+            {
+              "stat": "enemy_lightning_resistance",
+              "value": "-35%",
+              "raw": "-35% Enemy Lightning Resistance"
+            },
+            {
+              "stat": "magic_absorb",
+              "value": "+(9-11)",
+              "raw": "+(9-11) Magic Absorb"
+            }
+          ]
+        },
+        {
+          "item_type": "Polearm",
+          "sockets": 3,
+          "min_rlvl": 47,
+          "rune_order_and_modifiers": "Shael + Um + Tir",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "(180-220)%",
+              "raw": "(180-220)% Enhanced Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "Ignore Target's Defense",
+              "raw": "Ignore Target's Defense"
+            },
+            {
+              "stat": "enemy_lightning_resistance",
+              "value": "-35%",
+              "raw": "-35% Enemy Lightning Resistance"
+            },
+            {
+              "stat": "magic_absorb",
+              "value": "+(9-11)",
+              "raw": "+(9-11) Magic Absorb"
+            }
+          ]
+        },
+        {
+          "item_type": "Sword",
+          "sockets": 3,
+          "min_rlvl": 47,
+          "rune_order_and_modifiers": "Shael + Um + Tir",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "(180-220)%",
+              "raw": "(180-220)% Enhanced Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "Ignore Target's Defense",
+              "raw": "Ignore Target's Defense"
+            },
+            {
+              "stat": "enemy_lightning_resistance",
+              "value": "-35%",
+              "raw": "-35% Enemy Lightning Resistance"
+            },
+            {
+              "stat": "magic_absorb",
+              "value": "+(9-11)",
+              "raw": "+(9-11) Magic Absorb"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Crescent_Moon_%28Rune_Word%29",
+          "extracted_at": "2026-03-17T20:44:40.452982+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:44:40.452982+00:00"
+    },
+    {
+      "name": "Cure",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 35,
+          "rune_order_and_modifiers": "Shael + Io + Tal",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "Increase",
+              "raw": "Increase"
+            },
+            {
+              "stat": "raw",
+              "value": "Maximum Life",
+              "raw": "Maximum Life"
+            },
+            {
+              "stat": "raw",
+              "value": "5%",
+              "raw": "5%"
+            },
+            {
+              "stat": "poison_length_reduced",
+              "value": "Poison Resist +(10-30)%",
+              "raw": "Poison Resist +(10-30)% Poison Length Reduced"
+            },
+            {
+              "stat": "raw",
+              "value": "by 50%",
+              "raw": "by 50%"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Cure",
+          "extracted_at": "2026-03-17T20:44:45.841135+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:44:45.841135+00:00"
+    },
+    {
+      "name": "Death (Rune Word)",
+      "variants": [
+        {
+          "item_type": "Axe",
+          "sockets": 5,
+          "min_rlvl": 55,
+          "rune_order_and_modifiers": "Hel + El + Vex + Ort + Gul",
+          "runeword_modifiers": [
+            {
+              "stat": "glacial_spike",
+              "value": "25% Chance to Cast Level 18",
+              "raw": "25% Chance to Cast Level 18 Glacial Spike"
+            },
+            {
+              "stat": "raw",
+              "value": "on Attack",
+              "raw": "on Attack"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(300-385)%",
+              "raw": "(300-385)% Enhanced Damage"
+            },
+            {
+              "stat": "crushing_blow",
+              "value": "50% Chance of",
+              "raw": "50% Chance of Crushing Blow"
+            },
+            {
+              "stat": "deadly_strike",
+              "value": "0.5*lvl%",
+              "raw": "0.5*lvl% Deadly Strike"
+            }
+          ]
+        },
+        {
+          "item_type": "Sword",
+          "sockets": 5,
+          "min_rlvl": 55,
+          "rune_order_and_modifiers": "Hel + El + Vex + Ort + Gul",
+          "runeword_modifiers": [
+            {
+              "stat": "glacial_spike",
+              "value": "25% Chance to Cast Level 18",
+              "raw": "25% Chance to Cast Level 18 Glacial Spike"
+            },
+            {
+              "stat": "raw",
+              "value": "on Attack",
+              "raw": "on Attack"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(300-385)%",
+              "raw": "(300-385)% Enhanced Damage"
+            },
+            {
+              "stat": "crushing_blow",
+              "value": "50% Chance of",
+              "raw": "50% Chance of Crushing Blow"
+            },
+            {
+              "stat": "deadly_strike",
+              "value": "0.5*lvl%",
+              "raw": "0.5*lvl% Deadly Strike"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Death_%28Rune_Word%29",
+          "extracted_at": "2026-03-17T20:44:51.220256+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:44:51.220256+00:00"
+    },
+    {
+      "name": "Delirium",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 51,
+          "rune_order_and_modifiers": "Lem + Ist + Io",
+          "runeword_modifiers": [
+            {
+              "stat": "terror",
+              "value": "14% Chance to Cast Level 13",
+              "raw": "14% Chance to Cast Level 13 Terror"
+            },
+            {
+              "stat": "raw",
+              "value": "When Struck",
+              "raw": "When Struck"
+            },
+            {
+              "stat": "confuse",
+              "value": "11% Chance to Cast Level 18",
+              "raw": "11% Chance to Cast Level 18 Confuse"
+            },
+            {
+              "stat": "raw",
+              "value": "on Striking",
+              "raw": "on Striking"
+            },
+            {
+              "stat": "all_skills",
+              "value": "+2",
+              "raw": "+2 All Skills"
+            },
+            {
+              "stat": "defense",
+              "value": "+261",
+              "raw": "+261 Defense"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Delirium",
+          "extracted_at": "2026-03-17T20:44:56.598678+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:44:56.598678+00:00"
+    },
+    {
+      "name": "Destruction",
+      "variants": [
+        {
+          "item_type": "Polearm",
+          "sockets": 5,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Vex + Lo + Ber + Jah + Ko",
+          "runeword_modifiers": [
+            {
+              "stat": "meteor",
+              "value": "100% Chance to Cast Level 45",
+              "raw": "100% Chance to Cast Level 45 Meteor"
+            },
+            {
+              "stat": "raw",
+              "value": "When You Die",
+              "raw": "When You Die"
+            },
+            {
+              "stat": "nova",
+              "value": "15% Chance to Cast Level 22",
+              "raw": "15% Chance to Cast Level 22 Nova"
+            },
+            {
+              "stat": "raw",
+              "value": "on Attack",
+              "raw": "on Attack"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "350%",
+              "raw": "350% Enhanced Damage"
+            },
+            {
+              "stat": "magic_damage",
+              "value": "Adds 100-180",
+              "raw": "Adds 100-180 Magic Damage"
+            }
+          ]
+        },
+        {
+          "item_type": "Sword",
+          "sockets": 5,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Vex + Lo + Ber + Jah + Ko",
+          "runeword_modifiers": [
+            {
+              "stat": "meteor",
+              "value": "100% Chance to Cast Level 45",
+              "raw": "100% Chance to Cast Level 45 Meteor"
+            },
+            {
+              "stat": "raw",
+              "value": "When You Die",
+              "raw": "When You Die"
+            },
+            {
+              "stat": "nova",
+              "value": "15% Chance to Cast Level 22",
+              "raw": "15% Chance to Cast Level 22 Nova"
+            },
+            {
+              "stat": "raw",
+              "value": "on Attack",
+              "raw": "on Attack"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "350%",
+              "raw": "350% Enhanced Damage"
+            },
+            {
+              "stat": "magic_damage",
+              "value": "Adds 100-180",
+              "raw": "Adds 100-180 Magic Damage"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Destruction",
+          "extracted_at": "2026-03-17T20:45:01.960253+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:45:01.960253+00:00"
+    },
+    {
+      "name": "Doom",
+      "variants": [
+        {
+          "item_type": "Axe",
+          "sockets": 5,
+          "min_rlvl": 67,
+          "rune_order_and_modifiers": "Hel + Ohm + Um + Lo + Cham",
+          "runeword_modifiers": [
+            {
+              "stat": "all_skills",
+              "value": "+2",
+              "raw": "+2 All Skills"
+            },
+            {
+              "stat": "increased_attack_speed",
+              "value": "45",
+              "raw": "45 Increased Attack Speed"
+            },
+            {
+              "stat": "raw",
+              "value": "(280-320)% Enhanced Damage",
+              "raw": "(280-320)% Enhanced Damage"
+            },
+            {
+              "stat": "enemy_cold_resistance",
+              "value": "-(40-60)%",
+              "raw": "-(40-60)% Enemy Cold Resistance"
+            }
+          ]
+        },
+        {
+          "item_type": "Polearm",
+          "sockets": 5,
+          "min_rlvl": 67,
+          "rune_order_and_modifiers": "Hel + Ohm + Um + Lo + Cham",
+          "runeword_modifiers": [
+            {
+              "stat": "all_skills",
+              "value": "+2",
+              "raw": "+2 All Skills"
+            },
+            {
+              "stat": "increased_attack_speed",
+              "value": "45",
+              "raw": "45 Increased Attack Speed"
+            },
+            {
+              "stat": "raw",
+              "value": "(280-320)% Enhanced Damage",
+              "raw": "(280-320)% Enhanced Damage"
+            },
+            {
+              "stat": "enemy_cold_resistance",
+              "value": "-(40-60)%",
+              "raw": "-(40-60)% Enemy Cold Resistance"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Doom",
+          "extracted_at": "2026-03-17T20:45:07.340810+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:45:07.340810+00:00"
+    },
+    {
+      "name": "Dragon",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 61,
+          "rune_order_and_modifiers": "Sur + Lo + Sol",
+          "runeword_modifiers": [
+            {
+              "stat": "holy_fire",
+              "value": "Level 14",
+              "raw": "Level 14 Holy Fire"
+            },
+            {
+              "stat": "raw",
+              "value": "Aura When Equipped",
+              "raw": "Aura When Equipped"
+            },
+            {
+              "stat": "defense",
+              "value": "+360",
+              "raw": "+360 Defense"
+            },
+            {
+              "stat": "defense_vs_missile",
+              "value": "+230",
+              "raw": "+230 Defense vs Missile"
+            },
+            {
+              "stat": "all_attributes",
+              "value": "+(3-5)",
+              "raw": "+(3-5) All Attributes"
+            }
+          ]
+        },
+        {
+          "item_type": "Shield",
+          "sockets": 3,
+          "min_rlvl": 61,
+          "rune_order_and_modifiers": "Sur + Lo + Sol",
+          "runeword_modifiers": [
+            {
+              "stat": "holy_fire",
+              "value": "Level 14",
+              "raw": "Level 14 Holy Fire"
+            },
+            {
+              "stat": "raw",
+              "value": "Aura When Equipped",
+              "raw": "Aura When Equipped"
+            },
+            {
+              "stat": "defense",
+              "value": "+360",
+              "raw": "+360 Defense"
+            },
+            {
+              "stat": "defense_vs_missile",
+              "value": "+230",
+              "raw": "+230 Defense vs Missile"
+            },
+            {
+              "stat": "all_attributes",
+              "value": "+(3-5)",
+              "raw": "+(3-5) All Attributes"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Dragon",
+          "extracted_at": "2026-03-17T20:45:12.705407+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:45:12.705407+00:00"
+    },
+    {
+      "name": "Dream",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Io + Jah + Pul",
+          "runeword_modifiers": [
+            {
+              "stat": "fhr",
+              "value": "(20-30)",
+              "raw": "(20-30) Faster Hit Recovery"
+            },
+            {
+              "stat": "defense",
+              "value": "+(150-220)",
+              "raw": "+(150-220) Defense"
+            },
+            {
+              "stat": "mana_(based_on_character_level)",
+              "value": "+0.625*lvl",
+              "raw": "+0.625*lvl Mana (Based on Character Level)"
+            },
+            {
+              "stat": "raw",
+              "value": "All Resistances",
+              "raw": "All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+(5-20)",
+              "raw": "+(5-20)"
+            }
+          ]
+        },
+        {
+          "item_type": "Shield",
+          "sockets": 3,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Io + Jah + Pul",
+          "runeword_modifiers": [
+            {
+              "stat": "fhr",
+              "value": "(20-30)",
+              "raw": "(20-30) Faster Hit Recovery"
+            },
+            {
+              "stat": "defense",
+              "value": "+(150-220)",
+              "raw": "+(150-220) Defense"
+            },
+            {
+              "stat": "mana_(based_on_character_level)",
+              "value": "+0.625*lvl",
+              "raw": "+0.625*lvl Mana (Based on Character Level)"
+            },
+            {
+              "stat": "raw",
+              "value": "All Resistances",
+              "raw": "All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+(5-20)",
+              "raw": "+(5-20)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Dream",
+          "extracted_at": "2026-03-17T20:45:18.145865+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:45:18.145865+00:00"
+    },
+    {
+      "name": "Duress",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 47,
+          "rune_order_and_modifiers": "Shael + Um + Thul",
+          "runeword_modifiers": [
+            {
+              "stat": "cold_damage",
+              "value": "Adds 37-133",
+              "raw": "Adds 37-133 Cold Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "(2 Seconds)",
+              "raw": "(2 Seconds)"
+            },
+            {
+              "stat": "crushing_blow",
+              "value": "15% Chance of",
+              "raw": "15% Chance of Crushing Blow"
+            },
+            {
+              "stat": "open_wounds",
+              "value": "33% Chance of",
+              "raw": "33% Chance of Open Wounds"
+            },
+            {
+              "stat": "enhanced_defense",
+              "value": "(150-200)%",
+              "raw": "(150-200)% Enhanced Defense"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Duress",
+          "extracted_at": "2026-03-17T20:45:23.603679+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:45:23.603679+00:00"
+    },
+    {
+      "name": "Edge",
+      "variants": [
+        {
+          "item_type": "Missile weapon",
+          "sockets": 3,
+          "min_rlvl": 25,
+          "rune_order_and_modifiers": "Tir + Tal + Amn",
+          "runeword_modifiers": [
+            {
+              "stat": "damage_to_demons",
+              "value": "+(320-380)%",
+              "raw": "+(320-380)% Damage to Demons"
+            },
+            {
+              "stat": "damage_to_undead",
+              "value": "+280%",
+              "raw": "+280% Damage to Undead"
+            },
+            {
+              "stat": "raw",
+              "value": "Prevent Monster Heal",
+              "raw": "Prevent Monster Heal"
+            },
+            {
+              "stat": "all_attributes",
+              "value": "+(5-10)",
+              "raw": "+(5-10) All Attributes"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Edge",
+          "extracted_at": "2026-03-17T20:45:29.048073+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:45:29.048073+00:00"
+    },
+    {
+      "name": "Enigma",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Jah + Ith + Ber",
+          "runeword_modifiers": [
+            {
+              "stat": "teleport",
+              "value": "+1",
+              "raw": "+1 Teleport"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            },
+            {
+              "stat": "defense",
+              "value": "+(750-775)",
+              "raw": "+(750-775) Defense"
+            },
+            {
+              "stat": "strength",
+              "value": "+0.75*lvl",
+              "raw": "+0.75*lvl Strength"
+            },
+            {
+              "stat": "raw",
+              "value": "(Based on Character Level)",
+              "raw": "(Based on Character Level)"
+            },
+            {
+              "stat": "life_after_each_kill",
+              "value": "+14",
+              "raw": "+14 Life After Each Kill"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Enigma",
+          "extracted_at": "2026-03-17T20:45:34.371875+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:45:34.371875+00:00"
+    },
+    {
+      "name": "Enlightenment",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 45,
+          "rune_order_and_modifiers": "Pul + Ral + Sol",
+          "runeword_modifiers": [
+            {
+              "stat": "sorceress_skill_levels",
+              "value": "+2",
+              "raw": "+2 Sorceress Skill Levels"
+            },
+            {
+              "stat": "warmth",
+              "value": "+1",
+              "raw": "+1 Warmth"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Enlightenment",
+          "extracted_at": "2026-03-17T20:45:39.718430+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:45:39.718430+00:00"
+    },
+    {
+      "name": "Eternity",
+      "variants": [
+        {
+          "item_type": "Melee weapon",
+          "sockets": 5,
+          "min_rlvl": 63,
+          "rune_order_and_modifiers": "Amn + Ber + Ist + Sol + Sur",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "Slows Target",
+              "raw": "Slows Target"
+            },
+            {
+              "stat": "replenish_life",
+              "value": "by 33%",
+              "raw": "by 33% Replenish Life"
+            },
+            {
+              "stat": "regenerate_mana",
+              "value": "+16",
+              "raw": "+16 Regenerate Mana"
+            },
+            {
+              "stat": "cannot_be_frozen",
+              "value": "16%",
+              "raw": "16% Cannot be Frozen"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Eternity",
+          "extracted_at": "2026-03-17T20:45:45.065987+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:45:45.065987+00:00"
+    },
+    {
+      "name": "Exile",
+      "variants": [
+        {
+          "item_type": "Paladin item",
+          "sockets": 4,
+          "min_rlvl": 57,
+          "rune_order_and_modifiers": "Vex + Ohm + Ist + Dol",
+          "runeword_modifiers": [
+            {
+              "stat": "offensive_auras",
+              "value": "+2",
+              "raw": "+2 Offensive Auras"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "Paladin",
+              "raw": "Paladin"
+            },
+            {
+              "stat": "raw",
+              "value": "Only)",
+              "raw": "Only)"
+            },
+            {
+              "stat": "faster_block_rate",
+              "value": "30",
+              "raw": "30 Faster Block Rate"
+            },
+            {
+              "stat": "raw",
+              "value": "Freezes Target",
+              "raw": "Freezes Target"
+            },
+            {
+              "stat": "raw",
+              "value": "+1",
+              "raw": "+1"
+            },
+            {
+              "stat": "enhanced_defense",
+              "value": "(220-260)%",
+              "raw": "(220-260)% Enhanced Defense"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Exile",
+          "extracted_at": "2026-03-17T20:45:50.415707+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:45:50.415707+00:00"
+    },
+    {
+      "name": "Faith",
+      "variants": [
+        {
+          "item_type": "Missile weapon",
+          "sockets": 4,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Ohm + Jah + Lem + Eld",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "280%",
+              "raw": "280% Enhanced Damage"
+            },
+            {
+              "stat": "ar_percent",
+              "value": "300",
+              "raw": "300 % Bonus to Attack Rating"
+            },
+            {
+              "stat": "fire_damage",
+              "value": "+120",
+              "raw": "+120 Fire Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "All Resistances",
+              "raw": "All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+15",
+              "raw": "+15"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Faith",
+          "extracted_at": "2026-03-17T20:45:55.780547+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:45:55.780547+00:00"
+    },
+    {
+      "name": "Famine",
+      "variants": [
+        {
+          "item_type": "Axe",
+          "sockets": 4,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Fal + Ohm + Ort + Jah",
+          "runeword_modifiers": [
+            {
+              "stat": "magic_damage",
+              "value": "Adds 180-200",
+              "raw": "Adds 180-200 Magic Damage"
+            },
+            {
+              "stat": "fire",
+              "value": "Adds 50-200",
+              "raw": "Adds 50-200 Fire"
+            },
+            {
+              "stat": "raw",
+              "value": ",",
+              "raw": ","
+            },
+            {
+              "stat": "raw",
+              "value": "Lightning",
+              "raw": "Lightning"
+            },
+            {
+              "stat": "raw",
+              "value": "and",
+              "raw": "and"
+            },
+            {
+              "stat": "raw",
+              "value": "Cold Damage",
+              "raw": "Cold Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "(4 Seconds)",
+              "raw": "(4 Seconds)"
+            },
+            {
+              "stat": "life_stolen",
+              "value": "12%",
+              "raw": "12% Life Stolen"
+            },
+            {
+              "stat": "raw",
+              "value": "per hit",
+              "raw": "per hit"
+            },
+            {
+              "stat": "raw",
+              "value": "Prevent Monster Heal",
+              "raw": "Prevent Monster Heal"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Famine",
+          "extracted_at": "2026-03-17T20:46:01.120310+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:46:01.120310+00:00"
+    },
+    {
+      "name": "Flickering Flame",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 55,
+          "rune_order_and_modifiers": "Nef + Pul + Vex",
+          "runeword_modifiers": [
+            {
+              "stat": "enemy_fire_resistance",
+              "value": "-(10-15)%",
+              "raw": "-(10-15)% Enemy Fire Resistance"
+            },
+            {
+              "stat": "mana",
+              "value": "+(50-75)",
+              "raw": "+(50-75) Mana"
+            },
+            {
+              "stat": "raw",
+              "value": "Half Freeze Duration",
+              "raw": "Half Freeze Duration"
+            },
+            {
+              "stat": "raw",
+              "value": "Poison Length Reduced",
+              "raw": "Poison Length Reduced"
+            },
+            {
+              "stat": "raw",
+              "value": "by 50%",
+              "raw": "by 50%"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Flickering_Flame",
+          "extracted_at": "2026-03-17T20:46:06.538279+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:46:06.538279+00:00"
+    },
+    {
+      "name": "Fortitude",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 4,
+          "min_rlvl": 59,
+          "rune_order_and_modifiers": "El + Sol + Dol + Lo",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "300%",
+              "raw": "300% Enhanced Damage"
+            },
+            {
+              "stat": "enhanced_defense",
+              "value": "200%",
+              "raw": "200% Enhanced Defense"
+            },
+            {
+              "stat": "life_(based_on_character_level)",
+              "value": "+ lvl*(8-12)/8",
+              "raw": "+ lvl*(8-12)/8 Life (Based on Character Level)"
+            },
+            {
+              "stat": "raw",
+              "value": "All Resistances",
+              "raw": "All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+(25-30)",
+              "raw": "+(25-30)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Fortitude",
+          "extracted_at": "2026-03-17T20:46:11.977145+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:46:11.977145+00:00"
+    },
+    {
+      "name": "Fury (Rune Word)",
+      "variants": [
+        {
+          "item_type": "Melee weapon",
+          "sockets": 3,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Jah + Gul + Eth",
+          "runeword_modifiers": [
+            {
+              "stat": "life_stolen",
+              "value": "6%",
+              "raw": "6% Life Stolen"
+            },
+            {
+              "stat": "raw",
+              "value": "per hit",
+              "raw": "per hit"
+            },
+            {
+              "stat": "deadly_strike",
+              "value": "33%",
+              "raw": "33% Deadly Strike"
+            },
+            {
+              "stat": "open_wounds",
+              "value": "66% Chance of",
+              "raw": "66% Chance of Open Wounds"
+            },
+            {
+              "stat": "frenzy",
+              "value": "+5",
+              "raw": "+5 Frenzy"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "Barbarian",
+              "raw": "Barbarian"
+            },
+            {
+              "stat": "raw",
+              "value": "Only)",
+              "raw": "Only)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Fury_%28Rune_Word%29",
+          "extracted_at": "2026-03-17T20:46:17.410103+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:46:17.410103+00:00"
+    },
+    {
+      "name": "Gloom",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 47,
+          "rune_order_and_modifiers": "Fal + Um + Pul",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "(170-230)% Enhanced Defense",
+              "raw": "(170-230)% Enhanced Defense"
+            },
+            {
+              "stat": "half_freeze_duration",
+              "value": "All Resistances +30",
+              "raw": "All Resistances +30 Half Freeze Duration"
+            },
+            {
+              "stat": "mana",
+              "value": "5%",
+              "raw": "5% Damage Taken Goes to Mana"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Gloom",
+          "extracted_at": "2026-03-17T20:46:22.781326+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:46:22.781326+00:00"
+    },
+    {
+      "name": "Grief",
+      "variants": [
+        {
+          "item_type": "Axe",
+          "sockets": 5,
+          "min_rlvl": 59,
+          "rune_order_and_modifiers": "Eth + Tir + Lo + Mal + Ral",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "Damage +",
+              "raw": "Damage +"
+            },
+            {
+              "stat": "ignore_target's_defense",
+              "value": "(340-400)",
+              "raw": "(340-400) Ignore Target's Defense"
+            },
+            {
+              "stat": "dmg_to_demons",
+              "value": "+[1.875*lvl]%",
+              "raw": "+[1.875*lvl]% Dmg to Demons"
+            },
+            {
+              "stat": "raw",
+              "value": "(Based on Character Level)",
+              "raw": "(Based on Character Level)"
+            },
+            {
+              "stat": "enemy_poison_resistance",
+              "value": "-(20-25)%",
+              "raw": "-(20-25)% Enemy Poison Resistance"
+            }
+          ]
+        },
+        {
+          "item_type": "Sword",
+          "sockets": 5,
+          "min_rlvl": 59,
+          "rune_order_and_modifiers": "Eth + Tir + Lo + Mal + Ral",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "Damage +",
+              "raw": "Damage +"
+            },
+            {
+              "stat": "ignore_target's_defense",
+              "value": "(340-400)",
+              "raw": "(340-400) Ignore Target's Defense"
+            },
+            {
+              "stat": "dmg_to_demons",
+              "value": "+[1.875*lvl]%",
+              "raw": "+[1.875*lvl]% Dmg to Demons"
+            },
+            {
+              "stat": "raw",
+              "value": "(Based on Character Level)",
+              "raw": "(Based on Character Level)"
+            },
+            {
+              "stat": "enemy_poison_resistance",
+              "value": "-(20-25)%",
+              "raw": "-(20-25)% Enemy Poison Resistance"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Grief",
+          "extracted_at": "2026-03-17T20:46:28.116449+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:46:28.116449+00:00"
+    },
+    {
+      "name": "Ground",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 35,
+          "rune_order_and_modifiers": "Shael + Io + Ort",
+          "runeword_modifiers": [
+            {
+              "stat": "lightning_absorb",
+              "value": "Lightning Resist +(10-30)%",
+              "raw": "Lightning Resist +(10-30)% Lightning Absorb"
+            },
+            {
+              "stat": "raw",
+              "value": "+(10-15)%",
+              "raw": "+(10-15)%"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Ground",
+          "extracted_at": "2026-03-17T20:46:33.511243+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:46:33.511243+00:00"
+    },
+    {
+      "name": "Hand of Justice",
+      "variants": [
+        {
+          "item_type": "Weapon",
+          "sockets": 4,
+          "min_rlvl": 67,
+          "rune_order_and_modifiers": "Sur + Cham + Amn + Lo",
+          "runeword_modifiers": [
+            {
+              "stat": "holy_fire",
+              "value": "Level 16",
+              "raw": "Level 16 Holy Fire"
+            },
+            {
+              "stat": "raw",
+              "value": "Aura When Equipped",
+              "raw": "Aura When Equipped"
+            },
+            {
+              "stat": "increased_attack_speed",
+              "value": "33",
+              "raw": "33 Increased Attack Speed"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(280-330)%",
+              "raw": "(280-330)% Enhanced Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "Ignore Target's Defense",
+              "raw": "Ignore Target's Defense"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Hand_of_Justice",
+          "extracted_at": "2026-03-17T20:46:38.878577+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:46:38.878577+00:00"
+    },
+    {
+      "name": "Harmony",
+      "variants": [
+        {
+          "item_type": "Missile weapon",
+          "sockets": 4,
+          "min_rlvl": 39,
+          "rune_order_and_modifiers": "Tir + Ith + Sol + Ko",
+          "runeword_modifiers": [
+            {
+              "stat": "fire",
+              "value": "Adds 55-160",
+              "raw": "Adds 55-160 Fire"
+            },
+            {
+              "stat": "raw",
+              "value": ",",
+              "raw": ","
+            },
+            {
+              "stat": "raw",
+              "value": "Lightning",
+              "raw": "Lightning"
+            },
+            {
+              "stat": "raw",
+              "value": "and",
+              "raw": "and"
+            },
+            {
+              "stat": "raw",
+              "value": "Cold Damage",
+              "raw": "Cold Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "( (2.2-6.4) S)",
+              "raw": "( (2.2-6.4) S)"
+            },
+            {
+              "stat": "valkyrie",
+              "value": "+(2-6)",
+              "raw": "+(2-6) Valkyrie"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            },
+            {
+              "stat": "raw",
+              "value": "Regenerate Mana",
+              "raw": "Regenerate Mana"
+            },
+            {
+              "stat": "raw",
+              "value": "20%",
+              "raw": "20%"
+            },
+            {
+              "stat": "light_radius",
+              "value": "+2",
+              "raw": "+2 Light Radius"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Harmony",
+          "extracted_at": "2026-03-17T20:46:44.264699+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:46:44.264699+00:00"
+    },
+    {
+      "name": "Heart of the Oak",
+      "variants": [
+        {
+          "item_type": "Mace",
+          "sockets": 4,
+          "min_rlvl": 55,
+          "rune_order_and_modifiers": "Ko + Vex + Pul + Thul",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "Replenish Life",
+              "raw": "Replenish Life"
+            },
+            {
+              "stat": "increase",
+              "value": "+20",
+              "raw": "+20 Increase"
+            },
+            {
+              "stat": "raw",
+              "value": "Maximum Mana",
+              "raw": "Maximum Mana"
+            },
+            {
+              "stat": "all_res",
+              "value": "15%",
+              "raw": "15% All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+(30-40)",
+              "raw": "+(30-40)"
+            },
+            {
+              "stat": "oak_sage",
+              "value": "Level 4",
+              "raw": "Level 4 Oak Sage"
+            },
+            {
+              "stat": "charges",
+              "value": "(25/25",
+              "raw": "(25/25 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        },
+        {
+          "item_type": "Staff",
+          "sockets": 4,
+          "min_rlvl": 55,
+          "rune_order_and_modifiers": "Ko + Vex + Pul + Thul",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "Replenish Life",
+              "raw": "Replenish Life"
+            },
+            {
+              "stat": "increase",
+              "value": "+20",
+              "raw": "+20 Increase"
+            },
+            {
+              "stat": "raw",
+              "value": "Maximum Mana",
+              "raw": "Maximum Mana"
+            },
+            {
+              "stat": "all_res",
+              "value": "15%",
+              "raw": "15% All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+(30-40)",
+              "raw": "+(30-40)"
+            },
+            {
+              "stat": "oak_sage",
+              "value": "Level 4",
+              "raw": "Level 4 Oak Sage"
+            },
+            {
+              "stat": "charges",
+              "value": "(25/25",
+              "raw": "(25/25 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Heart_of_the_Oak",
+          "extracted_at": "2026-03-17T20:46:49.633216+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:46:49.633216+00:00"
+    },
+    {
+      "name": "Hearth",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 35,
+          "rune_order_and_modifiers": "Shael + Io + Thul",
+          "runeword_modifiers": [
+            {
+              "stat": "cold_absorb",
+              "value": "Cold Resist +(10-30)%",
+              "raw": "Cold Resist +(10-30)% Cold Absorb"
+            },
+            {
+              "stat": "cannot_be_frozen",
+              "value": "+(10-15)%",
+              "raw": "+(10-15)% Cannot be Frozen"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Hearth",
+          "extracted_at": "2026-03-17T20:46:54.988898+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:46:54.988898+00:00"
+    },
+    {
+      "name": "Holy Thunder",
+      "variants": [
+        {
+          "item_type": "Scepter",
+          "sockets": 4,
+          "min_rlvl": 24,
+          "rune_order_and_modifiers": "Eth + Ral + Ort + Tal",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "Adds 20-60 Lightning Damage",
+              "raw": "Adds 20-60 Lightning Damage"
+            },
+            {
+              "stat": "holy_shock",
+              "value": "+3",
+              "raw": "+3 Holy Shock"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "Paladin",
+              "raw": "Paladin"
+            },
+            {
+              "stat": "raw",
+              "value": "Only)",
+              "raw": "Only)"
+            },
+            {
+              "stat": "maximum_lightning_resist",
+              "value": "+5%",
+              "raw": "+5% Maximum Lightning Resist"
+            },
+            {
+              "stat": "raw",
+              "value": "Lightning Resist",
+              "raw": "Lightning Resist"
+            },
+            {
+              "stat": "raw",
+              "value": "+60%",
+              "raw": "+60%"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Holy_Thunder",
+          "extracted_at": "2026-03-17T20:47:00.399422+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:00.399422+00:00"
+    },
+    {
+      "name": "Honor",
+      "variants": [
+        {
+          "item_type": "Melee weapon",
+          "sockets": 5,
+          "min_rlvl": 27,
+          "rune_order_and_modifiers": "Amn + El + Ith + Tir + Sol",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "+200 Attack Rating",
+              "raw": "+200 Attack Rating"
+            },
+            {
+              "stat": "deadly_strike",
+              "value": "25%",
+              "raw": "25% Deadly Strike"
+            },
+            {
+              "stat": "strength",
+              "value": "+10",
+              "raw": "+10 Strength"
+            },
+            {
+              "stat": "raw",
+              "value": "Replenish Life",
+              "raw": "Replenish Life"
+            },
+            {
+              "stat": "raw",
+              "value": "+10",
+              "raw": "+10"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Honor",
+          "extracted_at": "2026-03-17T20:47:05.780460+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:05.780460+00:00"
+    },
+    {
+      "name": "Hustle",
+      "variants": [],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Hustle",
+          "extracted_at": "2026-03-17T20:47:11.200233+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:11.200233+00:00"
+    },
+    {
+      "name": "Hysteria",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 39,
+          "rune_order_and_modifiers": "Shael + Ko + Eld",
+          "runeword_modifiers": [
+            {
+              "stat": "evade",
+              "value": "+6",
+              "raw": "+6 Evade"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            },
+            {
+              "stat": "all_res",
+              "value": "35% Slower Stamina Drain",
+              "raw": "35% Slower Stamina Drain All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+10",
+              "raw": "+10"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Hysteria",
+          "extracted_at": "2026-03-17T20:47:16.530698+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:16.530698+00:00"
+    },
+    {
+      "name": "Ice",
+      "variants": [
+        {
+          "item_type": "Missile weapon",
+          "sockets": 4,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Amn + Shael + Jah + Lo",
+          "runeword_modifiers": [
+            {
+              "stat": "holy_freeze",
+              "value": "Level 18",
+              "raw": "Level 18 Holy Freeze"
+            },
+            {
+              "stat": "raw",
+              "value": "Aura When Equipped",
+              "raw": "Aura When Equipped"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(140-210)%",
+              "raw": "(140-210)% Enhanced Damage"
+            },
+            {
+              "stat": "cold_skill_damage",
+              "value": "+(25-30)%",
+              "raw": "+(25-30)% Cold Skill Damage"
+            },
+            {
+              "stat": "enemy_cold_resistance",
+              "value": "-20%",
+              "raw": "-20% Enemy Cold Resistance"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Ice",
+          "extracted_at": "2026-03-17T20:47:21.913327+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:21.913327+00:00"
+    },
+    {
+      "name": "Infinity",
+      "variants": [
+        {
+          "item_type": "Polearm",
+          "sockets": 4,
+          "min_rlvl": 63,
+          "rune_order_and_modifiers": "Ber + Mal + Ist",
+          "runeword_modifiers": [
+            {
+              "stat": "frw",
+              "value": "35",
+              "raw": "35 Faster Run/Walk"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(255-325)%",
+              "raw": "(255-325)% Enhanced Damage"
+            },
+            {
+              "stat": "enemy_lightning_resistance",
+              "value": "-(45-55)%",
+              "raw": "-(45-55)% Enemy Lightning Resistance"
+            },
+            {
+              "stat": "vitality",
+              "value": "+ 0.5*lvl",
+              "raw": "+ 0.5*lvl Vitality"
+            },
+            {
+              "stat": "raw",
+              "value": "(Based on Character Level)",
+              "raw": "(Based on Character Level)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Infinity",
+          "extracted_at": "2026-03-17T20:47:27.281934+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:27.281934+00:00"
+    },
+    {
+      "name": "Insight",
+      "variants": [
+        {
+          "item_type": "Polearm",
+          "sockets": 4,
+          "min_rlvl": 27,
+          "rune_order_and_modifiers": "Ral + Tir + Tal + Sol",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "(200-260)%",
+              "raw": "(200-260)% Enhanced Damage"
+            },
+            {
+              "stat": "ar_percent",
+              "value": "(180-250)",
+              "raw": "(180-250) % Bonus to Attack Rating"
+            },
+            {
+              "stat": "all_attributes",
+              "value": "+5",
+              "raw": "+5 All Attributes"
+            },
+            {
+              "stat": "critical_strike",
+              "value": "+(1-6)",
+              "raw": "+(1-6) Critical Strike"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        },
+        {
+          "item_type": "Staff",
+          "sockets": 4,
+          "min_rlvl": 27,
+          "rune_order_and_modifiers": "Ral + Tir + Tal + Sol",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "(200-260)%",
+              "raw": "(200-260)% Enhanced Damage"
+            },
+            {
+              "stat": "ar_percent",
+              "value": "(180-250)",
+              "raw": "(180-250) % Bonus to Attack Rating"
+            },
+            {
+              "stat": "all_attributes",
+              "value": "+5",
+              "raw": "+5 All Attributes"
+            },
+            {
+              "stat": "critical_strike",
+              "value": "+(1-6)",
+              "raw": "+(1-6) Critical Strike"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Insight",
+          "extracted_at": "2026-03-17T20:47:32.756975+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:32.756975+00:00"
+    },
+    {
+      "name": "King's Grace",
+      "variants": [
+        {
+          "item_type": "Scepter",
+          "sockets": 3,
+          "min_rlvl": 25,
+          "rune_order_and_modifiers": "Amn + Ral + Thul",
+          "runeword_modifiers": [
+            {
+              "stat": "damage_to_demons",
+              "value": "+100%",
+              "raw": "+100% Damage to Demons"
+            },
+            {
+              "stat": "attack_rating_against_demons",
+              "value": "+100",
+              "raw": "+100 Attack Rating Against Demons"
+            },
+            {
+              "stat": "damage_to_undead",
+              "value": "+50%",
+              "raw": "+50% Damage to Undead"
+            },
+            {
+              "stat": "attack_rating_against_undead",
+              "value": "+100",
+              "raw": "+100 Attack Rating Against Undead"
+            }
+          ]
+        },
+        {
+          "item_type": "Sword",
+          "sockets": 3,
+          "min_rlvl": 25,
+          "rune_order_and_modifiers": "Amn + Ral + Thul",
+          "runeword_modifiers": [
+            {
+              "stat": "damage_to_demons",
+              "value": "+100%",
+              "raw": "+100% Damage to Demons"
+            },
+            {
+              "stat": "attack_rating_against_demons",
+              "value": "+100",
+              "raw": "+100 Attack Rating Against Demons"
+            },
+            {
+              "stat": "damage_to_undead",
+              "value": "+50%",
+              "raw": "+50% Damage to Undead"
+            },
+            {
+              "stat": "attack_rating_against_undead",
+              "value": "+100",
+              "raw": "+100 Attack Rating Against Undead"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/King%27s_Grace",
+          "extracted_at": "2026-03-17T20:47:38.322882+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:38.322882+00:00"
+    },
+    {
+      "name": "Kingslayer",
+      "variants": [
+        {
+          "item_type": "Axe",
+          "sockets": 4,
+          "min_rlvl": 53,
+          "rune_order_and_modifiers": "Mal + Um + Gul + Fal",
+          "runeword_modifiers": [
+            {
+              "stat": "target_defense",
+              "value": "-25%",
+              "raw": "-25% Target Defense"
+            },
+            {
+              "stat": "crushing_blow",
+              "value": "33% Chance of",
+              "raw": "33% Chance of Crushing Blow"
+            },
+            {
+              "stat": "raw",
+              "value": "25% Chance of Open Wounds",
+              "raw": "25% Chance of Open Wounds"
+            },
+            {
+              "stat": "vengeance",
+              "value": "+1",
+              "raw": "+1 Vengeance"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        },
+        {
+          "item_type": "Sword",
+          "sockets": 4,
+          "min_rlvl": 53,
+          "rune_order_and_modifiers": "Mal + Um + Gul + Fal",
+          "runeword_modifiers": [
+            {
+              "stat": "target_defense",
+              "value": "-25%",
+              "raw": "-25% Target Defense"
+            },
+            {
+              "stat": "crushing_blow",
+              "value": "33% Chance of",
+              "raw": "33% Chance of Crushing Blow"
+            },
+            {
+              "stat": "raw",
+              "value": "25% Chance of Open Wounds",
+              "raw": "25% Chance of Open Wounds"
+            },
+            {
+              "stat": "vengeance",
+              "value": "+1",
+              "raw": "+1 Vengeance"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Kingslayer",
+          "extracted_at": "2026-03-17T20:47:43.755993+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:43.755993+00:00"
+    },
+    {
+      "name": "Last Wish",
+      "variants": [
+        {
+          "item_type": "Axe",
+          "sockets": 6,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Jah + Mal + Sur + Ber",
+          "runeword_modifiers": [
+            {
+              "stat": "charged_bolt",
+              "value": "20% Chance to Cast Level 20",
+              "raw": "20% Chance to Cast Level 20 Charged Bolt"
+            },
+            {
+              "stat": "raw",
+              "value": "on Attack",
+              "raw": "on Attack"
+            },
+            {
+              "stat": "might",
+              "value": "Level 17",
+              "raw": "Level 17 Might"
+            },
+            {
+              "stat": "raw",
+              "value": "Aura When Equipped",
+              "raw": "Aura When Equipped"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(330-375)%",
+              "raw": "(330-375)% Enhanced Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "(40-50)% Chance of Crushing Blow",
+              "raw": "(40-50)% Chance of Crushing Blow"
+            }
+          ]
+        },
+        {
+          "item_type": "Sword",
+          "sockets": 6,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Jah + Mal + Sur + Ber",
+          "runeword_modifiers": [
+            {
+              "stat": "charged_bolt",
+              "value": "20% Chance to Cast Level 20",
+              "raw": "20% Chance to Cast Level 20 Charged Bolt"
+            },
+            {
+              "stat": "raw",
+              "value": "on Attack",
+              "raw": "on Attack"
+            },
+            {
+              "stat": "might",
+              "value": "Level 17",
+              "raw": "Level 17 Might"
+            },
+            {
+              "stat": "raw",
+              "value": "Aura When Equipped",
+              "raw": "Aura When Equipped"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(330-375)%",
+              "raw": "(330-375)% Enhanced Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "(40-50)% Chance of Crushing Blow",
+              "raw": "(40-50)% Chance of Crushing Blow"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Last_Wish",
+          "extracted_at": "2026-03-17T20:47:49.100548+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:49.100548+00:00"
+    },
+    {
+      "name": "Lawbringer",
+      "variants": [
+        {
+          "item_type": "Hammer",
+          "sockets": 3,
+          "min_rlvl": 43,
+          "rune_order_and_modifiers": "Amn + Lem + Ko",
+          "runeword_modifiers": [
+            {
+              "stat": "target_defense",
+              "value": "-50%",
+              "raw": "-50% Target Defense"
+            },
+            {
+              "stat": "fire_damage",
+              "value": "Adds 150-210",
+              "raw": "Adds 150-210 Fire Damage"
+            },
+            {
+              "stat": "cold_damage",
+              "value": "Adds 130-180",
+              "raw": "Adds 130-180 Cold Damage"
+            },
+            {
+              "stat": "slain_monsters_rest_in_peace",
+              "value": "( (5.2-7.2) Seconds)",
+              "raw": "( (5.2-7.2) Seconds) Slain Monsters Rest in Peace"
+            }
+          ]
+        },
+        {
+          "item_type": "Scepter",
+          "sockets": 3,
+          "min_rlvl": 43,
+          "rune_order_and_modifiers": "Amn + Lem + Ko",
+          "runeword_modifiers": [
+            {
+              "stat": "target_defense",
+              "value": "-50%",
+              "raw": "-50% Target Defense"
+            },
+            {
+              "stat": "fire_damage",
+              "value": "Adds 150-210",
+              "raw": "Adds 150-210 Fire Damage"
+            },
+            {
+              "stat": "cold_damage",
+              "value": "Adds 130-180",
+              "raw": "Adds 130-180 Cold Damage"
+            },
+            {
+              "stat": "slain_monsters_rest_in_peace",
+              "value": "( (5.2-7.2) Seconds)",
+              "raw": "( (5.2-7.2) Seconds) Slain Monsters Rest in Peace"
+            }
+          ]
+        },
+        {
+          "item_type": "Sword",
+          "sockets": 3,
+          "min_rlvl": 43,
+          "rune_order_and_modifiers": "Amn + Lem + Ko",
+          "runeword_modifiers": [
+            {
+              "stat": "target_defense",
+              "value": "-50%",
+              "raw": "-50% Target Defense"
+            },
+            {
+              "stat": "fire_damage",
+              "value": "Adds 150-210",
+              "raw": "Adds 150-210 Fire Damage"
+            },
+            {
+              "stat": "cold_damage",
+              "value": "Adds 130-180",
+              "raw": "Adds 130-180 Cold Damage"
+            },
+            {
+              "stat": "slain_monsters_rest_in_peace",
+              "value": "( (5.2-7.2) Seconds)",
+              "raw": "( (5.2-7.2) Seconds) Slain Monsters Rest in Peace"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Lawbringer",
+          "extracted_at": "2026-03-17T20:47:54.423515+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:54.423515+00:00"
+    },
+    {
+      "name": "Leaf",
+      "variants": [
+        {
+          "item_type": "Staff",
+          "sockets": 2,
+          "min_rlvl": 19,
+          "rune_order_and_modifiers": "Tir + Ral",
+          "runeword_modifiers": [
+            {
+              "stat": "warmth",
+              "value": "+3",
+              "raw": "+3 Warmth"
+            },
+            {
+              "stat": "raw",
+              "value": "(Sorceress Only)",
+              "raw": "(Sorceress Only)"
+            },
+            {
+              "stat": "fire_bolt",
+              "value": "+3",
+              "raw": "+3 Fire Bolt"
+            },
+            {
+              "stat": "raw",
+              "value": "(Sorceress Only)",
+              "raw": "(Sorceress Only)"
+            },
+            {
+              "stat": "defense",
+              "value": "+2*lvl",
+              "raw": "+2*lvl Defense"
+            },
+            {
+              "stat": "raw",
+              "value": "(Based on Character Level)",
+              "raw": "(Based on Character Level)"
+            },
+            {
+              "stat": "raw",
+              "value": "Cold Resist",
+              "raw": "Cold Resist"
+            },
+            {
+              "stat": "raw",
+              "value": "+33%",
+              "raw": "+33%"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Leaf",
+          "extracted_at": "2026-03-17T20:47:59.779104+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:47:59.779104+00:00"
+    },
+    {
+      "name": "Lionheart",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 41,
+          "rune_order_and_modifiers": "Hel + Lum + Fal",
+          "runeword_modifiers": [
+            {
+              "stat": "dexterity",
+              "value": "+15",
+              "raw": "+15 Dexterity"
+            },
+            {
+              "stat": "vitality",
+              "value": "+20",
+              "raw": "+20 Vitality"
+            },
+            {
+              "stat": "life",
+              "value": "+50",
+              "raw": "+50 Life"
+            },
+            {
+              "stat": "raw",
+              "value": "All Resistances",
+              "raw": "All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+30",
+              "raw": "+30"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Lionheart",
+          "extracted_at": "2026-03-17T20:48:05.162408+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:48:05.162408+00:00"
+    },
+    {
+      "name": "Lore",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 2,
+          "min_rlvl": 27,
+          "rune_order_and_modifiers": "Ort + Sol",
+          "runeword_modifiers": [
+            {
+              "stat": "mana_after_each_kill",
+              "value": "+2",
+              "raw": "+2 Mana After Each Kill"
+            },
+            {
+              "stat": "light_radius",
+              "value": "+2",
+              "raw": "+2 Light Radius"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Lore",
+          "extracted_at": "2026-03-17T20:48:10.549154+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:48:10.549154+00:00"
+    },
+    {
+      "name": "Malice",
+      "variants": [
+        {
+          "item_type": "Melee weapon",
+          "sockets": 3,
+          "min_rlvl": 15,
+          "rune_order_and_modifiers": "Ith + El + Eth",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "Prevent Monster Heal",
+              "raw": "Prevent Monster Heal"
+            },
+            {
+              "stat": "monster_defense_per_hit",
+              "value": "-100",
+              "raw": "-100 Monster Defense per hit"
+            },
+            {
+              "stat": "raw",
+              "value": "Drain Life -5",
+              "raw": "Drain Life -5"
+            },
+            {
+              "stat": "light_radius",
+              "value": "-1",
+              "raw": "-1 Light Radius"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Malice",
+          "extracted_at": "2026-03-17T20:48:15.916910+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:48:15.916910+00:00"
+    },
+    {
+      "name": "Mania",
+      "variants": [
+        {
+          "item_type": "Weapon",
+          "sockets": 3,
+          "min_rlvl": 39,
+          "rune_order_and_modifiers": "Shael + Ko + Eld",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "10 Increased Attack Speed",
+              "raw": "10 Increased Attack Speed"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(180-200)%",
+              "raw": "(180-200)% Enhanced Damage"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Mania",
+          "extracted_at": "2026-03-17T20:48:21.249581+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:48:21.249581+00:00"
+    },
+    {
+      "name": "Melody",
+      "variants": [
+        {
+          "item_type": "Missile weapon",
+          "sockets": 3,
+          "min_rlvl": 39,
+          "rune_order_and_modifiers": "Shael + Ko + Nef",
+          "runeword_modifiers": [
+            {
+              "stat": "damage_to_undead",
+              "value": "+300%",
+              "raw": "+300% Damage to Undead"
+            },
+            {
+              "stat": "slow_missiles",
+              "value": "+3",
+              "raw": "+3 Slow Missiles"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "Amazon",
+              "raw": "Amazon"
+            },
+            {
+              "stat": "raw",
+              "value": "Only)",
+              "raw": "Only)"
+            },
+            {
+              "stat": "dodge",
+              "value": "+3",
+              "raw": "+3 Dodge"
+            },
+            {
+              "stat": "raw",
+              "value": "(Amazon Only)",
+              "raw": "(Amazon Only)"
+            },
+            {
+              "stat": "critical_strike",
+              "value": "+3",
+              "raw": "+3 Critical Strike"
+            },
+            {
+              "stat": "raw",
+              "value": "(Amazon Only)",
+              "raw": "(Amazon Only)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Melody",
+          "extracted_at": "2026-03-17T20:48:26.640961+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:48:26.640961+00:00"
+    },
+    {
+      "name": "Memory",
+      "variants": [
+        {
+          "item_type": "Staff",
+          "sockets": 4,
+          "min_rlvl": 37,
+          "rune_order_and_modifiers": "Lum + Io + Sol + Eth",
+          "runeword_modifiers": [
+            {
+              "stat": "energy",
+              "value": "+3",
+              "raw": "+3 Energy Shield"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "Sorceress",
+              "raw": "Sorceress"
+            },
+            {
+              "stat": "raw",
+              "value": "Only)",
+              "raw": "Only)"
+            },
+            {
+              "stat": "static_field",
+              "value": "+2",
+              "raw": "+2 Static Field"
+            },
+            {
+              "stat": "raw",
+              "value": "(Sorceress Only)",
+              "raw": "(Sorceress Only)"
+            },
+            {
+              "stat": "enhanced_defense",
+              "value": "50%",
+              "raw": "50% Enhanced Defense"
+            },
+            {
+              "stat": "raw",
+              "value": "Increase",
+              "raw": "Increase"
+            },
+            {
+              "stat": "raw",
+              "value": "Maximum Mana",
+              "raw": "Maximum Mana"
+            },
+            {
+              "stat": "raw",
+              "value": "20%",
+              "raw": "20%"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Memory",
+          "extracted_at": "2026-03-17T20:48:31.973164+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:48:31.973164+00:00"
+    },
+    {
+      "name": "Metamorphosis",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 67,
+          "rune_order_and_modifiers": "Io + Cham + Fal",
+          "runeword_modifiers": [
+            {
+              "stat": "shape_shifting",
+              "value": "+5",
+              "raw": "+5 Shape Shifting"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "Druid",
+              "raw": "Druid"
+            },
+            {
+              "stat": "raw",
+              "value": "only)",
+              "raw": "only)"
+            },
+            {
+              "stat": "crushing_blow",
+              "value": "25% Chance of",
+              "raw": "25% Chance of Crushing Blow"
+            },
+            {
+              "stat": "enhanced_defense",
+              "value": "(50-80)%",
+              "raw": "(50-80)% Enhanced Defense"
+            },
+            {
+              "stat": "raw",
+              "value": "All Resistances",
+              "raw": "All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+10",
+              "raw": "+10"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Metamorphosis",
+          "extracted_at": "2026-03-17T20:48:37.314626+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:48:37.314626+00:00"
+    },
+    {
+      "name": "Mist",
+      "variants": [
+        {
+          "item_type": "Missile weapon",
+          "sockets": 5,
+          "min_rlvl": 67,
+          "rune_order_and_modifiers": "Cham + Shael + Gul + Thul + Ith",
+          "runeword_modifiers": [
+            {
+              "stat": "piercing_attack",
+              "value": "+100%",
+              "raw": "+100% Piercing Attack"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(325-375)%",
+              "raw": "(325-375)% Enhanced Damage"
+            },
+            {
+              "stat": "vitality",
+              "value": "+24",
+              "raw": "+24 Vitality"
+            },
+            {
+              "stat": "raw",
+              "value": "All Resistances",
+              "raw": "All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+40",
+              "raw": "+40"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Mist",
+          "extracted_at": "2026-03-17T20:48:42.705559+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:48:42.705559+00:00"
+    },
+    {
+      "name": "Mosaic",
+      "variants": [
+        {
+          "item_type": "Claw",
+          "sockets": 3,
+          "min_rlvl": 53,
+          "rune_order_and_modifiers": "Mal + Gul + Amn",
+          "runeword_modifiers": [
+            {
+              "stat": "increased_attack_speed",
+              "value": "20",
+              "raw": "20 Increased Attack Speed"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(200-250)%",
+              "raw": "(200-250)% Enhanced Damage"
+            },
+            {
+              "stat": "cold_skill_damage",
+              "value": "+(8-15)% to",
+              "raw": "+(8-15)% to Cold Skill Damage"
+            },
+            {
+              "stat": "lightning_skill_damage",
+              "value": "+(8-15)% to",
+              "raw": "+(8-15)% to Lightning Skill Damage"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Mosaic",
+          "extracted_at": "2026-03-17T20:48:48.098074+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:48:48.098074+00:00"
+    },
+    {
+      "name": "Myth",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 25,
+          "rune_order_and_modifiers": "Hel + Amn + Nef",
+          "runeword_modifiers": [
+            {
+              "stat": "barbarian_skill_levels",
+              "value": "+2",
+              "raw": "+2 Barbarian Skill Levels"
+            },
+            {
+              "stat": "raw",
+              "value": "Replenish Life",
+              "raw": "Replenish Life"
+            },
+            {
+              "stat": "raw",
+              "value": "+10",
+              "raw": "+10"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Myth",
+          "extracted_at": "2026-03-17T20:48:53.537085+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:48:53.537085+00:00"
+    },
+    {
+      "name": "Nadir",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 2,
+          "min_rlvl": 13,
+          "rune_order_and_modifiers": "Nef + Tir",
+          "runeword_modifiers": [
+            {
+              "stat": "strength",
+              "value": "+5",
+              "raw": "+5 Strength"
+            },
+            {
+              "stat": "extra_gold_from_monsters",
+              "value": "-33%",
+              "raw": "-33% Extra Gold From Monsters"
+            },
+            {
+              "stat": "light_radius",
+              "value": "-3",
+              "raw": "-3 Light Radius"
+            },
+            {
+              "stat": "cloak_of_shadows",
+              "value": "Level 13",
+              "raw": "Level 13 Cloak of Shadows"
+            },
+            {
+              "stat": "charges",
+              "value": "(9/9",
+              "raw": "(9/9 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Nadir",
+          "extracted_at": "2026-03-17T20:48:58.859535+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:48:58.859535+00:00"
+    },
+    {
+      "name": "Oath",
+      "variants": [
+        {
+          "item_type": "Axe",
+          "sockets": 4,
+          "min_rlvl": 49,
+          "rune_order_and_modifiers": "Shael + Pul + Mal + Lum",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "30 Increased Attack Speed",
+              "raw": "30 Increased Attack Speed"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(210-340)%",
+              "raw": "(210-340)% Enhanced Damage"
+            },
+            {
+              "stat": "magic_absorb",
+              "value": "+(10-15)",
+              "raw": "+(10-15) Magic Absorb"
+            },
+            {
+              "stat": "heart_of_wolverine",
+              "value": "Level 16",
+              "raw": "Level 16 Heart of Wolverine"
+            },
+            {
+              "stat": "charges",
+              "value": "(20/20",
+              "raw": "(20/20 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        },
+        {
+          "item_type": "Mace",
+          "sockets": 4,
+          "min_rlvl": 49,
+          "rune_order_and_modifiers": "Shael + Pul + Mal + Lum",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "30 Increased Attack Speed",
+              "raw": "30 Increased Attack Speed"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(210-340)%",
+              "raw": "(210-340)% Enhanced Damage"
+            },
+            {
+              "stat": "magic_absorb",
+              "value": "+(10-15)",
+              "raw": "+(10-15) Magic Absorb"
+            },
+            {
+              "stat": "heart_of_wolverine",
+              "value": "Level 16",
+              "raw": "Level 16 Heart of Wolverine"
+            },
+            {
+              "stat": "charges",
+              "value": "(20/20",
+              "raw": "(20/20 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        },
+        {
+          "item_type": "Sword",
+          "sockets": 4,
+          "min_rlvl": 49,
+          "rune_order_and_modifiers": "Shael + Pul + Mal + Lum",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "30 Increased Attack Speed",
+              "raw": "30 Increased Attack Speed"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(210-340)%",
+              "raw": "(210-340)% Enhanced Damage"
+            },
+            {
+              "stat": "magic_absorb",
+              "value": "+(10-15)",
+              "raw": "+(10-15) Magic Absorb"
+            },
+            {
+              "stat": "heart_of_wolverine",
+              "value": "Level 16",
+              "raw": "Level 16 Heart of Wolverine"
+            },
+            {
+              "stat": "charges",
+              "value": "(20/20",
+              "raw": "(20/20 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Oath",
+          "extracted_at": "2026-03-17T20:49:04.191118+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:49:04.191118+00:00"
+    },
+    {
+      "name": "Obedience",
+      "variants": [
+        {
+          "item_type": "Polearm",
+          "sockets": 5,
+          "min_rlvl": 41,
+          "rune_order_and_modifiers": "Hel + Ko + Thul + Eth + Fal",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "370%",
+              "raw": "370% Enhanced Damage"
+            },
+            {
+              "stat": "enemy_fire_resistance",
+              "value": "-25%",
+              "raw": "-25% Enemy Fire Resistance"
+            },
+            {
+              "stat": "crushing_blow",
+              "value": "40% Chance of",
+              "raw": "40% Chance of Crushing Blow"
+            },
+            {
+              "stat": "defense",
+              "value": "+(200-300)",
+              "raw": "+(200-300) Defense"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Obedience",
+          "extracted_at": "2026-03-17T20:49:09.576159+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:49:09.576159+00:00"
+    },
+    {
+      "name": "Obsession",
+      "variants": [
+        {
+          "item_type": "Staff",
+          "sockets": 6,
+          "min_rlvl": 69,
+          "rune_order_and_modifiers": "Zod + Ist + Lem + Lum + Io + Nef",
+          "runeword_modifiers": [
+            {
+              "stat": "fcr",
+              "value": "65",
+              "raw": "65 Faster Cast Rate"
+            },
+            {
+              "stat": "fhr",
+              "value": "+60%",
+              "raw": "+60% Faster Hit Recovery"
+            },
+            {
+              "stat": "raw",
+              "value": "Increase",
+              "raw": "Increase"
+            },
+            {
+              "stat": "raw",
+              "value": "Maximum Life",
+              "raw": "Maximum Life"
+            },
+            {
+              "stat": "regenerate_mana",
+              "value": "(15-25)%",
+              "raw": "(15-25)% Regenerate Mana"
+            },
+            {
+              "stat": "raw",
+              "value": "(15-30)%",
+              "raw": "(15-30)%"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Obsession",
+          "extracted_at": "2026-03-17T20:49:15.009602+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:49:15.009602+00:00"
+    },
+    {
+      "name": "Passion",
+      "variants": [
+        {
+          "item_type": "Weapon",
+          "sockets": 4,
+          "min_rlvl": 43,
+          "rune_order_and_modifiers": "Dol + Ort + Eld + Lem",
+          "runeword_modifiers": [
+            {
+              "stat": "ar_percent",
+              "value": "(50-80)",
+              "raw": "(50-80) % Bonus to Attack Rating"
+            },
+            {
+              "stat": "berserk",
+              "value": "+1",
+              "raw": "+1 Berserk"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            },
+            {
+              "stat": "zeal",
+              "value": "+1",
+              "raw": "+1 Zeal"
+            },
+            {
+              "stat": "raw",
+              "value": "(oskill)",
+              "raw": "(oskill)"
+            },
+            {
+              "stat": "raw",
+              "value": "Hit Blinds Target",
+              "raw": "Hit Blinds Target"
+            },
+            {
+              "stat": "raw",
+              "value": "+10",
+              "raw": "+10"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Passion",
+          "extracted_at": "2026-03-17T20:49:20.366188+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:49:20.366188+00:00"
+    },
+    {
+      "name": "Pattern",
+      "variants": [
+        {
+          "item_type": "Claw",
+          "sockets": 3,
+          "min_rlvl": 23,
+          "rune_order_and_modifiers": "Tal + Ort + Thul",
+          "runeword_modifiers": [
+            {
+              "stat": "ar_percent",
+              "value": "10",
+              "raw": "10 % Bonus to Attack Rating"
+            },
+            {
+              "stat": "fire_damage",
+              "value": "12-32",
+              "raw": "12-32 Fire Damage"
+            },
+            {
+              "stat": "strength",
+              "value": "+6 to",
+              "raw": "+6 to Strength"
+            },
+            {
+              "stat": "dexterity",
+              "value": "+6 to",
+              "raw": "+6 to Dexterity"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Pattern",
+          "extracted_at": "2026-03-17T20:49:25.925537+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:49:25.925537+00:00"
+    },
+    {
+      "name": "Peace",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 29,
+          "rune_order_and_modifiers": "Shael + Thul + Amn",
+          "runeword_modifiers": [
+            {
+              "stat": "amazon_skill_levels",
+              "value": "+2",
+              "raw": "+2 Amazon Skill Levels"
+            },
+            {
+              "stat": "critical_strike",
+              "value": "+2",
+              "raw": "+2 Critical Strike"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Peace",
+          "extracted_at": "2026-03-17T20:49:31.340579+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:49:31.340579+00:00"
+    },
+    {
+      "name": "Phoenix",
+      "variants": [
+        {
+          "item_type": "Weapon",
+          "sockets": 4,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Vex + Lo + Jah",
+          "runeword_modifiers": [
+            {
+              "stat": "redemption",
+              "value": "Level (10-15)",
+              "raw": "Level (10-15) Redemption"
+            },
+            {
+              "stat": "raw",
+              "value": "Aura When Equipped",
+              "raw": "Aura When Equipped"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(350-400)%",
+              "raw": "(350-400)% Enhanced Damage"
+            },
+            {
+              "stat": "enemy_fire_resistance",
+              "value": "-28%",
+              "raw": "-28% Enemy Fire Resistance"
+            },
+            {
+              "stat": "defense_vs_missile",
+              "value": "+(350-400)",
+              "raw": "+(350-400) Defense vs Missile"
+            }
+          ]
+        },
+        {
+          "item_type": "Shield",
+          "sockets": 4,
+          "min_rlvl": 65,
+          "rune_order_and_modifiers": "Vex + Lo + Jah",
+          "runeword_modifiers": [
+            {
+              "stat": "redemption",
+              "value": "Level (10-15)",
+              "raw": "Level (10-15) Redemption"
+            },
+            {
+              "stat": "raw",
+              "value": "Aura When Equipped",
+              "raw": "Aura When Equipped"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(350-400)%",
+              "raw": "(350-400)% Enhanced Damage"
+            },
+            {
+              "stat": "enemy_fire_resistance",
+              "value": "-28%",
+              "raw": "-28% Enemy Fire Resistance"
+            },
+            {
+              "stat": "defense_vs_missile",
+              "value": "+(350-400)",
+              "raw": "+(350-400) Defense vs Missile"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Phoenix",
+          "extracted_at": "2026-03-17T20:49:36.782971+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:49:36.782971+00:00"
+    },
+    {
+      "name": "Plague",
+      "variants": [
+        {
+          "item_type": "Sword",
+          "sockets": 3,
+          "min_rlvl": 67,
+          "rune_order_and_modifiers": "Cham + Shael + Um",
+          "runeword_modifiers": [
+            {
+              "stat": "cleansing",
+              "value": "Level (13-17)",
+              "raw": "Level (13-17) Cleansing"
+            },
+            {
+              "stat": "raw",
+              "value": "Aura When Equipped",
+              "raw": "Aura When Equipped"
+            },
+            {
+              "stat": "all_skills",
+              "value": "+(1-2)",
+              "raw": "+(1-2) All Skills"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(220-320)%",
+              "raw": "(220-320)% Enhanced Damage"
+            },
+            {
+              "stat": "enemy_poison_resistance",
+              "value": "-23%",
+              "raw": "-23% Enemy Poison Resistance"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Plague",
+          "extracted_at": "2026-03-17T20:49:42.108901+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:49:42.108901+00:00"
+    },
+    {
+      "name": "Pride",
+      "variants": [
+        {
+          "item_type": "Polearm",
+          "sockets": 4,
+          "min_rlvl": 67,
+          "rune_order_and_modifiers": "Cham + Sur + Io + Lo",
+          "runeword_modifiers": [
+            {
+              "stat": "ar_percent",
+              "value": "(260-300)",
+              "raw": "(260-300) % Bonus to Attack Rating"
+            },
+            {
+              "stat": "raw",
+              "value": "+lvl%",
+              "raw": "+lvl%"
+            },
+            {
+              "stat": "raw",
+              "value": "Damage to Demons",
+              "raw": "Damage to Demons"
+            },
+            {
+              "stat": "raw",
+              "value": "(Based on Character Level)",
+              "raw": "(Based on Character Level)"
+            },
+            {
+              "stat": "lightning_damage",
+              "value": "Adds 50-280",
+              "raw": "Adds 50-280 Lightning Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "Replenish Life",
+              "raw": "Replenish Life"
+            },
+            {
+              "stat": "raw",
+              "value": "+8",
+              "raw": "+8"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Pride",
+          "extracted_at": "2026-03-17T20:49:47.527910+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:49:47.527910+00:00"
+    },
+    {
+      "name": "Principle",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 53,
+          "rune_order_and_modifiers": "Ral + Gul + Eld",
+          "runeword_modifiers": [
+            {
+              "stat": "damage_to_undead",
+              "value": "+50%",
+              "raw": "+50% Damage to Undead"
+            },
+            {
+              "stat": "life",
+              "value": "+(100-150)",
+              "raw": "+(100-150) Life"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Principle",
+          "extracted_at": "2026-03-17T20:49:53.749419+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:49:53.749419+00:00"
+    },
+    {
+      "name": "Prudence",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 2,
+          "min_rlvl": 49,
+          "rune_order_and_modifiers": "Mal + Tir",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "All Resistances",
+              "raw": "All Resistances"
+            },
+            {
+              "stat": "damage_reduced",
+              "value": "+(25-35)",
+              "raw": "+(25-35) Damage Reduced"
+            },
+            {
+              "stat": "raw",
+              "value": "by 3",
+              "raw": "by 3"
+            },
+            {
+              "stat": "raw",
+              "value": "Magic Damage Reduced by 10",
+              "raw": "Magic Damage Reduced by 10"
+            },
+            {
+              "stat": "light_radius",
+              "value": "+1",
+              "raw": "+1 Light Radius"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Prudence",
+          "extracted_at": "2026-03-17T20:50:00.019149+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:50:00.019149+00:00"
+    },
+    {
+      "name": "Radiance",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 27,
+          "rune_order_and_modifiers": "Nef + Sol + Ith",
+          "runeword_modifiers": [
+            {
+              "stat": "energy",
+              "value": "+10",
+              "raw": "+10 Energy"
+            },
+            {
+              "stat": "mana",
+              "value": "+33",
+              "raw": "+33 Mana"
+            },
+            {
+              "stat": "raw",
+              "value": "Magic Damage Reduced",
+              "raw": "Magic Damage Reduced"
+            },
+            {
+              "stat": "raw",
+              "value": "by 3",
+              "raw": "by 3"
+            },
+            {
+              "stat": "light_radius",
+              "value": "+5",
+              "raw": "+5 Light Radius"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Radiance",
+          "extracted_at": "2026-03-17T20:50:06.197858+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:50:06.197858+00:00"
+    },
+    {
+      "name": "Rain",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 49,
+          "rune_order_and_modifiers": "Ort + Mal + Ith",
+          "runeword_modifiers": [
+            {
+              "stat": "druid_skills",
+              "value": "+2",
+              "raw": "+2 Druid Skills"
+            },
+            {
+              "stat": "mana",
+              "value": "+(100-150)",
+              "raw": "+(100-150) Mana"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Rain",
+          "extracted_at": "2026-03-17T20:50:12.509030+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:50:12.509030+00:00"
+    },
+    {
+      "name": "Rhyme",
+      "variants": [
+        {
+          "item_type": "Shield",
+          "sockets": 2,
+          "min_rlvl": 29,
+          "rune_order_and_modifiers": "Shael + Eth",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "All Resistances",
+              "raw": "All Resistances"
+            },
+            {
+              "stat": "cannot_be_frozen",
+              "value": "+25",
+              "raw": "+25 Cannot be Frozen"
+            },
+            {
+              "stat": "extra_gold_from_monsters",
+              "value": "50%",
+              "raw": "50% Extra Gold From Monsters"
+            },
+            {
+              "stat": "better_chance_of_getting_magic_items",
+              "value": "25%",
+              "raw": "25% Better Chance of Getting Magic Items"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Rhyme",
+          "extracted_at": "2026-03-17T20:50:18.837259+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:50:18.837259+00:00"
+    },
+    {
+      "name": "Rift",
+      "variants": [
+        {
+          "item_type": "Polearm",
+          "sockets": 4,
+          "min_rlvl": 53,
+          "rune_order_and_modifiers": "Hel + Ko + Lem + Gul",
+          "runeword_modifiers": [
+            {
+              "stat": "magic_damage",
+              "value": "Adds 160-250",
+              "raw": "Adds 160-250 Magic Damage"
+            },
+            {
+              "stat": "fire_damage",
+              "value": "Adds 60-180",
+              "raw": "Adds 60-180 Fire Damage"
+            },
+            {
+              "stat": "all_attributes",
+              "value": "+(5-10)",
+              "raw": "+(5-10) All Attributes"
+            },
+            {
+              "stat": "mana",
+              "value": "38%",
+              "raw": "38% Damage Taken Goes to Mana"
+            }
+          ]
+        },
+        {
+          "item_type": "Scepter",
+          "sockets": 4,
+          "min_rlvl": 53,
+          "rune_order_and_modifiers": "Hel + Ko + Lem + Gul",
+          "runeword_modifiers": [
+            {
+              "stat": "magic_damage",
+              "value": "Adds 160-250",
+              "raw": "Adds 160-250 Magic Damage"
+            },
+            {
+              "stat": "fire_damage",
+              "value": "Adds 60-180",
+              "raw": "Adds 60-180 Fire Damage"
+            },
+            {
+              "stat": "all_attributes",
+              "value": "+(5-10)",
+              "raw": "+(5-10) All Attributes"
+            },
+            {
+              "stat": "mana",
+              "value": "38%",
+              "raw": "38% Damage Taken Goes to Mana"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Rift",
+          "extracted_at": "2026-03-17T20:50:25.010985+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:50:25.010985+00:00"
+    },
+    {
+      "name": "Ritual",
+      "variants": [
+        {
+          "item_type": "Dagger",
+          "sockets": 3,
+          "min_rlvl": 57,
+          "rune_order_and_modifiers": "Amn + Shael + Ohm",
+          "runeword_modifiers": [
+            {
+              "stat": "ed_percent",
+              "value": "(200-270)%",
+              "raw": "(200-270)% Enhanced Damage"
+            },
+            {
+              "stat": "ar_percent",
+              "value": "(200-260)",
+              "raw": "(200-260) % Bonus to Attack Rating"
+            },
+            {
+              "stat": "damage_to_demons",
+              "value": "+(150-250)%",
+              "raw": "+(150-250)% Damage to Demons"
+            },
+            {
+              "stat": "raw",
+              "value": "Slain Monsters Rest in Peace",
+              "raw": "Slain Monsters Rest in Peace"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Ritual",
+          "extracted_at": "2026-03-17T20:50:31.183584+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:50:31.183584+00:00"
+    },
+    {
+      "name": "Rune Word",
+      "variants": [],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Rune_Word",
+          "extracted_at": "2026-03-17T20:50:37.881282+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:50:37.881282+00:00"
+    },
+    {
+      "name": "Sanctuary (Rune Word)",
+      "variants": [
+        {
+          "item_type": "Shield",
+          "sockets": 3,
+          "min_rlvl": 49,
+          "rune_order_and_modifiers": "Ko + Mal",
+          "runeword_modifiers": [
+            {
+              "stat": "blocking",
+              "value": "20% Increased Chance of",
+              "raw": "20% Increased Chance of Blocking"
+            },
+            {
+              "stat": "enhanced_defense",
+              "value": "(130-160)%",
+              "raw": "(130-160)% Enhanced Defense"
+            },
+            {
+              "stat": "defense_vs_missile",
+              "value": "+250",
+              "raw": "+250 Defense vs Missile"
+            },
+            {
+              "stat": "raw",
+              "value": "All Resistances",
+              "raw": "All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+(50-70)",
+              "raw": "+(50-70)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Sanctuary_%28Rune_Word%29",
+          "extracted_at": "2026-03-17T20:50:44.022172+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:50:44.022172+00:00"
+    },
+    {
+      "name": "Silence",
+      "variants": [
+        {
+          "item_type": "Weapon",
+          "sockets": 6,
+          "min_rlvl": 55,
+          "rune_order_and_modifiers": "Dol + Eld + Hel + Ist + Tir + Vex",
+          "runeword_modifiers": [
+            {
+              "stat": "fhr",
+              "value": "20",
+              "raw": "20 Faster Hit Recovery"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "200%",
+              "raw": "200% Enhanced Damage"
+            },
+            {
+              "stat": "hit_blinds_target",
+              "value": "4% Mana Stolen per hit",
+              "raw": "4% Mana Stolen per hit Hit Blinds Target"
+            },
+            {
+              "stat": "raw",
+              "value": "+33",
+              "raw": "+33"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Silence",
+          "extracted_at": "2026-03-17T20:50:49.387657+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:50:49.387657+00:00"
+    },
+    {
+      "name": "Smoke",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 2,
+          "min_rlvl": 37,
+          "rune_order_and_modifiers": "Nef + Lum",
+          "runeword_modifiers": [
+            {
+              "stat": "all_res",
+              "value": "+250 Defense vs Missile",
+              "raw": "+250 Defense vs Missile All Resistances"
+            },
+            {
+              "stat": "raw",
+              "value": "+50",
+              "raw": "+50"
+            },
+            {
+              "stat": "light_radius",
+              "value": "-1",
+              "raw": "-1 Light Radius"
+            },
+            {
+              "stat": "weaken",
+              "value": "Level 6",
+              "raw": "Level 6 Weaken"
+            },
+            {
+              "stat": "charges",
+              "value": "(18/18",
+              "raw": "(18/18 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Smoke",
+          "extracted_at": "2026-03-17T20:50:55.629020+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:50:55.629020+00:00"
+    },
+    {
+      "name": "Spirit",
+      "variants": [
+        {
+          "item_type": "Sword",
+          "sockets": 4,
+          "min_rlvl": 25,
+          "rune_order_and_modifiers": "Tal + Thul + Ort + Amn",
+          "runeword_modifiers": [
+            {
+              "stat": "fhr",
+              "value": "55",
+              "raw": "55 Faster Hit Recovery"
+            },
+            {
+              "stat": "defense_vs_missile",
+              "value": "+250",
+              "raw": "+250 Defense vs Missile"
+            },
+            {
+              "stat": "vitality",
+              "value": "+22",
+              "raw": "+22 Vitality"
+            },
+            {
+              "stat": "mana",
+              "value": "+(89-112)",
+              "raw": "+(89-112) Mana"
+            }
+          ]
+        },
+        {
+          "item_type": "Shield",
+          "sockets": 4,
+          "min_rlvl": 25,
+          "rune_order_and_modifiers": "Tal + Thul + Ort + Amn",
+          "runeword_modifiers": [
+            {
+              "stat": "fhr",
+              "value": "55",
+              "raw": "55 Faster Hit Recovery"
+            },
+            {
+              "stat": "defense_vs_missile",
+              "value": "+250",
+              "raw": "+250 Defense vs Missile"
+            },
+            {
+              "stat": "vitality",
+              "value": "+22",
+              "raw": "+22 Vitality"
+            },
+            {
+              "stat": "mana",
+              "value": "+(89-112)",
+              "raw": "+(89-112) Mana"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Spirit",
+          "extracted_at": "2026-03-17T20:51:01.035421+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:51:01.035421+00:00"
+    },
+    {
+      "name": "Splendor",
+      "variants": [
+        {
+          "item_type": "Shield",
+          "sockets": 2,
+          "min_rlvl": 37,
+          "rune_order_and_modifiers": "Eth + Lum",
+          "runeword_modifiers": [
+            {
+              "stat": "faster_block_rate",
+              "value": "20",
+              "raw": "20 Faster Block Rate"
+            },
+            {
+              "stat": "enhanced_defense",
+              "value": "(60-100)%",
+              "raw": "(60-100)% Enhanced Defense"
+            },
+            {
+              "stat": "extra_gold_from_monsters",
+              "value": "50%",
+              "raw": "50% Extra Gold From Monsters"
+            },
+            {
+              "stat": "better_chance_of_getting_magic_items",
+              "value": "20%",
+              "raw": "20% Better Chance of Getting Magic Items"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Splendor",
+          "extracted_at": "2026-03-17T20:51:07.202636+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:51:07.202636+00:00"
+    },
+    {
+      "name": "Stealth",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 2,
+          "min_rlvl": 17,
+          "rune_order_and_modifiers": "Tal + Eth",
+          "runeword_modifiers": [
+            {
+              "stat": "fhr",
+              "value": "25",
+              "raw": "25 Faster Hit Recovery"
+            },
+            {
+              "stat": "dexterity",
+              "value": "+6",
+              "raw": "+6 Dexterity"
+            },
+            {
+              "stat": "stamina",
+              "value": "+15 Maximum",
+              "raw": "+15 Maximum Stamina"
+            },
+            {
+              "stat": "raw",
+              "value": "Magic Damage Reduced",
+              "raw": "Magic Damage Reduced"
+            },
+            {
+              "stat": "raw",
+              "value": "by 3",
+              "raw": "by 3"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Stealth",
+          "extracted_at": "2026-03-17T20:51:13.687224+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:51:13.687224+00:00"
+    },
+    {
+      "name": "Steel",
+      "variants": [
+        {
+          "item_type": "Axe",
+          "sockets": 2,
+          "min_rlvl": 13,
+          "rune_order_and_modifiers": "Tir + El",
+          "runeword_modifiers": [
+            {
+              "stat": "minimum_damage",
+              "value": "+3",
+              "raw": "+3 Minimum Damage"
+            },
+            {
+              "stat": "maximum_damage",
+              "value": "+3",
+              "raw": "+3 Maximum Damage"
+            },
+            {
+              "stat": "open_wounds",
+              "value": "50% Chance of",
+              "raw": "50% Chance of Open Wounds"
+            }
+          ]
+        },
+        {
+          "item_type": "Mace",
+          "sockets": 2,
+          "min_rlvl": 13,
+          "rune_order_and_modifiers": "Tir + El",
+          "runeword_modifiers": [
+            {
+              "stat": "minimum_damage",
+              "value": "+3",
+              "raw": "+3 Minimum Damage"
+            },
+            {
+              "stat": "maximum_damage",
+              "value": "+3",
+              "raw": "+3 Maximum Damage"
+            },
+            {
+              "stat": "open_wounds",
+              "value": "50% Chance of",
+              "raw": "50% Chance of Open Wounds"
+            }
+          ]
+        },
+        {
+          "item_type": "Sword",
+          "sockets": 2,
+          "min_rlvl": 13,
+          "rune_order_and_modifiers": "Tir + El",
+          "runeword_modifiers": [
+            {
+              "stat": "minimum_damage",
+              "value": "+3",
+              "raw": "+3 Minimum Damage"
+            },
+            {
+              "stat": "maximum_damage",
+              "value": "+3",
+              "raw": "+3 Maximum Damage"
+            },
+            {
+              "stat": "open_wounds",
+              "value": "50% Chance of",
+              "raw": "50% Chance of Open Wounds"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Steel",
+          "extracted_at": "2026-03-17T20:51:20.124315+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:51:20.124315+00:00"
+    },
+    {
+      "name": "Stone",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 4,
+          "min_rlvl": 47,
+          "rune_order_and_modifiers": "Shael + Um + Pul + Lum",
+          "runeword_modifiers": [
+            {
+              "stat": "defense_vs_missile",
+              "value": "+300",
+              "raw": "+300 Defense vs Missile"
+            },
+            {
+              "stat": "strength",
+              "value": "+16",
+              "raw": "+16 Strength"
+            },
+            {
+              "stat": "vitality",
+              "value": "+16",
+              "raw": "+16 Vitality"
+            },
+            {
+              "stat": "molten_boulder",
+              "value": "Level 16",
+              "raw": "Level 16 Molten Boulder"
+            },
+            {
+              "stat": "charges",
+              "value": "(80/80",
+              "raw": "(80/80 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Stone",
+          "extracted_at": "2026-03-17T20:51:26.540170+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:51:26.540170+00:00"
+    },
+    {
+      "name": "Strength (Rune Word)",
+      "variants": [
+        {
+          "item_type": "Melee weapon",
+          "sockets": 2,
+          "min_rlvl": 25,
+          "rune_order_and_modifiers": "Amn + Tir",
+          "runeword_modifiers": [
+            {
+              "stat": "strength",
+              "value": "+20",
+              "raw": "+20 Strength"
+            },
+            {
+              "stat": "vitality",
+              "value": "+10",
+              "raw": "+10 Vitality"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Strength_%28Rune_Word%29",
+          "extracted_at": "2026-03-17T20:51:32.850808+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:51:32.850808+00:00"
+    },
+    {
+      "name": "Temper",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 35,
+          "rune_order_and_modifiers": "Shael + Io + Ral",
+          "runeword_modifiers": [
+            {
+              "stat": "fire_absorb",
+              "value": "Fire Resist +(10-30)%",
+              "raw": "Fire Resist +(10-30)% Fire Absorb"
+            },
+            {
+              "stat": "raw",
+              "value": "+(10-15)%",
+              "raw": "+(10-15)%"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Temper",
+          "extracted_at": "2026-03-17T20:51:39.155525+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:51:39.155525+00:00"
+    },
+    {
+      "name": "Treachery",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 43,
+          "rune_order_and_modifiers": "Shael + Thul + Lem",
+          "runeword_modifiers": [
+            {
+              "stat": "assassin_skills",
+              "value": "+2",
+              "raw": "+2 Assassin Skills"
+            },
+            {
+              "stat": "increased_attack_speed",
+              "value": "45",
+              "raw": "45 Increased Attack Speed"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Treachery",
+          "extracted_at": "2026-03-17T20:51:45.336320+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:51:45.336320+00:00"
+    },
+    {
+      "name": "Unbending Will",
+      "variants": [
+        {
+          "item_type": "Sword",
+          "sockets": 6,
+          "min_rlvl": 41,
+          "rune_order_and_modifiers": "Fal + Io + Ith + Eld + El + Hel",
+          "runeword_modifiers": [
+            {
+              "stat": "increased_attack_speed",
+              "value": "(20-30)",
+              "raw": "(20-30) Increased Attack Speed"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(300-350)%",
+              "raw": "(300-350)% Enhanced Damage"
+            },
+            {
+              "stat": "life_stolen",
+              "value": "(8-10)%",
+              "raw": "(8-10)% Life Stolen"
+            },
+            {
+              "stat": "raw",
+              "value": "per hit",
+              "raw": "per hit"
+            },
+            {
+              "stat": "raw",
+              "value": "Prevent Monster Heal",
+              "raw": "Prevent Monster Heal"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Unbending_Will",
+          "extracted_at": "2026-03-17T20:51:51.590795+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:51:51.590795+00:00"
+    },
+    {
+      "name": "Venom (Rune Word)",
+      "variants": [
+        {
+          "item_type": "Weapon",
+          "sockets": 3,
+          "min_rlvl": 49,
+          "rune_order_and_modifiers": "Tal + Dol + Mal",
+          "runeword_modifiers": [
+            {
+              "stat": "mana_stolen",
+              "value": "7%",
+              "raw": "7% Mana Stolen"
+            },
+            {
+              "stat": "raw",
+              "value": "per hit",
+              "raw": "per hit"
+            },
+            {
+              "stat": "poison_nova",
+              "value": "Level 13",
+              "raw": "Level 13 Poison Nova"
+            },
+            {
+              "stat": "charges",
+              "value": "(11/11",
+              "raw": "(11/11 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            },
+            {
+              "stat": "poison_explosion",
+              "value": "Level 15",
+              "raw": "Level 15 Poison Explosion"
+            },
+            {
+              "stat": "raw",
+              "value": "(27/27 Charges)",
+              "raw": "(27/27 Charges)"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Venom_%28Rune_Word%29",
+          "extracted_at": "2026-03-17T20:51:56.973881+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:51:56.973881+00:00"
+    },
+    {
+      "name": "Vigilance",
+      "variants": [
+        {
+          "item_type": "Grimoire",
+          "sockets": 2,
+          "min_rlvl": 53,
+          "rune_order_and_modifiers": "Dol + Gul",
+          "runeword_modifiers": [
+            {
+              "stat": "faster_block_rate",
+              "value": "30",
+              "raw": "30 Faster Block Rate"
+            },
+            {
+              "stat": "enhanced_defense",
+              "value": "(75-100)%",
+              "raw": "(75-100)% Enhanced Defense"
+            },
+            {
+              "stat": "life",
+              "value": "+(20-40)",
+              "raw": "+(20-40) Life"
+            },
+            {
+              "stat": "mana",
+              "value": "+(20-40)",
+              "raw": "+(20-40) Mana"
+            }
+          ]
+        },
+        {
+          "item_type": "Any Shield",
+          "sockets": 2,
+          "min_rlvl": 53,
+          "rune_order_and_modifiers": "Dol + Gul",
+          "runeword_modifiers": [
+            {
+              "stat": "faster_block_rate",
+              "value": "30",
+              "raw": "30 Faster Block Rate"
+            },
+            {
+              "stat": "enhanced_defense",
+              "value": "(75-100)%",
+              "raw": "(75-100)% Enhanced Defense"
+            },
+            {
+              "stat": "life",
+              "value": "+(20-40)",
+              "raw": "+(20-40) Life"
+            },
+            {
+              "stat": "mana",
+              "value": "+(20-40)",
+              "raw": "+(20-40) Mana"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Vigilance",
+          "extracted_at": "2026-03-17T20:52:03.279529+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:52:03.279529+00:00"
+    },
+    {
+      "name": "Voice of Reason",
+      "variants": [
+        {
+          "item_type": "Mace",
+          "sockets": 4,
+          "min_rlvl": 43,
+          "rune_order_and_modifiers": "Lem + Ko + El + Eld",
+          "runeword_modifiers": [
+            {
+              "stat": "damage_to_demons",
+              "value": "+(220-350)%",
+              "raw": "+(220-350)% Damage to Demons"
+            },
+            {
+              "stat": "raw",
+              "value": "+(280-300)% Damage to Undead",
+              "raw": "+(280-300)% Damage to Undead"
+            },
+            {
+              "stat": "cold_damage",
+              "value": "Adds 100-220",
+              "raw": "Adds 100-220 Cold Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "( (4-8.8) Seconds)",
+              "raw": "( (4-8.8) Seconds)"
+            },
+            {
+              "stat": "enemy_cold_resistance",
+              "value": "-24%",
+              "raw": "-24% Enemy Cold Resistance"
+            }
+          ]
+        },
+        {
+          "item_type": "Sword",
+          "sockets": 4,
+          "min_rlvl": 43,
+          "rune_order_and_modifiers": "Lem + Ko + El + Eld",
+          "runeword_modifiers": [
+            {
+              "stat": "damage_to_demons",
+              "value": "+(220-350)%",
+              "raw": "+(220-350)% Damage to Demons"
+            },
+            {
+              "stat": "raw",
+              "value": "+(280-300)% Damage to Undead",
+              "raw": "+(280-300)% Damage to Undead"
+            },
+            {
+              "stat": "cold_damage",
+              "value": "Adds 100-220",
+              "raw": "Adds 100-220 Cold Damage"
+            },
+            {
+              "stat": "raw",
+              "value": "( (4-8.8) Seconds)",
+              "raw": "( (4-8.8) Seconds)"
+            },
+            {
+              "stat": "enemy_cold_resistance",
+              "value": "-24%",
+              "raw": "-24% Enemy Cold Resistance"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Voice_of_Reason",
+          "extracted_at": "2026-03-17T20:52:09.491888+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:52:09.491888+00:00"
+    },
+    {
+      "name": "Void",
+      "variants": [
+        {
+          "item_type": "Dagger",
+          "sockets": 3,
+          "min_rlvl": 69,
+          "rune_order_and_modifiers": "Thul + Zod + Ist",
+          "runeword_modifiers": [
+            {
+              "stat": "magic_skill_damage",
+              "value": "+(10-15)% to",
+              "raw": "+(10-15)% to Magic Skill Damage"
+            },
+            {
+              "stat": "abyss",
+              "value": "+(1-3)",
+              "raw": "+(1-3) Abyss"
+            },
+            {
+              "stat": "raw",
+              "value": "(",
+              "raw": "("
+            },
+            {
+              "stat": "raw",
+              "value": "oskill",
+              "raw": "oskill"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            },
+            {
+              "stat": "strength",
+              "value": "+(8-12)",
+              "raw": "+(8-12) Strength"
+            },
+            {
+              "stat": "decrepify",
+              "value": "Level 4",
+              "raw": "Level 4 Decrepify"
+            },
+            {
+              "stat": "charges",
+              "value": "(35/35",
+              "raw": "(35/35 Charges"
+            },
+            {
+              "stat": "raw",
+              "value": ")",
+              "raw": ")"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Void",
+          "extracted_at": "2026-03-17T20:52:16.777076+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:52:16.777076+00:00"
+    },
+    {
+      "name": "Wealth",
+      "variants": [
+        {
+          "item_type": "Body armor",
+          "sockets": 3,
+          "min_rlvl": 43,
+          "rune_order_and_modifiers": "Lem + Ko + Tir",
+          "runeword_modifiers": null
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Wealth",
+          "extracted_at": "2026-03-17T20:52:23.079289+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:52:23.079289+00:00"
+    },
+    {
+      "name": "White",
+      "variants": [
+        {
+          "item_type": "Wand",
+          "sockets": 2,
+          "min_rlvl": 35,
+          "rune_order_and_modifiers": "Dol + Io",
+          "runeword_modifiers": [
+            {
+              "stat": "bone_spear",
+              "value": "+2",
+              "raw": "+2 Bone Spear"
+            },
+            {
+              "stat": "raw",
+              "value": "(Necromancer Only)",
+              "raw": "(Necromancer Only)"
+            },
+            {
+              "stat": "skeleton_mastery",
+              "value": "+4",
+              "raw": "+4 Skeleton Mastery"
+            },
+            {
+              "stat": "raw",
+              "value": "(Necromancer Only)",
+              "raw": "(Necromancer Only)"
+            },
+            {
+              "stat": "bone_armor",
+              "value": "+3",
+              "raw": "+3 Bone Armor"
+            },
+            {
+              "stat": "raw",
+              "value": "(Necromancer Only)",
+              "raw": "(Necromancer Only)"
+            },
+            {
+              "stat": "mana",
+              "value": "+13",
+              "raw": "+13 Mana"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/White",
+          "extracted_at": "2026-03-17T20:52:29.548158+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:52:29.548158+00:00"
+    },
+    {
+      "name": "Wind",
+      "variants": [
+        {
+          "item_type": "Melee weapon",
+          "sockets": 2,
+          "min_rlvl": 61,
+          "rune_order_and_modifiers": "Sur + El",
+          "runeword_modifiers": [
+            {
+              "stat": "increased_attack_speed",
+              "value": "40",
+              "raw": "40 Increased Attack Speed"
+            },
+            {
+              "stat": "fhr",
+              "value": "15",
+              "raw": "15 Faster Hit Recovery"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "(120-160)%",
+              "raw": "(120-160)% Enhanced Damage"
+            },
+            {
+              "stat": "target_defense",
+              "value": "-50%",
+              "raw": "-50% Target Defense"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Wind",
+          "extracted_at": "2026-03-17T20:52:36.012299+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:52:36.012299+00:00"
+    },
+    {
+      "name": "Wisdom",
+      "variants": [
+        {
+          "item_type": "Helm",
+          "sockets": 3,
+          "min_rlvl": 45,
+          "rune_order_and_modifiers": "Pul + Ith + Eld",
+          "runeword_modifiers": [
+            {
+              "stat": "mana_stolen",
+              "value": "(4-8)%",
+              "raw": "(4-8)% Mana Stolen"
+            },
+            {
+              "stat": "raw",
+              "value": "per hit",
+              "raw": "per hit"
+            },
+            {
+              "stat": "energy",
+              "value": "+10",
+              "raw": "+10 Energy"
+            },
+            {
+              "stat": "raw",
+              "value": "Cannot be Frozen",
+              "raw": "Cannot be Frozen"
+            },
+            {
+              "stat": "mana_after_each_kill",
+              "value": "+5",
+              "raw": "+5 Mana After Each Kill"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Wisdom",
+          "extracted_at": "2026-03-17T20:52:42.135748+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:52:42.135748+00:00"
+    },
+    {
+      "name": "Wrath",
+      "variants": [
+        {
+          "item_type": "Missile weapon",
+          "sockets": 4,
+          "min_rlvl": 63,
+          "rune_order_and_modifiers": "Pul + Lum + Ber + Mal",
+          "runeword_modifiers": [
+            {
+              "stat": "raw",
+              "value": "+300% Damage to Demons",
+              "raw": "+300% Damage to Demons"
+            },
+            {
+              "stat": "damage_to_undead",
+              "value": "+(250-300)%",
+              "raw": "+(250-300)% Damage to Undead"
+            },
+            {
+              "stat": "magic_damage",
+              "value": "Adds 85-120",
+              "raw": "Adds 85-120 Magic Damage"
+            },
+            {
+              "stat": "lightning_damage",
+              "value": "Adds 41-240",
+              "raw": "Adds 41-240 Lightning Damage"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Wrath",
+          "extracted_at": "2026-03-17T20:52:48.428295+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:52:48.428295+00:00"
+    },
+    {
+      "name": "Zephyr",
+      "variants": [
+        {
+          "item_type": "Missile weapon",
+          "sockets": 2,
+          "min_rlvl": 21,
+          "rune_order_and_modifiers": "Ort + Eth",
+          "runeword_modifiers": [
+            {
+              "stat": "increased_attack_speed",
+              "value": "25",
+              "raw": "25 Increased Attack Speed"
+            },
+            {
+              "stat": "ed_percent",
+              "value": "33%",
+              "raw": "33% Enhanced Damage"
+            },
+            {
+              "stat": "attack_rating",
+              "value": "+66",
+              "raw": "+66 Attack Rating"
+            },
+            {
+              "stat": "defense",
+              "value": "+25",
+              "raw": "+25 Defense"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "site": "theamazonbasin.com",
+          "url": "https://www.theamazonbasin.com/wiki/index.php/Zephyr",
+          "extracted_at": "2026-03-17T20:52:54.759307+00:00"
+        }
+      ],
+      "last_verified_at": "2026-03-17T20:52:54.759307+00:00"
+    }
+  ]
+}
