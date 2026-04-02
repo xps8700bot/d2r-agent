@@ -46,16 +46,3 @@ def test_item_base_gmb():
     
     assert "Grand Matriarchal Bow" in result_text or "大院长" in result_text
     assert "+1-3 Bow and Crossbow Skills" in result_text
-
-
-def test_reddit_hot_question_crystal_sword_larzuk_spirit_breakpoint():
-    # Reddit-style hot question: can a Normal Crystal Sword become 4os at Larzuk for Spirit?
-    query = "Normal cows 掉的 Crystal Sword 拿去 Larzuk 会 4 孔吗，能做 Spirit 吗？"
-    result_text, trace_path = answer(query)
-
-    assert "Crystal Sword" in result_text
-    assert "26-40 (4 sockets)" in result_text
-    assert "Spirit" in result_text
-    assert ("Larzuk" in result_text) or ("拉苏克" in result_text)
-    # The answer should explicitly connect the breakpoint to the 4os Spirit outcome.
-    assert ("4 孔" in result_text) or ("4 sockets" in result_text)

@@ -16,7 +16,6 @@ from d2r_agent.knowledge.season_calendar import maybe_update_from_evidence, reso
 from d2r_agent.knowledge.strategy_cards import search_strategy_cards
 from d2r_agent.knowledge.fact_cards import search_fact_cards
 from d2r_agent.knowledge.mechanics_db import search_mechanics
-import re
 from d2r_agent.knowledge.runeword_db import search_runewords, format_runeword_hit
 from d2r_agent.knowledge.runeword_validator import validate_runeword_base, format_validator_result
 from d2r_agent.logging.trace import write_trace
@@ -129,29 +128,6 @@ def _extract_base_from_query(query: str) -> tuple[str | None, int | None]:
             break
 
     return base_item, socket_count
-
-
-def _extract_larzuk_breakpoint(statement: str) -> list[tuple[str, int]]:
-    """Parse ilvl breakpoint fragments like '26-40 (4 sockets)' from a mechanics statement."""
-    if not statement or "ilvl_breakpoints:" not in statement:
-        return []
-    matches = re.findall(r"(\d+\s*-\s*\d+|\d+\+)\s*\((\d+)\s*sockets?\)", statement, flags=re.I)
-    return [(rng.replace(" ", ""), int(sockets)) for rng, sockets in matches]
-
-
-def _is_larzuk_socket_query(query: str) -> bool:
-    q = (query or "").lower()
-    markers = ["larzuk", "拉苏克", "socket quest", "打孔", "会 4 孔", "几孔"]
-    return any(m in q for m in markers)
-
-
-def _infer_runeword_target(query: str) -> tuple[str | None, int | None]:
-    q = (query or "").lower()
-    if ("spirit" in q) or ("精神" in query):
-        return "Spirit", 4
-    if ("insight" in q) or ("眼光" in query) or ("洞察" in query):
-        return "Insight", 4
-    return None, None
 
 
 def _merge_ctx(defaults: dict, user_ctx: dict, *, current_date: str) -> dict:
@@ -701,56 +677,21 @@ def answer(
         )
     elif gap.intent in {"mechanics_query", "drop_rate"}:
         # Framework handler for boss/farming/area queries.
-        # For Reddit-style hot questions around Larzuk/socket breakpoints, infer the conclusion instead of just dumping records.
+        # Now wired up to search_mechanics; we format hits as TL;DR.
         tldr = []
-        larzuk_query = _is_larzuk_socket_query(user_query)
-        target_rw, target_sockets = _infer_runeword_target(user_query)
-        larzuk_inferred = False
-
-        if mechanics_hits and larzuk_query:
+        if mechanics_hits:
             for h in mechanics_hits[:3]:
                 r = h.record
                 tldr.append(f"**{r.canonical_name}**: {r.statement}")
-                breakpoints = _extract_larzuk_breakpoint(r.statement)
-                if breakpoints:
-                    hit_4os = next(((rng, sockets) for rng, sockets in breakpoints if sockets == 4), None)
-                    if hit_4os:
-                        rng, _ = hit_4os
-                        if target_rw and target_sockets == 4:
-                            tldr.append(
-                                f"如果这把 {r.canonical_name} 的 ilvl 落在 {rng}，Larzuk 会给它 4 孔；这正好满足 {target_rw} 的 4 孔需求。"
-                            )
-                            tldr.append(
-                                f"所以关键不是‘Normal 掉的就一定行’，而是它是否落在 {rng} 这个 breakpoint。满足就能做 {target_rw}，不满足就会出错孔数。"
-                            )
-                        else:
-                            tldr.append(
-                                f"Larzuk 给的是该底材在对应 ilvl 区间允许的最大孔数；对 {r.canonical_name} 来说，{rng} 区间会出 4 孔。"
-                            )
-                        larzuk_inferred = True
-                        break
-
-        if mechanics_hits and not larzuk_inferred:
-            for h in mechanics_hits[:3]:
-                r = h.record
-                tldr.append(f"**{r.canonical_name}**: {r.statement}")
-        elif not mechanics_hits:
+        else:
             tldr = [
                 "检测到 farm/boss/区域相关问题。",
                 "请指定具体 boss 或区域(如 Mephisto、Nihlathak、Chaos Sanctuary、奶牛关等)以获得详细建议。",
                 "⚠️ 暂无本地匹配数据,建议补充关键词。",
             ]
 
-        confidence = "high" if larzuk_inferred else ("med" if mechanics_hits else "low")
-        confidence_reason = (
-            "larzuk breakpoint inferred from structured item base data"
-            if larzuk_inferred
-            else ("mechanics_db search result" if mechanics_hits else "mechanics_query intent detected; no specific target matched")
-        )
-
-        next_step_question = "你想 farm 哪个具体区域 or boss?"
-        if larzuk_inferred:
-            next_step_question = "如果你愿意，我下一步可以继续帮你判断 Broad Sword / Flail / Polearm 在什么 ilvl 区间最适合打 Larzuk。"
+        confidence = "med" if mechanics_hits else "low"
+        confidence_reason = "mechanics_db search result" if mechanics_hits else "mechanics_query intent detected; no specific target matched"
 
         ans0 = Answer(
             assumptions={
@@ -763,7 +704,7 @@ def answer(
                 "A) 指定具体 boss/区域 → 获得专项 farm 建议",
                 "B) 指定职业/配装 → 获得效率对比",
             ],
-            next_step_question=next_step_question,
+            next_step_question="你想 farm 哪个具体区域 or boss?",
             confidence=confidence,
             confidence_reason=confidence_reason,
         )
