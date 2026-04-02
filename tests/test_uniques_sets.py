@@ -289,3 +289,33 @@ class TestNewUniques:
         results = search_mechanics("自然之和 防止怪物复活 骷髅 戒指", paths=ALL_PATHS)
         assert any(r.record.id == "unique.natures_peace" for r in results), \
             "Nature's Peace should be found by CN alias 自然之和"
+
+    def test_schaefers_hammer_en(self):
+        results = search_mechanics("Schaefer's Hammer paladin lightning damage", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.schaefers_hammer" for r in results), \
+            "Schaefer's Hammer should be found by English name"
+
+    def test_schaefers_hammer_cn(self):
+        results = search_mechanics("神圣锤 神圣战锤 闪电伤害 圣骑士", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.schaefers_hammer" for r in results), \
+            "Schaefer's Hammer should be found by CN alias 神圣锤"
+
+    def test_azurewrath_en(self):
+        results = search_mechanics("Azurewrath phase blade sanctuary aura undead", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.azurewrath" for r in results), \
+            "Azurewrath should be found by English name"
+
+    def test_azurewrath_cn(self):
+        results = search_mechanics("蔚蓝之怒 圣光剑 掌剑 Sanctuary", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.azurewrath" for r in results), \
+            "Azurewrath should be found by CN alias 蔚蓝之怒"
+
+    def test_death_cleaver_en(self):
+        results = search_mechanics("Death Cleaver berserker axe deadly strike crushing blow", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.death_cleaver" for r in results), \
+            "Death Cleaver should be found by English name"
+
+    def test_death_cleaver_cn(self):
+        results = search_mechanics("死亡劈斧 死劈 致命打击 粉碎一击", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.death_cleaver" for r in results), \
+            "Death Cleaver should be found by CN alias 死亡劈斧"
