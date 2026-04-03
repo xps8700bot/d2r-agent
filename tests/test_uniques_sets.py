@@ -319,3 +319,43 @@ class TestNewUniques:
         results = search_mechanics("死亡劈斧 死劈 致命打击 粉碎一击", paths=ALL_PATHS)
         assert any(r.record.id == "unique.death_cleaver" for r in results), \
             "Death Cleaver should be found by CN alias 死亡劈斧"
+
+    def test_stormshield_en(self):
+        results = search_mechanics("Stormshield monarch damage reduced physical", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.stormshield" for r in results), \
+            "Stormshield should be found by English name"
+
+    def test_stormshield_cn(self):
+        results = search_mechanics("风暴之盾 暴风盾 物理减伤 君主盾", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.stormshield" for r in results), \
+            "Stormshield should be found by CN alias 风暴之盾"
+
+    def test_herald_of_zakarum_en(self):
+        results = search_mechanics("Herald of Zakarum HoZ paladin skills shield", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.herald_of_zakarum" for r in results), \
+            "Herald of Zakarum should be found by English name"
+
+    def test_herald_of_zakarum_cn(self):
+        results = search_mechanics("扎卡鲁姆先驱 圣盾 骑士盾 圣骑士技能", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.herald_of_zakarum" for r in results), \
+            "HoZ should be found by CN alias 扎卡鲁姆先驱"
+
+    def test_waterwalks_en(self):
+        results = search_mechanics("Waterwalks boots life dexterity amazon", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.waterwalks" for r in results), \
+            "Waterwalks should be found by English name"
+
+    def test_waterwalks_cn(self):
+        results = search_mechanics("踏水靴 水鞋 敏捷 生命 亚马逊靴子", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.waterwalks" for r in results), \
+            "Waterwalks should be found by CN alias 踏水靴"
+
+    def test_skullders_ire_en(self):
+        results = search_mechanics("Skullder's Ire magic find per level body armor", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.skullders_ire" for r in results), \
+            "Skullder's Ire should be found by English name"
+
+    def test_skullders_ire_cn(self):
+        results = search_mechanics("骷髅之怒 MF衣 魔法发现 每级 铠甲", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.skullders_ire" for r in results), \
+            "Skullder's Ire should be found by CN alias 骷髅之怒"
