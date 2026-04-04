@@ -359,3 +359,38 @@ class TestNewUniques:
         results = search_mechanics("骷髅之怒 MF衣 魔法发现 每级 铠甲", paths=ALL_PATHS)
         assert any(r.record.id == "unique.skullders_ire" for r in results), \
             "Skullder's Ire should be found by CN alias 骷髅之怒"
+
+    def test_the_oculus_en(self):
+        results = search_mechanics("The Oculus sorceress orb MF skills", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.the_oculus" for r in results), \
+            "The Oculus should be found by English name"
+
+    def test_the_oculus_cn(self):
+        results = search_mechanics("天眼 法球 法系球杖 魔法发现 法师", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.the_oculus" for r in results), \
+            "The Oculus should be found by CN alias 天眼"
+
+    def test_the_oculus_teleport_quirk(self):
+        results = search_mechanics("oculus teleport proc annoying sorceress", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.the_oculus" for r in results), \
+            "The Oculus teleport proc note should surface in search"
+
+    def test_buriza_en(self):
+        results = search_mechanics("Buriza-Do Kyanon crossbow pierce freeze Amazon", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.buriza" for r in results), \
+            "Buriza should be found by English name"
+
+    def test_buriza_cn(self):
+        results = search_mechanics("冰冻弩炮 穿刺弩 布里扎 亚马逊 穿刺", paths=ALL_PATHS)
+        assert any(r.record.id == "unique.buriza" for r in results), \
+            "Buriza should be found by CN alias 冰冻弩炮"
+
+    def test_tal_rasha_detail(self):
+        results = search_mechanics("Tal Rasha set partial bonus 4 piece magic find MF", paths=ALL_PATHS)
+        assert any(r.record.id == "set.tal_rasha_wrappings" for r in results), \
+            "Tal Rasha detailed entry should be found by partial-bonus query"
+
+    def test_tal_rasha_cn_detail(self):
+        results = search_mechanics("塔拉夏 4件套 魔法发现 腰带 面具 法师", paths=ALL_PATHS)
+        assert any(r.record.id == "set.tal_rasha_wrappings" for r in results), \
+            "Tal Rasha should be found by CN detail query"
