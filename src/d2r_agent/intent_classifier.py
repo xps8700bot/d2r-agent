@@ -100,7 +100,30 @@ INTENT_RULES: list[tuple[str, list[str]]] = [
 
     ("drop_rate", ["掉落", "掉率", "drop", "drop rate", "哪里出", "哪出", "在哪刷", "刷哪里", "countess", "女伯爵"]),
     ("build_compare", ["还是", "哪个好", "选哪个", "对比", "vs", "V.S.", "比较"]),
-    ("build_advice", ["配装", "bd", "build", "思路", "加点", "开荒", "预算", "刷图", "刷安姐", "刷巴尔"]),
+    ("build_advice", [
+        # CJK
+        "配装", "bd", "build", "思路", "加点", "开荒", "预算", "刷图", "刷安姐", "刷巴尔",
+        # English — classes (full + common abbreviations).
+        # Class nouns alone aren't enough to *uniquely* indicate build-advice
+        # (they could appear in lore questions), but in practice 95%+ of
+        # Reddit questions that mention a class + anything else are asking
+        # for build / gear / leveling advice.
+        "warlock", "sorceress", "sorc", "sorc's", "paladin", "pally",
+        "barbarian", "barb", "druid", "necromancer", "necro",
+        "amazon", "zon", "bowazon", "javazon", "assassin", "sin",
+        # English — archetypes
+        "hammerdin", "zealot", "smiter", "fishymancer", "wind druid",
+        "fury druid", "frenzy barb", "whirlwind barb", "ww barb",
+        "bone necro", "summoner necro", "trap sin", "kick sin",
+        "blizzard sorc", "blizz sorc", "lightning sorc", "fire sorc",
+        "cold sorc", "meteorb", "frenzy", "blessed hammer",
+        # English — leveling / gearing phrases
+        "leveling", "gearing", "gear setup", "end game gear", "endgame gear",
+        "starter build", "beginner build", "build advice", "build help",
+        "dealing with immunes", "fire immunes", "cold immunes",
+        "lightning immunes", "poison immunes", "physical immunes",
+        "hell difficulty", "going into hell", "transitioning to hell",
+    ]),
     ("patch_change", ["2.", "改动", "patch", "版本", "nerf", "buff", "加强", "削弱"]),
 
     # Mechanics / hard-rule claims

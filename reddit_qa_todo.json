@@ -1,5 +1,205 @@
 {
   "version": 1,
   "description": "D2R question benchmark set, sourced from Reddit. State machine: pending -> in_progress -> passed | failed.",
-  "questions": []
+  "questions": [
+    {
+      "id": "reddit_1r4gn0i",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1r4gn0i/how_are_you_warlocks_dealing_with_fire_immunes_on/",
+      "question": "How are you warlocks dealing with fire immunes on hell?\n\nLeveling a warlock as practise for ladder reset. I love the fire skills, but I dread getting to Hell difficulty. I remember it being nearly impossible on my fire sorc. Are there any skills that work like sorcs frozen orb (no synergies needed) on warlock? \n\nThanks!",
+      "question_keywords": [
+        "warlocks",
+        "dealing",
+        "fire",
+        "immunes",
+        "hell"
+      ],
+      "reference_answer": "[19↑] Using a magic build\n[12↑] Im in NM atm and hit the act 4 immunes, between The Smith then Hepfisto demons i had on bind, the Death sigil which seems to be like a corpse explosion and my merc i managed to kinda cruise through to act 5! Still figuring out the little details but my full fire build with a couple demon points seem\n[8↑] This is what I've been doing in single player that has worked well for fire immunes so far: -Main hand obedience replaced spirit for -25% fire res (pretty cheap rw, can socket quest a regular scythe) -When I got to NM forge, I rerolled Hephasto for conviction aura (took like 10-15 tries) -The minion\n[2↑] I played.up till level 15, thinking the hero wasnt too strong, pretty balanced. I didnt realize i was playing on player /4 till then 😂",
+      "status": "in_progress",
+      "added_date": "2026-04-07",
+      "improvement_count": 1,
+      "failure_reason": "Partial: intent classification fixed, strategy cards now fire, but retrieval ranks generic leveling-guide intros over fire-immune-specific cards AND the KB has zero warlock-specific fire-immune content (only Druid/Assassin have such cards). Need (a) phrase-based scoring in search_strategy_cards so multi-word phrases like \"fire immune\" beat single-token overlap, and (b) new strategy cards or fact-db entries documenting Obedience runeword / Conviction merc / magic-build pivot for warlocks facing fire immunes. Both out of scope for today.",
+      "improvement_history": [
+        {
+          "ts": "2026-04-07T21:25:00Z",
+          "category": "intent_classification",
+          "summary": "Broadened build_advice keyword list with English class names (warlock/sorc/paladin/barb/druid/necro/amazon/sin), archetype names (hammerdin/zealot/fishymancer/etc.), and leveling/gearing phrases. Previously only CJK keywords + bd/build matched; English warlock questions fell through to general intent and never triggered strategy-card retrieval. After fix, strategy cards for Fire Warlock Leveling and Summoner Warlock fire correctly.",
+          "regression_result": "tests/test_intent_classifier_v2.py 25/25 pass; no existing case regressed."
+        }
+      ],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 13,
+        "num_comments": 51,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1rchie1",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1rchie1/early_hell_warlock/",
+      "question": "Early Hell Warlock\n\nJust hit hell. Debating between magic, demon, or echoing strike.\n\nStill doing early gearing, but let's assume I can make all of the early runewords in reasonable bases.\n\nI know ES gets real busted, but what's actually going to allow me to solo farm at a reasonable clip early on? I'm thinking CS or Andy are probably the most viable farming spots early on.",
+      "question_keywords": [
+        "early",
+        "hell",
+        "warlock",
+        "hit",
+        "debating"
+      ],
+      "reference_answer": "[7↑] ES with your favorite cursed bound demon, hephasto, makes the game easy mode. Just run an insight pole arm until you get something better and a spirit shield, try to get at least 75% fcr and dual leech and it's smooth sailing.\n[6↑] You can solo the game basically naked with heph defiler. Grab yourself a 4os chest and 3os helmet and put ptopaz in it, rock dual spirit and play walking sim. Heph 2 shots easily on p3 i haven’t tried to go higher but it should still be easy on p5. When you go for bosses swap defiler for goats for C\n[4↑] I like magic a lot. Went to 87 when Warlock first came out and now 84 in ladder, both with Abyss. It’s super comfy and safe. ES has more highend potential, but I just like Abyss. Can kill basically all mobs too.",
+      "status": "pending",
+      "added_date": "2026-04-07",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 19,
+        "num_comments": 52,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1rixsd7",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1rixsd7/left_over_skill_points_few_points_into_bind_demon/",
+      "question": "Left over skill points - Few points into bind demon tree worth it for magic warlock?\n\nI'm currently running in early hell with a magic warlock and coming up soon on maxing out all 4 of the miasma tree skills on the far right.  When there are left over skill points after that, does it make sense to work on getting something like hephatso via bind demon to help out, esp with the Baal wave 2 magic immunes?\n\nI'm playing SSF so ill have pretty limited +skills - maybe +5 total\n\nMy main question is if this popular choice is effective / worth it with only a small amount of points investe...",
+      "question_keywords": [
+        "left",
+        "over",
+        "skill",
+        "points",
+        "few"
+      ],
+      "reference_answer": "[42↑] Every warlock should bind demon tbh\n[15↑] Even one point in Bind Demon, Demon Mastery and Blood Oath makes a HUGE difference\n[13↑] One point in bind demon is incredible, you also want 1 point in consume and the ability to control 2 demons total for a nice damage /hp / frw buff\n[11↑] Every warlock build should have at least 1 point in bind demon at level 30. In its current state it’s too OP not to have. Find a demon with cursed and a decent aura and you’ll be walking through Hell laughing. A4 Hepasto is a good bet for these.\n[6↑] I dont even bother with a merc since my demon can tank everything and gives me an aura. Oh and even tanks damage that my character takes through blood oath.",
+      "status": "pending",
+      "added_date": "2026-04-07",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 16,
+        "num_comments": 28,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1rx3wei",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1rx3wei/going_for_runeword_completion_and_have_a/",
+      "question": "going for runeword completion and have a proposition for void...\n\nhey folks, I'm maybe a half dozen runewords away from being done with the runewords. been mostly doing the expensive ones off ladder where I had a stash of runes I didn't care much about since I only really play ladder.\n\nanyway, point is I was looking at \"Void\" and it's clearly meant to be put in a dagger base with +3 to abyss already on it. but off ladder those are selling for crazy prices. I could just use any 3os dagger and be done with it, but that feels extra wasteful, so what I'm wondering...",
+      "question_keywords": [
+        "going",
+        "runeword",
+        "completion",
+        "proposition",
+        "void"
+      ],
+      "reference_answer": "[4↑] Not in a position to take you up on this (offline) but running Hell Cows I find sooo many Kris with staff mod, multiple with +3 Abyss over the last few weeks.\n[4↑] i have a handful stashed for my warlock but im not sure if any are +3 abyss. ill look when i get home from work later this evening. chances are you will find someone else to take you up on your offer by then though :P\n[3↑] I use one for my FOHdin, so the abyss is useless for me, if you do end up just making it, if it rolls 15% to the magic damage I’ll give you the runes back for it.\n[2↑] I was looking long time for a good base, settled with a +2 Abyss dagger. Rolled 15% magic Dmg, but only +1 Abyss, making it a +5 Abyss.\n[1↑] Wait you making them and not just dropping them on the ground in some free game?",
+      "status": "pending",
+      "added_date": "2026-04-07",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 23,
+        "num_comments": 19,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1qthhyi",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1qthhyi/help_with_monarch/",
+      "question": "Help with Monarch\n\nHaving trouble finding a Monarch shield to make spirit. I scoured Google and YouTube to find more info, the concensus seems to be to hit up a bunch of places in act 1 he'll with no magic find on. Been doing that for a few hours now and havnt seen a single Monarch, white or other wise. Playing on ps5 with no active psn account so I can't trade for one. Is there anything else I couls be doing or are the RNG gods looking down on me unfavorably?",
+      "question_keywords": [
+        "monarch",
+        "having",
+        "trouble",
+        "finding",
+        "shield"
+      ],
+      "reference_answer": "[4↑] I usually go to the grave yard and farm her and the two places there and only a few hours those are rookie numbers bro.\n[2↑] Hell Cows if you can, A3-5 NM TZ perhaps? Depends on the ilvl for the area. Ilvl for a white mon is 72; @a2 Hell and forward the ilvl is 74+, so could drop there. Hell A1 ilvls of 72+ are: Inner Cloister, Cathedral, Catacombs 1-4, Cows, Den of Evil, Cave 1&amp;2, Burial Grounds, Crypt, Maus, Tristra\n[2↑] hell cows\n[2↑] It’s been a bit since I’ve looked up the ilvl, but iirc monarch is ilvl 72, so you want to go to a zone that is alvl 72+ (you could also kill bosses/super uniques lower, but that’s not faster) https://diablo.fandom.com/wiki/Area_Level This will show you the area levels. Pick your fav 72+ and start k",
+      "status": "pending",
+      "added_date": "2026-04-07",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 4,
+        "num_comments": 29,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1mgq3cl",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1mgq3cl/why_fury_druid_seems_severely_underrated_compared/",
+      "question": "Why Fury Druid seems severely underrated compared to Zealot? How to fix my weak Zealot?\n\nOver the yeas I've read on forums and sites about a lot of builds and noticed that Fury Druid build is rarely mentioned compared to the Zealot. I am wondering what makes the Zealot far more preferred/mentioned build than the Fury Druid considering the very similar playstile? For melee builds recommendation people are far more likely to mention Frenzy barb or Whirlwind wich are actually very gear dependent.\n\nSo I made my first Fury Druid and noticed that at just around level 50 he has around the ...",
+      "question_keywords": [
+        "fury",
+        "druid",
+        "seems",
+        "severely",
+        "underrated"
+      ],
+      "reference_answer": "[7↑] Did you follow any mainstream guides in building these? Look at [maxroll.gg](http://maxroll.gg), there's also calculators so you can play around with the numbers from different equipment. I don't have much experience with zealot but 2h weapons will easily outmatch 1h+shield regarding damage. Werewol\n[3↑] I think OP is on to something here. Fury Druid not getting enough appreciation. You can get ridiculous damage and run/walk speed, insane life too. Fury is my next character for sure. Been messing with a zealot and he is decent but I bet Fury Druid would kill way faster with the same or less gear\n[2↑] Is your zealer using grief? If so, it’s +damage numbers don’t show on your character screen. Its a glitch",
+      "status": "pending",
+      "added_date": "2026-04-07",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 14,
+        "num_comments": 21,
+        "flair": "Suggestion / Feedback"
+      }
+    },
+    {
+      "id": "reddit_1o9gybr",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1o9gybr/why_does_mercs_level_up_slower_in_group_games/",
+      "question": "Why does mercs level up slower in group games?\n\nSo I have noticed this, if I was just solo playing, my merc's level matches with me easily and is just 1 lvl with me.\n\nBut if I played a bit of baal runs or cows or w/e with 8 players, his level starts really slow down and a 1 lvl gap becomes a 5 or 6 lvl gap real quick\n\nwhy is that?",
+      "question_keywords": [
+        "mercs",
+        "level",
+        "slower",
+        "group",
+        "games"
+      ],
+      "reference_answer": "[6↑] As ive understood it. I dont believe mercs get exp from party member kills. Mercs get the same exp as player if players kills monster. Including any exp penalties. Mercs do gain experience from minion kills (skeleton, grizzly, valk, shadow master, etc...) Mercs gain bonus exp if they kill the monste\n[2↑] Mercs get little to no exp unless they last hit the monsters. Probably not getting the kill on much in group games.\n[1↑] Yes. I went to some. Baal runs and did meteor. While dealing a lot of damage. It didn't kill anyone. I got xp but my merc didn't. I switched to fireball and my merc would gain a lot of xp because they had the final tick to kill.",
+      "status": "pending",
+      "added_date": "2026-04-07",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 9,
+        "num_comments": 9,
+        "flair": "Help / Bug"
+      }
+    },
+    {
+      "id": "reddit_1s7nm7p",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1s7nm7p/is_there_a_problem_with_heralds/",
+      "question": "is there a problem with heralds?\n\nI usually farm the active TZ until I get a herald pop or 2, then I terrorize entire acts and farm them to get additional heralds. Every session I played over this past weekend, I never once got  a herald or even the message about getting their Ire. I usually get at least one herald pretty easily and some games I've had upwards of 8. To not see a single herald all weekend seems odd to me. Anyone else having any issue getting them or did the RNG gods just hate me all weekend..... well most of the ...",
+      "question_keywords": [
+        "there",
+        "problem",
+        "heralds",
+        "usually",
+        "farm"
+      ],
+      "reference_answer": "[10↑] RNGesus is angry with you\n[9↑] Heralds suck. Garbage system.\n[5↑] I am SP offline p8, and I get about 2 heralds per Act.\n[3↑] My wife and I found our 5th sunder last night. Terrorized Flayer Jungle yeilded 3 Heralds so we terrorized A1, then A2. Sunder dropped on our 11th Herald of the night. Took about 2 hours.\n[4↑] I had pretty good herald luck yesterday. Ran a game with tz act 1,2 and 4 and ran whatever spawned in between. Got 16 heralds in one game but of course no sunder. lol",
+      "status": "pending",
+      "added_date": "2026-04-07",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 14,
+        "num_comments": 46,
+        "flair": null
+      }
+    }
+  ]
 }
