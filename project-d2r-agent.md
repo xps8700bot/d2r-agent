@@ -20,6 +20,29 @@ daily automated runs — not the project's own development history (see
 - `tests/` — pytest regression suite.
 - Remote: `https://github.com/xps8700bot/d2r-agent` (branch `main`).
 
+## Open TODOs (carry-over items, not tied to a single run)
+
+- [ ] **Phrase-aware scoring in `src/d2r_agent/knowledge/strategy_cards.py`.**
+  Current scoring is naive token overlap, so generic guide intros outrank
+  topical cards. Boost bigrams/trigrams (`fire immune`, `hell difficulty`,
+  `dealing with`) and penalize cards tagged `intro`/`overview` when the
+  query is problem-specific. (Surfaced by run 2 / reddit_1r4gn0i.)
+- [ ] **Warlock fire-immune strategy cards.**
+  `data/strategy_cards.jsonl` has zero warlock fire-immune content. Add
+  hand-written cards covering: Obedience polearm on merc (-25% target
+  fire res), Hephasto reroll for Conviction-aura merc, Magic Warlock
+  pivot, Death sigil + Bind Demon synergy. (Surfaced by run 2 /
+  reddit_1r4gn0i — this is the blocker to move that question to `passed`.)
+- [ ] **Windows-only test fixture encoding bugs (pre-existing).**
+  On Windows, these 3 tests fail with `UnicodeDecodeError` because their
+  fixture loaders open files without `encoding="utf-8"` (cp1252 default):
+  - `tests/test_gems.py::TestGemsDb::test_gem_upgrade_recipe_exists`
+  - `tests/test_item_bases_manual.py::test_item_base_monarch`
+  - `tests/test_item_bases_manual.py::test_item_base_phase_blade`
+  Not caused by the scheduled task; they pollute every full `pytest` run
+  on this machine. Fix: add `encoding="utf-8"` to the relevant `open()`
+  calls in those tests (or the helpers they use).
+
 ## Runs
 
 ### 2026-04-07 — Bootstrap run (scheduled-task artifacts only)
