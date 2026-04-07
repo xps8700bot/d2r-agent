@@ -1,0 +1,38 @@
+{
+  "ts": "2026-04-07T21:35:00Z",
+  "run_of_day": 2,
+  "changed_files": [
+    "src/d2r_agent/intent_classifier.py",
+    "reddit_qa_todo.json",
+    "scripts/reddit_collect.py",
+    "project-runs/2026-04-07_run2_start.json",
+    "project-runs/2026-04-07_run2_end.json",
+    "project-d2r-agent.md"
+  ],
+  "tests": "209/212 pass. Intent-classifier regression: tests/test_intent_classifier_v2.py 25/25 pass. Three pre-existing Windows-only UnicodeDecode failures (test_gems.py::test_gem_upgrade_recipe_exists, test_item_bases_manual.py::test_item_base_monarch, test_item_bases_manual.py::test_item_base_phase_blade) — confirmed pre-existing by stashing my changes and re-running.",
+  "commit": "66d3a76",
+  "push_status": "success (9e58b9d..66d3a76 main -> main)",
+  "reddit_fetch": "success",
+  "reddit_fetch_tool": "curl",
+  "reddit_fetch_detail": "mcp__Claude_in_Chrome__navigate refused reddit.com / old.reddit.com / np.reddit.com all with 'This site is not allowed due to safety restrictions' (same allow-list as WebFetch, contrary to expectations when SKILL.md was updated). Fell through to tier-2 (Bash curl) which worked fine against reddit.com/{subreddit}/top.json and /search.json with a custom User-Agent. Parsed 3 listing JSONs + 6 topic-specific searches, then fetched top comment trees for 8 posts. Total 8 usable pending questions added to the queue.",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1r4gn0i",
+        "question": "How are you warlocks dealing with fire immunes on hell?",
+        "result": "in_progress",
+        "improvement_count": 1,
+        "improvement_notes": "Broadened build_advice intent keywords with English class/archetype/leveling terms. Before: query classified as 'general', no strategy-card retrieval, purely generic TL;DR. After: query classified as 'build_advice', strategy cards for Fire Warlock Leveling + Summoner Warlock fire correctly. BUT: (a) search_strategy_cards token-overlap scoring ranks generic leveling-guide intros above topical cards; (b) data/strategy_cards.jsonl has zero warlock fire-immune content (only Druid Fissure + Assassin Fire Blast/Dragon Tail mention fire-immunes). Both out of scope for a single-session fix — marked in_progress to continue next run.",
+        "failure_reason": null
+      }
+    ],
+    "questions_added_to_queue": 8
+  },
+  "regression_check": {
+    "tested_ids": [],
+    "all_passed": true,
+    "regressions": [],
+    "note": "Intent-classifier is the only code path I changed; its dedicated test file (25 cases) passes. Full suite also verified: no regressions vs baseline. No 'passed' questions in the queue yet, so no question-level regression sample to draw from."
+  },
+  "review_instructions": "Two follow-ups worth attention: (1) Phrase-aware scoring in src/d2r_agent/knowledge/strategy_cards.py — currently it's naive token overlap so 'How to deal with fire immunes' matches a generic 'Leveling Guide' intro because both contain 'Leveling' / 'Warlock' / 'Fire'. Suggest: boost score for bigrams/trigrams ('fire immune', 'hell difficulty', 'deal with'), penalize cards whose tags include 'intro' or 'overview' when the query is problem-specific. (2) Knowledge gap: data/strategy_cards.jsonl and data/fact_db/mechanics/*.jsonl have no warlock-specific fire-immune strategies. Reference answers from Reddit suggest: swap to Magic Warlock tree, use Obedience polearm for -25% fire res on merc, reroll Hephasto for Conviction aura merc, lean on Death sigil + Bind Demon. Worth a targeted ingestion pass or hand-written strategy cards."
+}
