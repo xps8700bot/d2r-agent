@@ -9,10 +9,10 @@
     "project-runs/2026-04-08_end.json"
   ],
   "tests": "pytest tests/ -> 209 passed, 3 failed (pre-existing Windows UnicodeDecode errors in test_gems::test_gem_upgrade_recipe_exists and test_item_bases_manual::{test_item_base_monarch,test_item_base_phase_blade}). Confirmed pre-existing by re-running pytest on stashed baseline — same 3 fail. Not a regression.",
-  "commit": "<filled after commit>",
+  "commit": "b885501",
   "reddit_fetch": "skipped_sufficient",
   "reddit_fetch_tool": "none",
-  "push_status": "<filled after push>",
+  "push_status": "success: 88150bf..b885501 main -> main",
   "qa_summary": {
     "questions_processed": [
       {
