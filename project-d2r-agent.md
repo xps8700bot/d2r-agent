@@ -146,3 +146,44 @@ daily automated runs — not the project's own development history (see
      demote it below `curl` in the preferred-tool list (or drop it).
   3. Next pending question if Q1 clears: `reddit_1rchie1` — "Early Hell
      Warlock: magic vs demon vs echoing strike".
+
+## 2026-04-08 — Run 1
+
+- **Goal:** Resume `reddit_1r4gn0i` and clear the two carryover blockers
+  (phrase-based scoring + warlock fire-immune content).
+- **Pull / git state:** `git pull --rebase` → already up to date.
+  `pending=7, in_progress=1`, so Reddit fetch skipped (sufficient pool).
+- **Improvement A — retrieval logic** (`search_strategy_cards`):
+  added stop-word-filtered bigram (+6) and trigram (+10) phrase
+  scoring with a singular-form fallback so `fire immunes` matches
+  cards containing `fire immune`. Single-token overlap still scores 1
+  per token, so phrases dominate. The change is local to
+  `src/d2r_agent/knowledge/strategy_cards.py` and preserves the
+  existing `+`-prefixed boost.
+- **Improvement B — knowledge gap** (`data/strategy_cards.jsonl`):
+  added 4 internal strategy cards for warlock vs fire-immunes:
+  Obedience runeword (-25% enemy fire res), Hephasto reroll →
+  Conviction-aura merc, Magic-tree pivot (Abyss / Echoing Strike),
+  and Echoing Strike on swap as a fire-immune-boss answer. Tagged
+  `d2ragent / strategy / warlock / fire-immune` so the existing
+  retrieval picks them up. Source URLs are `internal://strategy/...`
+  so they are clearly marked as in-house notes.
+- **Re-run on `reddit_1r4gn0i`:** TL;DR now leads with the Obedience
+  card and the Echoing Strike card; top-3 strategy hits are
+  (1) Fire Warlock vs Fire Immunes, (2) Hephasto Conviction Merc,
+  (3) Echoing Strike vs Fire Immunes. Covers all three top reference
+  answers (Obedience polearm, Conviction merc, magic build pivot).
+  Factual / completeness / harmlessness all pass.
+  → `status: passed`, `improvement_count = 2`.
+- **Regression:** No `passed` benchmark cases existed before this run,
+  so used `pytest tests/` as the safety net. 209 pass / 3 fail; the
+  3 failures (`test_gems::test_gem_upgrade_recipe_exists`,
+  `test_item_bases_manual::test_item_base_monarch`,
+  `test_item_bases_manual::test_item_base_phase_blade`) are
+  pre-existing Windows `UnicodeDecodeError` issues — verified by
+  stashing my changes and running pytest on the baseline (same 3
+  fail). Not a regression introduced today.
+- **Next step planned:** pick up `reddit_1rchie1` (Early Hell Warlock:
+  magic vs demon vs ES) on the next run; this newly-passed
+  `reddit_1r4gn0i` is now eligible for sample-regression on future
+  runs.

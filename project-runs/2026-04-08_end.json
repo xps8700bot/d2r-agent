@@ -1,0 +1,35 @@
+{
+  "ts": "2026-04-08T09:10:00-07:00",
+  "changed_files": [
+    "src/d2r_agent/knowledge/strategy_cards.py",
+    "data/strategy_cards.jsonl",
+    "reddit_qa_todo.json",
+    "project-d2r-agent.md",
+    "project-runs/2026-04-08_start.json",
+    "project-runs/2026-04-08_end.json"
+  ],
+  "tests": "pytest tests/ -> 209 passed, 3 failed (pre-existing Windows UnicodeDecode errors in test_gems::test_gem_upgrade_recipe_exists and test_item_bases_manual::{test_item_base_monarch,test_item_base_phase_blade}). Confirmed pre-existing by re-running pytest on stashed baseline — same 3 fail. Not a regression.",
+  "commit": "<filled after commit>",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "<filled after push>",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1r4gn0i",
+        "question": "How are you warlocks dealing with fire immunes on hell?",
+        "result": "passed",
+        "improvement_count": 2,
+        "improvement_notes": "Two improvements stacked on top of yesterday's intent-classification fix: (a) phrase-based scoring in search_strategy_cards (bigram +6, trigram +10, singular-form fallback) so multi-word phrases like 'fire immune' beat generic single-token overlap; (b) added 4 internal strategy cards covering warlock fire-immune solutions (Obedience runeword, Hephasto Conviction merc, Magic-tree pivot, Echoing Strike swap). Re-run agent now surfaces all three top reference answers (Obedience polearm, Conviction merc, magic build pivot) in TL;DR.",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": [],
+    "all_passed": true,
+    "regressions": [],
+    "note": "No 'passed' questions existed before this run, so no benchmark sample available. Used full pytest suite as the safety net (see 'tests' field). reddit_1r4gn0i is now passed and will be eligible for regression sampling on the next run."
+  },
+  "review_instructions": "Human review: (1) Check the 4 new internal strategy cards in data/strategy_cards.jsonl for factual accuracy of D2R mechanics (Obedience -25% fire res, Hephasto Conviction reroll, Echoing Strike ignoring fire immunity). (2) Confirm that boosting bigrams +6 / trigrams +10 in search_strategy_cards is the right magnitude — currently makes 1 phrase ~= 6 single tokens. (3) The internal:// source URLs are clearly marked as in-house but make sure that's acceptable in user-facing TL;DR output."
+}

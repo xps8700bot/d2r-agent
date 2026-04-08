@@ -1,0 +1,9 @@
+{
+  "ts": "2026-04-08T09:00:00-07:00",
+  "goal": "Resume reddit_1r4gn0i (warlock fire-immunes, in_progress from 2026-04-07). Address the two carryover blockers: (a) phrase-based scoring in search_strategy_cards so multi-word phrases like 'fire immune' beat single-token overlap; (b) add fact-db / strategy-card content for warlock vs fire-immunes (Obedience runeword / Conviction merc / magic-build pivot). Then re-evaluate the agent's answer and run regression on at least 1 prior passed question.",
+  "rebase_conflict": false,
+  "git_pull_rebase": "Already up to date",
+  "pending_count_before": 7,
+  "in_progress_carryover": ["reddit_1r4gn0i"],
+  "reddit_fetch_planned": "skipped_sufficient (pending=7 >= 5)"
+}
