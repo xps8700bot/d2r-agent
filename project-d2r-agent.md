@@ -22,17 +22,11 @@ daily automated runs — not the project's own development history (see
 
 ## Open TODOs (carry-over items, not tied to a single run)
 
-- [ ] **Phrase-aware scoring in `src/d2r_agent/knowledge/strategy_cards.py`.**
-  Current scoring is naive token overlap, so generic guide intros outrank
-  topical cards. Boost bigrams/trigrams (`fire immune`, `hell difficulty`,
-  `dealing with`) and penalize cards tagged `intro`/`overview` when the
-  query is problem-specific. (Surfaced by run 2 / reddit_1r4gn0i.)
-- [ ] **Warlock fire-immune strategy cards.**
-  `data/strategy_cards.jsonl` has zero warlock fire-immune content. Add
-  hand-written cards covering: Obedience polearm on merc (-25% target
-  fire res), Hephasto reroll for Conviction-aura merc, Magic Warlock
-  pivot, Death sigil + Bind Demon synergy. (Surfaced by run 2 /
-  reddit_1r4gn0i — this is the blocker to move that question to `passed`.)
+- [x] **Phrase-aware scoring in `src/d2r_agent/knowledge/strategy_cards.py`.**
+  Completed 2026-04-08: bigram +6, trigram +10, singular-form fallback.
+- [x] **Warlock fire-immune strategy cards.**
+  Completed 2026-04-08: 4 internal cards (Obedience, Conviction merc,
+  Magic pivot, Echoing Strike). reddit_1r4gn0i now `passed`.
 - [ ] **Windows-only test fixture encoding bugs (pre-existing).**
   On Windows, these 3 tests fail with `UnicodeDecodeError` because their
   fixture loaders open files without `encoding="utf-8"` (cp1252 default):
@@ -187,3 +181,64 @@ daily automated runs — not the project's own development history (see
   magic vs demon vs ES) on the next run; this newly-passed
   `reddit_1r4gn0i` is now eligible for sample-regression on future
   runs.
+
+## 2026-04-09 — Run 1
+
+- **Goal:** Process 3 pending questions (daily max). Reddit fetch skipped
+  (7 pending >= 5 threshold).
+- **Pull / git state:** `git pull --rebase` → already up to date (after
+  stash/pop for local untracked changes).
+- **Questions processed (3 passed, 0 failed):**
+
+  1. **`reddit_1rchie1`** — "Early Hell Warlock: magic vs demon vs ES"
+     - Baseline: classified as `runeword_recipe` (keyword "runewords" in
+       text) → strategy cards skipped entirely → retrieved BotD/HotO/CTA.
+     - **Fix A (intent classification):** Added class-name + build-context
+       disambiguation heuristic in `intent_classifier.py`. When a class
+       name (warlock, sorc, etc.) co-occurs with build-context words
+       (farming, gearing, leveling, debating, solo), the heuristic fires
+       before the main rule loop and returns `build_advice`, preventing
+       "runeword" from hijacking intent.
+     - **Fix B (knowledge gap):** Added 2 strategy cards: early-hell warlock
+       build comparison (ES vs Magic vs Demon with specific gear) and
+       ES+Hephasto early-hell farming guide. Increased strategy_cards
+       search limit from 2 to 4 in `orchestrator.py`.
+     - After fix: TL;DR covers all 3 reference answers (ES+Hephasto easy
+       mode, Abyss comfy/safe, Heph Defiler walking sim).
+     - `improvement_count = 1`, `status → passed`.
+
+  2. **`reddit_1rixsd7`** — "Bind demon tree worth it for magic warlock?"
+     - Baseline: surfaced ES skill allocations but missed the emphatic
+       community consensus about 1-point Bind Demon.
+     - **Fix (knowledge gap):** Added strategy card for 1-point Bind Demon
+       investment (bind demon + demon mastery + blood oath = 3 points total
+       for massive impact, demon tanks everything, replaces merc).
+     - After fix: TL;DR leads with the emphatic answer and covers all
+       reference points.
+     - `improvement_count = 1`, `status → passed`.
+
+  3. **`reddit_1rx3wei`** — "Void runeword completion / +3 Abyss base"
+     - Baseline: `search_runewords()` returned Hand of Justice, Brand,
+       Fortitude instead of Void. Root cause: common English words ("and",
+       "for", "just") matched as substrings of runeword names (Brand
+       contains "and", Fortitude starts with "for", Hand of Justice
+       contains "just"), outscoring the actual target "Void".
+     - **Fix (retrieval logic):** Added stop-word filtering and punctuation
+       stripping to `search_runewords()` in `runeword_db.py`. Void now
+       correctly ranks #1.
+     - `improvement_count = 1`, `status → passed`.
+
+- **Code changes:**
+  - `src/d2r_agent/intent_classifier.py` — class+build-context heuristic
+  - `src/d2r_agent/knowledge/runeword_db.py` — stop-word filtering
+  - `src/d2r_agent/orchestrator.py` — strategy_cards limit 2→4
+  - `data/strategy_cards.jsonl` — +3 internal strategy cards
+- **Regression:** `reddit_1r4gn0i` re-verified (Obedience, Magic pivot, ES
+  all surfaced). `reddit_1rchie1` re-verified. `pytest` 209/212 (3 pre-
+  existing Windows encoding failures, same as before).
+- **Commit:** `b8a9d3c`. Push: success (`75735b6..b8a9d3c`).
+- **Benchmark status:** 4 passed, 0 failed, 4 pending. Next pending:
+  `reddit_1qthhyi` (Help with Monarch / where to farm).
+- **Open TODOs updated:** phrase-aware scoring and warlock fire-immune
+  cards (both addressed in 2026-04-08) can be checked off. The Windows
+  encoding test bug remains.

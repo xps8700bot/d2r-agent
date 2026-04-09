@@ -1,0 +1,53 @@
+{
+  "ts": "2026-04-09T09:15:00Z",
+  "changed_files": [
+    "src/d2r_agent/intent_classifier.py",
+    "src/d2r_agent/knowledge/runeword_db.py",
+    "src/d2r_agent/orchestrator.py",
+    "data/strategy_cards.jsonl",
+    "reddit_qa_todo.json",
+    "data/memory.jsonl",
+    "project-runs/2026-04-09_start.json",
+    "project-runs/2026-04-09_end.json",
+    "project-d2r-agent.md"
+  ],
+  "tests": "pytest tests/ -> 209 passed, 3 failed (pre-existing Windows UnicodeDecodeError in test_gems::test_gem_upgrade_recipe_exists, test_item_bases_manual::{test_item_base_monarch, test_item_base_phase_blade}). Same 3 as previous runs. Not a regression.",
+  "commit": "b8a9d3c",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "success: 75735b6..b8a9d3c main -> main",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1rchie1",
+        "question": "Early Hell Warlock: magic vs demon vs echoing strike",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Intent misclassified as runeword_recipe (keyword 'runewords' in question). Added class-name+build-context heuristic to prefer build_advice. Added 2 strategy cards: early-hell warlock build comparison + ES+Hephasto farming guide. Increased strategy_cards limit from 2 to 4.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1rixsd7",
+        "question": "Left over skill points - bind demon worth it for magic warlock?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "First run surfaced ES skill allocations but missed the emphatic community consensus. Added strategy card for 1-point Bind Demon investment (bind demon + demon mastery + blood oath = 3 points total for massive impact).",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1rx3wei",
+        "question": "Void runeword completion - looking for +3 Abyss dagger base",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "search_runewords() was returning Hand of Justice/Brand/Fortitude instead of Void because common words (and/for/just) matched as substrings. Added stop-word filtering + punctuation stripping. Void now correctly ranks #1.",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1r4gn0i", "reddit_1rchie1"],
+    "all_passed": true,
+    "regressions": []
+  },
+  "review_instructions": "Human review: (1) Check the class-name+build-context heuristic in intent_classifier.py — ensure it doesn't over-trigger on actual runeword recipe questions that happen to mention a class. (2) The stop-word list in runeword_db.py is manually curated — consider if any legitimate D2R terms got blocked. (3) New strategy cards contain community-sourced advice (ES+Hephasto, 1-pt Bind Demon) — verify D2R accuracy."
+}
