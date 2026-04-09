@@ -52,17 +52,25 @@
         "debating"
       ],
       "reference_answer": "[7↑] ES with your favorite cursed bound demon, hephasto, makes the game easy mode. Just run an insight pole arm until you get something better and a spirit shield, try to get at least 75% fcr and dual leech and it's smooth sailing.\n[6↑] You can solo the game basically naked with heph defiler. Grab yourself a 4os chest and 3os helmet and put ptopaz in it, rock dual spirit and play walking sim. Heph 2 shots easily on p3 i haven’t tried to go higher but it should still be easy on p5. When you go for bosses swap defiler for goats for C\n[4↑] I like magic a lot. Went to 87 when Warlock first came out and now 84 in ladder, both with Abyss. It’s super comfy and safe. ES has more highend potential, but I just like Abyss. Can kill basically all mobs too.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-07",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-09T09:07:00Z",
+          "category": "intent_classification+knowledge_gap",
+          "summary": "Two fixes: (1) Added class-name+build-context disambiguation heuristic in intent_classifier.py so queries mentioning both a class name and build-context words (farming, gearing, leveling, etc.) are classified as build_advice even when runeword keyword is present. Previously classified as runeword_recipe which skipped strategy card search entirely. (2) Added 2 internal strategy cards: early-hell warlock build comparison (ES vs Magic vs Demon) and ES+Hephasto early-hell farming guide. Also increased strategy_cards search limit from 2 to 4 in orchestrator.py.",
+          "regression_result": "test_intent_classifier_v2.py 25/25 pass; reddit_1r4gn0i regression pass (Obedience + ES + magic-pivot all surfaced)."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 19,
         "num_comments": 52,
         "flair": "Question"
-      }
+      },
+      "passed_at": "2026-04-09T09:07:00Z"
     },
     {
       "id": "reddit_1rixsd7",
@@ -76,17 +84,25 @@
         "few"
       ],
       "reference_answer": "[42↑] Every warlock should bind demon tbh\n[15↑] Even one point in Bind Demon, Demon Mastery and Blood Oath makes a HUGE difference\n[13↑] One point in bind demon is incredible, you also want 1 point in consume and the ability to control 2 demons total for a nice damage /hp / frw buff\n[11↑] Every warlock build should have at least 1 point in bind demon at level 30. In its current state it’s too OP not to have. Find a demon with cursed and a decent aura and you’ll be walking through Hell laughing. A4 Hepasto is a good bet for these.\n[6↑] I dont even bother with a merc since my demon can tank everything and gives me an aura. Oh and even tanks damage that my character takes through blood oath.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-07",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-09T09:08:00Z",
+          "category": "knowledge_gap",
+          "summary": "Added strategy card for Warlock 1-point Bind Demon investment (bind demon + demon mastery + blood oath = 3 points for massive impact). First run surfaced ES skill allocations but missed the emphatic community consensus about minimal-investment bind demon. New card covers SSF/limited +skills scenario and Baal wave 2 magic immunes.",
+          "regression_result": "Covered by regression run on reddit_1r4gn0i (still passes). Intent classifier 25/25 pass."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 16,
         "num_comments": 28,
         "flair": null
-      }
+      },
+      "passed_at": "2026-04-09T09:08:00Z"
     },
     {
       "id": "reddit_1rx3wei",
@@ -100,17 +116,25 @@
         "void"
       ],
       "reference_answer": "[4↑] Not in a position to take you up on this (offline) but running Hell Cows I find sooo many Kris with staff mod, multiple with +3 Abyss over the last few weeks.\n[4↑] i have a handful stashed for my warlock but im not sure if any are +3 abyss. ill look when i get home from work later this evening. chances are you will find someone else to take you up on your offer by then though :P\n[3↑] I use one for my FOHdin, so the abyss is useless for me, if you do end up just making it, if it rolls 15% to the magic damage I’ll give you the runes back for it.\n[2↑] I was looking long time for a good base, settled with a +2 Abyss dagger. Rolled 15% magic Dmg, but only +1 Abyss, making it a +5 Abyss.\n[1↑] Wait you making them and not just dropping them on the ground in some free game?",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-07",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-09T09:11:00Z",
+          "category": "retrieval_logic",
+          "summary": "Added stop-word filtering to search_runewords() in runeword_db.py. Common English words (and, for, just, etc.) were matching as substrings of runeword names (Brand contains and, Fortitude contains for, Hand of Justice contains just), causing irrelevant runewords to outscore Void. After fix, Void correctly ranks #1. Also strips punctuation from tokens so void... (with ellipsis) produces clean void token.",
+          "regression_result": "Covered by full pytest run."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 23,
         "num_comments": 19,
         "flair": null
-      }
+      },
+      "passed_at": "2026-04-09T09:11:00Z"
     },
     {
       "id": "reddit_1qthhyi",

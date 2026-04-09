@@ -1,0 +1,6 @@
+{
+  "ts": "2026-04-09T09:01:00Z",
+  "goal": "Process reddit_1rchie1 (Early Hell Warlock: magic vs demon vs ES) and up to 2 more pending questions. Regression-check reddit_1r4gn0i after any code changes. Reddit fetch skipped (7 pending >= 5 threshold).",
+  "rebase_conflict": false,
+  "reddit_fetch": "skipped_sufficient"
+}

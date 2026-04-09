@@ -368,7 +368,7 @@ def answer(
     strategy_hits_obj = []
     strategy_tldr: list[str] = []
     if gap.intent in {"build_advice", "build_compare"}:
-        sh = search_strategy_cards(user_query, path="data/strategy_cards.jsonl", limit=2)
+        sh = search_strategy_cards(user_query, path="data/strategy_cards.jsonl", limit=4)
         for h in sh:
             strategy_hits_obj.append({"topic": h.topic, "source_url": h.source_url, "title_path": h.title_path})
             # TL;DR style line

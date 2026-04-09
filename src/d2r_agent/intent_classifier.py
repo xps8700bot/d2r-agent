@@ -217,6 +217,25 @@ def classify_intent_rules(q: str) -> str:
     if "双持" in q and _interrogative:
         return "mechanics_claim"
 
+    # Heuristic: class-name + build-context signals → build_advice,
+    # even when a recipe keyword (e.g. "runeword") also appears.
+    # Actual recipe queries focus on a specific item ("how to make Enigma"),
+    # not on class + farming/gearing/leveling context.
+    _CLASS_NAMES = {
+        "warlock", "sorceress", "sorc", "paladin", "pally",
+        "barbarian", "barb", "druid", "necromancer", "necro",
+        "amazon", "zon", "assassin", "sin",
+    }
+    _BUILD_CONTEXT = {
+        "farm", "farming", "solo", "gearing", "leveling", "debating",
+        "build", "spec", "respec", "skill tree", "early hell", "late hell",
+        "starter", "beginner", "endgame", "end game",
+    }
+    _has_class = any(cn in s for cn in _CLASS_NAMES)
+    _has_build_ctx = any(bc in s for bc in _BUILD_CONTEXT)
+    if _has_class and _has_build_ctx:
+        return "build_advice"
+
     for intent, kws in INTENT_RULES:
         for kw in kws:
             if kw.lower() in s:

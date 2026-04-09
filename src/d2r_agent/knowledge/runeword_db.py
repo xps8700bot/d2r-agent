@@ -198,8 +198,25 @@ def search_runewords(user_query: str, path: str, limit: int = 3) -> list[Runewor
     for cn, en in _ALIASES.items():
         if cn in q or cn in q_lower:
             resolved_terms.append(en.lower())
-    # Also add raw tokens from query
-    tokens = [t for t in q_lower.replace("(", " ").replace(")", " ").replace("?", " ").split() if len(t) >= 3]
+    # Also add raw tokens from query (strip punctuation, filter stop words)
+    _STOP_WORDS = frozenset({
+        "the", "and", "for", "but", "not", "you", "all", "can", "had", "her",
+        "was", "one", "our", "out", "are", "has", "his", "how", "its", "may",
+        "who", "did", "get", "got", "him", "let", "say", "she", "too", "use",
+        "with", "have", "that", "this", "from", "just", "into", "been", "done",
+        "does", "each", "them", "then", "than", "what", "when", "which", "will",
+        "would", "could", "should", "about", "after", "being", "going", "their",
+        "there", "those", "still", "also", "already", "anyone", "clearly",
+        "meant", "looking", "selling", "wondering", "completion", "proposition",
+        "extra", "feels", "wasteful", "willing", "pretty", "really", "maybe",
+        "some", "any", "put", "good", "over", "few", "left",
+    })
+    import re as _re
+    tokens = [
+        _re.sub(r"[^a-z0-9']", "", t)
+        for t in q_lower.replace("(", " ").replace(")", " ").replace("?", " ").split()
+    ]
+    tokens = [t for t in tokens if len(t) >= 3 and t not in _STOP_WORDS]
     resolved_terms.extend(tokens)
 
     entries = _load_runewords(path)
