@@ -93,6 +93,20 @@ class TestAntiRegression:
         """野蛮人双持开荒 is build advice (双持 without interrogative)."""
         assert classify_intent_rules("野蛮人双持开荒") == "build_advice"
 
+    def test_negated_magic_find_not_mf_intent(self):
+        """'no magic find' in context should NOT trigger magic_find_rule."""
+        assert classify_intent_rules(
+            "Having trouble finding a Monarch shield with no magic find on"
+        ) == "drop_rate"
+
+    def test_item_farming_trouble_finding(self):
+        """'trouble finding X' should be drop_rate."""
+        assert classify_intent_rules("trouble finding a Monarch shield") == "drop_rate"
+
+    def test_actual_mf_question_still_works(self):
+        """Genuine MF question should still classify as magic_find_rule."""
+        assert classify_intent_rules("Does magic find affect rune drops?") == "magic_find_rule"
+
 
 # ---------------------------------------------------------------------------
 # classify_intent (context_gap wrapper) consistency

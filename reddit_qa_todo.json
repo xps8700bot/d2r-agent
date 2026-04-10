@@ -148,11 +148,18 @@
         "shield"
       ],
       "reference_answer": "[4↑] I usually go to the grave yard and farm her and the two places there and only a few hours those are rookie numbers bro.\n[2↑] Hell Cows if you can, A3-5 NM TZ perhaps? Depends on the ilvl for the area. Ilvl for a white mon is 72; @a2 Hell and forward the ilvl is 74+, so could drop there. Hell A1 ilvls of 72+ are: Inner Cloister, Cathedral, Catacombs 1-4, Cows, Den of Evil, Cave 1&amp;2, Burial Grounds, Crypt, Maus, Tristra\n[2↑] hell cows\n[2↑] It’s been a bit since I’ve looked up the ilvl, but iirc monarch is ilvl 72, so you want to go to a zone that is alvl 72+ (you could also kill bosses/super uniques lower, but that’s not faster) https://diablo.fandom.com/wiki/Area_Level This will show you the area levels. Pick your fav 72+ and start k",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-07",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-10T09:06:26.529485+00:00",
+          "category": "intent_classification+knowledge_gap",
+          "summary": "Intent misclassified as magic_find_rule due to 'no magic find' phrase. Added negation-aware heuristic + item-farming keyword heuristic (trouble finding) to intent classifier. Added Monarch farming strategy card with ilvl/area level info. Extended strategy_cards retrieval to drop_rate/mechanics_query intents.",
+          "regression_result": "tests/test_intent_classifier_v2.py 28/28 pass; 184/184 other tests pass."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 4,
@@ -172,11 +179,18 @@
         "underrated"
       ],
       "reference_answer": "[7↑] Did you follow any mainstream guides in building these? Look at [maxroll.gg](http://maxroll.gg), there's also calculators so you can play around with the numbers from different equipment. I don't have much experience with zealot but 2h weapons will easily outmatch 1h+shield regarding damage. Werewol\n[3↑] I think OP is on to something here. Fury Druid not getting enough appreciation. You can get ridiculous damage and run/walk speed, insane life too. Fury is my next character for sure. Been messing with a zealot and he is decent but I bet Fury Druid would kill way faster with the same or less gear\n[2↑] Is your zealer using grief? If so, it’s +damage numbers don’t show on your character screen. Its a glitch",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-07",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-10T09:07:31.289714+00:00",
+          "category": "knowledge_gap",
+          "summary": "No strategy cards existed for Fury Druid or Zealot. Added 2 cards: Fury Werewolf Druid build overview + Fury Druid vs Zealot comparison (includes Grief hidden damage note, advantages of each build).",
+          "regression_result": "N/A - no code changes, only data addition."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 14,
@@ -196,11 +210,18 @@
         "games"
       ],
       "reference_answer": "[6↑] As ive understood it. I dont believe mercs get exp from party member kills. Mercs get the same exp as player if players kills monster. Including any exp penalties. Mercs do gain experience from minion kills (skeleton, grizzly, valk, shadow master, etc...) Mercs gain bonus exp if they kill the monste\n[2↑] Mercs get little to no exp unless they last hit the monsters. Probably not getting the kill on much in group games.\n[1↑] Yes. I went to some. Baal runs and did meteor. While dealing a lot of damage. It didn't kill anyone. I got xp but my merc didn't. I switched to fireball and my merc would gain a lot of xp because they had the final tick to kill.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-07",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-10T09:09:42.552588+00:00",
+          "category": "intent_classification+knowledge_gap",
+          "summary": "Short keyword \"tc\" (2 chars) caused false positive: \"matches\" contains \"tc\" substring, triggering treasure_class_rule. Added word-boundary matching for keywords <= 3 ASCII chars. Added merc XP mechanics strategy card explaining group vs solo XP rules.",
+          "regression_result": "tests/test_intent_classifier_v2.py 28/28 pass."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 9,

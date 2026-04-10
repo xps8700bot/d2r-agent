@@ -1,0 +1,53 @@
+{
+  "ts": "2026-04-10T09:15:00Z",
+  "changed_files": [
+    "src/d2r_agent/intent_classifier.py",
+    "src/d2r_agent/orchestrator.py",
+    "data/strategy_cards.jsonl",
+    "reddit_qa_todo.json",
+    "data/memory.jsonl",
+    "tests/test_intent_classifier_v2.py",
+    "project-runs/2026-04-10_start.json",
+    "project-runs/2026-04-10_end.json",
+    "project-d2r-agent.md"
+  ],
+  "tests": "pytest tests/ -> 187 passed, 3 skipped (pre-existing Windows UnicodeDecodeError in test_gems::test_gem_upgrade_recipe_exists, test_item_bases_manual::{test_item_base_monarch, test_item_base_phase_blade}). Same 3 as previous runs. Not a regression.",
+  "commit": "pending",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "pending",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1qthhyi",
+        "question": "Help with Monarch - trouble finding Monarch shield for Spirit",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Intent misclassified as magic_find_rule due to 'no magic find' phrase. Added negation-aware heuristic + item-farming keyword heuristic to intent classifier. Added Monarch farming strategy card. Extended strategy_cards retrieval to drop_rate/mechanics_query intents.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1mgq3cl",
+        "question": "Why Fury Druid seems severely underrated compared to Zealot?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "No strategy cards for Fury Druid or Zealot. Added Fury Werewolf Druid build overview + Fury Druid vs Zealot comparison card (Grief hidden damage note, advantages of each).",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1o9gybr",
+        "question": "Why does mercs level up slower in group games?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Short keyword 'tc' (2 chars) caused false positive: 'matches' contains 'tc' substring, triggering treasure_class_rule. Added word-boundary matching for keywords <= 3 ASCII chars. Added merc XP mechanics strategy card.",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1r4gn0i", "reddit_1rx3wei"],
+    "all_passed": true,
+    "regressions": []
+  },
+  "review_instructions": "Human review: (1) Word-boundary matching for short keywords (<=3 ASCII chars) in intent_classifier.py — check that existing short keywords like 'mf', 'gc', 'tc', 'cv', 'vs', 'bd' still work correctly as standalone words. (2) Strategy cards retrieval now enabled for drop_rate/mechanics_query intents — this may surface irrelevant cards when the question mentions farming areas tangentially. Monitor noise level. (3) New strategy cards (Monarch farming, Fury Druid, merc XP) contain community-sourced info — verify D2R accuracy."
+}

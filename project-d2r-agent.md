@@ -242,3 +242,52 @@ daily automated runs — not the project's own development history (see
 - **Open TODOs updated:** phrase-aware scoring and warlock fire-immune
   cards (both addressed in 2026-04-08) can be checked off. The Windows
   encoding test bug remains.
+
+---
+
+### 2026-04-10
+
+- **Questions processed:** 3 (all passed on first improvement attempt)
+  1. `reddit_1qthhyi` — "Help with Monarch" (where to farm Monarch for Spirit)
+     - **Root cause (intent):** "no magic find on" phrase triggered `magic_find_rule`
+       instead of the correct `drop_rate` intent.
+     - **Fix 1 (intent_classifier):** Added negation-aware heuristic — when "magic
+       find" / "mf" is preceded by "no" / "without" / "zero", skip `magic_find_rule`.
+     - **Fix 2 (intent_classifier):** Added item-farming heuristic — "trouble
+       finding" / "can't find" / "where to find" now early-return `drop_rate`.
+     - **Fix 3 (orchestrator):** Extended strategy card retrieval to
+       `drop_rate` and `mechanics_query` intents (was only `build_advice`/`build_compare`).
+       Also injected strategy_tldr into the mechanics_query/drop_rate answer branch.
+     - **Fix 4 (knowledge):** Added Monarch farming strategy card (ilvl 72, area
+       level 72+ zones, Hell Cows best spot, Larzuk 4os, 156 Str req).
+     - `improvement_count = 1`, `status → passed`.
+
+  2. `reddit_1mgq3cl` — "Why Fury Druid seems underrated compared to Zealot?"
+     - **Root cause (knowledge gap):** No strategy cards for Fury Druid or Zealot.
+     - **Fix:** Added 2 strategy cards: Fury Werewolf Druid build overview +
+       Fury Druid vs Zealot comparison (Grief hidden damage, advantages of each).
+     - `improvement_count = 1`, `status → passed`.
+
+  3. `reddit_1o9gybr` — "Why does mercs level up slower in group games?"
+     - **Root cause (intent):** Short keyword "tc" (2 chars) matched inside
+       "matches", triggering `treasure_class_rule` instead of `mechanics_query`.
+     - **Fix 1 (intent_classifier):** Added word-boundary matching for all
+       keywords ≤ 3 ASCII chars using regex lookahead/lookbehind. This prevents
+       "tc" matching inside "matches", "mf" inside "comfort", etc.
+     - **Fix 2 (knowledge):** Added merc XP mechanics strategy card explaining
+       group vs solo XP rules (merc only gets XP from owner kills / own kills).
+     - `improvement_count = 1`, `status → passed`.
+
+- **Code changes:**
+  - `src/d2r_agent/intent_classifier.py` — negation-aware MF heuristic, item-farming
+    early-return, word-boundary matching for short keywords
+  - `src/d2r_agent/orchestrator.py` — strategy cards for drop_rate/mechanics_query
+  - `data/strategy_cards.jsonl` — +4 strategy cards (Monarch, Fury Druid, Zealot
+    comparison, merc XP)
+  - `tests/test_intent_classifier_v2.py` — +3 tests (negation, item-farming, genuine MF)
+- **Regression:** `reddit_1r4gn0i` re-verified (fire immunes warlock — correct).
+  `reddit_1rx3wei` re-verified (Void runeword — correct). `pytest` 187/190
+  (3 pre-existing Windows encoding failures, same as before).
+- **Commit:** pending. Push: pending.
+- **Benchmark status:** 7 passed, 0 failed, 1 pending (`reddit_1s7nm7p` — heralds).
+  Next: `reddit_1s7nm7p`.

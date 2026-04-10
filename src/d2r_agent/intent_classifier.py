@@ -98,7 +98,11 @@ INTENT_RULES: list[tuple[str, list[str]]] = [
 
     ("cube_recipe", ["公式", "合成", "赫拉迪克方块", "cube", "recipe", "blood craft"]),
 
-    ("drop_rate", ["掉落", "掉率", "drop", "drop rate", "哪里出", "哪出", "在哪刷", "刷哪里", "countess", "女伯爵"]),
+    ("drop_rate", [
+        "掉落", "掉率", "drop", "drop rate", "哪里出", "哪出", "在哪刷", "刷哪里", "countess", "女伯爵",
+        # English item-hunting phrases
+        "where to find", "looking for", "hunting for",
+    ]),
     ("build_compare", ["还是", "哪个好", "选哪个", "对比", "vs", "V.S.", "比较"]),
     ("build_advice", [
         # CJK
@@ -207,6 +211,19 @@ def classify_intent_rules(q: str) -> str:
         if re.search(r"\S+\s*(还是|vs|对比|比较)\s*\S+", q):
             return "build_compare"
 
+    # Heuristic: "magic find" / "mf" mentioned only in negation context
+    # ("no magic find", "without mf", "zero mf", "0 mf") is NOT asking
+    # about MF mechanics — skip magic_find_rule so the real intent surfaces.
+    _mf_negated = bool(re.search(
+        r"\b(no|without|zero|0)\s+(magic\s*find|mf)\b", s
+    ))
+
+    # Heuristic: item-farming pattern — "finding X", "trouble finding",
+    # "can't find", "where to find" should map to drop_rate before generic
+    # keyword matching (which might be hijacked by incidental MF mention).
+    if re.search(r"(trouble\s+finding|can'?t\s+find|where\s+to\s+find|having\s+trouble.*finding)", s):
+        return "drop_rate"
+
     # Heuristic: Chinese weapon-mode mechanics — "单手" + "双手" co-occurrence
     # Only trigger mechanics_claim when BOTH appear together (interrogative weapon-mode question).
     # "双持" alone is NOT sufficient: it's commonly used in build contexts ("双持旋风蛮开荒").
@@ -238,8 +255,18 @@ def classify_intent_rules(q: str) -> str:
 
     for intent, kws in INTENT_RULES:
         for kw in kws:
-            if kw.lower() in s:
-                return intent
+            kw_lower = kw.lower()
+            # Short keywords (<=3 chars, ASCII) require word-boundary matching
+            # to avoid false positives like "tc" matching inside "matches".
+            if len(kw_lower) <= 3 and kw_lower.isascii():
+                if not re.search(r"(?<![a-z])" + re.escape(kw_lower) + r"(?![a-z])", s):
+                    continue
+            elif kw_lower not in s:
+                continue
+            # Skip magic_find_rule when MF is only mentioned in negation
+            if intent == "magic_find_rule" and _mf_negated:
+                break
+            return intent
 
     return "general"
 

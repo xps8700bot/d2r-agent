@@ -367,7 +367,7 @@ def answer(
     # Strategy KB: for build questions, surface one actionable nugget first.
     strategy_hits_obj = []
     strategy_tldr: list[str] = []
-    if gap.intent in {"build_advice", "build_compare"}:
+    if gap.intent in {"build_advice", "build_compare", "drop_rate", "mechanics_query"}:
         sh = search_strategy_cards(user_query, path="data/strategy_cards.jsonl", limit=4)
         for h in sh:
             strategy_hits_obj.append({"topic": h.topic, "source_url": h.source_url, "title_path": h.title_path})
@@ -677,13 +677,17 @@ def answer(
         )
     elif gap.intent in {"mechanics_query", "drop_rate"}:
         # Framework handler for boss/farming/area queries.
-        # Now wired up to search_mechanics; we format hits as TL;DR.
+        # Now wired up to search_mechanics + strategy cards; format as TL;DR.
         tldr = []
+        # Strategy cards first (actionable advice from guides / community).
+        if strategy_tldr:
+            for s in strategy_tldr[:2]:
+                tldr.append(s)
         if mechanics_hits:
             for h in mechanics_hits[:3]:
                 r = h.record
                 tldr.append(f"**{r.canonical_name}**: {r.statement}")
-        else:
+        if not tldr:
             tldr = [
                 "检测到 farm/boss/区域相关问题。",
                 "请指定具体 boss 或区域(如 Mephisto、Nihlathak、Chaos Sanctuary、奶牛关等)以获得详细建议。",
