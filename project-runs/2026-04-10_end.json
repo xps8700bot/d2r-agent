@@ -12,10 +12,10 @@
     "project-d2r-agent.md"
   ],
   "tests": "pytest tests/ -> 187 passed, 3 skipped (pre-existing Windows UnicodeDecodeError in test_gems::test_gem_upgrade_recipe_exists, test_item_bases_manual::{test_item_base_monarch, test_item_base_phase_blade}). Same 3 as previous runs. Not a regression.",
-  "commit": "pending",
+  "commit": "b65bf47",
   "reddit_fetch": "skipped_sufficient",
   "reddit_fetch_tool": "none",
-  "push_status": "pending",
+  "push_status": "success: ecc5584..b65bf47 main -> main",
   "qa_summary": {
     "questions_processed": [
       {

@@ -288,6 +288,6 @@ daily automated runs — not the project's own development history (see
 - **Regression:** `reddit_1r4gn0i` re-verified (fire immunes warlock — correct).
   `reddit_1rx3wei` re-verified (Void runeword — correct). `pytest` 187/190
   (3 pre-existing Windows encoding failures, same as before).
-- **Commit:** pending. Push: pending.
+- **Commit:** `b65bf47`. Push: success (`ecc5584..b65bf47`).
 - **Benchmark status:** 7 passed, 0 failed, 1 pending (`reddit_1s7nm7p` — heralds).
   Next: `reddit_1s7nm7p`.
