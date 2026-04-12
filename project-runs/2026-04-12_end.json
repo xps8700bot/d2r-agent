@@ -1,0 +1,54 @@
+{
+  "ts": "2026-04-12T10:25:00Z",
+  "changed_files": [
+    "data/fact_db/mechanics/farming.jsonl",
+    "data/fact_db/mechanics/superuniques.jsonl",
+    "data/memory.jsonl",
+    "reddit_qa_todo.json",
+    "src/d2r_agent/intent_classifier.py",
+    "src/d2r_agent/knowledge/mechanics_db.py",
+    "src/d2r_agent/knowledge/mechanics_schema.py",
+    "src/d2r_agent/knowledge/strategy_cards.py",
+    "src/d2r_agent/orchestrator.py",
+    "src/d2r_agent/schemas.py"
+  ],
+  "tests": "187 passed, 2 pre-existing failures (test_gems, test_item_bases_manual - both UnicodeDecodeError on cp1252)",
+  "commit": "cbb0dfc",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1sb0934",
+        "question": "Did they change the sunder drops in the new patch?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Improved mechanics_db stopword filtering, score-gap filtering, orchestrator mechanics-first TL;DR priority for drop_rate intent, added patch consistency statement to sunder fact, fixed strategy_cards stopword-token scoring bug",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1s10apf",
+        "question": "Any recent SOJ drop from NM Andy?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Updated Andariel SoJ fact with extreme rarity context and patch consistency info",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1ry0nvx",
+        "question": "Rune Farming - locations for high runes",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Fixed intent classification for rune farming queries (was misclassified as build_advice due to class name), added High Rune Farming Locations mechanics fact, fixed MechanicsFactRecord and EvidenceSnippet schema to accept community_consensus evidence_source_type",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1rchie1", "reddit_1r4gn0i"],
+    "all_passed": true,
+    "regressions": []
+  },
+  "review_instructions": "Key changes: (1) Mechanics DB search now has stopword filtering and score-gap filtering - verify this doesn't hurt queries with short meaningful tokens. (2) Strategy cards now use content_tokens for scoring - may reduce hits for some queries. (3) Intent classifier has new _item_farming heuristic that overrides build_advice - verify this doesn't false-positive on actual build questions mentioning runes."
+}

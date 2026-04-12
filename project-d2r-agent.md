@@ -317,3 +317,30 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `523d896`. Push: success.
 - **Benchmark status:** 8 passed, 0 failed, 12 pending.
   Next: `reddit_1sb0934` (sunder drop rate) or other pending questions.
+
+---
+
+## 2026-04-12
+
+- **Questions processed:** 3 (all passed on first attempt with improvements)
+  1. `reddit_1sb0934` — "Did they change the sunder drops in the new patch?" → **passed**
+     - Before: TL;DR was irrelevant strategy cards (mosaic assassin, Monarch); mechanics facts buried in Evidence
+     - Fix: mechanics-first TL;DR for drop_rate, stopword filtering, score-gap filtering, updated sunder fact with patch consistency statement
+  2. `reddit_1s10apf` — "Any recent SOJ drop from NM Andy?" → **passed**
+     - Before: Missing rarity context ("thousands of runs is normal")
+     - Fix: Updated Andariel SoJ fact with extreme rarity + "no patch change" info
+  3. `reddit_1ry0nvx` — "Rune Farming locations for high runes" → **passed**
+     - Before: Misclassified as build_advice (due to "paladin"), no rune farming knowledge
+     - Fix: Added _item_farming intent heuristic, added High Rune Farming Locations mechanics fact, fixed schema for community_consensus evidence type
+- **Code changes:**
+  - `src/d2r_agent/orchestrator.py` — mechanics_tldr parameter, mechanics-first TL;DR for drop_rate/mechanics_query, strong-hit strategy card suppression
+  - `src/d2r_agent/knowledge/mechanics_db.py` — stopword filtering in tokenizer, score-gap filtering (1/2 threshold)
+  - `src/d2r_agent/knowledge/strategy_cards.py` — fixed scoring to use content_tokens, added stopwords, raised min threshold to 4
+  - `src/d2r_agent/intent_classifier.py` — _item_farming heuristic to override build_advice for rune/item farming
+  - `data/fact_db/mechanics/farming.jsonl` — +1 High Rune Farming Locations fact, updated sunder fact
+  - `data/fact_db/mechanics/superuniques.jsonl` — updated Andariel SoJ fact
+  - `src/d2r_agent/knowledge/mechanics_schema.py`, `src/d2r_agent/schemas.py` — added community_consensus to evidence_source_type enum
+- **Regression:** `reddit_1rchie1` (early Hell warlock) passed. `reddit_1r4gn0i` (warlock fire immunes) passed. `pytest` 187/189 (2 pre-existing Windows encoding failures).
+- **Commit:** `cbb0dfc`. Push: success.
+- **Benchmark status:** 11 passed, 0 failed, 9 pending.
+  Next: `reddit_1s96soq` (console demon consuming) or other pending questions.
