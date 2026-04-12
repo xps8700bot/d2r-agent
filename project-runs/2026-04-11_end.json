@@ -1,0 +1,34 @@
+{
+  "ts": "2026-04-12T00:55:00Z",
+  "changed_files": [
+    "src/d2r_agent/intent_classifier.py",
+    "data/fact_db/mechanics/farming.jsonl",
+    "data/strategy_cards.jsonl",
+    "reddit_qa_todo.json",
+    "data/memory.jsonl",
+    "project-runs/2026-04-11_start.json"
+  ],
+  "tests": "190 passed, 2 failed (pre-existing UnicodeDecodeError in test_gems.py and test_item_bases_manual.py, cp1252 encoding issue, unrelated to changes)",
+  "commit": "523d896",
+  "reddit_fetch": "success",
+  "reddit_fetch_tool": "curl",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1s7nm7p",
+        "question": "is there a problem with heralds? I usually farm the active TZ until I get a herald pop or 2...",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added herald/sunder/TZ keywords to intent classifier + 4 Herald mechanics facts to farming.jsonl + 1 Herald strategy card. After fix, Herald info surfaces as #1 TL;DR hit, correctly explaining that dry streaks are RNG variance, not a bug.",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1r4gn0i", "reddit_1mgq3cl"],
+    "all_passed": true,
+    "regressions": []
+  },
+  "review_instructions": "12 new Reddit questions collected (queue now 20 total, 12 pending). Herald/Sunder/TZ knowledge layer is new — verify facts against latest patch notes if Blizzard changes Herald mechanics."
+}

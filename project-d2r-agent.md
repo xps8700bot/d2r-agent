@@ -291,3 +291,29 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `b65bf47`. Push: success (`ecc5584..b65bf47`).
 - **Benchmark status:** 7 passed, 0 failed, 1 pending (`reddit_1s7nm7p` — heralds).
   Next: `reddit_1s7nm7p`.
+
+---
+
+### 2026-04-11 — Herald/Sunder/TZ knowledge + batch Reddit collection
+
+- **Question processed:** `reddit_1s7nm7p` (herald spawn problem) — **passed** after
+  1 improvement round.
+  - Root cause: no Herald/Sunder/TZ knowledge in KB + missing intent keywords.
+    Agent returned unrelated Warlock strategy cards.
+  - Fix: (a) Added "herald"/"sunder"/"terror zone" etc. to `mechanics_query` keywords
+    in `intent_classifier.py`. (b) Added 4 Herald/TZ facts to `farming.jsonl` (TZ
+    overview, Herald overview, Sunder drop mechanics, farming tips). (c) Added 1
+    Herald farming strategy card. After fix, Herald info is #1 TL;DR hit.
+- **Reddit collection:** 12 new questions via curl + `reddit_collect.py`.
+  Queue: 20 total (8 passed, 12 pending).
+  Sources: `r/diablo2resurrected` top/month + keyword search.
+- **Code changes:**
+  - `src/d2r_agent/intent_classifier.py` — herald/sunder/TZ keywords added
+  - `data/fact_db/mechanics/farming.jsonl` — +4 Herald/TZ mechanics facts
+  - `data/strategy_cards.jsonl` — +1 Herald farming strategy card
+- **Regression:** `reddit_1r4gn0i` (warlock fire immunes) passed.
+  `reddit_1mgq3cl` (fury druid vs zealot) passed. `pytest` 190/192
+  (2 pre-existing Windows encoding failures).
+- **Commit:** `523d896`. Push: success.
+- **Benchmark status:** 8 passed, 0 failed, 12 pending.
+  Next: `reddit_1sb0934` (sunder drop rate) or other pending questions.
