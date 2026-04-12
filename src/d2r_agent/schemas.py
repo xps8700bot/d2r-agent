@@ -50,7 +50,7 @@ class EvidenceSnippet(BaseModel):
     snippet: str
     # Where this snippet came from. "stub" means it's just a search entry / placeholder,
     # not an extracted, quotable fact.
-    evidence_source_type: Literal["extract", "stub", "structured_kb"] = "extract"
+    evidence_source_type: Literal["extract", "stub", "structured_kb", "community_consensus"] = "extract"
 
 
 class ExtractedFacts(BaseModel):

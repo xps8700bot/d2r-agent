@@ -33,40 +33,46 @@ def iter_mechanics_records(paths: list[str]) -> list[MechanicsFactRecord]:
     return out
 
 
+_STOPWORDS = {
+    "the", "and", "for", "with", "from", "are", "you", "your", "this",
+    "that", "they", "them", "have", "has", "any", "but", "not", "all",
+    "out", "into", "onto", "what", "which", "when", "where", "how",
+    "why", "who", "did", "does", "doing", "was", "were", "been",
+    "its", "just", "very", "can", "could", "would", "should", "get",
+    "got", "really", "still", "also", "too", "much", "more", "most",
+    "one", "some", "only", "after", "before", "than", "then", "new",
+    "had", "or", "in", "it", "is", "if", "of", "to", "at", "on",
+    "so", "be", "do", "my", "me", "we",
+}
+
+
 def _tokenize(q: str) -> list[str]:
     s = (q or "").lower()
-    # Keep some CJK characters but split them for better matching
-    # Change: don't just split on spaces if it's CJK.
-    
+
+    # Strip punctuation (keep alphanumeric, CJK, +, -, %)
+    s = re.sub(r"[^0-9a-zA-Z_\u4e00-\u9fff\+\-% ]+", " ", s)
+
     # First, handle non-CJK words as usual
     non_cjk = re.sub(r"[\u4e00-\u9fff]+", " ", s)
     toks = [t for t in non_cjk.split() if t]
-    
+
     short_keep = {"tc", "mf", "ilvl", "alvl", "qlvl", "fcr", "fhr", "ias"}
     out: list[str] = []
     for t in toks:
+        if t in _STOPWORDS:
+            continue
         if len(t) >= 2 or t in short_keep:
             out.append(t)
-            
+
     # Then, handle CJK characters
     cjk_blocks = re.findall(r"[\u4e00-\u9fff]+", s)
     for block in cjk_blocks:
-        out.append(block) # full block
+        out.append(block)  # full block
         if len(block) >= 2:
             for i in range(len(block) - 1):
-                out.append(block[i:i+2])
+                out.append(block[i:i + 2])
         for char in block:
             out.append(char)
-            
-    # de-dupe keep order
-    seen = set()
-    dedup = []
-    for t in out:
-        if t in seen:
-            continue
-        seen.add(t)
-        dedup.append(t)
-    return dedup[:40]
 
     # de-dupe keep order
     seen = set()
@@ -148,4 +154,9 @@ def search_mechanics(user_query: str, *, paths: list[str], limit: int = 5) -> li
         hits.append(MechanicsHit(record=r, score=score))
 
     hits.sort(key=lambda h: h.score, reverse=True)
+    # Filter out low-relevance noise: drop results scoring less than half
+    # the top score to avoid generic token matches polluting results.
+    if hits and hits[0].score > 0:
+        threshold = max(hits[0].score // 2, 6)
+        hits = [h for h in hits if h.score >= threshold]
     return hits[:limit]

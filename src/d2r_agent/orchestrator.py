@@ -178,6 +178,7 @@ def _compose_answer(
     evidence: list[EvidenceSnippet],
     *,
     strategy_tldr: list[str] | None = None,
+    mechanics_tldr: list[str] | None = None,
     concise: bool = False,
 ) -> Answer:
     assumptions = {
@@ -192,9 +193,25 @@ def _compose_answer(
     tldr: list[str] = []
     options: list[str] = []
 
+    mechanics_tldr = mechanics_tldr or []
     strategy_tldr = strategy_tldr or []
-    if strategy_tldr:
-        # Always surface at least one strategy nugget if we have it.
+
+    # When we have mechanics facts (structured KB), they take priority over
+    # strategy cards — especially for drop_rate / mechanics_query where the
+    # mechanics DB holds the authoritative answer.
+    if mechanics_tldr and intent in {"drop_rate", "mechanics_query", "magic_find_rule", "treasure_class_rule"}:
+        for m in mechanics_tldr[:3]:
+            tldr.append(m)
+        # Append at most 1 strategy nugget as supplementary context.
+        if strategy_tldr:
+            tldr.append(strategy_tldr[0])
+    elif mechanics_tldr:
+        # Other intents: still surface mechanics, but let strategy lead.
+        for s in strategy_tldr[:2]:
+            tldr.append(s)
+        for m in mechanics_tldr[:2]:
+            tldr.append(m)
+    elif strategy_tldr:
         for s in strategy_tldr[:3]:
             tldr.append(s)
 
@@ -382,6 +399,7 @@ def answer(
 
     # Mechanics local KB (structured) before any live retrieval.
     mechanics_hits = []
+    mechanics_tldr: list[str] = []
     mechanics_reasoning = None
 
     import d2r_agent
@@ -427,6 +445,12 @@ def answer(
                     evidence_source_type=r.evidence_source_type,
                 )
             )
+
+        # Build mechanics TL;DR lines from top hits so they appear in the answer summary.
+        for h in mechanics_hits[:3]:
+            r = h.record
+            label = r.canonical_name or r.topic or ""
+            mechanics_tldr.append(f"**{label}**: {r.statement}")
 
         # Apply minimal reasoning rules (Phase 0).
         if gap.intent == "magic_find_rule":
@@ -679,14 +703,19 @@ def answer(
         # Framework handler for boss/farming/area queries.
         # Now wired up to search_mechanics + strategy cards; format as TL;DR.
         tldr = []
-        # Strategy cards first (actionable advice from guides / community).
-        if strategy_tldr:
-            for s in strategy_tldr[:2]:
-                tldr.append(s)
+        # Mechanics facts first (authoritative structured KB), then strategy cards as supplement.
         if mechanics_hits:
             for h in mechanics_hits[:3]:
                 r = h.record
                 tldr.append(f"**{r.canonical_name}**: {r.statement}")
+            # When mechanics hits are strong (top score >= 100), strategy cards are
+            # likely noise (generic "drop rate" matches). Skip them.
+            top_score = mechanics_hits[0].score if mechanics_hits else 0
+            if strategy_tldr and top_score < 100:
+                tldr.append(strategy_tldr[0])
+        elif strategy_tldr:
+            for s in strategy_tldr[:2]:
+                tldr.append(s)
         if not tldr:
             tldr = [
                 "检测到 farm/boss/区域相关问题。",
@@ -713,7 +742,7 @@ def answer(
             confidence_reason=confidence_reason,
         )
     else:
-        ans0 = _compose_answer(user_query, ctx, gap.intent, rr.expected_entities, rr.need_retrieval, evidence, strategy_tldr=strategy_tldr, concise=bool(user_ctx.get("concise")))
+        ans0 = _compose_answer(user_query, ctx, gap.intent, rr.expected_entities, rr.need_retrieval, evidence, strategy_tldr=strategy_tldr, mechanics_tldr=mechanics_tldr, concise=bool(user_ctx.get("concise")))
 
     followups = build_followups(missing_fields=gap.missing_fields, intent=gap.intent, entities=rr.expected_entities, ctx=ctx)
 

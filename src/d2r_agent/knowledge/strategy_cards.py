@@ -49,6 +49,9 @@ def search_strategy_cards(user_query: str, path: str, limit: int = 3) -> list[St
         "out", "into", "onto", "what", "which", "when", "where", "how",
         "why", "who", "doing", "dealing", "getting", "going", "really",
         "still", "just", "very", "can", "could", "would", "should",
+        "did", "does", "was", "were", "been", "got", "get", "found",
+        "new", "one", "game", "after", "before", "change", "changed",
+        "much", "more", "most", "also", "too", "need", "like",
     }
 
     content_tokens = [t for t in tokens if t not in _STOPWORDS]
@@ -100,7 +103,7 @@ def search_strategy_cards(user_query: str, path: str, limit: int = 3) -> list[St
         ]).lower()
 
         score = 0
-        for token in tokens:
+        for token in content_tokens:
             if token in hay:
                 score += 3 if token.startswith("+") else 1
 
@@ -118,7 +121,9 @@ def search_strategy_cards(user_query: str, path: str, limit: int = 3) -> list[St
                     score += 10
                     break
 
-        if score <= 0:
+        # Require at least a bigram-level match (score >= 6) or 4+ single-token
+        # hits to filter out cards that only weakly overlap on generic words.
+        if score < 4:
             continue
 
         scored.append(

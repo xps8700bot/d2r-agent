@@ -255,6 +255,15 @@ def classify_intent_rules(q: str) -> str:
     }
     _has_class = any(cn in s for cn in _CLASS_NAMES)
     _has_build_ctx = any(bc in s for bc in _BUILD_CONTEXT)
+    # Don't let class+farming trigger build_advice when the question is about
+    # item/rune farming locations (e.g. "rune farming for paladin").
+    _item_farming = bool(re.search(
+        r"\b(rune|runes|high rune|hr|lo|sur|ber|jah|ohm|cham|zod|vex|gul|ist)\b.*\b(farm|farming|drop)\b"
+        r"|\b(farm|farming|drop)\b.*\b(rune|runes|high rune|hr|lo|sur|ber|jah|ohm|cham|zod|vex|gul|ist)\b",
+        s
+    ))
+    if _item_farming:
+        return "drop_rate"
     if _has_class and _has_build_ctx:
         return "build_advice"
 

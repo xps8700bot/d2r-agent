@@ -273,11 +273,16 @@
         "sunder"
       ],
       "reference_answer": "[40↑] It is most certainly not \"raining\" sunders\n[19↑] My brother and I just spent the entire evening farming TZ and we ain’t found shit\n[8↑] I just spent 4 hours in a game. Killed 8 or more T5 heralds. 0 sunders\n[3↑] Today I ran TZ Act 1, 2, and 4 and had 7 heralds spawn\n[3↑] I had a unique grand charm drop from a herald today. I was freaking out because i couldnt pick it up and thought my internet was dropping. Fucking gheeds. To me it feels like heralds spawn faster after you 'draw ire' since the patch",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-12",
+          "changes": "Improved mechanics_db stopword filtering, score-gap filtering, orchestrator mechanics-first TL;DR priority for drop_rate intent, added patch consistency statement to sunder fact, fixed strategy_cards stopword-token scoring bug"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 94,
@@ -297,11 +302,16 @@
         "followed"
       ],
       "reference_answer": "[30↑] I have literally never found a soj and have played quite a bit\n[10↑] I hope he does 5000 more without success. Serves him right.\n[8↑] I haven't found an SOJ yet from D2R, and had to trade for the only one I have.\n[5↑] Nope but I havent tried. I think it took me only like 2 or 3 hours to get it from NM Andy on the Switch. Cant believe he's still going at it\n[4↑] Check out Regular Schmuck. He did almost 8000(?) runs and got an SOJ for NM Andy",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-12",
+          "changes": "Updated Andariel SoJ fact with extreme rarity context and patch consistency info"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 28,
@@ -369,11 +379,16 @@
         "there"
       ],
       "reference_answer": "[6↑] Travincal, LK or cows. Running CS Can also be good\n[6↑] Kill lots of shit. That’s the secret.\n[3↑] Arcane Sanctuary is good for farming runes but make sure to kill the ghosts and wraiths over a platform so their loot doesn’t fall off the edge into the void.\n[3↑] The real answer is areas with high density of monsters. Also if you are solely focused on rune drops you will want to reduce the mf you have on your gear and focus on clear speed. Cows, chaos sanctuary, high density tz's, and trav (are good farming spots for runes. Arcane sanctuary is good too becau\n[1↑] I've had really good luck in the Flayer Jungle (because of the monster density) and in the Bloody Foothills. Just leave Harrogath and full clear up to Shenk and Eldritch. Had a Zod drop there in the LoD days when runes were much scarcer.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-12",
+          "changes": "Fixed intent classification for rune farming queries, added High Rune Farming Locations fact, fixed MechanicsFactRecord schema to accept community_consensus evidence_source_type"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 13,

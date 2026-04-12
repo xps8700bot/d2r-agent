@@ -47,7 +47,7 @@ class MechanicsFactRecord(BaseModel):
     source_title: Optional[str] = None
     source_site: str
     source_tier: SourceTier
-    evidence_source_type: Literal["extract", "stub"] = "extract"
+    evidence_source_type: Literal["extract", "stub", "community_consensus"] = "extract"
 
     confidence: Confidence = "med"
     version_scope: VersionScope = Field(default_factory=VersionScope)
