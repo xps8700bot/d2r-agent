@@ -151,6 +151,11 @@ INTENT_RULES: list[tuple[str, list[str]]] = [
     ("mechanics_query", [
         "farm", "怎么farm", "怎么刷", "在哪farm",
         "boss", "怪", "monster", "精英", "区域",
+        # Herald / Sunder / Terror Zone mechanics (RotW 2.5+)
+        "herald", "heralds", "先驱者", "传令官",
+        "sunder", "sunder charm", "sunders", "碎裂护符", "碎裂",
+        "terror zone", "terrorize", "terrorized", "恐怖区域", "恐怖地带",
+        "tz", "terror", "ire",
         "nihlathak", "尼拉萨克", "cows", "奶牛", "chaos sanctuary", "混沌圣殿",
         "baal run", "巴尔跑", "diablo run", "暗黑跑", "mephisto", "梅菲斯托",
         "shenk", "pindle", "巴尔", "刷图效率", "刷图路线",

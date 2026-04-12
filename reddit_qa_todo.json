@@ -241,16 +241,312 @@
         "farm"
       ],
       "reference_answer": "[10↑] RNGesus is angry with you\n[9↑] Heralds suck. Garbage system.\n[5↑] I am SP offline p8, and I get about 2 heralds per Act.\n[3↑] My wife and I found our 5th sunder last night. Terrorized Flayer Jungle yeilded 3 Heralds so we terrorized A1, then A2. Sunder dropped on our 11th Herald of the night. Took about 2 hours.\n[4↑] I had pretty good herald luck yesterday. Ran a game with tz act 1,2 and 4 and ran whatever spawned in between. Got 16 heralds in one game but of course no sunder. lol",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-07",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-12T00:47:54Z",
+          "category": "knowledge_gap+intent_classification",
+          "summary": "(a) Added herald/sunder/terror zone keywords to intent_classifier mechanics_query rule list so Herald questions classify as mechanics_query instead of general. (b) Added 4 Herald/TZ mechanics facts to farming.jsonl covering TZ overview, Herald overview, Sunder drop mechanics, and Herald farming tips. (c) Added Herald farming strategy card to strategy_cards.jsonl. After fix, Herald info surfaces as #1 TL;DR hit.",
+          "regression_result": "tests/ 190 passed, 2 pre-existing UnicodeDecodeError failures unrelated. Regression: reddit_1r4gn0i (warlock fire immunes) passed, reddit_1mgq3cl (fury druid vs zealot) passed."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 14,
         "num_comments": 46,
         "flair": null
+      },
+      "passed_at": "2026-04-12T00:47:54Z"
+    },
+    {
+      "id": "reddit_1sb0934",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1sb0934/its_raining_sunders/",
+      "question": "It's raining sunders\n\nDid they change the sunder drops in the new patch?  \nUntil today i had only found 2 sunder after weeks of terrorizing full games\n\nToday in my first game after the patch i already found 3 sunders in the same game, and i'm still in act 3\n\nDid it change or i just got really lucky?",
+      "question_keywords": [
+        "it's",
+        "raining",
+        "sunders",
+        "change",
+        "sunder"
+      ],
+      "reference_answer": "[40↑] It is most certainly not \"raining\" sunders\n[19↑] My brother and I just spent the entire evening farming TZ and we ain’t found shit\n[8↑] I just spent 4 hours in a game. Killed 8 or more T5 heralds. 0 sunders\n[3↑] Today I ran TZ Act 1, 2, and 4 and had 7 heralds spawn\n[3↑] I had a unique grand charm drop from a herald today. I was freaking out because i couldnt pick it up and thought my internet was dropping. Fucking gheeds. To me it feels like heralds spawn faster after you 'draw ire' since the patch",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 94,
+        "num_comments": 52,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1s10apf",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1s10apf/any_recent_soj_drop_from_nm_andy/",
+      "question": "Any recent SOJ drop from NM Andy?\n\nIf any of you have followed Mr.LlamaSC, you'll have watched him do 5000 runs of Andy NM and not a single SOJ drop!  Has anyone actually found an SOJ from NM Andy since the expansion?",
+      "question_keywords": [
+        "recent",
+        "soj",
+        "drop",
+        "andy",
+        "followed"
+      ],
+      "reference_answer": "[30↑] I have literally never found a soj and have played quite a bit\n[10↑] I hope he does 5000 more without success. Serves him right.\n[8↑] I haven't found an SOJ yet from D2R, and had to trade for the only one I have.\n[5↑] Nope but I havent tried. I think it took me only like 2 or 3 hours to get it from NM Andy on the Switch. Cant believe he's still going at it\n[4↑] Check out Regular Schmuck. He did almost 8000(?) runs and got an SOJ for NM Andy",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 28,
+        "num_comments": 70,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1s96soq",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1s96soq/console_players_how_do_we_stop_consuming_our_demon/",
+      "question": "Console players, how do we stop consuming our demon?\n\nit happens all too often. had a nice helphesto with might and curse on him, ripppp",
+      "question_keywords": [
+        "console",
+        "players",
+        "stop",
+        "consuming",
+        "demon"
+      ],
+      "reference_answer": "[32↑] I just don’t use consume 😅\n[9↑] I don’t know which build you’re using but with echoing strike I don’t find I need to consume to clear all content with ease\n[6↑] Take a second. Face away from bound demon. Hope he doesn't move. Cast goat or whatever and consume back to back really fast.\n[5↑] Plus 1 vote to just not using it anymore. I’ve only done nit a couple times but after last time it was around 100 runs before I got a cursed hephisto or lister (it was lister and he doesn’t even have a good aura and not as good as the one I consumed)\n[4↑] Once I had a keeper, I unbound both the consume and bind skill. One of the drawbacks on console. Still wouldn’t trade my couch and big screen for a computer desk 😁",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 19,
+        "num_comments": 48,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1sc2eb7",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1sc2eb7/asking_for_paladin_shield_advice/",
+      "question": "Asking for paladin shield advice\n\nI got this excep base with 45 res. Is this good enough for phoenix or only spirit? Main hand or cta swap?\n\nI researched other place than reddit, is true that only elite base especially sacred targe or rondache are good enough for phoenix? (Because low block chance on normal and excep base and phoenix is expensive)\n\nAdditional question, is it true that some high end base pursue damage and rating because “all resist is easy to get on paladin” -random guy on internet said?",
+      "question_keywords": [
+        "asking",
+        "paladin",
+        "shield",
+        "advice",
+        "excep"
+      ],
+      "reference_answer": "[7↑] That's a spirit base. I wouldn't put Phoenix or any HR rw in an exceptional base\n[4↑] Spirit sure but I'd def wait for a better base for Phoenix. It's an expensive rw so hard to justify not using an elite base\n[3↑] You should find an elite base by the time you have found all the runes for Phoenix. And if you’re gonna use so many HRs for that it’s best to make sure the base is as good as can be\n[2↑] What a shame that's not elite. Holy shit\n[2↑] Make Spirit and pray for 35 fcr.",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 17,
+        "num_comments": 11,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1ry0nvx",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1ry0nvx/rune_farming/",
+      "question": "Rune Farming\n\nHey All,\n\nIs there specific locations that are better for farming high runes such as Lo or Sur? Im trying to make double dragon on ladder for paladin but can't seem to get them to drop.\n\nThanks!",
+      "question_keywords": [
+        "rune",
+        "farming",
+        "hey",
+        "all",
+        "there"
+      ],
+      "reference_answer": "[6↑] Travincal, LK or cows. Running CS Can also be good\n[6↑] Kill lots of shit. That’s the secret.\n[3↑] Arcane Sanctuary is good for farming runes but make sure to kill the ghosts and wraiths over a platform so their loot doesn’t fall off the edge into the void.\n[3↑] The real answer is areas with high density of monsters. Also if you are solely focused on rune drops you will want to reduce the mf you have on your gear and focus on clear speed. Cows, chaos sanctuary, high density tz's, and trav (are good farming spots for runes. Arcane sanctuary is good too becau\n[1↑] I've had really good luck in the Flayer Jungle (because of the monster density) and in the Bloody Foothills. Just leave Harrogath and full clear up to Shenk and Eldritch. Had a Zod drop there in the LoD days when runes were much scarcer.",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 13,
+        "num_comments": 21,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1rsed0a",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1rsed0a/whats_the_weakest_hell_act_1demon_thats_stronger/",
+      "question": "What's the weakest Hell act 1demon that's stronger than NM Lister?\n\nI'm having fun with my first Warlock and his Lister from Nightmare. He's tanking af but is already struggling with dmg in mid Act2 in Hell, so I'm considering switching to an Act 1hell demon...but who?",
+      "question_keywords": [
+        "what's",
+        "weakest",
+        "hell",
+        "act",
+        "demon"
+      ],
+      "reference_answer": "[19↑] The smith\n[10↑] Random coldplains lady can also be a beast if she has good auras. Then you also have a hottie goth girlfriend to follow you around.\n[4↑] How is he struggling with damage lmao? NM lister will kill everything in hell no problem.\n[3↑] You *are* using defilers, right?\n[1↑] If I die and lose a demon I quickly get someone from cold plains, then go for smith, then use smith to help me run river of flame. Smith can carry you easily to ActIV. I found a goat boi on way to Smith with holy freeze and curse and he beat Baal by himself though it did take a minute.",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 15,
+        "num_comments": 13,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1rz3qt9",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1rz3qt9/do_i_even_bother_with_fortitude_for_merc/",
+      "question": "Do I even bother with Fortitude for Merc?\n\nI've never seen a good base and current have zero Lo runes, but the plan was to save or cube one once I found a good base for my merc.\n\nAnd then I got this and threw an Um rune in initially as a placeholder, but now I'm not sure I even make a Fortitude at all for the merc.  Resists are maxed and Defence is high.  Maybe use for grief or warlock weapon fort instead?\n\nFyi, I'm offline so BER rune for phys DMG reduction is a challenge.",
+      "question_keywords": [
+        "even",
+        "bother",
+        "fortitude",
+        "merc",
+        "i've"
+      ],
+      "reference_answer": "[22↑] Upping merc damage and lifesteal goes a long way to their survivability.\n[8↑] Why not just treachery?\n[2↑] I noticed a major improvement in survivability upgrading from Treachery to Fortitude. Like hitting Emilio with a few rejuvs each P5 Chaos run to none at all at P7. He also does noticeably more damage. That being said, I made a Grief with my first Lo and waited until my second Lo to drop before I mad\n[2↑] Life Leech, high damage, and IAS are the trifecta of keeping a merc alive long term, anytning else comes after you secure those, that's why Trechery is such a solid investment, especially for the price.\n[2↑] Fortitude is just sooooo good. Id still go for that. Life leech is a must for merc tho. If you are lacking a good headpiece give me a PM. Got a extra Andys Visage lying around you can have.",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 39,
+        "num_comments": 41,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1s46d6b",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1s46d6b/found_ohm_cta_or_save_for_enigma/",
+      "question": "Found Ohm. cta or save for enigma?\n\nFound this randomy in tz stony tomb.\n\nI play es warlock.  Have tele staff on switch.  \n\nMy gut says too much hassle as for a lot of stuff where cta would be useful, I need my tele staff.\n\nIm not close to enigma.  I have an ohm and Lo.  Beyond that a couple vex and mal gul.\n\nRealistically i think it makes sense just to wait.  Wondering if others came to similar conclusions.",
+      "question_keywords": [
+        "found",
+        "ohm",
+        "cta",
+        "save",
+        "enigma"
+      ],
+      "reference_answer": "[62↑] If you don't have a CTA, you should make one. Honestly, with the runes you have you're not that close to an Enigma. If you had a Ber or Jah I would say wait. But the CTA is a big boost and used on every character. You could be playing for weeks before getting any step closer to Engima, and the CTA i\n[14↑] Enigma lets you skip mobs. CTA lets you farm them. Practically speaking, CTA should improve your chances of making Enigma.\n[13↑] You are on SSF, make the CTA. It’s a huge improvement\n[4↑] CTA. Warlock doesn’t really need teleport as you should just be full clearing terror zones CTA gives massive survivability boost for you and your merc across all your characters\n[2↑] CTA for SSF, such a huge improvement. Enigma will come when the time is right.",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 121,
+        "num_comments": 88,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1rrw27j",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1rrw27j/countess_run_superstition/",
+      "question": "Countess run superstition\n\nI’ve been playing Diablo since the year 2000 when I was in 7th grade. I played through D1 and quickly went into D2. When LOD released in 2001, my life changed forever. We all know the story. Still to this day the reason I believe I was able to convince my Christian parents to buy me the game was that I was killing the Devil and all my friends parents let them play it too 😂. \n\nThe reason for this post is to see if anyone else has the same superstition as me or if anyone has any Diablo related sup...",
+      "question_keywords": [
+        "countess",
+        "run",
+        "superstition",
+        "playing",
+        "since"
+      ],
+      "reference_answer": "[37↑] Do a science experiment. Do 100 runs where you open the chest, and 100 runs where you don’t. Report back here. I expect the results by end of day.\n[27↑] Who forgets keys and thinks a locked chest has a jah waiting for them in it and will never know because you didn’t have a key on you so you tp to town and get one only to find a cracked item and bolts\n[11↑] I always like to do 1 red portal area in act 5 per difficulty. Idk why, just fun on hardcore 😂\n[8↑] The first year of d2r i was the same but never got anything so I skip now. I always hit the Mephisto chest. Think I got a skiller one time in 26 years of playing lol\n[5↑] Literally me",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 113,
+        "num_comments": 126,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1ruocia",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1ruocia/single_player/",
+      "question": "Single player\n\nHow much faster could I find uniques and all that good stuff on offline single player with max player count compared to online? I just want all the gear I’ve been grinding for on online xD",
+      "question_keywords": [
+        "single",
+        "player",
+        "much",
+        "faster",
+        "find"
+      ],
+      "reference_answer": "[12↑] It's great but you have to build up you strong chars solo, no trading (obviously). Once you're rolling it's great.\n[3↑] I play p5 around 200 mf on hdin and I find alot Few bul kathos Combat 45 life Coa 2soc Shako Few dungos.. bunch of other stuff Pissed they got rid of offline duping I still got like 60 high runes though\n[2↑] For finding uniq/set it won't be that much difference as most of them drop for elite/champions (number of players doesn't affect number of drops from them and only slightly increase drop rates). For runes, runeword bases and ofc exp it's massive. It also have significant impact on bosses, as they do\n[1↑] The main difference, other than latent sunders, is with chests and little monsters. They become maybe 3x as likely to drop something. Most of the benefit occurs at 3/5 players, but even that can hurt your kill speed. Other monsters are far less affected and generally drop better stuff, so any slight",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 10,
+        "num_comments": 11,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1segibo",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1segibo/dummy_needs_help/",
+      "question": "Dummy needs help\n\nHey everyone still new to it all just need help knowing which shield is better. I always have problems switching to new gear because I just don’t know when an item I find is better (made the ralorttal shield but buckler is my current shield in use)",
+      "question_keywords": [
+        "dummy",
+        "needs",
+        "hey",
+        "everyone",
+        "still"
+      ],
+      "reference_answer": "[5↑] Just mainly want a rule of thumb of when to know it’s good to switch\n[4↑] So a good rule of thumb is if youre in the previous difficulty you can rock mf (magic find) gear In normal youre not really punished for low res so if youre farming norm you can kinda wear whatever When you start pushing the next difficulty you want high res or you'll get melted. It looks like you'r\n[3↑] Capping resistance is your first real goal for your character so I would always select gear with that in mind.\n[2↑] If you need the res then ancients pledge is better\n[2↑] When comparing gear. You should check your characters needs. Firstly there are two types of characters in this game. Casters and Physical. Casters need fcr and Physical need attack rating and speed. So ask yourself. Does your character need energy and vitality or Res (resistamces). Idk what your res",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 17,
+        "num_comments": 25,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1shc5hf",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1shc5hf/wth_is_this_rogue_merc_doing_in_the_pit/",
+      "question": "WTH is this rogue merc doing in the pit?\n\nI was surprised to see her fighting off monster in the PIT? First time I ever see that... Is that normal?\n\nhttps://preview.redd.it/gf96gk3kgaug1.png?width=2560&amp;format=png&amp;auto=webp&amp;s=9a4151b210465179f0972717cbe38fe5b28c642c",
+      "question_keywords": [
+        "wth",
+        "rogue",
+        "merc",
+        "doing",
+        "pit"
+      ],
+      "reference_answer": "[2↑] They show up in odd places from time to time. It's not supposed to happen but it's been happening for decades. Rather harmless\n[1↑] Yeah I was thinking of making a post but also had one the other day in black marsh. Kind of cool to see\n[1↑] I've played for a long time and never seen any other characters fighting besides act 5 mercs",
+      "status": "pending",
+      "added_date": "2026-04-11",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 12,
+        "num_comments": 3,
+        "flair": "Question"
       }
     }
   ]
