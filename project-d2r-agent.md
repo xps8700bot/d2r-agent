@@ -344,3 +344,17 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `cbb0dfc`. Push: success.
 - **Benchmark status:** 11 passed, 0 failed, 9 pending.
   Next: `reddit_1s96soq` (console demon consuming) or other pending questions.
+
+### 2026-04-13 — Run: 3 questions passed, 8 strategy cards, intent keywords expanded
+- **Reddit fetch:** Skipped (9 pending >= 5 threshold).
+- **Questions processed (3/3 passed after 1 improvement each):**
+  1. `reddit_1s96soq` — Console Warlock Consume Demon: intent was `general` (no Warlock keywords matched). Fix: added `consume`, `consuming`, `bound demon`, `defiler`, `echoing strike`, `death sigil`, `abyss` to `build_advice` keywords; added `helphesto` typo to `mechanics_query`. Added 3 strategy cards (skip Consume, use Echoing Strike, face-away + controller tips). → **passed**
+  2. `reddit_1sc2eb7` — Paladin shield (excep base for Phoenix vs Spirit): agent gave generic Monarch/Spirit info. Fix: added 3 strategy cards (exceptional = Spirit only, elite for Phoenix, block chance differences). → **passed**
+  3. `reddit_1rsed0a` — Weakest Hell Act 1 demon vs NM Lister: agent gave generic warlock build advice. Fix: added 2 strategy cards (The Smith as best Hell Act 1 demon, NM Lister falloff, Defilers check). → **passed**
+- **Changed files:**
+  - `src/d2r_agent/intent_classifier.py` — Warlock skill keywords in build_advice, helphesto typo in mechanics_query
+  - `data/strategy_cards.jsonl` — +8 strategy cards (3 Consume, 3 paladin shield, 2 bind demon)
+- **Regression:** `reddit_1s7nm7p` (heralds) passed. `reddit_1rixsd7` (magic warlock bind demon) passed. `pytest` 212/215 (3 pre-existing Windows encoding failures, 28/28 intent classifier tests pass).
+- **Commit:** `0063c3d`. Push: success.
+- **Benchmark status:** 14 passed, 0 failed, 6 pending.
+  Next: `reddit_1rz3qt9`, `reddit_1s46d6b`, `reddit_1rrw27j`, `reddit_1ruocia`, `reddit_1segibo`, `reddit_1shc5hf`.
