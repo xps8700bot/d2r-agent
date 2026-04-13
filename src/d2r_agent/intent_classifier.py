@@ -127,6 +127,9 @@ INTENT_RULES: list[tuple[str, list[str]]] = [
         "dealing with immunes", "fire immunes", "cold immunes",
         "lightning immunes", "poison immunes", "physical immunes",
         "hell difficulty", "going into hell", "transitioning to hell",
+        # English — Warlock-specific skill/mechanic phrases (RotW)
+        "consume", "consuming", "bound demon", "bind demon", "defiler",
+        "defilers", "echoing strike", "death sigil", "abyss",
     ]),
     ("patch_change", ["2.", "改动", "patch", "版本", "nerf", "buff", "加强", "削弱"]),
 
@@ -162,7 +165,7 @@ INTENT_RULES: list[tuple[str, list[str]]] = [
         "countess", "女伯爵", "andariel", "安达利尔", "duriel", "都瑞尔",
         "墨菲斯托", "迪亚波罗", "diablo", "mephisto",
         "山克", "皮叔", "暴躁外皮", "pindleskin", "奶牛王", "cow king",
-        "埃尔德里奇", "eldritch", "hephasto", "海法斯特", "碎骨者", "bonebreak",
+        "埃尔德里奇", "eldritch", "hephasto", "helphesto", "海法斯特", "碎骨者", "bonebreak",
         "unique", "暗金", "shako", "小丑帽", "arachnid", "蜘蛛腰带",
         "soj", "约旦之石", "索命戒", "war traveler", "战旅",
         "griffon", "鹰眼", "mara", "玛拉", "andys", "andy", "安达利尔面具",

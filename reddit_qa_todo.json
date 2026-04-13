@@ -331,11 +331,18 @@
         "demon"
       ],
       "reference_answer": "[32↑] I just don’t use consume 😅\n[9↑] I don’t know which build you’re using but with echoing strike I don’t find I need to consume to clear all content with ease\n[6↑] Take a second. Face away from bound demon. Hope he doesn't move. Cast goat or whatever and consume back to back really fast.\n[5↑] Plus 1 vote to just not using it anymore. I’ve only done nit a couple times but after last time it was around 100 runs before I got a cursed hephisto or lister (it was lister and he doesn’t even have a good aura and not as good as the one I consumed)\n[4↑] Once I had a keeper, I unbound both the consume and bind skill. One of the drawbacks on console. Still wouldn’t trade my couch and big screen for a computer desk 😁",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-13T09:06:00Z",
+          "category": "intent_classification+knowledge_gap",
+          "summary": "Added Warlock-specific keywords (consume, consuming, bound demon, defiler, echoing strike, death sigil, abyss) to build_advice intent rule. Added helphesto typo variant to mechanics_query. Created 3 strategy cards for Warlock Consume Demon Console Tips covering: skip Consume, use Echoing Strike, face-away technique, controller button mapping.",
+          "regression_result": "pending"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 19,
@@ -355,11 +362,18 @@
         "excep"
       ],
       "reference_answer": "[7↑] That's a spirit base. I wouldn't put Phoenix or any HR rw in an exceptional base\n[4↑] Spirit sure but I'd def wait for a better base for Phoenix. It's an expensive rw so hard to justify not using an elite base\n[3↑] You should find an elite base by the time you have found all the runes for Phoenix. And if you’re gonna use so many HRs for that it’s best to make sure the base is as good as can be\n[2↑] What a shame that's not elite. Holy shit\n[2↑] Make Spirit and pray for 35 fcr.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-13T09:12:00Z",
+          "category": "knowledge_gap",
+          "summary": "Added 3 strategy cards for paladin shield base selection (exceptional vs elite for Phoenix/Spirit, block chance differences, CTA swap advice). First attempt gave generic Monarch/Spirit info; after adding cards, answer correctly recommends exceptional base for Spirit only and elite base for Phoenix.",
+          "regression_result": "pending"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 17,
@@ -408,11 +422,18 @@
         "demon"
       ],
       "reference_answer": "[19↑] The smith\n[10↑] Random coldplains lady can also be a beast if she has good auras. Then you also have a hottie goth girlfriend to follow you around.\n[4↑] How is he struggling with damage lmao? NM lister will kill everything in hell no problem.\n[3↑] You *are* using defilers, right?\n[1↑] If I die and lose a demon I quickly get someone from cold plains, then go for smith, then use smith to help me run river of flame. Smith can carry you easily to ActIV. I found a goat boi on way to Smith with holy freeze and curse and he beat Baal by himself though it did take a minute.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-13T09:17:00Z",
+          "category": "knowledge_gap",
+          "summary": "Added 2 strategy cards about Warlock Bind Demon choices: The Smith as best Hell Act 1 demon, NM Lister damage falloff and Defiler check, Cold Plains demons with good auras. First attempt gave generic warlock build advice; after adding cards, answer correctly recommends The Smith and Defilers.",
+          "regression_result": "pending"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 15,
