@@ -255,6 +255,11 @@ def classify_intent_rules(q: str) -> str:
         "farm", "farming", "solo", "gearing", "leveling", "debating",
         "build", "spec", "respec", "skill tree", "early hell", "late hell",
         "starter", "beginner", "endgame", "end game",
+        # Mercenary gear priority is a build/gear decision, not a recipe query.
+        "merc", "mercenary", "merc gear", "for merc", "for my merc",
+        # Tradeoff / priority decisions ("do I bother", "is it worth", "save X for Y")
+        # are build_advice even when specific runeword names appear.
+        "bother", "worth it", "is it worth", "priority", "save for",
     }
     _has_class = any(cn in s for cn in _CLASS_NAMES)
     _has_build_ctx = any(bc in s for bc in _BUILD_CONTEXT)

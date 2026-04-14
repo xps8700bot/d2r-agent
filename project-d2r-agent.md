@@ -358,3 +358,16 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `0063c3d`. Push: success.
 - **Benchmark status:** 14 passed, 0 failed, 6 pending.
   Next: `reddit_1rz3qt9`, `reddit_1s46d6b`, `reddit_1rrw27j`, `reddit_1ruocia`, `reddit_1segibo`, `reddit_1shc5hf`.
+
+### 2026-04-14 — Run: 2 questions passed, 6 strategy cards, intent BUILD_CONTEXT extended
+- **Reddit fetch:** Skipped (6 pending >= 5 threshold).
+- **Questions processed (2/2 passed after 1 improvement each):**
+  1. `reddit_1rz3qt9` — "Do I even bother with Fortitude for Merc?" (Warlock, offline, no Lo). Intent was **misclassified as `runeword_recipe`** because the rule matched "grief" keyword first. Fix: extended `intent_classifier._BUILD_CONTEXT` with `merc`, `mercenary`, `bother`, `worth it`, `priority`, `save for` so `_has_class + _has_build_ctx` heuristic correctly maps strategic-tradeoff questions to `build_advice`. Added 3 strategy cards: Merc Gear Priority Trifecta (life-leech/damage/IAS), Fortitude-for-Merc (Treachery→Fortitude upgrade math, Lo-rune sequencing), Lo-rune allocation priority (Grief > Fort-merc > skip Warlock weapon). → **passed**
+  2. `reddit_1s46d6b` — "Found Ohm. CTA or save for Enigma?" (Warlock, tele staff on switch, SSF-ish). Agent classified correctly as `build_advice` but pulled unrelated leveling + Amazon overview cards. Fix: added 3 strategy cards: CTA vs Enigma Ohm-priority decision (rule: hoard Ohm only if Jah AND Ber already in stash), Warlock tele-staff + CTA swap workflow, SSF CTA-always-correct rationale. → **passed**
+- **Changed files:**
+  - `src/d2r_agent/intent_classifier.py` — extended _BUILD_CONTEXT (merc/mercenary/bother/worth it/priority/save for)
+  - `data/strategy_cards.jsonl` — +6 strategy cards (3 merc/Fortitude, 3 CTA/Enigma)
+- **Regression:** `reddit_1s96soq` (consume demon) classifies build_advice, surfaces Warlock cards. `reddit_1sc2eb7` (paladin shield) still returns elite-vs-exceptional guidance. 28/28 intent classifier tests pass. `pytest` 190 passed / 2 pre-existing Windows encoding failures.
+- **Commit:** (see end marker). Push: (see end marker).
+- **Benchmark status:** 16 passed, 0 failed, 4 pending.
+  Next: `reddit_1rrw27j` (Countess superstition), `reddit_1ruocia` (Single player MF), `reddit_1segibo` (Shield base comparison), `reddit_1shc5hf` (rogue merc pit behavior).

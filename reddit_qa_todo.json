@@ -453,11 +453,17 @@
         "i've"
       ],
       "reference_answer": "[22↑] Upping merc damage and lifesteal goes a long way to their survivability.\n[8↑] Why not just treachery?\n[2↑] I noticed a major improvement in survivability upgrading from Treachery to Fortitude. Like hitting Emilio with a few rejuvs each P5 Chaos run to none at all at P7. He also does noticeably more damage. That being said, I made a Grief with my first Lo and waited until my second Lo to drop before I mad\n[2↑] Life Leech, high damage, and IAS are the trifecta of keeping a merc alive long term, anytning else comes after you secure those, that's why Trechery is such a solid investment, especially for the price.\n[2↑] Fortitude is just sooooo good. Id still go for that. Life leech is a must for merc tho. If you are lacking a good headpiece give me a PM. Got a extra Andys Visage lying around you can have.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-14",
+          "category": "knowledge_gap",
+          "note": "Added 3 strategy cards (Merc trifecta, Fortitude-for-Merc, Lo-rune priority). Extended intent_classifier _BUILD_CONTEXT with merc/bother/worth it/priority/save for — fixes misclassification of strategic-tradeoff questions as runeword_recipe when runeword names appear."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 39,
@@ -477,11 +483,17 @@
         "enigma"
       ],
       "reference_answer": "[62↑] If you don't have a CTA, you should make one. Honestly, with the runes you have you're not that close to an Enigma. If you had a Ber or Jah I would say wait. But the CTA is a big boost and used on every character. You could be playing for weeks before getting any step closer to Engima, and the CTA i\n[14↑] Enigma lets you skip mobs. CTA lets you farm them. Practically speaking, CTA should improve your chances of making Enigma.\n[13↑] You are on SSF, make the CTA. It’s a huge improvement\n[4↑] CTA. Warlock doesn’t really need teleport as you should just be full clearing terror zones CTA gives massive survivability boost for you and your merc across all your characters\n[2↑] CTA for SSF, such a huge improvement. Enigma will come when the time is right.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-14",
+          "category": "knowledge_gap",
+          "note": "Added 3 strategy cards (CTA vs Enigma Ohm priority, Warlock tele-staff CTA swap setup, SSF CTA-always-correct). Intent already classified as build_advice; gap was knowledge content for CTA-vs-Enigma tradeoff."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 121,
