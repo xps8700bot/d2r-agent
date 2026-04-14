@@ -1,0 +1,43 @@
+{
+  "ts": "2026-04-14T02:30:00Z",
+  "changed_files": [
+    "src/d2r_agent/intent_classifier.py",
+    "data/strategy_cards.jsonl",
+    "data/memory.jsonl",
+    "reddit_qa_todo.json",
+    "project-d2r-agent.md",
+    "project-runs/2026-04-14_start.json"
+  ],
+  "tests": "190 passed, 2 failed (pre-existing UnicodeDecodeError in tests/test_item_bases_manual.py on Windows, unrelated). 28/28 intent classifier tests pass.",
+  "commit": "e42d723",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1rz3qt9",
+        "question": "Do I even bother with Fortitude for Merc? (Warlock, offline, no Lo, considering Grief or warlock weapon fort alternatives)",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Root cause: intent classifier rule matched 'grief' keyword first and classified as runeword_recipe, causing the agent to answer with irrelevant runeword-base validation nonsense. Fix: extended _BUILD_CONTEXT with merc/mercenary/bother/worth it/priority/save for so class+build_ctx heuristic fires first. Added 3 strategy cards covering merc gear trifecta (leech/damage/IAS), Fortitude vs Treachery upgrade math, and Lo-rune priority (Grief > Fort-merc > skip warlock weapon).",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1s46d6b",
+        "question": "Found Ohm. CTA or save for Enigma? (Warlock, tele staff on switch, SSF-ish, has Ohm+Lo+Vex+Mal+Gul)",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Intent was already build_advice; gap was knowledge content. Added 3 strategy cards: CTA vs Enigma Ohm-priority rule (hoard only if Jah AND Ber already in stash), Warlock tele-staff + CTA swap workflow, SSF CTA-always-correct rationale.",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1s96soq", "reddit_1sc2eb7"],
+    "all_passed": true,
+    "regressions": [],
+    "notes": "Intent classification verified for both (build_advice). Strategy cards still surface. 28/28 intent_classifier_v2 tests pass."
+  },
+  "review_instructions": "No human review needed. 2/2 questions passed after 1 improvement each. 6 new strategy cards, 1 intent_classifier heuristic extension. Benchmark: 16 passed / 0 failed / 4 pending."
+}
