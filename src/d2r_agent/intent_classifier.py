@@ -261,7 +261,14 @@ def classify_intent_rules(q: str) -> str:
         # are build_advice even when specific runeword names appear.
         "bother", "worth it", "is it worth", "priority", "save for",
     }
-    _has_class = any(cn in s for cn in _CLASS_NAMES)
+    # Word-boundary match so short class abbreviations ("sin", "zon", "sorc",
+    # "barb") don't substring-hit unrelated words like "session" / "Amazon" /
+    # "source" / "barbed". Regression fix 2026-04-15: reddit_1s7nm7p (heralds)
+    # was mis-classified as build_advice because "sin" matched "session".
+    _has_class = any(
+        re.search(r"(?<![a-z])" + re.escape(cn) + r"(?![a-z])", s)
+        for cn in _CLASS_NAMES
+    )
     _has_build_ctx = any(bc in s for bc in _BUILD_CONTEXT)
     # Don't let class+farming trigger build_advice when the question is about
     # item/rune farming locations (e.g. "rune farming for paladin").

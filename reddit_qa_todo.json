@@ -513,11 +513,17 @@
         "since"
       ],
       "reference_answer": "[37↑] Do a science experiment. Do 100 runs where you open the chest, and 100 runs where you don’t. Report back here. I expect the results by end of day.\n[27↑] Who forgets keys and thinks a locked chest has a jah waiting for them in it and will never know because you didn’t have a key on you so you tp to town and get one only to find a cracked item and bolts\n[11↑] I always like to do 1 red portal area in act 5 per difficulty. Idk why, just fun on hardcore 😂\n[8↑] The first year of d2r i was the same but never got anything so I skip now. I always hit the Mephisto chest. Think I got a skiller one time in 26 years of playing lol\n[5↑] Literally me",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-15T01:00:00Z",
+          "category": "knowledge_gap",
+          "summary": "Added 3 internal strategy cards: Countess chest vs rune-table debunk, D2 superstitions real-vs-placebo, Countess farming levers-that-matter. Top hit now directly addresses the chest=placebo claim factually; answer passes correctness + completeness + harmlessness."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 113,
@@ -595,6 +601,148 @@
         "score": 12,
         "num_comments": 3,
         "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1rw6ccy",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1rw6ccy/which_is_the_best_for_enigma_i_plan_to_have_one/",
+      "question": "which is the best for enigma? i plan to have one",
+      "question_keywords": [
+        "best",
+        "enigma",
+        "plan"
+      ],
+      "reference_answer": "[71↑] Whatever you think looks cooler when equipped.\n[26↑] Defense matters so little I’d rather not pay higher repair costs for superior items, personally. Unless you’re stacking defense on a merc or something. Quality of life.\n[15↑] Mage plate is the correct answer!\n[11↑] Homie in this same thread one person said repair costs and you said \"but I wanna\", and then someone said do the archon and you said \"but the repair costs\". Just use whichever one you think looks coolest. You could already be teleporting.\n[8↑] I went AP and have NO RAGRETS",
+      "status": "pending",
+      "added_date": "2026-04-15",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 79,
+        "num_comments": 164,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1sgwav0",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1sgwav0/do_you_actually_run_dozens_of_mf_runs_in_a/",
+      "question": "Do you actually run dozens of MF runs in a session and what is your mental illness?\n\nI am a long time d2 player but I haven't been an avid d2 player since the aughts and I was a teen.\n\nthese days I go through short stints of d2, almost like Minecraft phases.\n\nI just can't magic find however. I get bored after my 10th run.\n\nI've counted 50 hell countess runs and I have only gotten up to shael so I'm losing interest there but how do you magic find yourself?\n\nwhat's your preference? do you actually play a few hours a day and MF during that slot? or just do a few runs a day?",
+      "question_keywords": [
+        "actually",
+        "run",
+        "dozens",
+        "runs",
+        "session"
+      ],
+      "reference_answer": "[29↑] I'm the same, 10 runs tops of whatever and then i need to change to another spot. And after 30 minutes i can't stand another second of farming. But I have long ago accepted that i'll probably never find anything amazing, unless with some god given luck.\n[22↑] Are you one of the folks that comments “I’ve played for 25 years and the best item I’ve ever found is shako” ? Also my mental illness is autism\n[14↑] I like to terrorize an entire act and just run the whole thing. Usually A1\n[7↑] Something of note: MF doesn’t effect rune drops. For runes, you need high kill counts. When I MF, I don’t use enigma, I just run whole areas. The addition of terror zones was great for my play style, and it’s even better now with the 30 min windows (albeit frustrating for things like Duriel/Baal). I",
+      "status": "pending",
+      "added_date": "2026-04-15",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 46,
+        "num_comments": 113,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1my2qtj",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1my2qtj/is_the_game_supposed_to_be_this_unbalanced_as_a/",
+      "question": "Is the game supposed to be this unbalanced as a barbarian?\n\nI just recently bought diablo 2 resurrected on sale and picked the barbarian. This is my first ever time playing a diablo game so I didn't really know what to do in terms of skills so I just picked the one that seems useful at the time. Act 1 went pretty well had a bit of trouble with the bosses but it wasn't to bad but as soon as I reached act 2 I was getting steamrolled. Idk what happened, I had to claw my way through every encounter. heard the skill double swing should help so I invested some...",
+      "question_keywords": [
+        "supposed",
+        "unbalanced",
+        "barbarian",
+        "recently",
+        "bought"
+      ],
+      "reference_answer": "[45↑] Ahhh excellent You had your first Duriel beat down Duriel is the first real challenge in the game It will help for you and your mercenary to chug loads of thawing potions before going in. They stack and raise your cold resist (duriel has cold attacks) The barbarian is probably the hardest character.\n[9↑] Like others are saying, with added details: 1. You’re not crazy. Barbs can feel clunky when low level. Feels like every tiny monster becomes a 1-on-1. No major screen clears, and bosses are like chopping metal logs. 2. Stats - The *general* standard is to put every stat point in Vitality *except* wh\n[8↑] Don’t try to balance your stats. You need to pour everything you can into vitality and just enough points into strength and dex to wear the gear you want to. Otherwise, you will go down very quickly.",
+      "status": "pending",
+      "added_date": "2026-04-15",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 30,
+        "num_comments": 65,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1o2cbjm",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1o2cbjm/how_do_these_amazon_gauntlets_compare/",
+      "question": "How do these Amazon gauntlets compare?\n\n[Offline] So I’ve found these 2/20 rare gauntlets some time ago but don’t use them currently because they’re too heavy for my Amazon right now.\n\nThen I saw this recent post with somewhat similar gloves and people seemed to get very excited about them. \n\nhttps://www.reddit.com/r/D2R_Marketplace/s/YqBRpsg5r5\n\nWhich would be generally better in your opinion?",
+      "question_keywords": [
+        "amazon",
+        "gauntlets",
+        "compare",
+        "offline",
+        "found"
+      ],
+      "reference_answer": "[9↑] Depends on if you’re needing mana steal or Fire resistance. They’re both very solid gloves.. if you can use the Resistances and not the leech, then the Skull touch seems obvious. But if Fire is of no concern and you’d like more sustain, the Mana leech is very strong\n[7↑] Shame it's not lightning resist.\n[7↑] The one with the strength and dex is a million times better than the dual leech one\n[2↑] You wana just ignore anything that’s not a desired affix. First one is 2/20/3ml. 3 points. So avg. nothing special. Maybe a half point for pr? Self use or early ladder trade. Second pair are 2/20/7str/11dex/fr24. 4.5+ points. Very nice and valuable. The gap in chance between getting 3 nice stats and\n[2↑] I suggest you use silkeave boots for mana issue. Maek is what majes the difference. I even have a Phoenix shield on swap but rarely use it because it take a too long",
+      "status": "pending",
+      "added_date": "2026-04-15",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 22,
+        "num_comments": 15,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1sbfpmm",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1sbfpmm/my_main_gripe_with_rotw_are_the_new_mechanics/",
+      "question": "My main gripe with RotW are the new mechanics that interfere with your real life\n\nLike many, I logged back on to D2 to check out the new content, for the first time since 2011.\n\nIt was fun. The warlock is OP AF, or course. And I'm sure they will tone him down. But he is fun, as a character. I hope he remains fun and playable after his much needed nerf hammers.\n\nI also like the idea of terror zones (I know they're not new, but they're new for me) and incentivizing you to farm different areas. I like the new uber ancients and their jewel drops, sunder charms and how they open u...",
+      "question_keywords": [
+        "main",
+        "gripe",
+        "rotw",
+        "new",
+        "mechanics"
+      ],
+      "reference_answer": "[38↑] It front loads the main grind. Instead of finding a sunder charm to enable you to do end game content, you're restricted from enjoying most builds until you do a 200+ hour grind to find a sunder charm that has a 70%+ chance of not rolling the element you need. And that grind requires numerous high-c\n[11↑] I just want regular sunder charms back lol. Don’t remove Latent, but bring back older sunder. Single player Hell is wayyyyy too long of a Lower Kurast farm for Infinity because before that I can barely hold my own at Chaos, let alone farm Heralds. If I had a sunder charm, I could stand my own to far\n[10↑] I agree with this. I have limited time, so dedicating hours to get multiple level 5 heralds isn’t viable most days and I play offline so I can’t trade for one Would be great if level 1 heralds had a chance to drop or they increased herald spawn rates",
+      "status": "pending",
+      "added_date": "2026-04-15",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 72,
+        "num_comments": 50,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1rh09pp",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1rh09pp/after_warlock_i_cant_play_fishymancer_anymore/",
+      "question": "After Warlock, I can't play Fishymancer anymore\n\n...and it doesn't even have much to do with how powerful a bound demon is for a demon lock. The most important gameplay difference is...death mark.\n\nBeing able to send minions to wherever you need them \\*instantly\\* is simply on another level in terms of quality of \"life\". That and...defiler AoE damage. Incredible.\n\nI wish instead of the attract curse that we have, we could plant down a flag/waypoint where minions are supposed to go. Doesn't need to be teleport, but get them there without ME tel...",
+      "question_keywords": [
+        "after",
+        "warlock",
+        "can't",
+        "play",
+        "fishymancer"
+      ],
+      "reference_answer": "[32↑] Im actually on the opposite side - switched to fishymancer after trying demon lock :D I dont know - in a way its fitting for the undead summons to be a mindless horde just attacking whats in front of them? At least IMO.\n[13↑] Would love a bind undead for necro\n[3↑] They should just make summons/minions focus on cursed monsters. Curses should also become more useful, but I don't know how that looks. Decrep and amp damage are already used on every summon build. Lower resist is good for poison. The rest are useless or meh at best.\n[5↑] I haven't fully tested out warlocks summons, but although powerful, the summons are quite limited isn't it? I still like to have a whole pack of minions attacking stuff. But yeah, if I could control them to target something it really would help a lot. Necro's curses are still really OP. I used to al",
+      "status": "pending",
+      "added_date": "2026-04-15",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 62,
+        "num_comments": 40,
+        "flair": null
       }
     }
   ]
