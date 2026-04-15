@@ -371,3 +371,45 @@ daily automated runs — not the project's own development history (see
 - **Commit:** (see end marker). Push: (see end marker).
 - **Benchmark status:** 16 passed, 0 failed, 4 pending.
   Next: `reddit_1rrw27j` (Countess superstition), `reddit_1ruocia` (Single player MF), `reddit_1segibo` (Shield base comparison), `reddit_1shc5hf` (rogue merc pit behavior).
+
+### 2026-04-15 — Run: 1 question passed + regression-driven classifier fix, 6 new pending
+- **Reddit fetch:** Success (4 pending was below threshold). Used `curl` +
+  `.json` endpoints: `r/diablo2resurrected/top.json?t=month` +
+  `search.json?q={how+do,best,build}` → 6 new entries via
+  `scripts/reddit_collect.py`: `1rw6ccy` (best base for Enigma), `1sgwav0`
+  (MF run session mental-illness discussion), `1my2qtj` (barbarian
+  unbalanced?), `1o2cbjm` (Amazon gauntlets 2/20 compare), `1sbfpmm` (RotW
+  mechanics life-interference gripe), `1rh09pp` (Warlock vs Fishymancer
+  comfort).
+- **Questions processed (1/1 passed after 1 improvement):**
+  1. `reddit_1rrw27j` — "Countess run superstition" (does opening the chest
+     affect rune drops?). Classifier routed correctly to `drop_rate`, but
+     no strategy card addressed the superstition framing — agent returned
+     generic Countess rune-table info without touching the chest question.
+     Fix: 3 internal strategy cards — (a) Countess chest vs rune-table
+     debunk (chest is a separate roll, opening it does NOT affect the
+     special rune drop), (b) D2 superstitions real-vs-placebo (chest myth,
+     area re-entry myth, class-bias myth, town-portal myth; real
+     techniques: Meph moat, /players N, MF on killing blow), (c) Countess
+     farming levers-that-matter (Hell/players/runs-per-hour vs
+     chest/direction/class). Top strategy hit now directly answers the
+     placebo claim factually. → **passed**
+- **Regression fix (bonus):** Initial regression sample `reddit_1s7nm7p`
+  (heralds) revealed the question had been mis-routing to `build_advice`
+  instead of `mechanics_query` since the e42d723 change. Root cause: the
+  `_CLASS_NAMES` detection used plain substring match, so short
+  abbreviations "sin"/"zon"/"sorc"/"barb" matched unrelated words like
+  "session"/"Amazon"/"source". Fixed by switching to word-boundary regex.
+  Post-fix: heralds correctly routes to `mechanics_query` and surfaces
+  herald/TZ/sunder facts; all 6 tracked-passed questions re-verified
+  (`1rrw27j`, `1rz3qt9`, `1s46d6b`, `1s7nm7p`, `1s96soq`, `1r4gn0i`).
+- **Changed files:**
+  - `src/d2r_agent/intent_classifier.py` — `_CLASS_NAMES` word-boundary match
+  - `data/strategy_cards.jsonl` — +3 Countess superstition cards
+  - `data/memory.jsonl` — agent-written run memories
+- **Tests:** `pytest` 212 passed, 3 deselected (pre-existing Windows cp1252
+  fixture encoding failures, unrelated). 28/28 intent classifier tests pass.
+- **Commit:** `75ddfe3`. Push: success.
+- **Benchmark status:** 17 passed, 0 failed, 9 pending (26 total).
+  Next: `reddit_1ruocia` (SP MF), `reddit_1segibo` (shield base),
+  `reddit_1shc5hf` (rogue merc pit), plus 6 freshly collected.

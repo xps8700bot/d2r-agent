@@ -1,0 +1,34 @@
+{
+  "ts": "2026-04-15T02:05:00Z",
+  "changed_files": [
+    "src/d2r_agent/intent_classifier.py",
+    "data/strategy_cards.jsonl",
+    "data/memory.jsonl",
+    "reddit_qa_todo.json",
+    "project-runs/2026-04-15_start.json"
+  ],
+  "tests": "212 passed, 3 deselected (pre-existing Windows cp1252 fixture-encoding failures in tests/test_gems.py + tests/test_item_bases_manual.py — unrelated to this run). 28/28 intent_classifier tests pass.",
+  "commit": "75ddfe3",
+  "reddit_fetch": "success",
+  "reddit_fetch_tool": "curl",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1rrw27j",
+        "question": "Countess run superstition — does opening the chest affect rune drops? what other D2 superstitions do players have?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Gap was knowledge content + nothing surfaced for 'superstition / chest' framing. Agent's baseline answer gave generic Countess rune-table info without addressing the chest-superstition question. Added 3 internal strategy cards: (a) Countess chest vs rune-table debunk (chest is independent from the special rune roll), (b) D2 superstitions real-vs-placebo (chest myth, area re-entry myth, class-bias myth, town-portal myth, vs real techniques Meph moat + /players N + MF on killing blow), (c) Countess rune farming levers-that-matter (Hell/players/runs-per-hour vs chest/direction/class). Top strategy hit now directly addresses the chest=placebo claim factually.",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1s7nm7p", "reddit_1s96soq"],
+    "all_passed": true,
+    "regressions": [],
+    "notes": "reddit_1s7nm7p (heralds) INITIALLY regressed: the class+build_ctx heuristic mis-routed it to build_advice instead of mechanics_query because substring 'sin' matched 'session' (class abbreviation for assassin). Root-caused and fixed by switching _CLASS_NAMES detection to word-boundary regex. Post-fix, heralds question correctly routes to mechanics_query and surfaces herald/TZ/sunder facts. reddit_1s96soq (consume demon) still routes to build_advice and surfaces Warlock-consume strategy cards as expected. All 6 tracked passed questions (1rrw27j, 1rz3qt9, 1s46d6b, 1s7nm7p, 1s96soq, 1r4gn0i) verified on post-fix classifier."
+  },
+  "review_instructions": "No human review required. 1/1 question passed after 1 improvement. Side-effect: fixed a pre-existing classifier bug where short class-name abbreviations did substring match (found via regression sampling, not via failing tests). Benchmark: 17 passed / 0 failed / 9 pending (26 total). 6 new pending questions collected via curl from r/diablo2resurrected top+search endpoints."
+}
