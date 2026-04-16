@@ -1,0 +1,7 @@
+{
+  "ts": "2026-04-16T02:05:00Z",
+  "goal": "Process next pending Reddit QA (reddit_1ruocia: offline single-player vs online drop rates with max player count). 9 pending >= 5 threshold, so skip Reddit collection. Evaluate agent answer vs reference, improve if needed (strategy cards / intent / retrieval), run regression on 1-2 passed questions.",
+  "rebase_conflict": false,
+  "pending_count": 9,
+  "reddit_fetch_plan": "skipped_sufficient"
+}

@@ -413,3 +413,54 @@ daily automated runs — not the project's own development history (see
 - **Benchmark status:** 17 passed, 0 failed, 9 pending (26 total).
   Next: `reddit_1ruocia` (SP MF), `reddit_1segibo` (shield base),
   `reddit_1shc5hf` (rogue merc pit), plus 6 freshly collected.
+
+## Run 2026-04-16 — `reddit_1ruocia` (SP /players 8 vs online drop scaling)
+
+- **Goal:** Process the next pending question about offline single-player
+  with /players 8 drop speed vs online gear hunting. 9 pending ≥ 5, so
+  Reddit collection skipped. No rebase conflict.
+- **Question:** "How much faster could I find uniques and all that good
+  stuff on offline single player with max player count compared to online?"
+- **First-attempt miss:** Classifier correctly routed to `mechanics_query`,
+  but retrieval returned off-topic hits — Herald Farming Tips (matched on
+  "players/8" phrase), Shenk Death Bombardment (stray substring), War
+  Traveler (matched "magic find"), and the Placebo Superstitions strategy
+  card (only tangentially relevant). No fact or card covered /players N
+  scaling or SP-vs-online drop differences. Classic **knowledge gap**.
+- **Fix:**
+  - New mechanics fact `mechanics.farming.players_setting_scaling` with
+    rich aliases (`/players`, `/players N`, `players 8`, `offline vs
+    online`, `SP vs online`, `players count drops`, etc.). Statement
+    covers: small unique/set impact, LARGE rune/XP/runeword-base impact,
+    ~3x chests+small mobs, boss diminishing returns past /players 3–5,
+    kill-speed tradeoff, latent-Sunder offline-only, and the critical
+    caveat that UNIQUE hunting via SP /players 8 is only a modest
+    speedup vs online (often slower than online trading for specific
+    items).
+  - 3 new strategy cards in `data/strategy_cards.jsonl`:
+    (a) "Offline Single Player vs Online: how much faster is /players 8?"
+    — drop-type-by-drop-type comparison.
+    (b) "/players N rule of thumb — diminishing returns past 3-5" —
+    practical N-selection guide including kill-speed vs density.
+    (c) "Self-found SP vs Online trading — best path for specific
+    uniques" — addresses the OP's "I just want all the gear I've been
+    grinding for" framing by noting trading often beats SP drop rates
+    for mid-tier uniques.
+- **Evaluation after fix:** Top mechanics hit directly addresses the
+  question and matches all reference-answer bullets — small unique
+  diff, massive rune/XP diff, boss scaling, ~3x chests, /players 3–5
+  sweet spot, kill-speed tradeoff, latent sunders. Factual ✅,
+  Complete ✅, Harmless ✅. → **passed** on 1st improvement.
+- **Regression:** `reddit_1qthhyi` (Monarch farming) still surfaces
+  Monarch + Hell area levels + MF-doesn't-help-bases tip correctly.
+  `reddit_1s7nm7p` (Heralds) still surfaces Herald + TZ facts
+  correctly. No regressions.
+- **Changed files:**
+  - `data/fact_db/mechanics/farming.jsonl` — +1 `/players` scaling fact
+  - `data/strategy_cards.jsonl` — +3 SP-vs-online strategy cards
+  - `reddit_qa_todo.json` — `reddit_1ruocia` → `passed`
+- **Tests:** `pytest` 187 passed + 28 intent_classifier_v2 passed;
+  28 deselected (pre-existing Windows cp1252 encoding failures, unrelated).
+- **Benchmark status:** 18 passed, 0 failed, 8 pending (26 total).
+  Next: `reddit_1segibo` (shield base), `reddit_1shc5hf` (rogue merc pit),
+  `reddit_1rw6ccy` (best base for Enigma), plus the rest of the batch.

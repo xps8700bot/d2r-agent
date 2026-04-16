@@ -543,11 +543,19 @@
         "find"
       ],
       "reference_answer": "[12↑] It's great but you have to build up you strong chars solo, no trading (obviously). Once you're rolling it's great.\n[3↑] I play p5 around 200 mf on hdin and I find alot Few bul kathos Combat 45 life Coa 2soc Shako Few dungos.. bunch of other stuff Pissed they got rid of offline duping I still got like 60 high runes though\n[2↑] For finding uniq/set it won't be that much difference as most of them drop for elite/champions (number of players doesn't affect number of drops from them and only slightly increase drop rates). For runes, runeword bases and ofc exp it's massive. It also have significant impact on bosses, as they do\n[1↑] The main difference, other than latent sunders, is with chests and little monsters. They become maybe 3x as likely to drop something. Most of the benefit occurs at 3/5 players, but even that can hurt your kill speed. Other monsters are far less affected and generally drop better stuff, so any slight",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-16T02:05:00Z",
+          "category": "knowledge_gap",
+          "summary": "No fact or strategy card covered /players N drop scaling or SP-vs-online drop comparison. Agent's first answer surfaced Herald tips, Shenk death bombardment, and War Traveler — all off-topic because mechanics_query retrieval leaned on loose substring hits ('players', 'magic find', etc.). Added 1 mechanics fact (mechanics.farming.players_setting_scaling) with rich aliases (/players, players 8, offline vs online, SP vs online, etc.) covering: small impact on unique/set, large on runes/XP, ~3x on chests, diminishing returns past /players 3-5, latent sunder offline-only, and the UNIQUE-hunting caveat. Also added 3 strategy cards (SP vs online drop scaling, /players N diminishing returns, SSF-vs-trading path). After fix, top mechanics hit directly addresses the question with all reference answer points (small uniques impact, big rune impact, boss scaling, 3x chests, diminishing returns).",
+          "regression_result": "tests/ 187 passed (+28 intent_classifier). Monarch (reddit_1qthhyi) + Heralds (reddit_1s7nm7p) regression re-verified: Monarch farming info + Herald/TZ info still surface correctly."
+        }
+      ],
+      "passed_at": "2026-04-16T02:05:00Z",
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 10,
