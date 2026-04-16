@@ -1,0 +1,34 @@
+{
+  "ts": "2026-04-16T02:10:00Z",
+  "changed_files": [
+    "data/fact_db/mechanics/farming.jsonl",
+    "data/strategy_cards.jsonl",
+    "reddit_qa_todo.json",
+    "project-d2r-agent.md",
+    "project-runs/2026-04-16_start.json"
+  ],
+  "tests": "187 passed + 28 intent_classifier_v2 passed; 28 deselected (pre-existing Windows cp1252 fixture-encoding failures in tests/test_gems.py + tests/test_item_bases_manual.py — unrelated to this run).",
+  "commit": "a737080",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1ruocia",
+        "question": "How much faster could I find uniques on offline single player with max player count (/players 8) compared to online?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Knowledge gap: no fact or strategy card covered /players N drop scaling or SP-vs-online drop comparison. First attempt surfaced off-topic Herald/Shenk/War-Traveler hits via loose substring matches. Added 1 mechanics fact (mechanics.farming.players_setting_scaling) with rich aliases and 3 strategy cards (SP vs online scaling, /players N diminishing returns, SSF-vs-trading for uniques). After fix, top mechanics hit directly addresses all reference-answer points: small unique/set impact, large rune/XP impact, ~3x chests, boss diminishing returns past /players 3-5, kill-speed tradeoff, latent sunders.",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1qthhyi", "reddit_1s7nm7p"],
+    "all_passed": true,
+    "regressions": [],
+    "notes": "Monarch farming question still surfaces Monarch item fact + Hell area-level Monarch-base farming strategy card + MF-doesn't-help-whites tip. Herald question still surfaces Herald + TZ mechanics facts. New /players fact has high aliases overlap with these queries but does not outrank the more specific matches, so no regressions."
+  },
+  "review_instructions": "No human review required. 1/1 question passed after 1 improvement. Benchmark: 18 passed / 0 failed / 8 pending (26 total). Note: the new mechanics fact includes a subjective-but-community-supported claim that online trading is often faster than SP /players 8 for specific unique hunts — this matches reference answer [12↑] but is a strategy opinion, not a hard mechanic; acceptable as community_consensus."
+}
