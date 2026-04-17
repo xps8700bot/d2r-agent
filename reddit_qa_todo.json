@@ -575,17 +575,25 @@
         "still"
       ],
       "reference_answer": "[5↑] Just mainly want a rule of thumb of when to know it’s good to switch\n[4↑] So a good rule of thumb is if youre in the previous difficulty you can rock mf (magic find) gear In normal youre not really punished for low res so if youre farming norm you can kinda wear whatever When you start pushing the next difficulty you want high res or you'll get melted. It looks like you'r\n[3↑] Capping resistance is your first real goal for your character so I would always select gear with that in mind.\n[2↑] If you need the res then ancients pledge is better\n[2↑] When comparing gear. You should check your characters needs. Firstly there are two types of characters in this game. Casters and Physical. Casters need fcr and Physical need attack rating and speed. So ask yourself. Does your character need energy and vitality or Res (resistamces). Idk what your res",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-17T09:05:00Z",
+          "category": "intent_classification+knowledge_gap",
+          "summary": "(a) Added gear evaluation heuristic in intent_classifier: regex detects patterns like \"which X better\", \"when to switch\", \"how do I know when better\" and routes to build_advice, overriding incidental runeword keyword match. (b) Added 2 strategy cards: beginner gear evaluation (resistance cap priority, caster vs physical, defense vs res tradeoffs) and Ancients Pledge early shield guide. (c) Fixed _compose_answer to not show strong-fact stub when strategy cards provide content.",
+          "regression_result": "215 passed, 0 failed."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 17,
         "num_comments": 25,
         "flair": "Question"
-      }
+      },
+      "passed_at": "2026-04-17T09:05:00Z"
     },
     {
       "id": "reddit_1shc5hf",
@@ -599,17 +607,25 @@
         "pit"
       ],
       "reference_answer": "[2↑] They show up in odd places from time to time. It's not supposed to happen but it's been happening for decades. Rather harmless\n[1↑] Yeah I was thinking of making a post but also had one the other day in black marsh. Kind of cool to see\n[1↑] I've played for a long time and never seen any other characters fighting besides act 5 mercs",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-11",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-17T09:15:00Z",
+          "category": "intent_classification+knowledge_gap",
+          "summary": "(a) Added curiosity/observation heuristic in intent_classifier: regex detects \"is that normal\", \"never seen before\", \"first time I ever see\" patterns and routes to general intent, preventing mechanics_query from dominating with irrelevant DB hits. (b) Added NPC merc bug strategy card describing the decades-old pathfinding bug. (c) Broadened strategy card search to all intents (not just 4). (d) Added aliases field to strategy card scoring haystack. (e) Changed mechanics_query composition to always include top strategy card.",
+          "regression_result": "215 passed, 0 failed."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 12,
         "num_comments": 3,
         "flair": "Question"
-      }
+      },
+      "passed_at": "2026-04-17T09:15:00Z"
     },
     {
       "id": "reddit_1rw6ccy",
@@ -621,17 +637,25 @@
         "plan"
       ],
       "reference_answer": "[71↑] Whatever you think looks cooler when equipped.\n[26↑] Defense matters so little I’d rather not pay higher repair costs for superior items, personally. Unless you’re stacking defense on a merc or something. Quality of life.\n[15↑] Mage plate is the correct answer!\n[11↑] Homie in this same thread one person said repair costs and you said \"but I wanna\", and then someone said do the archon and you said \"but the repair costs\". Just use whichever one you think looks coolest. You could already be teleporting.\n[8↑] I went AP and have NO RAGRETS",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-15",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-17T09:20:00Z",
+          "category": "intent_classification+knowledge_gap",
+          "summary": "(a) Extended gear eval heuristic to match \"which X best\" and \"best base/armor/shield\" patterns, routing to build_advice. (b) Added Enigma base armor selection strategy card: Mage Plate vs Archon Plate vs Dusk Shroud, community consensus on defense irrelevance, Str req tradeoffs, repair costs.",
+          "regression_result": "215 passed, 0 failed. Regressions: Ohm/CTA (reddit_1s46d6b) still correct, Monarch (reddit_1qthhyi) still correct."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 79,
         "num_comments": 164,
         "flair": null
-      }
+      },
+      "passed_at": "2026-04-17T09:20:00Z"
     },
     {
       "id": "reddit_1sgwav0",

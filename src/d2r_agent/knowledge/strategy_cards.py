@@ -100,6 +100,7 @@ def search_strategy_cards(user_query: str, path: str, limit: int = 3) -> list[St
             nugget,
             " ".join(obj.get("tags") or []),
             " ".join(obj.get("title_path") or []),
+            " ".join(obj.get("aliases") or []),
         ]).lower()
 
         score = 0

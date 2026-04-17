@@ -282,6 +282,41 @@ def classify_intent_rules(q: str) -> str:
     if _has_class and _has_build_ctx:
         return "build_advice"
 
+    # Heuristic: gear evaluation / item comparison questions.
+    # Patterns like "which shield is better", "when should I switch gear",
+    # "how do I know when an item is better" are build_advice even when a
+    # runeword name appears incidentally (e.g. "I made Ancient's Pledge but
+    # is my buckler better?").  Must precede the keyword loop so "runeword"
+    # doesn't steal the classification.
+    _GEAR_EVAL_RE = re.compile(
+        r"which\b.{0,30}\b(better|best)"
+        r"|when\b.{0,20}\bswitch"
+        r"|is\b.{0,30}\bbetter\s+than"
+        r"|how\s+(do|can)\s+I\s+know\b.{0,30}\bbetter"
+        r"|how\s+to\s+(compare|evaluate|tell)\b.{0,20}\b(gear|item|equip|shield|armor|weapon)"
+        r"|rule\s+of\s+thumb.{0,20}\b(gear|switch|equip|item)"
+        r"|best\s+(base|armor|shield|weapon|helm)\b",
+        re.I,
+    )
+    if _GEAR_EVAL_RE.search(s):
+        return "build_advice"
+
+    # Heuristic: curiosity / observation questions.
+    # Patterns like "is that normal?", "never seen that before", "first time I
+    # ever see" indicate the user is asking about a visual quirk or trivia, not
+    # a mechanics query.  Route to general so strategy cards (which cover known
+    # bugs and trivia) get priority over irrelevant mechanics DB hits.
+    _CURIOSITY_RE = re.compile(
+        r"is\s+th(at|is)\s+normal"
+        r"|never\s+seen\s+th(at|is)\s+before"
+        r"|first\s+time\s+I\s+(ever\s+)?see"
+        r"|has\s+anyone\s+(else\s+)?seen\s+this"
+        r"|what\s+is\s+th(at|is)\b.{0,20}\bdoing",
+        re.I,
+    )
+    if _CURIOSITY_RE.search(s):
+        return "general"
+
     for intent, kws in INTENT_RULES:
         for kw in kws:
             kw_lower = kw.lower()

@@ -215,7 +215,7 @@ def _compose_answer(
         for s in strategy_tldr[:3]:
             tldr.append(s)
 
-    if retrieval_needed and not evidence:
+    if retrieval_needed and not evidence and not strategy_tldr:
         tldr.append("这是强事实类问题:我需要从白名单资料站检索后才能给出具体数值/配方/限制。")
         tldr.append("当前 MVP 只生成检索计划与证据入口,不会凭空编造具体数据。")
         confidence = "low"
@@ -381,10 +381,11 @@ def answer(
     ctx = _merge_ctx(gap.default_assumptions, user_ctx, current_date=current_date)
     events.append({"step": "ctx_merge", "input": {"defaults": gap.default_assumptions, "user_ctx": user_ctx}, "output": ctx})
 
-    # Strategy KB: for build questions, surface one actionable nugget first.
+    # Strategy KB: always search — curated cards may provide the best answer
+    # for niche / trivia / cross-intent questions.
     strategy_hits_obj = []
     strategy_tldr: list[str] = []
-    if gap.intent in {"build_advice", "build_compare", "drop_rate", "mechanics_query"}:
+    if True:
         sh = search_strategy_cards(user_query, path="data/strategy_cards.jsonl", limit=4)
         for h in sh:
             strategy_hits_obj.append({"topic": h.topic, "source_url": h.source_url, "title_path": h.title_path})
@@ -708,10 +709,11 @@ def answer(
             for h in mechanics_hits[:3]:
                 r = h.record
                 tldr.append(f"**{r.canonical_name}**: {r.statement}")
-            # When mechanics hits are strong (top score >= 100), strategy cards are
-            # likely noise (generic "drop rate" matches). Skip them.
-            top_score = mechanics_hits[0].score if mechanics_hits else 0
-            if strategy_tldr and top_score < 100:
+            # Always surface the top strategy card if available — curated
+            # strategy cards often provide the best direct answer for niche
+            # or non-numeric questions even when mechanics hits score high
+            # on generic keyword overlap.
+            if strategy_tldr:
                 tldr.append(strategy_tldr[0])
         elif strategy_tldr:
             for s in strategy_tldr[:2]:
