@@ -464,3 +464,40 @@ daily automated runs — not the project's own development history (see
 - **Benchmark status:** 18 passed, 0 failed, 8 pending (26 total).
   Next: `reddit_1segibo` (shield base), `reddit_1shc5hf` (rogue merc pit),
   `reddit_1rw6ccy` (best base for Enigma), plus the rest of the batch.
+
+## 2026-04-17 Run — 3/3 passed (commit b9fdc26)
+
+- **Questions processed:**
+  1. `reddit_1segibo` — "Dummy needs help: which shield is better (Ancient's Pledge
+     vs buckler), when to switch gear?" → **passed** (1 improvement). Root cause:
+     "runeword" keyword hijacked intent to `runeword_recipe`. Fix: added gear eval
+     heuristic ("which X better/best" → `build_advice`), 2 strategy cards (beginner
+     gear evaluation + Ancient's Pledge guide), fixed `_compose_answer` to skip
+     strong-fact stub when strategy cards provide content.
+  2. `reddit_1shc5hf` — "WTH is this rogue merc doing in the pit? Is that normal?"
+     → **passed** (1 improvement). Root cause: "monster" keyword triggered
+     `mechanics_query` with irrelevant DB hits. Fix: added curiosity heuristic
+     ("is that normal" → `general`), NPC merc bug strategy card, broadened strategy
+     card search to all intents, added `aliases` field to scoring haystack.
+  3. `reddit_1rw6ccy` — "Which is the best base for Enigma?" → **passed**
+     (1 improvement). Root cause: same "runeword" keyword issue. Fix: extended
+     gear eval regex to match "which X best" + "best base/armor", added Enigma
+     base armor selection strategy card.
+- **Regression:** 4 passed questions re-verified: `reddit_1rixsd7` (bind demon),
+  `reddit_1rx3wei` (runeword completion), `reddit_1s46d6b` (Ohm CTA), `reddit_1qthhyi`
+  (Monarch). All still return correct top results. No regressions.
+- **Key architectural changes:**
+  - Strategy card search now runs for ALL intents (was limited to 4)
+  - `aliases` field now contributes to strategy card scoring
+  - Two new intent classifier heuristics: gear eval + curiosity/observation
+  - `mechanics_query` composition always surfaces top strategy card
+- **Changed files:**
+  - `src/d2r_agent/intent_classifier.py` — gear eval + curiosity heuristics
+  - `src/d2r_agent/knowledge/strategy_cards.py` — aliases in scoring haystack
+  - `src/d2r_agent/orchestrator.py` — broadened strategy search, composition fixes
+  - `data/strategy_cards.jsonl` — +4 strategy cards
+  - `reddit_qa_todo.json` — 3 questions → `passed`
+- **Tests:** 215 passed, 0 failed, 0.82s.
+- **Benchmark status:** 21 passed, 0 failed, 5 pending (26 total).
+  Next: `reddit_1sgwav0`, `reddit_1my2qtj`, `reddit_1o2cbjm`, `reddit_1sbfpmm`,
+  `reddit_1rh09pp`.
