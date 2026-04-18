@@ -501,3 +501,33 @@ daily automated runs — not the project's own development history (see
 - **Benchmark status:** 21 passed, 0 failed, 5 pending (26 total).
   Next: `reddit_1sgwav0`, `reddit_1my2qtj`, `reddit_1o2cbjm`, `reddit_1sbfpmm`,
   `reddit_1rh09pp`.
+
+### 2026-04-18
+
+- **Questions processed (3/3 passed, 1 improvement each):**
+  1. `reddit_1my2qtj` — Barbarian unbalanced / Duriel fight → **passed**.
+     Added Duriel fight tips card (thawing potions, cold resist, TP trick) and
+     Barbarian beginner difficulty card (hardest starting class). Optimized
+     aliases with bigram-matching phrases to outrank generic maxroll guides.
+  2. `reddit_1sgwav0` — MF farming habits/motivation → **passed**.
+     Added MF farming session tips card (run frequency, rotation, bursts).
+     Fixed orchestrator to surface strategy cards in mechanics-intent answers
+     (magic_find_rule path previously bypassed strategy cards entirely).
+  3. `reddit_1o2cbjm` — Amazon gauntlets comparison → **passed**.
+     Added rare glove evaluation card (2/20 gauntlets, affix point system,
+     STR/DEX vs leech).
+- **Regression check:** `reddit_1rw6ccy` (Enigma base), `reddit_1rx3wei`
+  (runeword completion) — both passed, no degradation.
+- **Key architectural change:** Orchestrator now includes top strategy card
+  in mechanics-intent answers (magic_find_rule, treasure_class_rule, etc.).
+  Previously these intents only showed mechanics reasoning output.
+- **Changed files:**
+  - `src/d2r_agent/orchestrator.py` — strategy card surfacing in mechanics answers
+  - `data/strategy_cards.jsonl` — +5 strategy cards (Duriel, Barb beginner,
+    MF farming, rare glove eval + memory.jsonl from trace logging)
+  - `reddit_qa_todo.json` — 3 questions → `passed`
+- **Tests:** 212 passed, 3 pre-existing cp1252 failures, 0 regressions.
+- **Commit:** `af912b0`
+- **Benchmark status:** 24 passed, 0 failed, 2 pending (26 total).
+  Next: `reddit_1sbfpmm` (RotW new mechanics gripe),
+  `reddit_1rh09pp` (Warlock vs Fishymancer).

@@ -1,0 +1,50 @@
+{
+  "ts": "2026-04-18T10:15:00Z",
+  "changed_files": [
+    "data/strategy_cards.jsonl",
+    "data/memory.jsonl",
+    "src/d2r_agent/orchestrator.py",
+    "reddit_qa_todo.json",
+    "project-runs/2026-04-18_start.json"
+  ],
+  "tests": "212 passed in 0.99s; 3 pre-existing cp1252 encoding failures (test_gems.py, test_item_bases_manual.py). No regressions from today's changes.",
+  "commit": "af912b0",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1my2qtj",
+        "question": "Is the game supposed to be this unbalanced as a barbarian? (Duriel fight trouble)",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added Duriel fight tips strategy card (thawing potions, cold resist, TP trick) and Barbarian beginner difficulty card (hardest starting class, gear-dependent). Optimized aliases with bigram-matching phrases so cards rank #1/#2 over generic maxroll build guides.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1sgwav0",
+        "question": "Do you actually run dozens of MF runs in a session? (farming habits/motivation)",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added MF farming session tips strategy card (run frequency, rotation, 250-350 MF sweet spot, playing in bursts). Fixed orchestrator._compose_answer bypass: mechanics-intent answers (magic_find_rule, treasure_class_rule, etc.) now surface the top strategy card alongside mechanics reasoning output.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1o2cbjm",
+        "question": "How do these Amazon gauntlets compare? (2/20 rare gloves evaluation)",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added rare glove evaluation strategy card covering 2/20 Amazon gauntlets, affix point valuation system (STR/DEX > resist > leech), and specific examples matching the reference answer.",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1rw6ccy", "reddit_1rx3wei"],
+    "all_passed": true,
+    "regressions": [],
+    "notes": "Enigma base armor card still surfaces #1 for that query. Runeword completion question unchanged from prior runs. No degradation from orchestrator strategy-card fix or new cards."
+  },
+  "review_instructions": "No human review required. 3/3 questions passed after 1 improvement each. Benchmark: 24 passed / 0 failed / 2 pending (26 total). Key architectural change: orchestrator now surfaces strategy cards in mechanics-intent answers — this is a broad change that improves answer quality for MF/TC/affix/charm/crafting queries by adding practical context alongside technical mechanics reasoning. Monitor for any strategy card pollution in pure-mechanics questions."
+}
