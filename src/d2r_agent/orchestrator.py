@@ -684,6 +684,8 @@ def answer(
         tldr = [mechanics_reasoning.answer]
         if mechanics_reasoning.why:
             tldr.extend(mechanics_reasoning.why[:2])
+        if strategy_tldr:
+            tldr.append(strategy_tldr[0])
         ans0 = Answer(
             assumptions={
                 "release_track": ctx.get("release_track"),

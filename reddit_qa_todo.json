@@ -669,11 +669,16 @@
         "session"
       ],
       "reference_answer": "[29↑] I'm the same, 10 runs tops of whatever and then i need to change to another spot. And after 30 minutes i can't stand another second of farming. But I have long ago accepted that i'll probably never find anything amazing, unless with some god given luck.\n[22↑] Are you one of the folks that comments “I’ve played for 25 years and the best item I’ve ever found is shako” ? Also my mental illness is autism\n[14↑] I like to terrorize an entire act and just run the whole thing. Usually A1\n[7↑] Something of note: MF doesn’t effect rune drops. For runes, you need high kill counts. When I MF, I don’t use enigma, I just run whole areas. The addition of terror zones was great for my play style, and it’s even better now with the 30 min windows (albeit frustrating for things like Duriel/Baal). I",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-15",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-18",
+          "change": "Added MF farming session tips strategy card. Fixed orchestrator to include strategy cards in mechanics intent answers (magic_find_rule, treasure_class_rule, etc.)."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 46,
@@ -693,11 +698,16 @@
         "bought"
       ],
       "reference_answer": "[45↑] Ahhh excellent You had your first Duriel beat down Duriel is the first real challenge in the game It will help for you and your mercenary to chug loads of thawing potions before going in. They stack and raise your cold resist (duriel has cold attacks) The barbarian is probably the hardest character.\n[9↑] Like others are saying, with added details: 1. You’re not crazy. Barbs can feel clunky when low level. Feels like every tiny monster becomes a 1-on-1. No major screen clears, and bosses are like chopping metal logs. 2. Stats - The *general* standard is to put every stat point in Vitality *except* wh\n[8↑] Don’t try to balance your stats. You need to pour everything you can into vitality and just enough points into strength and dex to wear the gear you want to. Otherwise, you will go down very quickly.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-15",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-18",
+          "change": "Added Duriel fight tips + Barbarian beginner difficulty strategy cards with bigram-optimized aliases. Cards now rank #1 and #2 for this query."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 30,
@@ -717,11 +727,16 @@
         "found"
       ],
       "reference_answer": "[9↑] Depends on if you’re needing mana steal or Fire resistance. They’re both very solid gloves.. if you can use the Resistances and not the leech, then the Skull touch seems obvious. But if Fire is of no concern and you’d like more sustain, the Mana leech is very strong\n[7↑] Shame it's not lightning resist.\n[7↑] The one with the strength and dex is a million times better than the dual leech one\n[2↑] You wana just ignore anything that’s not a desired affix. First one is 2/20/3ml. 3 points. So avg. nothing special. Maybe a half point for pr? Self use or early ladder trade. Second pair are 2/20/7str/11dex/fr24. 4.5+ points. Very nice and valuable. The gap in chance between getting 3 nice stats and\n[2↑] I suggest you use silkeave boots for mana issue. Maek is what majes the difference. I even have a Phoenix shield on swap but rarely use it because it take a too long",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-15",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-18",
+          "change": "Added rare glove evaluation strategy card (2/20 Amazon gauntlets, affix point system, STR/DEX vs leech comparison)."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 22,
