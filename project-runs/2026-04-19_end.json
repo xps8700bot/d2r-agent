@@ -7,10 +7,10 @@
     "project-runs/2026-04-19_start.json"
   ],
   "tests": "212 passed in 0.95s; 3 pre-existing cp1252 encoding failures (test_gems.py, test_item_bases_manual.py). No regressions from today's changes.",
-  "commit": "<pending>",
+  "commit": "869526b",
   "reddit_fetch": "success",
   "reddit_fetch_tool": "curl",
-  "push_status": "<pending>",
+  "push_status": "success",
   "qa_summary": {
     "questions_processed": [
       {
