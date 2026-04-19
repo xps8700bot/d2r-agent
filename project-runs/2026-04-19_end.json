@@ -1,0 +1,51 @@
+{
+  "ts": "2026-04-19T09:25:00Z",
+  "changed_files": [
+    "data/strategy_cards.jsonl",
+    "data/memory.jsonl",
+    "reddit_qa_todo.json",
+    "project-runs/2026-04-19_start.json"
+  ],
+  "tests": "212 passed in 0.95s; 3 pre-existing cp1252 encoding failures (test_gems.py, test_item_bases_manual.py). No regressions from today's changes.",
+  "commit": "<pending>",
+  "reddit_fetch": "success",
+  "reddit_fetch_tool": "curl",
+  "push_status": "<pending>",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1sbfpmm",
+        "question": "My main gripe with RotW are the new mechanics (sunder charms, heralds grind)",
+        "result": "passed",
+        "improvement_count": 0,
+        "improvement_notes": "Agent explained sunder charms and herald mechanics correctly. Question is more opinion/complaint than mechanics query.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1rh09pp",
+        "question": "After Warlock, I can't play Fishymancer anymore (Death Mark quality of life)",
+        "result": "passed",
+        "improvement_count": 0,
+        "improvement_notes": "Agent surfaced Warlock summoner build guide info from Maxroll. Opinion-based comparison handled appropriately.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1s7umha",
+        "question": "Why is blizzard sorc better than frozen orb sorc?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added Blizzard vs Frozen Orb comparison strategy card covering damage differences (3-5x), cooldown mechanics, positioning, dual-spec flexibility, and historical FO nerf context (patch 1.13c).",
+        "failure_reason": null
+      }
+    ],
+    "questions_collected": 20,
+    "collection_source": "r/diablo2resurrected top/month + search, r/diablo2 top/month + search, r/Diablo search"
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1rw6ccy", "reddit_1rx3wei"],
+    "all_passed": true,
+    "regressions": [],
+    "notes": "Enigma base armor card still surfaces #1. Runeword completion / Monarch card unchanged. No degradation from new Blizzard vs FO card."
+  },
+  "review_instructions": "No human review required. 3/3 questions passed (1 needed improvement). 20 new questions collected from Reddit. Benchmark: 27 passed / 0 failed / 19 pending (46 total). New strategy card: Blizzard vs Frozen Orb Sorceress comparison — covers damage, cooldown, positioning, dual-spec tradeoffs."
+}

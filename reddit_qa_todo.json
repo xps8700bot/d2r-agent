@@ -756,7 +756,7 @@
         "mechanics"
       ],
       "reference_answer": "[38↑] It front loads the main grind. Instead of finding a sunder charm to enable you to do end game content, you're restricted from enjoying most builds until you do a 200+ hour grind to find a sunder charm that has a 70%+ chance of not rolling the element you need. And that grind requires numerous high-c\n[11↑] I just want regular sunder charms back lol. Don’t remove Latent, but bring back older sunder. Single player Hell is wayyyyy too long of a Lower Kurast farm for Infinity because before that I can barely hold my own at Chaos, let alone farm Heralds. If I had a sunder charm, I could stand my own to far\n[10↑] I agree with this. I have limited time, so dedicating hours to get multiple level 5 heralds isn’t viable most days and I play offline so I can’t trade for one Would be great if level 1 heralds had a chance to drop or they increased herald spawn rates",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-15",
       "improvement_count": 0,
       "failure_reason": null,
@@ -780,7 +780,7 @@
         "fishymancer"
       ],
       "reference_answer": "[32↑] Im actually on the opposite side - switched to fishymancer after trying demon lock :D I dont know - in a way its fitting for the undead summons to be a mindless horde just attacking whats in front of them? At least IMO.\n[13↑] Would love a bind undead for necro\n[3↑] They should just make summons/minions focus on cursed monsters. Curses should also become more useful, but I don't know how that looks. Decrep and amp damage are already used on every summon build. Lower resist is good for poison. The rest are useless or meh at best.\n[5↑] I haven't fully tested out warlocks summons, but although powerful, the summons are quite limited isn't it? I still like to have a whole pack of minions attacking stuff. But yeah, if I could control them to target something it really would help a lot. Necro's curses are still really OP. I used to al",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-15",
       "improvement_count": 0,
       "failure_reason": null,
@@ -790,6 +790,487 @@
         "score": 62,
         "num_comments": 40,
         "flair": null
+      }
+    },
+    {
+      "id": "reddit_1s7umha",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1s7umha/why_is_blizzard_sorc_better_than_frozen_orb_sorc/",
+      "question": "Why is blizzard sorc better than frozen orb sorc? Veteran, but I've always preferred Orb dual spec--wanting to min max my build though\n\nI've played since release, but didn't really explore endgame till D2R (like many). I've got thousands of hours across all classes now, but I'm far from an expert in any of them and haven't even tried every build yet.  \n\nFor Sorc I've always preferred Orb because of the sheer massiveness of the AOE &amp; CC--I can hit things behind me. And if I position myself right so the orb explodes inside a boss, it does very, very high single target damage (the damage on the skill is per ice bolt, at the end...",
+      "question_keywords": [
+        "blizzard",
+        "sorc",
+        "better",
+        "frozen",
+        "orb"
+      ],
+      "reference_answer": "[156↑] Blizzards kill speed is simply higher and requires less positioning compared to orb. But I'm an old school player and hate how Blizzard feels so I always play orb even if it's slower. There is something so satisfying about lining up a orb perfectly that blizzard can't replicate.\n[82↑] Frozen Orb got gimped considerably when they introduced the casting cooldown.\n[75↑] I’m team fo/hydra my dude\n[31↑] Orb just doesn’t do enough damage I’ve found. I loved it 20 years ago and when I came back recently was disappointed that it’s weaker now.\n[25↑] Blizzard sorcs do multiple times your builds damage. Your build farms P1-P3. Blizzard sorcs in the exact same gear will trash their farms on P5-P8. Blizzard is their AOE and Ice Blast shreds all their single target. If you haven't played Blizzard you won't know any better but once you do, you see ho",
+      "status": "passed",
+      "added_date": "2026-04-19",
+      "improvement_count": 1,
+      "failure_reason": null,
+      "improvement_history": [
+        "Added Blizzard vs Frozen Orb comparison strategy card covering damage differences, cooldown mechanics, positioning, dual-spec flexibility, and historical FO nerf context"
+      ],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 92,
+        "num_comments": 155,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1sbn4ot",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1sbn4ot/would_anyone_else_like_to_see_d2r_rework_poison/",
+      "question": "Would Anyone Else Like To See D2R Rework Poison Damage?\n\n- Takes a masters course to understand how it even works\n\n- Can't use multiple abilities because of poison not stacking\n\n- Loses damage on frame hits and hurts you when using other skills or playing with other people\n\n- Pretty bad outside of a super powerful very rare unique\n\nSurely there is a simpler way to set it up that removes the more annoying aspects, and it could make it a little nicer to play with.",
+      "question_keywords": [
+        "anyone",
+        "else",
+        "like",
+        "see",
+        "rework"
+      ],
+      "reference_answer": "[22↑] I would like to see it improved. However, I don't really trust modern Blizzard to fix it. They tend to overshoot. Some things worked out pretty well with D2R, to be honest. Still, it would be scary.\n[15↑] How does poison actually work? I’m using some poison charms on my ES lock and have no idea if they help or take inventory space\n[12↑] They would have to basically devote a lot of engineering resources \\*just\\* for this. IIUC, the reason why D2 has such janky poison damage is that it's all just one thing: health regeneration. Poison is just negative health regeneration. The idea of tracking poison as a separate debuff that had sens\n[6↑] I would prefer they don't mess with 25 year-old underlying mechanics. Add items/jewels/runes etc that work with those mechanics to improve the effectiveness of poison.",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 94,
+        "num_comments": 53,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1s7mbm1",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1s7mbm1/is_there_a_best_boss_to_farm_anymore/",
+      "question": "Is there a “best” boss to farm anymore?\n\nI know they changed the drop rate for Andy. So does that mean all bosses are the same Harding drop rates?",
+      "question_keywords": [
+        "there",
+        "best",
+        "boss",
+        "farm",
+        "anymore"
+      ],
+      "reference_answer": "[96↑] Diablo for me because i suck at map reading and there's no goddamn dolls or gloams\n[68↑] Andy was just tuned down to be roughly in line with Meph, both are just better or worse in different areas. That being said, both are still the best overall. As long as you don't hunt for the most rare items, those are still better with Diablo or Baal.\n[24↑] I'm a big fan of chaos, had my best drops in there plus a great spot to farm bases.\n[16↑] if not TZ. I just do baal and diablo as those spots can still give you tc87s. Diablo himself is capped at tc84 but the little random champ/rare packs inside can drop tc87. Baal and diablo have good chances at gheed wager, mephisto book and the diablos book (the fire apocalypse book). Other then that",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 54,
+        "num_comments": 87,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1sd54p4",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1sd54p4/templar_or_tyreals/",
+      "question": "Templar or Tyreals?\n\nis there any way to tell which one this is before identifying it?",
+      "question_keywords": [
+        "templar",
+        "tyreals",
+        "there",
+        "way",
+        "tell"
+      ],
+      "reference_answer": "[104↑] Templar's, Tyraels is indestructible and won't roll Eth AFAIK.\n[35↑] Templar. Tyraels has indestrucible mod so cant roll ethereal.\n[21↑] Eth Templar rare as hell tho\n[6↑] I don’t think Tyraels can roll eth\n[6↑] 🎶 should I open it, or should I keep it sealed! 🎶",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 72,
+        "num_comments": 42,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1s5uhns",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1s5uhns/jst_got_this_from_mephgoin_to_give_it_to_my_merc/",
+      "question": "jst got this from meph,goin to give it to my merc, whats the best thing to socket in this?",
+      "question_keywords": [
+        "jst",
+        "meph",
+        "goin",
+        "give",
+        "merc"
+      ],
+      "reference_answer": "[14↑] i think the best thing is IAS to help merc reach a faster ias breakpoint. nice find btw!\n[5↑] Shael or ias jewel. W treachery+andariel or g-face he packs a punch\n[2↑] Probably the new physical gem\n[2↑] I'm slapping a Lo in mine and gonna do some tests with it with warlock\n[2↑] I got like 3 to 4 to drop and still no eth yet. Nice find for you",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 36,
+        "num_comments": 52,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1slwavp",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1slwavp/would_you_sacrifice_2_ohms_1_lo_1_sur_for_a_ber/",
+      "question": "Would you sacrifice 2 ohms + 1 Lo + 1 Sur for a Ber to make Enigma?\n\nI’m single player offline, and after a million years I finally found a Jah (I’ve found 2 chams and the high runes listed in the title). I think teleport would make mf so much easier for me (warlock and hammerdin) so I’m considering sacrificing the said runes. Would you do it?",
+      "question_keywords": [
+        "sacrifice",
+        "ohms",
+        "sur",
+        "ber",
+        "make"
+      ],
+      "reference_answer": "[36↑] I would.\n[22↑] Let us know when you find that Ber in the next couple days after doing this. Lol jk, but it does happen.\n[14↑] For first Enigma? Yes. I would make it in a Mage Plate personally.\n[13↑] It's absolutely worth it. I know the feeling though, so sometimes I time box this sort of decision to make myself feel better - \"Let me run LK/trav/chaos for a week and if I don't find a Ber or a Sur then I'll cube up.\"\n[5↑] I would farm LK on p7 for another Sur I already found 4 of them to cube them into infinity If u dont have a grief and cta i would say its such a waste of so many runes If u already got cta and grief go for it",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 24,
+        "num_comments": 54,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1sb36xi",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1sb36xi/does_the_12_max_dmg_make_up_for_the_missing_3ed/",
+      "question": "Does the 12 max dmg make up for the missing 3ed?",
+      "question_keywords": [
+        "max",
+        "dmg",
+        "make",
+        "missing"
+      ],
+      "reference_answer": "[16↑] Due to the bug that persists to this day I dont think people want that combo on jewels unfortunately. Hold onto it though if it ever gets fixed I feel like this has some solid value.\n[1↑] I'd use it in my offline play. Need one more jewel for my tomb reaver, but holding out for 30%+\n[1↑] Great in a windforce\n[1↑] How much does a 40ed jewel go for np other mods\n[1↑] Bug doesnt work normal Its trash You will always want max dmg and ed separated",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 16,
+        "num_comments": 15,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1s7fuk0",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1s7fuk0/anni_offline/",
+      "question": "Anni offline?!\n\nFirst time finding an soj offline, decided to kill dclone for the Anni. \n\nBiggest offline accomplishment next to my +45 life pcomb gc",
+      "question_keywords": [
+        "anni",
+        "offline",
+        "first",
+        "time",
+        "finding"
+      ],
+      "reference_answer": "[18↑] Grats! I just can’t find a SoJ. 😡\n[6↑] Was farming cows for a white monarch shield. TZ Andy popped shield. TZ Andy popped. Got a stormshield before I got my white Monarch. Was doing Hell cows, managed to get it on the next round of TZ Andy…\n[2↑] Scored an SOJ off a random cow run in hell. Immediately summoned Dclone. I spent so much time prepping for the fight, guess I forgot how OP locks are... My merc, whom I had equipped with the crucial prevent monster heal, died while slowly moonwalking towards Dclone. Two seconds later, I had him dead\n[1↑] I have 3 wisps, 5 raven frosts and 0 sojs.\n[1↑] Took me about 2 days to gamble one with a lvl 47 char",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 110,
+        "num_comments": 27,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1s4pjin",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1s4pjin/not_in_bad_way_has_this_season_felt_weird_to/",
+      "question": "[Not in bad way] Has this season felt weird to anyone else with rune drops?\n\nRune drops have felt weird in a good way this season.\n\nI have 30 shael runes, 15 io, 20 dol, and I've found around 10 mals.\n\nAnyone else feel like they've found more of certain runes than ever in previous seasons over the last 25 years?",
+      "question_keywords": [
+        "bad",
+        "way",
+        "season",
+        "felt",
+        "weird"
+      ],
+      "reference_answer": "[16↑] I’ve noticed that like 7/10 times a rune drops, another one drops in the next 15 seconds. It’s happened a freaky amount of times.\n[12↑] I’ve gotten a lot more mid runes but zero high. It’s been very streaky too\n[7↑] I am definitely having more fun picking them up with the rune tab. No more endless cubing space management.\n[6↑] 3 Sur and a Ber in a week was a pretty nuts run.\n[3↑] It's been bad for me.",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 27,
+        "num_comments": 49,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1smirq6",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1smirq6/whats_the_highest_rune_that_can_drop_in_nm/",
+      "question": "What’s the highest rune that can drop in NM?\n\nOr what have you seen dropped? UM is the highest I have seen…",
+      "question_keywords": [
+        "highest",
+        "rune",
+        "drop",
+        "seen",
+        "dropped"
+      ],
+      "reference_answer": "[7↑] non tz its vex\n[5↑] I had a ber drop in nightmare terrorized zone act 1 catacombs\n[5↑] I had a ber drop from tz 71.\n[3↑] Lo. Runa numero 28\n[2↑] Should be Vex, or Lo if you count TZ",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 8,
+        "num_comments": 16,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1s6nzth",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1s6nzth/fire_warlocks_on_ubers/",
+      "question": "Fire Warlocks on Ubers?\n\nAnyone know this build’s viability against ‘em?",
+      "question_keywords": [
+        "fire",
+        "warlocks",
+        "ubers",
+        "anyone",
+        "know"
+      ],
+      "reference_answer": "[4↑] Very slim chance I would guess\n[4↑] Probably not without some expensive endgame gear\n[3↑] Did it once by the skin of my teeth, failed on a second attempt. Bound TZ Mauler basically did all the work. I think I might have contributed some fire damage against Meph, basically worthless against Baal and Diablo.\n[2↑] My firelock is pretty near the top end (torch, anni, phoenix, flicker, arach, magefist, chaos wraithstep, obsession, nigma and a couple skillers) , and I couldn't do it. Would try again if I had an Ars Diablo with a fire jewel/opals to boost damage further. If you have enough into Bind Demon and the\n[2↑] pure summoner lock can do ubers. pure summon doesnt scale well. so as long as your bound demon is immortal enough - yes. i would look for lightning echanced for resists vs meph. damage from apocalypse will be awesome addition. recast lethargy before it expires. have open wounds at least 50% on merc ",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 6,
+        "num_comments": 14,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1ryutix",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1ryutix/got_only_3_sockets_on_a_poleaxe_instead_of_4/",
+      "question": "Got only 3 sockets on a Poleaxe instead of 4?\n\nThis post is useless, just coping...I got to Act5, Finished Larzuk's quest to finally get the sockets on Poleaxe for Insight. But things didn't go as planned as I only received 3 sockets instead of 4 as I was convinced it will be. I thoroughly searched the internet to make sure I know what I'm doing.   \nAt this point I don't know what to do because I can't play like this drinking potions and going back to town to buy some more. I play Hammerdin. I was really, really looking forward to use Insigh...",
+      "question_keywords": [
+        "only",
+        "sockets",
+        "poleaxe",
+        "instead",
+        "post"
+      ],
+      "reference_answer": "[15↑] It’s based on where item dropped. It’ll get max sockets for its item level. If you happen to be on hardcore ladder I have a bunch of of low/mid insights and bases I could pass your way\n[9↑] Max Sockets depends on the level of the Item. Lower end Items typically have a lower max.\n[7↑] I could be wrong but I believe that there is a hidden “stat” which is item level (ilvl). For instance, you can find a crystal sword in Act2 Normal; it will have a low ilvl and therefore will only be able to get 3os max. Conversely, you can find a crystal sword doing Hell Cows and its ilvl will be si\n[7↑] At this point there's zero reason they can't add iLvl to the item tooltips. We're making brand new content now, so we're well beyond any 'no changes' crowd that may or may not have existed. We can hold 99 Jah Runes in one stash slot. We can handle iLvl on tooltips.",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 6,
+        "num_comments": 36,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1sf3eq6",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1sf3eq6/is_this_a_good_singer_barb_helm/",
+      "question": "Is this a good singer barb helm?\n\nIs this better in slot than shako or a 2/20 circlet (w/o sockets) for a singer? If it gets two sockets by Larzuk?\n\nhttps://preview.redd.it/k4rpg6313ttg1.png?width=1289&amp;format=png&amp;auto=webp&amp;s=faa9cf4d995f031979c4c9e28bd2018bfea35846",
+      "question_keywords": [
+        "good",
+        "singer",
+        "barb",
+        "helm",
+        "better"
+      ],
+      "reference_answer": "[5↑] Nope. It lacks 2barb or \"+3 to warcries\" to have any use. This is one for charsi. Do not waste larzuk on it.\n[1↑] Wow. Oh dang forgot no +3 wc. If it was jewelers or artisan 3os would be cool gf / mf helm\n[1↑] Nada\n[1↑] Its a good enough lvling singer barb helm but not endgame and not something i would waste a larzuk on cuz thats like 20 mins of your life to get rushed for that quest those 20 mins can be used on a better item 😂",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 4,
+        "num_comments": 6,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1s73msx",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1s73msx/how_to_get_started_tradingfarming/",
+      "question": "How to get started trading/farming?\n\nHey gang! Longtime casual player since 2001ish. Played D1 when I was a lad, and just kept playing the series throughout the years, but I've always been pretty lazy/sloppy about it. D2 has always been my favorite, playing a few times a year since launch, and more now with D2R on PS5. I used to run a Druid or necro summoner up through nightmare, before quitting on Hell. I've always just loved playing the game, so I never bothered with endgame content till now. \n\nNow I'm playing a softcore ladder 8...",
+      "question_keywords": [
+        "started",
+        "trading",
+        "farming",
+        "hey",
+        "gang"
+      ],
+      "reference_answer": "[4↑] Make sure you have a magic find of 300ish, while still retaining good resists. Fill your inventory with resist charms, and hit TZ's. Solo farming is a bit slower, but it's what I do. I focus on TZ farming bigtime. It's best for MF, and experience. After lvl90, the level grind halts to a crawl. Save \n[3↑] TZ’s are good. You could farm keys and trade them for runes to get wealth. You can run travincal for some fast runs and good drops. Heralds aren’t the greatest right now if you’re thinking of getting lucky with a sunder drop. Maybe next ladders they’ll buff the drop rates. Levelling after 89 is also\n[2↑] You're already on the right track. Pretty much every season until Warlock went the same for me and I always ended up geared. I wouldn't even trade at first I'd wait a couple weeks for my friends to get some okish gear then join them with a Horker barb 😂. Anyways after I had decent gear when the Terr",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 6,
+        "num_comments": 4,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1s2qjvb",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1s2qjvb/what_should_i_do_with_my_remaining_points_summon/",
+      "question": "What should I do with my remaining points (summon warlock)?\n\nI’m playing HC and having tons of fun with my build. \n\nBut now that I have bind demon, demon mastery and  Blood oath maxed and a singlepoint in blade warp and lethargy. I don’t know where to put my points. \n\nI was thinking of maxing mirror blades and putting the remaining points in echoing strike as a side thing (so that I can easily poison Ubers if I want to run it) but I’m unsure. \n\nI don’t want to fully respec into an es warlock as I’m enjoying my demon too much",
+      "question_keywords": [
+        "remaining",
+        "points",
+        "summon",
+        "warlock",
+        "playing"
+      ],
+      "reference_answer": "[3↑] I put them in defilers. I think it's lv 13 let's them chain 5. Helps with some aoe clearing\n[1↑] [https://maxroll.gg/d2/guides/summoner-warlock-guide](https://maxroll.gg/d2/guides/summoner-warlock-guide) i assume max blood oath though due to hard core.\n[1↑] I am playing the same, sphc summonlock. I went full summon. Don’t need blood boil at all. Max lethargy, rest into engorge. Ezpz walk through hell. You’ll want to run 2 defilers (swap to goatman when fighting boss) and a cursed demon - honestly just pick one. On budget gear I waltzed through hell wit",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 4,
+        "num_comments": 11,
+        "flair": "Question"
+      }
+    },
+    {
+      "id": "reddit_1rz35ze",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1rz35ze/i_never_beat_hell_is_it_just_me/",
+      "question": "I never beat hell. Is it Just me?\n\nI love d2. I love playing diffrent classes but after nightmare there is always for me that moment on hell when i cannot go any further. I try to use runewords guides etc. But im Also frustrated because i play solo and i cannot enjoy the game fully. I love watching leveling +90 charr. I hate when i need to skip certain mobs because od ress. Maybe im Just nad Player but this is for me the biggest regret.",
+      "question_keywords": [
+        "never",
+        "beat",
+        "hell",
+        "love",
+        "playing"
+      ],
+      "reference_answer": "[13↑] You are not investing enough time farming. It's that simple. Farm what you can to be able to farm other things later. And do it A LOT.\n[7↑] I was like that until D2R came out. There are plenty of classes that can absolutely beat hell with mid SSF gear if you play them correctly, and yeah sometimes that means skipping mobs. No shame in it.\n[5↑] Hell is hard. Normal takes a bit to get going while you have no gear but is not exceedingly difficult. Nightmare I'd argue is easier as you now have some ok gear and your level 30 skills with some points in them. Hell is where everything has immunities and nasty keywords coming at you. You may get s\n[4↑] Over level. It’ll get easier. I have basic runewords (Stealth/Lore) and stuff I’ve found while gaming. I’m lvl85 in HC (warlock) and ready to go to Hell ancients but, I’m in ACT4, running Chaos over and over. Started at lvl72. Upgraded several item but, still nothing unique or HR gear yet. I’m playi",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 4,
+        "num_comments": 38,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1s0jh0t",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1s0jh0t/is_it_faster_to_make_a_lod_character_from_scratch/",
+      "question": "Is it faster to make a LoD character from scratch and get an old sunder, or keep trying fruitlessly with a fully geared lvl90 RotW character?\n\nGenuinely asking, it would be interesting to do the math on this. How much worse are the old sunders in usefulness anyways? If they were \"too easy\" to get, shouldn't we just be making old characters and getting the old ones instead of bothering trying to get a new one? Playing P1 online.",
+      "question_keywords": [
+        "faster",
+        "make",
+        "lod",
+        "character",
+        "scratch"
+      ],
+      "reference_answer": "[60↑] I am just not getting how are we supposed to get new sunders in singleplayer on melee chars. Most of the time, I am seeing heralds with thorns and stone skin, meaning life tap doesn’t work and I kill myself with thorns.\n[44↑] Get a rush on old, should be quick and easy. Way faster to get a sunder\n[36↑] Before RotW dropped I had a long hiatus from d2, with only an occasional run for fun. But, apparently, whenever the patch that introduced the original sunder charms dropped, I played for a while and farmed one of each type, because when I bought this expansion and converted my characters I discovere\n[19↑] you can technically hit 99 without ever seeing a latent sunder so LoD is surely faster, no extra stats obviously though so yeah",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 64,
+        "num_comments": 73,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1s7tgbh",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1s7tgbh/arcane_sanctuary_order_of_ways/",
+      "question": "Arcane Sanctuary, order of ways?\n\nJust curious and  'for teh lulz': What is your order in D2R Arcane Sanctuary? Which way do you try first and last when you look for hate keys?\n\n\n\n[My way.](https://preview.redd.it/65a9uwop87sg1.jpg?width=1913&amp;format=pjpg&amp;auto=webp&amp;s=c3e808172e1fecb00f8bb4ed6b23649f9cdee128)",
+      "question_keywords": [
+        "arcane",
+        "sanctuary",
+        "order",
+        "ways",
+        "curious"
+      ],
+      "reference_answer": "[80↑] The exact opposite of yours. Top left, top right, bottom left, summoner.\n[36↑] 4,3,1,2\n[18↑] 3,1,2,4 Works about 25% of the time I’d say\n[12↑] The wrong way, then the wrong way, then the right way (but I miss it), then the wrong way. Realize there aren't 4 wrong ways and find which one I didn't finish.\n[7↑] I don't have a directional order. I try the straightest path first (no stairs or anything) Then rotate clockwise, but leaving the teleporting path for last",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 9,
+        "num_comments": 80,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1slfh1e",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1slfh1e/high_rune_trade_logic/",
+      "question": "High Rune Trade Logic\n\n**THIS IS FOR LADDER ONLY, NON-LADDER NOTHING OF THIS APPLIES AS THE MARKET IS FLOODED BY BOTTED RUNES AND LONG TIME STACKING**\n\n**\"Real world\" value of runes:**\n\n**Pul** \\- This rune has trading value, if you are looking for a common unique item, people will usually be happy trade it with you, since they know they can exchange it. Value in pgems vary 6-10 is realistic.  \n**Um** \\- This is a great rune for all res and trading for a bit higher value items. It is not often sold for pgems.  \n**Mal*...",
+      "question_keywords": [
+        "high",
+        "rune",
+        "trade",
+        "logic",
+        "ladder"
+      ],
+      "reference_answer": "[34↑] If this isn’t ChatGPT then I’m actually impressed. I don’t think I’ve ever been this passionate about anything in my life\n[25↑] A caster amulet is much harder to hit on than a skiller if you’re rerolling. I would not advise you sell and try to roll a caster amulet. That is a very good way to bankrupt yourself. I also don’t understand where you’re reasoning that selling HRs for Ists = acquiring wealth. Because a HR is worth m\n[9↑] over my years,I've found ber, cham, and zod...but no jah. cheeky bastard. edit: I feel like I need to start trading my pgems instead of using them to roll for skillers that never get the 40 life with it lol\n[5↑] You can estimate the 'usage value' of a HR by dividing its trade value in Ists by its relative rarity ratio to Ist It ranges from 1 (Ist obv) to about 3 (Lo) to 5 (Jah) However I disagree that you always want to sell HRs you arent going to use for Ists, because its often easier to find a partner to ",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 105,
+        "num_comments": 44,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1sarczh",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1sarczh/eth_unique_diadem_dropped_today_seeking_advice/",
+      "question": "Eth Unique Diadem dropped today. Seeking advice before I crash out. SP\n\nSo I was farming TZ Arcane today and a Vex rune dropped from a wispy boy. Next run, SoJ pops from a chest. Feeling pretty good! Couple runs later, bam, unique Diadem from a Ghoul Lord near Summoner. Ethereal. Been playing D2 my whole life; 5 years D2R on this SP account; never found a Griffon’s before until now. Excited, yet somewhat deflated right now.\n\nSo my question is: how should I use this? My viable characters to use it on are:\n\n\\-&gt; Mosaic Sin\n\n\\-&gt; Nova Sorc\n\n\\-&gt; Javazon\n\nI haven’...",
+      "question_keywords": [
+        "eth",
+        "unique",
+        "diadem",
+        "dropped",
+        "today"
+      ],
+      "reference_answer": "[41↑] I would just identify it and be VERY happy about my chronicle progress. Griffons is one of the big ones. Then wear it with whoever gets the least damage. Javazon I would suspect. Then run it down to 1 dura and keep it in stash just in case.\n[11↑] Java is a good fit since you dont get hit often. Use it until it has 1 durability. Then if you have an excess zod use that (maybe]\n[4↑] You’ll find another one, one day. I just wore my eth perfect war travs till they broke. Griffs I’ve found 3 offline SSF, they’ll come.\n[3↑] Javazon will have the longest use for it I guess. Then put it in your stash when it reaches 1 durability and wait for that zod.\n[2↑] Happened to me this ladder early….. I was big sad",
+      "status": "pending",
+      "added_date": "2026-04-19",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 121,
+        "num_comments": 69,
+        "flair": "Discussion"
       }
     }
   ]

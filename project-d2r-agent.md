@@ -531,3 +531,35 @@ daily automated runs — not the project's own development history (see
 - **Benchmark status:** 24 passed, 0 failed, 2 pending (26 total).
   Next: `reddit_1sbfpmm` (RotW new mechanics gripe),
   `reddit_1rh09pp` (Warlock vs Fishymancer).
+
+### 2026-04-19
+
+- **Reddit collection:** 20 new questions via curl + `.json` endpoints.
+  Sources: `r/diablo2resurrected` top/month + flair:Question + build/mechanic
+  keyword searches, `r/diablo2` top/month + self posts, `r/Diablo` D2R search.
+  Queue: 46 total (27 passed, 19 pending).
+- **Questions processed (3/3 passed, 1 needed improvement):**
+  1. `reddit_1sbfpmm` — "RotW mechanics interfere with real life" (sunder/herald
+     grind complaint) → **passed** (0 improvements). Opinion/complaint question;
+     agent explained sunder charm mechanics and herald spawning correctly.
+  2. `reddit_1rh09pp` — "After Warlock, I can't play Fishymancer anymore"
+     (Death Mark quality of life) → **passed** (0 improvements). Opinion-based
+     comparison; agent surfaced Warlock summoner build guide info from Maxroll.
+  3. `reddit_1s7umha` — "Why is blizzard sorc better than frozen orb sorc?"
+     → **passed** (1 improvement). First attempt only returned FO guide info
+     without comparing. Fix: added Blizzard vs Frozen Orb comparison strategy
+     card covering damage differences (3-5x with synergies), no-cooldown
+     advantage, positioning differences, dual-spec flexibility (FO/Fireball),
+     historical FO nerf context (patch 1.13c cooldown), and when each is
+     preferred (Blizzard for boss farming, FO for versatility).
+- **Regression check:** `reddit_1rw6ccy` (Enigma base armor), `reddit_1rx3wei`
+  (runeword completion) — both passed. No degradation from new card.
+- **Changed files:**
+  - `data/strategy_cards.jsonl` — +1 Blizzard vs Frozen Orb comparison card
+  - `data/memory.jsonl` — agent-written memories from question processing
+  - `reddit_qa_todo.json` — 3 questions → `passed`, +20 new questions
+- **Tests:** 212 passed, 3 pre-existing cp1252 failures, 0 regressions.
+- **Commit:** (see end marker)
+- **Benchmark status:** 27 passed, 0 failed, 19 pending (46 total).
+  Next: `reddit_1sbn4ot` (poison damage rework), `reddit_1s7mbm1` (best boss
+  to farm), `reddit_1sd54p4` (Templar vs Tyrael's), etc.
