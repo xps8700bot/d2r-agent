@@ -830,11 +830,16 @@
         "rework"
       ],
       "reference_answer": "[22↑] I would like to see it improved. However, I don't really trust modern Blizzard to fix it. They tend to overshoot. Some things worked out pretty well with D2R, to be honest. Still, it would be scary.\n[15↑] How does poison actually work? I’m using some poison charms on my ES lock and have no idea if they help or take inventory space\n[12↑] They would have to basically devote a lot of engineering resources \\*just\\* for this. IIUC, the reason why D2 has such janky poison damage is that it's all just one thing: health regeneration. Poison is just negative health regeneration. The idea of tracking poison as a separate debuff that had sens\n[6↑] I would prefer they don't mess with 25 year-old underlying mechanics. Add items/jewels/runes etc that work with those mechanics to improve the effectiveness of poison.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-20",
+          "change": "Added poison damage mechanics strategy card covering DOT/frames, non-stacking rules, PLR, charm interaction, Lower Resist, frame-hit issue"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2",
         "score": 94,
@@ -854,11 +859,16 @@
         "anymore"
       ],
       "reference_answer": "[96↑] Diablo for me because i suck at map reading and there's no goddamn dolls or gloams\n[68↑] Andy was just tuned down to be roughly in line with Meph, both are just better or worse in different areas. That being said, both are still the best overall. As long as you don't hunt for the most rare items, those are still better with Diablo or Baal.\n[24↑] I'm a big fan of chaos, had my best drops in there plus a great spot to farm bases.\n[16↑] if not TZ. I just do baal and diablo as those spots can still give you tc87s. Diablo himself is capped at tc84 but the little random champ/rare packs inside can drop tc87. Baal and diablo have good chances at gheed wager, mephisto book and the diablos book (the fire apocalypse book). Other then that",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-20",
+          "change": "Added boss farming comparison strategy card: Andy normalization, Andy/Meph best for mid-tier, Diablo/Baal for TC87, Chaos Sanctuary popularity, Terror Zones"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2",
         "score": 54,
@@ -878,11 +888,16 @@
         "tell"
       ],
       "reference_answer": "[104↑] Templar's, Tyraels is indestructible and won't roll Eth AFAIK.\n[35↑] Templar. Tyraels has indestrucible mod so cant roll ethereal.\n[21↑] Eth Templar rare as hell tho\n[6↑] I don’t think Tyraels can roll eth\n[6↑] 🎶 should I open it, or should I keep it sealed! 🎶",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-20",
+          "change": "Added Templar vs Tyrael identification strategy card: Ethereal = Templar (Tyrael has Indestructible so cannot be Eth)"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 72,
