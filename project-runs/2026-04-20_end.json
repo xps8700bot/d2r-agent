@@ -1,0 +1,49 @@
+{
+  "ts": "2026-04-20T09:30:00Z",
+  "changed_files": [
+    "data/strategy_cards.jsonl",
+    "data/memory.jsonl",
+    "reddit_qa_todo.json",
+    "project-runs/2026-04-20_start.json"
+  ],
+  "tests": "212 passed in 1.12s; 3 pre-existing cp1252 encoding failures (test_gems.py, test_item_bases_manual.py). No regressions from today's changes.",
+  "commit": "2e8d59f",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1sbn4ot",
+        "question": "Would Anyone Else Like To See D2R Rework Poison Damage?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added poison damage mechanics strategy card: DOT/frames, non-stacking rules, PLR, charm interaction, frame-hit issue.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1s7mbm1",
+        "question": "Is there a best boss to farm anymore?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added boss farming comparison strategy card: Andy normalization, Andy/Meph for mid-tier, Diablo/Baal for TC87, Chaos Sanctuary, Terror Zones.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1sd54p4",
+        "question": "Templar or Tyreals? Is there any way to tell before identifying?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added Templar vs Tyrael's identification card: Ethereal = Templar's Might because Tyrael's has Indestructible (cannot roll Eth).",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1rw6ccy", "reddit_1rx3wei"],
+    "all_passed": true,
+    "regressions": [],
+    "notes": "Enigma base armor card still correctly surfaces 'defense doesn't matter, pick looks.' Void runeword correctly identified as Dagger (Thul+Zod+Ist) with Hell Cows farming suggestion. No degradation."
+  },
+  "review_instructions": "No human review required. 3/3 questions passed (each needed 1 improvement). Benchmark: 30 passed / 0 failed / 16 pending (46 total). Three new strategy cards added covering poison mechanics, boss farming efficiency, and Templar/Tyrael identification."
+}

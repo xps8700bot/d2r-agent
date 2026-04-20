@@ -563,3 +563,31 @@ daily automated runs — not the project's own development history (see
 - **Benchmark status:** 27 passed, 0 failed, 19 pending (46 total).
   Next: `reddit_1sbn4ot` (poison damage rework), `reddit_1s7mbm1` (best boss
   to farm), `reddit_1sd54p4` (Templar vs Tyrael's), etc.
+
+---
+
+### 2026-04-20 — Poison mechanics, boss farming, Templar/Tyrael ID
+
+- **Questions processed:** 3/3 passed (each needed 1 improvement round)
+  - `reddit_1sbn4ot` (poison damage mechanics) — Agent initially returned Poison
+    Javazon build guide instead of explaining mechanics. Fix: added poison damage
+    mechanics strategy card (DOT/frames, non-stacking, PLR, charm interaction,
+    frame-hit issue). After fix, correct card surfaces #1.
+  - `reddit_1s7mbm1` (best boss to farm) — Agent returned Countess/SoJ/Sunder
+    info instead of addressing Andy normalization. Fix: added boss farming
+    comparison card (Andy tuned down to match Meph, both best for mid-tier,
+    Diablo/Baal for TC87, Chaos Sanctuary, Terror Zones). After fix, correct.
+  - `reddit_1sd54p4` (Templar vs Tyrael's before ID) — Agent returned merc build
+    guides about Sacred Armor. Fix: added Eth/Indestructible identification card
+    (Tyrael's has Indestructible → can't roll Eth → Eth Sacred = Templar's).
+- **Regression check:** `reddit_1rw6ccy` (Enigma base), `reddit_1rx3wei` (Void
+  runeword) — both passed. No degradation from 3 new cards.
+- **Changed files:**
+  - `data/strategy_cards.jsonl` — +3 strategy cards (poison mechanics, boss
+    farming comparison, Templar vs Tyrael ID)
+  - `data/memory.jsonl` — agent-written memories from question processing
+  - `reddit_qa_todo.json` — 3 questions → `passed`
+- **Tests:** 212 passed, 3 pre-existing cp1252 failures, 0 regressions.
+- **Commit:** `2e8d59f`. Push: success.
+- **Benchmark status:** 30 passed, 0 failed, 16 pending (46 total).
+  Next: `reddit_1sbajr3`, `reddit_1s8v0mi`, `reddit_1sd1bzf`, etc.
