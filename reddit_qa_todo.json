@@ -917,17 +917,25 @@
         "merc"
       ],
       "reference_answer": "[14↑] i think the best thing is IAS to help merc reach a faster ias breakpoint. nice find btw!\n[5↑] Shael or ias jewel. W treachery+andariel or g-face he packs a punch\n[2↑] Probably the new physical gem\n[2↑] I'm slapping a Lo in mine and gonna do some tests with it with warlock\n[2↑] I got like 3 to 4 to drop and still no eth yet. Nice find for you",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-21T09:11:03.209670+00:00",
+          "category": "intent_classification+knowledge_gap",
+          "summary": "Added socket-question regex to _GEAR_EVAL_RE in intent_classifier (what to socket, best to socket, socket in this/it/my patterns). Added Merc Weapon Socketing strategy card covering Reaper's Toll IAS/Shael, Lo rune, physical gem, Tomb Reaver, and IAS breakpoint priority.",
+          "regression_result": "28/28 intent tests pass; regression on reddit_1r4gn0i (warlock fire immunes) and reddit_1rw6ccy (enigma base) both pass."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 36,
         "num_comments": 52,
         "flair": null
-      }
+      },
+      "passed_at": "2026-04-21T09:11:03.209670+00:00"
     },
     {
       "id": "reddit_1slwavp",
@@ -941,17 +949,25 @@
         "make"
       ],
       "reference_answer": "[36↑] I would.\n[22↑] Let us know when you find that Ber in the next couple days after doing this. Lol jk, but it does happen.\n[14↑] For first Enigma? Yes. I would make it in a Mage Plate personally.\n[13↑] It's absolutely worth it. I know the feeling though, so sometimes I time box this sort of decision to make myself feel better - \"Let me run LK/trav/chaos for a week and if I don't find a Ber or a Sur then I'll cube up.\"\n[5↑] I would farm LK on p7 for another Sur I already found 4 of them to cube them into infinity If u dont have a grief and cta i would say its such a waste of so many runes If u already got cta and grief go for it",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-21T09:11:03.209670+00:00",
+          "category": "knowledge_gap",
+          "summary": "Added Cubing High Runes for Enigma strategy card: community YES for SSF, cubing path math, CTA/Grief check first, time-boxing strategy, Mage Plate recommendation, Murphy's Law joke.",
+          "regression_result": "Covered by regression run."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 24,
         "num_comments": 54,
         "flair": "Question"
-      }
+      },
+      "passed_at": "2026-04-21T09:11:03.209670+00:00"
     },
     {
       "id": "reddit_1sb36xi",
@@ -964,17 +980,25 @@
         "missing"
       ],
       "reference_answer": "[16↑] Due to the bug that persists to this day I dont think people want that combo on jewels unfortunately. Hold onto it though if it ever gets fixed I feel like this has some solid value.\n[1↑] I'd use it in my offline play. Need one more jewel for my tomb reaver, but holding out for 30%+\n[1↑] Great in a windforce\n[1↑] How much does a 40ed jewel go for np other mods\n[1↑] Bug doesnt work normal Its trash You will always want max dmg and ed separated",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-21T09:11:03.209670+00:00",
+          "category": "intent_classification+knowledge_gap",
+          "summary": "Added jewel/ed/max dmg keywords to mechanics_query intent rules. Added ED%+Max Damage Jewel Bug strategy card covering non-stacking bug, trash for competitive use, Windforce exception, hold for future fix.",
+          "regression_result": "212/212 tests pass (3 pre-existing UnicodeDecodeError). Enigma base regression initially failed then fixed with aliases."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 16,
         "num_comments": 15,
         "flair": "Question"
-      }
+      },
+      "passed_at": "2026-04-21T09:11:03.209670+00:00"
     },
     {
       "id": "reddit_1s7fuk0",

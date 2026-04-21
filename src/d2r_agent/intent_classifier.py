@@ -184,7 +184,9 @@ INTENT_RULES: list[tuple[str, list[str]]] = [
         "raven frost", "渡鸦霜", "冰免戒", "冰戒", "rf",
         "bk ring", "bk戒", "婚戒", "布尔卡索斯", "bul-kathos",
         "highlord", "海洛德", "闪电暗金项链",
-        "宝石", "gem", "skull", "骷髅", "amethyst", "紫晶", "ruby", "红宝石",
+        "jewel", "jewels", "珠宝", "ed jewel", "ias jewel", "max dmg", "max damage",
+        "enhanced damage", "ed%", "40ed", "15ias",
+        "宝��", "gem", "skull", "骷髅", "amethyst", "紫晶", "ruby", "红宝石",
         "sapphire", "蓝宝石", "topaz", "黄宝石", "emerald", "绿宝石",
         "diamond", "钻石", "perfect gem", "完美宝石", "flawless", "无瑕",
         "宝石升级", "gem upgrade", "魔找宝石", "mf gem", "mf宝石",
@@ -295,7 +297,10 @@ def classify_intent_rules(q: str) -> str:
         r"|how\s+(do|can)\s+I\s+know\b.{0,30}\bbetter"
         r"|how\s+to\s+(compare|evaluate|tell)\b.{0,20}\b(gear|item|equip|shield|armor|weapon)"
         r"|rule\s+of\s+thumb.{0,20}\b(gear|switch|equip|item)"
-        r"|best\s+(base|armor|shield|weapon|helm)\b",
+        r"|best\s+(base|armor|shield|weapon|helm)\b"
+        r"|what.{0,15}\bsocket\b.{0,10}\b(in|into)\b"
+        r"|best\b.{0,15}\b(to\s+)?socket"
+        r"|socket\b.{0,10}\b(in\s+)?(this|it|my)\b",
         re.I,
     )
     if _GEAR_EVAL_RE.search(s):
