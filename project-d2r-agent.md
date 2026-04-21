@@ -591,3 +591,37 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `2e8d59f`. Push: success.
 - **Benchmark status:** 30 passed, 0 failed, 16 pending (46 total).
   Next: `reddit_1sbajr3`, `reddit_1s8v0mi`, `reddit_1sd1bzf`, etc.
+
+---
+
+### 2026-04-21 — Run 15
+
+- **Goal:** Process 3 pending questions from benchmark set.
+- **Reddit fetch:** Skipped (15 pending questions, threshold is 5).
+- **Questions processed (3 passed, 0 failed):**
+  - `reddit_1s5uhns` (merc weapon socketing: best socket for Meph drop) — Agent
+    returned beginner gear evaluation instead. Fix: added socket-question regex to
+    `_GEAR_EVAL_RE` (what/best to socket, socket in this/it/my). Added Merc Weapon
+    Socketing strategy card (Reaper's Toll IAS/Shael, Lo rune, physical gem, IAS
+    breakpoint priority).
+  - `reddit_1slwavp` (sacrifice 2 Ohm + Lo + Sur for Ber to make Enigma) — Agent
+    returned SP vs online + CTA priority cards but missed the cubing decision. Fix:
+    added Cubing High Runes for Enigma strategy card (community YES for SSF,
+    cubing path math, CTA/Grief check, time-boxing strategy, Mage Plate).
+  - `reddit_1sb36xi` (ED% + max dmg jewel bug) — Agent returned nothing (classified
+    as general with zero hits). Fix: added jewel/ed/max dmg keywords to
+    `mechanics_query` intent rules. Added ED%+Max Damage Jewel Bug strategy card
+    (non-stacking bug, trash competitive, Windforce exception, hold for fix).
+- **Regression check:** `reddit_1r4gn0i` (warlock fire immunes) — passed.
+  `reddit_1rw6ccy` (Enigma base) — initially failed (short query + score threshold
+  filtered out the card). Fixed by adding aliases to the Enigma base strategy card.
+  Both pass after fix.
+- **Changed files:**
+  - `src/d2r_agent/intent_classifier.py` — socket-question regex + jewel keywords
+  - `data/strategy_cards.jsonl` — +3 strategy cards, Enigma base card aliases
+  - `data/memory.jsonl` — agent memories from processing
+  - `reddit_qa_todo.json` — 3 questions → `passed`
+- **Tests:** 212 passed, 3 pre-existing cp1252 failures, 0 regressions.
+- **Commit:** `78b6254`. Push: success.
+- **Benchmark status:** 33 passed, 0 failed, 13 pending (46 total).
+  Next: `reddit_1s7fuk0`, `reddit_1s4pjin`, `reddit_1smirq6`, etc.

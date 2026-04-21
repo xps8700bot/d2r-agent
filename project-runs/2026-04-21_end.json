@@ -1,0 +1,50 @@
+{
+  "ts": "2026-04-21T02:15:00Z",
+  "changed_files": [
+    "src/d2r_agent/intent_classifier.py",
+    "data/strategy_cards.jsonl",
+    "data/memory.jsonl",
+    "reddit_qa_todo.json",
+    "project-runs/2026-04-21_start.json"
+  ],
+  "tests": "212 passed, 3 pre-existing UnicodeDecodeError failures (test_gems.py, test_item_bases_manual.py x2). 28/28 intent classifier tests pass.",
+  "commit": "78b6254",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1s5uhns",
+        "question": "jst got this from meph, goin to give it to my merc, whats the best thing to socket in this?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added socket-question regex to _GEAR_EVAL_RE (what/best to socket patterns). Added Merc Weapon Socketing strategy card (Reaper's Toll IAS/Shael, Lo rune, physical gem, Tomb Reaver, IAS breakpoint priority).",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1slwavp",
+        "question": "Would you sacrifice 2 ohms + 1 Lo + 1 Sur for a Ber to make Enigma?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added Cubing High Runes for Enigma strategy card (community YES for SSF, cubing path math, CTA/Grief check, time-boxing strategy, Mage Plate recommendation).",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1sb36xi",
+        "question": "Does the 12 max dmg make up for the missing 3ed?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added jewel/ed/max dmg keywords to mechanics_query intent. Added ED%+Max Damage Jewel Bug strategy card (non-stacking bug, trash for competitive, Windforce exception, hold for fix).",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1r4gn0i", "reddit_1rw6ccy"],
+    "all_passed": true,
+    "regressions": [],
+    "notes": "reddit_1rw6ccy (Enigma base) initially regressed due to short query + score threshold. Fixed by adding aliases to the Enigma base strategy card. Both regressions pass after fix."
+  },
+  "review_instructions": "No human review needed. All 3 questions passed on first improvement attempt. Regression caught and fixed for Enigma base query."
+}
