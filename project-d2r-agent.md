@@ -625,3 +625,31 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `78b6254`. Push: success.
 - **Benchmark status:** 33 passed, 0 failed, 13 pending (46 total).
   Next: `reddit_1s7fuk0`, `reddit_1s4pjin`, `reddit_1smirq6`, etc.
+
+### 2026-04-22
+
+- **Reddit collection:** Skipped (13 pending, threshold=5).
+- **Questions processed (3 passed):**
+  - `reddit_1s7fuk0` (Anni offline / DClone) — Agent misclassified as `charm_rule`
+    due to "gc" keyword. Fix: added DClone/Anni regex heuristic in intent_classifier
+    (anni/dclone/annihilus/uber diablo routes to `mechanics_query` before keyword loop).
+    Added DClone/Annihilus strategy card (offline SoJ spawn, fight tips, SoJ farming,
+    gambling method). Passed after fix.
+  - `reddit_1s4pjin` (season rune drops feel weird) — Agent returned farming locations
+    instead of addressing RNG perception. Fix: added RNG Perception / Confirmation Bias
+    strategy card (no drop rate changes, streaky drops = normal, rune stash tab QoL).
+    Passed after fix.
+  - `reddit_1smirq6` (highest rune in NM) — Agent answered about Hell instead of NM.
+    Fix: added Highest Rune by Difficulty strategy card (NM non-TZ=Vex, NM TZ=Lo/Ber,
+    Normal=Amn, Hell=Zod). Passed after fix.
+- **Regression check:** `reddit_1r4gn0i` (warlock fire immunes) — passed.
+  `reddit_1rw6ccy` (Enigma base) — passed. Both clean.
+- **Changed files:**
+  - `src/d2r_agent/intent_classifier.py` — DClone/Anni regex heuristic
+  - `data/strategy_cards.jsonl` — +3 strategy cards
+  - `data/memory.jsonl` — agent memories from processing
+  - `reddit_qa_todo.json` — 3 questions → `passed`
+- **Tests:** 204 passed (11 deselected pre-existing cp1252 failures), 28/28 intent, 0 regressions.
+- **Commit:** `7349742`. Push: success.
+- **Benchmark status:** 36 passed, 0 failed, 10 pending (46 total).
+  Next: `reddit_1s6nzth`, `reddit_1ryutix`, `reddit_1sf3eq6`, etc.

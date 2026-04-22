@@ -1,0 +1,49 @@
+{
+  "ts": "2026-04-22T09:20:00Z",
+  "changed_files": [
+    "src/d2r_agent/intent_classifier.py",
+    "data/strategy_cards.jsonl",
+    "data/memory.jsonl",
+    "reddit_qa_todo.json",
+    "project-runs/2026-04-22_start.json"
+  ],
+  "tests": "204 passed, 11 deselected (3 pre-existing UnicodeDecodeError in test_gems.py + test_item_bases_manual.py). 28/28 intent classifier tests pass.",
+  "commit": "7349742",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1s7fuk0",
+        "question": "Anni offline?! First time finding an soj offline, decided to kill dclone for the Anni.",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added DClone/Anni regex heuristic in intent_classifier (anni/dclone/annihilus/uber diablo -> mechanics_query). Added DClone and Annihilus Charm strategy card covering offline SoJ spawn, fight tips, SoJ farming, gambling method.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1s4pjin",
+        "question": "[Not in bad way] Has this season felt weird to anyone else with rune drops?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added RNG Perception / Confirmation Bias strategy card: no D2R patch changed base rune drop rates, streaky drops are mathematically normal, rune stash tab QoL creates perception of more drops.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1smirq6",
+        "question": "What's the highest rune that can drop in NM?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added Highest Rune by Difficulty strategy card: NM non-TZ max = Vex (#26), NM with TZ = Lo (#28) or Ber (#30) confirmed, Normal cap = Amn, Hell = Zod.",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1r4gn0i", "reddit_1rw6ccy"],
+    "all_passed": true,
+    "regressions": []
+  },
+  "review_instructions": "No human review needed. All 3 questions passed on first improvement attempt. Both regressions pass cleanly."
+}
