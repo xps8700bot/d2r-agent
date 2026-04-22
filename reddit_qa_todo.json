@@ -1012,17 +1012,25 @@
         "finding"
       ],
       "reference_answer": "[18↑] Grats! I just can’t find a SoJ. 😡\n[6↑] Was farming cows for a white monarch shield. TZ Andy popped shield. TZ Andy popped. Got a stormshield before I got my white Monarch. Was doing Hell cows, managed to get it on the next round of TZ Andy…\n[2↑] Scored an SOJ off a random cow run in hell. Immediately summoned Dclone. I spent so much time prepping for the fight, guess I forgot how OP locks are... My merc, whom I had equipped with the crucial prevent monster heal, died while slowly moonwalking towards Dclone. Two seconds later, I had him dead\n[1↑] I have 3 wisps, 5 raven frosts and 0 sojs.\n[1↑] Took me about 2 days to gamble one with a lvl 47 char",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-22T09:15:00Z",
+          "category": "intent_classification+knowledge_gap",
+          "summary": "Added DClone/Anni heuristic to intent_classifier (regex for anni/dclone/annihilus/uber diablo routes to mechanics_query before keyword loop). Added DClone and Annihilus Charm strategy card covering offline SoJ spawn, fight tips, SoJ farming, gambling method.",
+          "regression_result": "28/28 intent tests pass; regression on reddit_1r4gn0i and reddit_1rw6ccy both pass."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 110,
         "num_comments": 27,
         "flair": "Discussion"
-      }
+      },
+      "passed_at": "2026-04-22T09:15:00Z"
     },
     {
       "id": "reddit_1s4pjin",
@@ -1036,17 +1044,25 @@
         "weird"
       ],
       "reference_answer": "[16↑] I’ve noticed that like 7/10 times a rune drops, another one drops in the next 15 seconds. It’s happened a freaky amount of times.\n[12↑] I’ve gotten a lot more mid runes but zero high. It’s been very streaky too\n[7↑] I am definitely having more fun picking them up with the rune tab. No more endless cubing space management.\n[6↑] 3 Sur and a Ber in a week was a pretty nuts run.\n[3↑] It's been bad for me.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-22T09:15:00Z",
+          "category": "knowledge_gap",
+          "summary": "Added RNG Perception / Confirmation Bias strategy card: no D2R patch changed base rune drop rates, streaky drops are mathematically normal (geometric distribution), rune stash tab QoL creates perception of more drops, mid-runes accumulate fast.",
+          "regression_result": "Covered by regression run."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 27,
         "num_comments": 49,
         "flair": "Question"
-      }
+      },
+      "passed_at": "2026-04-22T09:15:00Z"
     },
     {
       "id": "reddit_1smirq6",
@@ -1060,17 +1076,25 @@
         "dropped"
       ],
       "reference_answer": "[7↑] non tz its vex\n[5↑] I had a ber drop in nightmare terrorized zone act 1 catacombs\n[5↑] I had a ber drop from tz 71.\n[3↑] Lo. Runa numero 28\n[2↑] Should be Vex, or Lo if you count TZ",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "ts": "2026-04-22T09:15:00Z",
+          "category": "knowledge_gap",
+          "summary": "Added Highest Rune by Difficulty strategy card: NM non-TZ max = Vex (#26), NM with TZ = Lo (#28) or Ber (#30) confirmed, Normal practical cap = Amn, Hell = Zod from alvl 85 areas.",
+          "regression_result": "Covered by regression run."
+        }
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 8,
         "num_comments": 16,
         "flair": "Discussion"
-      }
+      },
+      "passed_at": "2026-04-22T09:15:00Z"
     },
     {
       "id": "reddit_1s6nzth",

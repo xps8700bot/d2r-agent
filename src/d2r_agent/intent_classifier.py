@@ -322,6 +322,17 @@ def classify_intent_rules(q: str) -> str:
     if _CURIOSITY_RE.search(s):
         return "general"
 
+    # Heuristic: DClone / Annihilus / Uber Diablo questions.
+    # These mention "anni", "dclone", "uber diablo", "annihilus" and should
+    # route to mechanics_query even when other keywords (like "gc", "soj")
+    # would otherwise trigger charm_rule or mechanics_query with wrong focus.
+    _DCLONE_RE = re.compile(
+        r"\banni\b|annihilus|\bdclone\b|diablo\s*clone|uber\s*diablo",
+        re.I,
+    )
+    if _DCLONE_RE.search(s):
+        return "mechanics_query"
+
     for intent, kws in INTENT_RULES:
         for kw in kws:
             kw_lower = kw.lower()
