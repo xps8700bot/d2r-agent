@@ -1108,11 +1108,13 @@
         "know"
       ],
       "reference_answer": "[4↑] Very slim chance I would guess\n[4↑] Probably not without some expensive endgame gear\n[3↑] Did it once by the skin of my teeth, failed on a second attempt. Bound TZ Mauler basically did all the work. I think I might have contributed some fire damage against Meph, basically worthless against Baal and Diablo.\n[2↑] My firelock is pretty near the top end (torch, anni, phoenix, flicker, arach, magefist, chaos wraithstep, obsession, nigma and a couple skillers) , and I couldn't do it. Would try again if I had an Ars Diablo with a fire jewel/opals to boost damage further. If you have enough into Bind Demon and the\n[2↑] pure summoner lock can do ubers. pure summon doesnt scale well. so as long as your bound demon is immortal enough - yes. i would look for lightning echanced for resists vs meph. damage from apocalypse will be awesome addition. recast lethargy before it expires. have open wounds at least 50% on merc ",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        "Added Uber Tristram strategy card (boss resistances, build viability, Fire Warlock not viable). Added ubers heuristic in intent_classifier to route Uber Tristram questions to mechanics_query."
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 6,
@@ -1132,11 +1134,13 @@
         "post"
       ],
       "reference_answer": "[15↑] It’s based on where item dropped. It’ll get max sockets for its item level. If you happen to be on hardcore ladder I have a bunch of of low/mid insights and bases I could pass your way\n[9↑] Max Sockets depends on the level of the Item. Lower end Items typically have a lower max.\n[7↑] I could be wrong but I believe that there is a hidden “stat” which is item level (ilvl). For instance, you can find a crystal sword in Act2 Normal; it will have a low ilvl and therefore will only be able to get 3os max. Conversely, you can find a crystal sword doing Hell Cows and its ilvl will be si\n[7↑] At this point there's zero reason they can't add iLvl to the item tooltips. We're making brand new content now, so we're well beyond any 'no changes' crowd that may or may not have existed. We can hold 99 Jah Runes in one stash slot. We can handle iLvl on tooltips.",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        "Added Larzuk Socket Quest strategy card (ilvl determines max sockets, not just item type). Added larzuk keyword to mechanics_query intent."
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 6,
@@ -1156,11 +1160,13 @@
         "better"
       ],
       "reference_answer": "[5↑] Nope. It lacks 2barb or \"+3 to warcries\" to have any use. This is one for charsi. Do not waste larzuk on it.\n[1↑] Wow. Oh dang forgot no +3 wc. If it was jewelers or artisan 3os would be cool gf / mf helm\n[1↑] Nada\n[1↑] Its a good enough lvling singer barb helm but not endgame and not something i would waste a larzuk on cuz thats like 20 mins of your life to get rushed for that quest those 20 mins can be used on a better item 😂",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        "Added Singer Barbarian helm evaluation strategy card (+skills mandatory, tier list, FCR breakpoints)."
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 4,

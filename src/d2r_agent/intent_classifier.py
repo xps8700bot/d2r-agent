@@ -154,6 +154,8 @@ INTENT_RULES: list[tuple[str, list[str]]] = [
     ("mechanics_query", [
         "farm", "怎么farm", "怎么刷", "在哪farm",
         "boss", "怪", "monster", "精英", "区域",
+        # Larzuk / socketing mechanics
+        "larzuk", "拉祖克", "socket quest", "打孔任务",
         # Herald / Sunder / Terror Zone mechanics (RotW 2.5+)
         "herald", "heralds", "先驱者", "传令官",
         "sunder", "sunder charm", "sunders", "碎裂护符", "碎裂",
@@ -331,6 +333,17 @@ def classify_intent_rules(q: str) -> str:
         re.I,
     )
     if _DCLONE_RE.search(s):
+        return "mechanics_query"
+
+    # Heuristic: Uber Tristram / Pandemonium Event viability questions.
+    # "ubers" (plural) refers to Uber Tristram boss fight, distinct from
+    # "uber diablo" (DClone) handled above.  These are mechanics questions
+    # about boss resistances and build viability, not generic build advice.
+    _UBERS_RE = re.compile(
+        r"\bubers\b|uber\s*tristram|pandemonium\s*event|uber\s*bosses?|uber\s*meph",
+        re.I,
+    )
+    if _UBERS_RE.search(s):
         return "mechanics_query"
 
     for intent, kws in INTENT_RULES:
