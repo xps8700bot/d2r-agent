@@ -653,3 +653,28 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `7349742`. Push: success.
 - **Benchmark status:** 36 passed, 0 failed, 10 pending (46 total).
   Next: `reddit_1s6nzth`, `reddit_1ryutix`, `reddit_1sf3eq6`, etc.
+
+### 2026-04-23 — Daily run
+- **Goal:** Process 3 pending questions (10 pending, no Reddit fetch needed).
+- **Questions processed (3/3 passed on first improvement):**
+  - `reddit_1s6nzth` (Fire Warlocks on Ubers?) — Agent gave generic Warlock build info, missed
+    Uber boss mechanics. Fix: added Uber Tristram strategy card (boss resistances, Pandemonium
+    Diablo fire immune, build viability). Added `ubers` heuristic in intent_classifier →
+    mechanics_query. Passed after fix.
+  - `reddit_1ryutix` (Poleaxe 3 sockets instead of 4) — Agent returned irrelevant Monarch farming
+    card, missed ilvl/socket relationship. Fix: added Larzuk Socket Quest strategy card (ilvl
+    determines max sockets). Added `larzuk` keyword to mechanics_query. Passed after fix.
+  - `reddit_1sf3eq6` (singer barb helm evaluation) — Agent returned Larzuk card instead of helm
+    evaluation. Fix: added Singer Barbarian helm strategy card (+skills mandatory, tier list, FCR
+    breakpoints, charsi if no +skills). Passed after fix.
+- **Regression check:** `reddit_1s7nm7p` (heralds) — passed.
+  `reddit_1rchie1` (early Hell Warlock) — passed. Both clean.
+- **Changed files:**
+  - `src/d2r_agent/intent_classifier.py` — Ubers heuristic + Larzuk keyword
+  - `data/strategy_cards.jsonl` — +3 strategy cards
+  - `data/memory.jsonl` — agent memories from processing
+  - `reddit_qa_todo.json` — 3 questions → `passed`
+- **Tests:** 212 passed (3 failed pre-existing cp1252), 28/28 intent, 0 regressions.
+- **Commit:** `602fc91`. Push: success.
+- **Benchmark status:** 39 passed, 0 failed, 7 pending (46 total).
+  Next: `reddit_1s73msx`, `reddit_1s2qjvb`, `reddit_1rz35ze`, etc.
