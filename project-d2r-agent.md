@@ -678,3 +678,27 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `602fc91`. Push: success.
 - **Benchmark status:** 39 passed, 0 failed, 7 pending (46 total).
   Next: `reddit_1s73msx`, `reddit_1s2qjvb`, `reddit_1rz35ze`, etc.
+
+### 2026-04-24 — Daily run
+- **Goal:** Process 3 pending questions from `reddit_qa_todo.json`. No Reddit collection needed (7 pending ≥ 5 threshold).
+- **Questions processed (3/3 passed):**
+  - `reddit_1s73msx` (How to get started trading/farming?) — Agent returned tangential strategy
+    cards (rune drop perception, CTA vs Enigma). Fix: added 2 strategy cards — "Getting Started
+    with Farming" (MF ~250-350, Countess/Andy/Meph/Trav/TZ, key farming, what to pick up) and
+    "D2R Trading Basics" (rune currency, trade platforms, item values). Passed after fix.
+  - `reddit_1s2qjvb` (Summon warlock remaining points) — Agent returned Echoing Strike build
+    guides instead of summon-specific advice. Fix: added "Summon Warlock Skill Allocation" card
+    (defilers chain 5 at lvl 13, lethargy, engorge, 2 defilers + cursed demon composition).
+    Passed after fix.
+  - `reddit_1rz35ze` (I never beat Hell) — Agent returned Uber Tristram card (irrelevant). Fix:
+    added "Beating Hell Difficulty" card (farm more, over-level, budget runewords Stealth/Lore/
+    Spirit/Insight, skipping immunes is normal, best solo classes, merc setup). Passed after fix.
+- **Regression check:** `reddit_1rixsd7` (bind demon for magic warlock) — passed.
+  `reddit_1ry0nvx` (rune farming locations) — passed. Both clean.
+- **Changed files:**
+  - `data/strategy_cards.jsonl` — +4 strategy cards (640 total)
+  - `reddit_qa_todo.json` — 3 questions → `passed`
+- **Tests:** 187 passed (3 failed pre-existing cp1252), 28/28 intent, 0 regressions.
+- **Commit:** `dfb0715`. Push: success.
+- **Benchmark status:** 42 passed, 0 failed, 4 pending (46 total).
+  Next: `reddit_1s0jh0t`, `reddit_1s7tgbh`, `reddit_1slfh1e`, `reddit_1sarczh`.
