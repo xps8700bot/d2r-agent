@@ -1186,11 +1186,13 @@
         "gang"
       ],
       "reference_answer": "[4↑] Make sure you have a magic find of 300ish, while still retaining good resists. Fill your inventory with resist charms, and hit TZ's. Solo farming is a bit slower, but it's what I do. I focus on TZ farming bigtime. It's best for MF, and experience. After lvl90, the level grind halts to a crawl. Save \n[3↑] TZ’s are good. You could farm keys and trade them for runes to get wealth. You can run travincal for some fast runs and good drops. Heralds aren’t the greatest right now if you’re thinking of getting lucky with a sunder drop. Maybe next ladders they’ll buff the drop rates. Levelling after 89 is also\n[2↑] You're already on the right track. Pretty much every season until Warlock went the same for me and I always ended up geared. I wouldn't even trade at first I'd wait a couple weeks for my friends to get some okish gear then join them with a Horker barb 😂. Anyways after I had decent gear when the Terr",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        "Added farming guide + trading basics strategy cards (beginner MF setup, farm targets, key farming, trading economy)"
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 6,
@@ -1210,11 +1212,13 @@
         "playing"
       ],
       "reference_answer": "[3↑] I put them in defilers. I think it's lv 13 let's them chain 5. Helps with some aoe clearing\n[1↑] [https://maxroll.gg/d2/guides/summoner-warlock-guide](https://maxroll.gg/d2/guides/summoner-warlock-guide) i assume max blood oath though due to hard core.\n[1↑] I am playing the same, sphc summonlock. I went full summon. Don’t need blood boil at all. Max lethargy, rest into engorge. Ezpz walk through hell. You’ll want to run 2 defilers (swap to goatman when fighting boss) and a cursed demon - honestly just pick one. On budget gear I waltzed through hell wit",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        "Added summon warlock skill allocation strategy card (defilers chain 5 at lvl 13, lethargy, engorge, demon composition)"
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 4,
@@ -1234,11 +1238,13 @@
         "playing"
       ],
       "reference_answer": "[13↑] You are not investing enough time farming. It's that simple. Farm what you can to be able to farm other things later. And do it A LOT.\n[7↑] I was like that until D2R came out. There are plenty of classes that can absolutely beat hell with mid SSF gear if you play them correctly, and yeah sometimes that means skipping mobs. No shame in it.\n[5↑] Hell is hard. Normal takes a bit to get going while you have no gear but is not exceedingly difficult. Nightmare I'd argue is easier as you now have some ok gear and your level 30 skills with some points in them. Hell is where everything has immunities and nasty keywords coming at you. You may get s\n[4↑] Over level. It’ll get easier. I have basic runewords (Stealth/Lore) and stuff I’ve found while gaming. I’m lvl85 in HC (warlock) and ready to go to Hell ancients but, I’m in ACT4, running Chaos over and over. Started at lvl72. Upgraded several item but, still nothing unique or HR gear yet. I’m playi",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        "Added Hell difficulty tips strategy card (farm more, over-level, budget runewords, skipping immunes is normal, best solo classes)"
+      ],
       "meta": {
         "subreddit": "diablo2resurrected",
         "score": 4,
