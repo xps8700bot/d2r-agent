@@ -702,3 +702,29 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `dfb0715`. Push: success.
 - **Benchmark status:** 42 passed, 0 failed, 4 pending (46 total).
   Next: `reddit_1s0jh0t`, `reddit_1s7tgbh`, `reddit_1slfh1e`, `reddit_1sarczh`.
+
+---
+
+### 2026-04-25 — Run
+
+- **Reddit collection:** 16 new questions added (from r/diablo2, r/diablo2resurrected, r/Diablo search).
+  Queue: 62 total, 17 pending, 45 passed.
+- **Questions processed (3/3 passed):**
+  - `reddit_1s0jh0t` (LoD vs RotW sunder farming): Failed initially — agent had no knowledge about
+    old vs latent sunders. Added 2 mechanics facts (sunder_lod_vs_rotw, herald_rotw_danger). Passed after fix.
+  - `reddit_1s7tgbh` (Arcane Sanctuary path order): Failed initially — agent returned irrelevant
+    Cow Level info. Added Arcane Sanctuary Summoner farming fact. Passed after fix.
+  - `reddit_1slfh1e` (High Rune trade values): Passed on first attempt — agent's trading strategy
+    card covered rune value hierarchy adequately.
+- **Regression check:** `reddit_1s2qjvb` (summon warlock remaining points) — passed.
+  `reddit_1s7nm7p` (herald spawn rates) — passed. No regressions.
+- **Bug fixes:** Fixed 2 pre-existing encoding bugs in test_gems.py and test_item_bases_manual.py
+  (missing encoding='utf-8' on Windows).
+- **Changed files:**
+  - `data/fact_db/mechanics/farming.jsonl` — +3 facts (LoD/RotW sunders, Herald danger, Arcane Sanctuary)
+  - `reddit_qa_todo.json` — +16 questions, 3 → `passed`
+  - `tests/test_gems.py`, `tests/test_item_bases_manual.py` — encoding fix
+- **Tests:** 215 passed, 0 failed, 0 regressions.
+- **Commit:** `6f164aa`. Push: success.
+- **Benchmark status:** 45 passed, 0 failed, 17 pending (62 total).
+  Next: `reddit_1sarczh`, `reddit_1sn08mo`, `reddit_1sjxy2t`, `reddit_1ss2es0`.

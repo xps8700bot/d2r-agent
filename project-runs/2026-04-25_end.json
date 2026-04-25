@@ -1,0 +1,56 @@
+{
+  "ts": "2026-04-25T02:15:00Z",
+  "changed_files": [
+    "data/fact_db/mechanics/farming.jsonl",
+    "data/memory.jsonl",
+    "reddit_qa_todo.json",
+    "tests/test_gems.py",
+    "tests/test_item_bases_manual.py",
+    "project-runs/2026-04-25_start.json"
+  ],
+  "tests": "215 passed, 0 failed (fixed 2 pre-existing encoding bugs in test files)",
+  "commit": "6f164aa",
+  "reddit_fetch": "success",
+  "reddit_fetch_tool": "curl",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1s0jh0t",
+        "question": "Is it faster to make a LoD character from scratch and get an old sunder, or keep trying with RotW?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added 2 new facts to farming.jsonl: LoD vs RotW sunder comparison + RotW Herald danger modifiers. Agent now correctly explains old vs latent sunders and recommends LoD for basic sunder farming.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1s7tgbh",
+        "question": "Arcane Sanctuary, order of ways when looking for the Summoner?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added Arcane Sanctuary Summoner farming fact. Agent now correctly describes the 4-path layout, Summoner location being random, and practical farming tips.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1slfh1e",
+        "question": "High Rune Trade Logic - rune values on ladder",
+        "result": "passed",
+        "improvement_count": 0,
+        "improvement_notes": "Passed on first attempt. Agent correctly covered rune value hierarchy (Ist base, Gul ~2 Ist, etc.) and trading strategies.",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1s2qjvb", "reddit_1s7nm7p"],
+    "all_passed": true,
+    "regressions": []
+  },
+  "reddit_collection": {
+    "new_questions_added": 16,
+    "sources": ["r/diablo2 search", "r/diablo2resurrected search", "r/Diablo search"],
+    "queue_total": 62,
+    "queue_pending": 17
+  },
+  "review_instructions": "3 new mechanics facts added to farming.jsonl — verify RotW-specific sunder charm details are accurate (latent sunder stats, Herald thorns+stone skin interaction). 2 encoding fixes in test files are straightforward (added encoding='utf-8')."
+}
