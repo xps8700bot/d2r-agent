@@ -42,7 +42,7 @@ class TestGemsDb:
     def test_gem_upgrade_recipe_exists(self):
         """Gem upgrade recipe entry should exist in the gems DB."""
         import json
-        with open(GEMS_PATH) as f:
+        with open(GEMS_PATH, encoding="utf-8") as f:
             records = [json.loads(l) for l in f if l.strip()]
         ids = [r["id"] for r in records]
         assert "gem.cube_upgrade" in ids, "gem.cube_upgrade not found in gems.jsonl"

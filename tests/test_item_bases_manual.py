@@ -21,7 +21,7 @@ def test_item_base_monarch():
     query = "君主盾 多少防御 力量要求？"
     result_text, trace_path = answer(query)
     print(f"DEBUG: Result for Monarch: {result_text}")
-    with open(trace_path, "r") as f:
+    with open(trace_path, "r", encoding="utf-8") as f:
         import json
         trace = json.load(f)
         print(f"DEBUG: Intent detected: {trace.get('intent')}")
@@ -45,7 +45,7 @@ def test_item_base_phase_blade():
     query = "幻化之刃 机制"
     result_text, trace_path = answer(query)
     print(f"DEBUG: Result for Phase Blade: {result_text}")
-    with open(trace_path, "r") as f:
+    with open(trace_path, "r", encoding="utf-8") as f:
         import json
         trace = json.load(f)
         print(f"DEBUG: Intent detected: {trace.get('intent')}")

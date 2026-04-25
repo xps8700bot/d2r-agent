@@ -1264,11 +1264,18 @@
         "scratch"
       ],
       "reference_answer": "[60↑] I am just not getting how are we supposed to get new sunders in singleplayer on melee chars. Most of the time, I am seeing heralds with thorns and stone skin, meaning life tap doesn’t work and I kill myself with thorns.\n[44↑] Get a rush on old, should be quick and easy. Way faster to get a sunder\n[36↑] Before RotW dropped I had a long hiatus from d2, with only an occasional run for fun. But, apparently, whenever the patch that introduced the original sunder charms dropped, I played for a while and farmed one of each type, because when I bought this expansion and converted my characters I discovere\n[19↑] you can technically hit 99 without ever seeing a latent sunder so LoD is surely faster, no extra stats obviously though so yeah",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-25",
+          "action": "Added LoD vs RotW sunder charm comparison facts to data/fact_db/mechanics/farming.jsonl (2 new entries: mechanics.farming.sunder_lod_vs_rotw and mechanics.farming.herald_rotw_danger)",
+          "category": "knowledge_gap",
+          "result": "passed"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2",
         "score": 64,
@@ -1288,11 +1295,18 @@
         "curious"
       ],
       "reference_answer": "[80↑] The exact opposite of yours. Top left, top right, bottom left, summoner.\n[36↑] 4,3,1,2\n[18↑] 3,1,2,4 Works about 25% of the time I’d say\n[12↑] The wrong way, then the wrong way, then the right way (but I miss it), then the wrong way. Realize there aren't 4 wrong ways and find which one I didn't finish.\n[7↑] I don't have a directional order. I try the straightest path first (no stairs or anything) Then rotate clockwise, but leaving the teleporting path for last",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
-      "improvement_count": 0,
+      "improvement_count": 1,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-25",
+          "action": "Added Arcane Sanctuary Summoner farming fact to data/fact_db/mechanics/farming.jsonl (mechanics.farming.arcane_sanctuary_summoner)",
+          "category": "knowledge_gap",
+          "result": "passed"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2",
         "score": 9,
@@ -1312,11 +1326,18 @@
         "ladder"
       ],
       "reference_answer": "[34↑] If this isn’t ChatGPT then I’m actually impressed. I don’t think I’ve ever been this passionate about anything in my life\n[25↑] A caster amulet is much harder to hit on than a skiller if you’re rerolling. I would not advise you sell and try to roll a caster amulet. That is a very good way to bankrupt yourself. I also don’t understand where you’re reasoning that selling HRs for Ists = acquiring wealth. Because a HR is worth m\n[9↑] over my years,I've found ber, cham, and zod...but no jah. cheeky bastard. edit: I feel like I need to start trading my pgems instead of using them to roll for skillers that never get the 40 life with it lol\n[5↑] You can estimate the 'usage value' of a HR by dividing its trade value in Ists by its relative rarity ratio to Ist It ranges from 1 (Ist obv) to about 3 (Lo) to 5 (Jah) However I disagree that you always want to sell HRs you arent going to use for Ists, because its often easier to find a partner to ",
-      "status": "pending",
+      "status": "passed",
       "added_date": "2026-04-19",
       "improvement_count": 0,
       "failure_reason": null,
-      "improvement_history": [],
+      "improvement_history": [
+        {
+          "date": "2026-04-25",
+          "action": "Passed on first attempt - agent covered rune trade values and trading logic adequately",
+          "category": "no_change_needed",
+          "result": "passed"
+        }
+      ],
       "meta": {
         "subreddit": "diablo2",
         "score": 105,
@@ -1346,6 +1367,390 @@
         "score": 121,
         "num_comments": 69,
         "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1sn08mo",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1sn08mo/warlock_aside_which_builds_are_best_at_herald/",
+      "question": "Warlock aside, which builds are best at Herald farming?\n\nObviously clear speed is a factor, but I don’t have enigma yet. After my summon warlock died an lost me my P8 TZ98 Cursed+Fana Heph I want a new build.\n\nHammerdin obviously comes to mind, but I’ve probably leveled 25 hammerdins to 95 throughout the years, and this time around I’m still Jah or ber+sur away from enigma.\n\nWhat build handles T5 Heralds the best?",
+      "question_keywords": [
+        "warlock",
+        "aside",
+        "builds",
+        "best",
+        "herald"
+      ],
+      "reference_answer": "[49↑] I mean, barbarian doubles the herald loot chances, hard to not be the top build. Cooley did a video on this. https://youtu.be/ElNoXDLoduU?si=CEi_XcnDg2BvLDY0\n[13↑] As a near bis hammerdin, Im lacking magic sunder, but I dont find the build too good at Herald farming. Both killing the herald itself can be rough, but whats worse is the hammer mechanic itself. Aiming it is just bad in so many maps. Classes that can aim and kill more linear seem “better” to me. Am\n[9↑] With the way they have changed Heralds on PTR you don't want to kill T5 anymore, really. I mean full clear games are fine, but not the meta, they completely destroyed the meta of full clear games. What you want to do now is just kill the first two heralds and leave the game and repeat. Why? Herald 1",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 35,
+        "num_comments": 94,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1sjxy2t",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1sjxy2t/ssf_found_my_jah_but_no_mage_plate_do_i_use/",
+      "question": "SSF. Found my Jah! But no Mage Plate, do I use Archon instead?\n\nSee title. \n\nI have a 3os Archon plate but somehow managed to find a ber and Jah before a mage plate with 3os. Do I just use an Archon plate or wait to find an MP?\n\n* I'm not in an immediate rush to build it, but I don't want to wait a week, so I have a little time to farm a mage plate I suppose! Though the itch is already there.\n* SSF, so I am likely wanting the enigma to be used by many characters. \n* My Hell map is fantastic right now, do I don't really want to drop to nightmare to farm.\n\nPle...",
+      "question_keywords": [
+        "ssf",
+        "found",
+        "jah",
+        "mage",
+        "plate"
+      ],
+      "reference_answer": "[44↑] A few hours of cows and you’ll have options. I like either MP or dusk shroud. I’m not worried about min maxing though\n[25↑] I would very much not do that, also Mage plates can ONLY roll up to 3 socket so if you find any mage plate just larzuk it. Archon plate str req is just too high.\n[17↑] Hold on my man https://preview.redd.it/ukc32ig3dvug1.jpeg?width=2384&amp;format=pjpg&amp;auto=webp&amp;s=bdb5296b506e62b67467160e6509ed113fb8a16a You'll need to look up warlock separately but this should help\n[10↑] Enigma in mp is tbr best because you can use it in all chars\n[9↑] It really doesn’t matter in the whole scheme of things. The difference it will make in the end is minuscule.",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 30,
+        "num_comments": 70,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1ss2es0",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1ss2es0/druid_build_that_can_handle_p8_farming/",
+      "question": "Druid build that can handle P8 farming?\n\nDruid is the only character I’ve never played. I think I’m going to try one next ladder reset. What is arguably the strongest build I can aim for?  Wind Druid looks interesting to me as I prefer Cold builds, but the Fire Druid seems to have dual element available with physical and fire damage?\n\nAny advice appreciated. Looking for both start and end game suggestions.  I play online, but solo. Thanks.",
+      "question_keywords": [
+        "druid",
+        "build",
+        "handle",
+        "farming",
+        "only"
+      ],
+      "reference_answer": "[33↑] Fire is s-tier but you need GG gear.\n[15↑] Druids are not great in end game pvm. They are naturally tanky and deal good single target damage but the area damage is limited, making them excellent PvP chars but mediocre for farming. Tornado is the easiest build to get going. It plays like a hammerdin, just slower. Short range high damage with \n[10↑] Fury druid with reapers can kill everything p8\n[5↑] Fire Druid is it but honestly the build is so clunky: Firestorm is painful to aim need to basically just tele exactly on top of whatever you’re targeting Fissure being semi random is also as pajnful as blizzard targeting. Apocalypse only lasting 50 seconds is so weird. It’s a lot of upkeep. Lastly: \n[3↑] I play a summoner druid on hardcore that I can p8 on. You need an act 5 merc with lawbringer.",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 19,
+        "num_comments": 52,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1s3eiww",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1s3eiww/what_is_the_best_single_player_strategy_for_a_new/",
+      "question": "What is the Best Single Player Strategy for a new Start?\n\nHeadline is the question. If someone wants to start a completely fresh account on Single Player (obviously self found) what would be the fastest way to go?\n\nGoal is to have at least 1 of each class with a A-Tier build or even better.\n\nE.g. should I play sorc and only when the sorc has managed to farm gear for a necro start the necro? Or would another char like Javazon, FoH Paladin, Summoner Necro or Warlock be better?\n\nHow to get Enigma, INsight, Hoto, CtA? Is singleplayer with /players8 actuall...",
+      "question_keywords": [
+        "best",
+        "single",
+        "player",
+        "strategy",
+        "new"
+      ],
+      "reference_answer": "[46↑] sorc...teleporting for boss runs is invaluable\n[12↑] Sorc LK Sorc bosses Unfortunately it’s not even close. But you could do a warlock and run chaos or something with a tele staff on P7\n[10↑] I started with a summoning necro.. was painfully slow, got stuck at hell Diablo, then I made a blizz/hydra sorc and I beat the whole thing on p7 and only had to turn it down for bosses lol she is op. Teleport is a must. Get yourself 2 spirits asap and you’ll fly through the game :)\n[4↑] Sorc to start, farm some bosses, do LK farming until first enigma. Then Warlock can farm everywhere\n[4↑] Yeah if you're looking to actually gear up all classes and do it solo, a sorc is likely going to be your best first option just cause of teleport. Basically just farming forever until you can get an enigma going to switch characters lol.",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 14,
+        "num_comments": 57,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1soigyw",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1soigyw/hit_my_first_wall_in_d2_as_new_player_in/",
+      "question": "Hit my first wall in D2 as new player in nightmare need recs to reroll class with a build\n\nHey! Long time Diablo fan never got into D2 and have had D2R sitting in my library since it came out on PS. Now I play on my PlayStation portal and it’s great! Just did my first run through the game on normal with holy fire paladin. I know it’s super easy but I wanted to make it work in nightmare. Last acts gave me trouble in normal and nightmare has kicked it up a notch! I stupidly used my respecs not knowing there limited and feel like my character is doomed to hit the fire resistant enemy wal...",
+      "question_keywords": [
+        "hit",
+        "first",
+        "wall",
+        "new",
+        "player"
+      ],
+      "reference_answer": "[7↑] Holy fire through normal and blessed hammer once you reach travincal nightmare is a very consistent path and one of the easiest play throughs across all classes. Blessed hammer takes a bit to get used to but deals a shitton of damage. Magic immune monsters exist but you can simply ignore them until \n[5↑] Summon Necro with curse and corpse explosion is a great build to start out on. Resistances are mostly a non factor and the build still performs great with minimal gear options. May not be the fastest, but it’s the safest way to get all the way through the game\n[3↑] I respec'ed right about where you hit the wall to foh smiter which was a great ssf starter because I could farm meph, trav, and chaos sanctuary from low gear pretty efficiently and had ok tp frames for lower kurast. between those I got infinity and grief which opened up all the other classes. too ba",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 13,
+        "num_comments": 30,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1sf9xjx",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1sf9xjx/just_got_to_hell_dif_lvl_70_what_now/",
+      "question": "Just got to hell dif lvl 70 what now\n\nI don't know what to any advice as title says just made it to hell difficulty  an I don't know how to do any endgame stuff I haven't even made a runeword set yet where can I farm ber runes?",
+      "question_keywords": [
+        "hell",
+        "dif",
+        "lvl",
+        "now",
+        "don't"
+      ],
+      "reference_answer": "[49↑] Farm ber runes lol\n[15↑] Th grind hasn’t even started yet..\n[5↑] Look up an online guide. Certain areas in each zone drop ber’s, but the drop rate is stupidly low. Realistically you’ll be making several runewords before your first ber. It took me 20 years to drop my first, over 3 accounts, and only semi consistent play. I think I logged somewhere between 5k and 1\n[3↑] You need a merc that can help you. Cheapest alternative is either Insight/Tresachery A2 merc, or a Sazabi full set A5 merc You need to bring up your resistances. Make sure you completed Anya’s quest in normal and NM, and use charms with resistances if you must. Check your character sheet to ensure t\n[2↑] What char did you level as your first? If you went sorc I would hit LK p7 chests till your eyes bleed. I made enigma after like 2k runs last week.",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 12,
+        "num_comments": 43,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1su6iqt",
+      "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1su6iqt/best_p8_destroyer_build_in_d2r_stier_no_struggle/",
+      "question": "Best P8 Destroyer Build in D2R? (S-Tier, no struggle)\n\nHello\n\nWhat’s the absolute best build that just deletes everything on /players 8 without struggling?\n\nI’m talking about a true P8 monster that:\n\nclears fast even in high density areas\n\nmelts elites + bosses, doesn’t get hard-stuck on immunes and still feels smooth to play (not clunky or super niche)\n\nBasically a build that just steamrolls the entire game on max difficulty scaling.\n\nI’ve seen a lot of hype around:\n\nMosaic Assassin \n\nLightning Sorc\n\nHammerdin\n\n If you had to pick ONE build that ab...",
+      "question_keywords": [
+        "best",
+        "destroyer",
+        "build",
+        "tier",
+        "struggle"
+      ],
+      "reference_answer": "[23↑] Mosaic Sin. 2x mosaic, Enigma, 65 fcr or 102 if you're loaded. rest is luxury enjoy not playing the game\n[11↑] ES Warlock with Hex:Purge maxed. Also max all its synergies including Sigil: Death. For the moment only one point in Bind Demon so you can Bind Ismail Vilehand from the Trav council, he's always cursed. Use Death Mark to teleport him attacking unto enemies, he curses them immediately. Apply Sigil: D\n[11↑] Other than those already mentioned, the current warlock certainly does it. As for after nerf, some YouTubers are already coming up with pretty decent builds, like Abyss. It looks pretty good too.\n[10↑] It's not the fastest, but it's fast enough for me: Demon Warlock. You run with one defiler and one goatman until your merc doesn't keep constantly dying, then you switch to two defilers. Plus your bound demon, naturally. There's no area in the game you can't just waltz through.",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2resurrected",
+        "score": 10,
+        "num_comments": 55,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1sr6pop",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1sr6pop/ariocs_needle_dreadfang_or_decapitator_death_rw/",
+      "question": "Arioc's Needle, Dreadfang, or Decapitator Death RW (For Warlock Echoing Strike)?\n\nHi all, have a question similar to my question in regards to gear about using Arachnid Mesh over Gheed's Wager.\n\n  \nSo during Ladder, I've come across a 5 soc Decapitator, a Dreadfang, and more recently, Arioc's Needle which apparently has found it's home in Echoing Strike Warlock. Off ladder, I have a Warlock that does echoing strike in the typical build you'd expect from him, and I've been of three minds about either one of these weapons being poised on my mainhand.\n\n  \nfor Arioc's, the one th...",
+      "question_keywords": [
+        "arioc's",
+        "needle",
+        "dreadfang",
+        "decapitator",
+        "death"
+      ],
+      "reference_answer": "[5↑] Yeah all these will slap, I'm using obedience and doing 30k-55k\n[6↑] The truth is weapon really doesn't matter for current ES lock. You are one shotting everything with a wirt's leg. So you might just get more fcr/mf/res than damage.\n[4↑] Not Dreadfang. Echoing Strike cannot proc curses (as I understand). If you get a cursed bound demon the whole screen gets cursed with Amp Dmg everywhere you go. I've found Ariocs to be good; Death is likely better but I'm using that on my Fury Druid. The Deadly Strike and 4 all skills on the Ariocs \n[3↑] I run grief/dreadfang on my frenzy barb. I tried dual grief but the amp damage makes this thing absolutely worth keeping, along with a host of other good stats. If they had given it +1-2 barb skills it would be a new bis barb sword",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 8,
+        "num_comments": 22,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1sgr03s",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1sgr03s/dragondintesladin_question/",
+      "question": "Dragondin/Tesladin question?\n\nI have a hammerdin in Single Player and I'm trying to reach lvl 99 . I'm currently 93 and the grind is getting really slow even with Terror Zones. I have enough runes to make a single Dragon item and a Single Dream item and was wondering if I should try running this as a loot pinata build and just run P1 or P3 zones and enjoy some loot explosions in the process if it's a viable build. What is your experience, will this do enough damage to run some Terror Zones and still be able to farm as quick ...",
+      "question_keywords": [
+        "dragondin",
+        "tesladin",
+        "hammerdin",
+        "single",
+        "player"
+      ],
+      "reference_answer": "[20↑] Dream is a “fun” build, but in single player where you don’t ever want to be in P1, it isn’t all that good, especially when you compare it to hammers. Also you’d want two, not one. I think if you do this and set your enigma back several dozen hours, you’re going to feel really bad\n[10↑] Tbh if you want 99,you need some p8 at this stage. P1-p3 will not cut it in terms of exp\n[4↑] Dual dragon or dual dream, not one of each. Then self conviction aura (no need for sunders).\n[4↑] The aura stacking is usually what makes the build strong, it's like a 300% dmg increase stack them. Sunder charm shouldn't matter, use conviction when doing spell dmg, fnata/might/conc with grief (depends on what auras you have from gear/on merc)",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 5,
+        "num_comments": 35,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1suqbec",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1suqbec/favorite_p1_build_for_solo_farming/",
+      "question": "Favorite P1 build for solo farming?\n\nI really like sets, but eventually every ladder feel the pull to enigma (for everything). I seem to always drift towards meta builds despite not wanting to so I can farm higher player counts. \n\nSo if I force myself to just do P1, maybe with sets maybe not, just to play a fun build even if it’s not the strongest what would you suggest?  \n\nIn the past I liked a frost nova sorc and a frost maiden bowazon for some examples. I frequently also play Necro summoner and Necro poison so trying to do somet...",
+      "question_keywords": [
+        "favorite",
+        "build",
+        "solo",
+        "farming",
+        "really"
+      ],
+      "reference_answer": "[5↑] You can get through a decent amount of stuff on a barbarian using the IK set honestly.\n[3↑] Barb is actually the best Trav farmer on P1. Item Find doesn't scale with player count. Any build can do it well, but I prefer WW with grief or support/gf barb &amp; let A5 merc kill everything.\n[1↑] I play SCNL online so it's mostly p1. I like to clear Hell with every class set too, but I don't keep farming with them beyond that. Barb IK WW and Necro Trang poison with Dweb were very easy so my favorites. Mavina fire/ice hybrid was ok too. Aldur is one of the worst sets, as expected. I did Bear \n[1↑] Barb is the best P1 farmer.\n[1↑] I completed a grail primarily on p1. I used a combination of characters and just played them as I felt like playing them. I did the last part of the grail, the last 5 items, on a lightning sorc because it was easy to build her up with lots of mf and still maintain enough damage. The thing that I lov",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 5,
+        "num_comments": 13,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1s4xudf",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1s4xudf/where_do_you_farm_when_tz_zones_suck/",
+      "question": "Where do you farm when TZ zones suck?\n\nI haven’t had much time to play in RotW (and in D2R in general..)\n\nMy \\*\\*Single Player\\*\\* warlock is obviously strong, but I can’t decide where I should farm.\n\nI’ve had some luck recently, but still miss a lot of my desired pieces (Shako, Arach, HRs including Zod). Back in the day I would’ve just farmed Meph for uniques and CS/WSK for anything higher TC, but I have no idea what the ‘rules’ are these days.",
+      "question_keywords": [
+        "farm",
+        "zones",
+        "suck",
+        "haven",
+        "much"
+      ],
+      "reference_answer": "[12↑] Usually a few keyruns. 30 mins are over in no time.\n[8↑] Keys. But seemingly I am cursed because never really see it drop\n[5↑] Chaos always best , lk for runes arcane for runes, pit ancient tunnels for different places to farm. And if anything shard tz.\n[3↑] I’ve been doing trav + Mephisto runs with my best magic find gear on my warlock. Really enjoying the quick simple runs and it’s filling out my collection log like crazy\n[2↑] are you playing offline? If your gaming time is limited.... you can change your pc clock in settings to choose which zone is terrorized. It is \"cheating,\" but if you are playing offline solo then the only thing that matters is having fun [https://www.d2emu.com/tz-sp](https://www.d2emu.com/tz-sp)",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 4,
+        "num_comments": 39,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1sr4hww",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1sr4hww/better_general_endgame_tz_farming_hc_build/",
+      "question": "Better general endgame tz farming hc build?\n\nfury druid or bladesin for pvm hc tz farming? fury druid i assume does way more single target, but the bladesin im assuming clears density better with the blade trap+death sentry? does the fury druids single target outweigh bladesins so much so that the aoe she brings wouldnt make up for it?",
+      "question_keywords": [
+        "better",
+        "general",
+        "endgame",
+        "farming",
+        "build"
+      ],
+      "reference_answer": "[2↑] Single target can never compete with AOE I would say. Melee will also always lose on survival, especially for hardcore.\n[1↑] Fury Druid might have a lot more damage, but it's a melee build on hardcore. Bladesin is a (relatively) ranged build that has AoE and, importantly for HC, crowd control. I'd choose Bladesin. Actually no, I'd choose a completely different build instead of these two ))\n[1↑] Probs Javazon or warlock with an SS\n[1↑] I’d be hesitant to get too invested in either. HC melee and you want to TZ farm it’s just a matter of when you’ll die not if. Safest and most fun HC build I have is a throw barb. Huge HP pool, find item, ranged attack, and can stab with your weapons too if you want. Grim ward is also prob the best C",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 4,
+        "num_comments": 14,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1subp2n",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1subp2n/should_i_make_my_javazon/",
+      "question": "Should I make my javazon?\n\nObviously you can’t tell make the decision. Long story short I came back for D2R, leveled a warlock and grinded. I’m 95, dropped 3x Sur (no LK involved. Fuck that place) and 1 Cham meaning I’m very far from enigma still, unless RNG gods bless me with a Jah.\n\nTo change things up I leveled a barbarian. He’s now 83, and he just \\*stinks\\*, so he’s parked until I find a Lo.\n\nI like my warlock a lot. He’s a pure summoner, and can do everything. In the end I mostly farm keys (for my pure smiter to han...",
+      "question_keywords": [
+        "make",
+        "javazon",
+        "obviously",
+        "tell",
+        "decision"
+      ],
+      "reference_answer": "[15↑] If RNG already gave you Griffons + Titans, the game is basically yelling \"make the javazon already\" :D\n[5↑] How are you gonna gear and spec your barb after finding your Lo? I assume you’re making PB Grief. I’m just curious, i also have a 83 barb (but with Grief) and i still feel he stinks … 😆\n[5↑] Sunder isnt a necessity for cows. If you can get an infinity as well, youll clear pretty much everything except maybe lightning enchanted TZs\n[5↑] Amazon was and still is the Queen of Cows, with or without sunder. Aside from the CowKing or some random roll on Elites, there are now Lightning immunes and the more enemies the more damage she can cause. If your goal is to farm Runes, LK is, unfortunately, your best bet. The high density of cows ma",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 4,
+        "num_comments": 24,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1sex4qf",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1sex4qf/best_rune_find_build_with_0_mf/",
+      "question": "Best rune find build with 0 MF.\n\nI was wondering what build would be best to farm runes focusing on everything survivability related. Like All res, def, life, that kind of stuff. Pretty much the best of the best to survive any enviroment and move on quickly and most efficiently farm high runes on a high player count in single player. Thanks in advance for all the help!",
+      "question_keywords": [
+        "best",
+        "rune",
+        "find",
+        "build",
+        "wondering"
+      ],
+      "reference_answer": "[14↑] One Lo rune and you can make a trav barb that is arguably the best rune finder\n[10↑] Nova sorc\n[9↑] Lightning fury Amazon is generally regarded as the fastest zone clearer, it's just her cast animation is slow, so teleport isn't as smooth to use. She has good passives for survivability and valkyrie helps draw agro. If you don't have infinity you can just farm cows, which is pretty good for rune fa\n[7↑] Players 7 Cows and Chaos Sanctuary are best rune farming areas if you still want chances for other items to drop. Otherwise the best spot is lower kurast super chest farming on Players 7. LK runs will also net good charms and jewels. Correct on no MF. google LK runs if you want more details. Lightni\n[3↑] I would have to assume a nova sorc with infinity and energy shield and a Merc with insight. Sunder charm to boost damage on immunes.",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 2,
+        "num_comments": 64,
+        "flair": null
+      }
+    },
+    {
+      "id": "reddit_1sha9fb",
+      "source_url": "https://www.reddit.com/r/Diablo/comments/1sha9fb/easy_but_engaging_d2r_builds/",
+      "question": "Easy but Engaging D2R Builds?\n\nSo I recently got into D2 after playing D3 loads a couple years back. For context I have a level 32 barb which I didnt enjoy playing so I made a necro and thats on nightmare at act2 level 40 with a summon setup(which I plan on maxing before making a new character this time) but I just dont find it engaging. I summon blood golem and let that and my hire kill a couple of mobs then summon skeletons and they kill every thing while I sit behind them, pop amp damage and use corpse explosions for Yello...",
+      "question_keywords": [
+        "easy",
+        "engaging",
+        "builds",
+        "recently",
+        "into"
+      ],
+      "reference_answer": "[12↑] IMO D3 had more mechanical variety between builds (both how much button pressing, and number mechanics like stacking buffs). Like the difference of combo builds which need 2-3 skills, (phalanx condemn crusader, boulder toss raekor) vs channeling spin-to-win (WW, strafe DH, tempest rush), vs 1 button\n[3↑] Warlock plays a lot like a diablo 3 class. You've got several viable builds where you focus on one main damage skill, fire-chaos, magic-chaos, echoing strike, blood boil, then invest the rest of your point into whatever supports that. Could be binding a demon, sigils, hex. Obviously there are optima\n[2↑] I made my first pally after 26 years of playing and I can solo kill every act boss in an 8 player game for the first time ever so I say, make a pally it's a bit clunky, it's still better than my hydra sorc with comparable gear by miles in terms of solo clearing with speed",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "Diablo",
+        "score": 8,
+        "num_comments": 32,
+        "flair": "Discussion"
+      }
+    },
+    {
+      "id": "reddit_1shp3vy",
+      "source_url": "https://www.reddit.com/r/diablo2/comments/1shp3vy/build_advice_for_blizzhydra_sorc_needed/",
+      "question": "Build advice for Blizz/Hydra sorc needed\n\n[Link to my current build, level 86.](https://diablo2.io/skilltree.php?class=Sorceress&amp;skills=%7B%22normal%22%3A%7B%2236%22%3A1%2C%2237%22%3A1%2C%2239%22%3A1%2C%2240%22%3A1%2C%2242%22%3A1%2C%2243%22%3A1%2C%2244%22%3A1%2C%2245%22%3A1%2C%2247%22%3A1%2C%2252%22%3A1%2C%2254%22%3A1%2C%2255%22%3A1%2C%2259%22%3A20%2C%2261%22%3A20%2C%2262%22%3A20%2C%2265%22%3A9%7D%2C%22bonus%22%3A%7B%7D%2C%22allSkillsBonus%22%3A%7B%2236%22%3A8%2C%2237%22%3A8%2C%2238%22%3A8%2C%2239%22%3A8%2C%2240%22%3A8%2C%2241%22%3A...",
+      "question_keywords": [
+        "build",
+        "advice",
+        "blizz",
+        "hydra",
+        "sorc"
+      ],
+      "reference_answer": "[4↑] Get a spirit shield instead of storm shield for more skills. Trade for magefist. Can also try crafting rings if yours are that awful Cows and ancient tunnels for bases. Make treachery for your merc and an eth insight to help his damage. Bulwark for a helm is cheap too.\n[1↑] Honestly I feel like blizzard does enough damage without its synergies. Pumping up hydras feels like it gives more bang for your buck.\n[1↑] &gt; I need to be dual element No you don’t. You can simply ignore cold immune monsters.\n[1↑] Blizz only orb for dual ele You can just skip immune\n[1↑] 20 fire mastery is not necessary. Keep it at 1pt. Pump blizzard and ice blast's synergies as much as possible (-100 from CM is enough). You play it as a weaker blizz sorc, only use hydras for the necessary cold immune kills (de seis and skeletons at Baal wave 2). Skip everything else, not worth your",
+      "status": "pending",
+      "added_date": "2026-04-25",
+      "improvement_count": 0,
+      "failure_reason": null,
+      "improvement_history": [],
+      "meta": {
+        "subreddit": "diablo2",
+        "score": 1,
+        "num_comments": 32,
+        "flair": "D2R"
       }
     }
   ]
