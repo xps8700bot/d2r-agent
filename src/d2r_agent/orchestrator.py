@@ -428,7 +428,7 @@ def answer(
     ]
     # For mechanics_query, we ONLY want to hit the DB if we actually have some hits.
     # Otherwise we'll fall through to the default scaffold.
-    if gap.intent in {"magic_find_rule", "treasure_class_rule", "affix_level_rule", "charm_rule", "crafting_rule", "mechanics_query", "drop_rate"}:
+    if gap.intent in {"magic_find_rule", "treasure_class_rule", "affix_level_rule", "charm_rule", "crafting_rule", "mechanics_query", "drop_rate", "build_advice"}:
         mechanics_hits = search_mechanics(user_query, paths=mechanics_paths, limit=5)
 
         # Convert mechanics hits to EvidenceSnippet (quotable, structured).

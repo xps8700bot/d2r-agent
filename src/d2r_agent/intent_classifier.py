@@ -246,6 +246,20 @@ def classify_intent_rules(q: str) -> str:
     if "双持" in q and _interrogative:
         return "mechanics_claim"
 
+    # Heuristic: interrogative + mechanics keywords → mechanics_claim.
+    # Must fire before build_advice keyword loop (which catches class names).
+    _MECHANICS_TOKENS = {"levitate", "levitation", "one hand", "one-hand", "two hand",
+                         "two-hand", "two-handed", "passive"}
+    if _interrogative and any(mt in s for mt in _MECHANICS_TOKENS):
+        return "mechanics_claim"
+
+    # Heuristic: affix + ilvl co-occurrence → affix_level_rule.
+    # Prevents "ilvl" from stealing to treasure_class_rule when the question
+    # is clearly about affix availability.
+    _AFFIX_TOKENS = {"affix", "词缀", "前缀", "后缀", "prefix", "suffix"}
+    if any(at in s for at in _AFFIX_TOKENS) and re.search(r"\bilvl\b", s):
+        return "affix_level_rule"
+
     # Heuristic: class-name + build-context signals → build_advice,
     # even when a recipe keyword (e.g. "runeword") also appears.
     # Actual recipe queries focus on a specific item ("how to make Enigma"),
@@ -264,6 +278,10 @@ def classify_intent_rules(q: str) -> str:
         # Tradeoff / priority decisions ("do I bother", "is it worth", "save X for Y")
         # are build_advice even when specific runeword names appear.
         "bother", "worth it", "is it worth", "priority", "save for",
+        # Item usage advice ("how should I use this?", "seeking advice")
+        "how should i use", "seeking advice", "what should i do",
+        "what to do with", "which character", "who should use",
+        "viable character", "put it on", "give it to",
     }
     # Word-boundary match so short class abbreviations ("sin", "zon", "sorc",
     # "barb") don't substring-hit unrelated words like "session" / "Amazon" /
@@ -284,6 +302,17 @@ def classify_intent_rules(q: str) -> str:
     if _item_farming:
         return "drop_rate"
     if _has_class and _has_build_ctx:
+        return "build_advice"
+
+    # Heuristic: item-found + usage advice questions.
+    # "I found X / X dropped / got X — how should I use it / seeking advice"
+    # These are build_advice, not drop_rate (even though "dropped" matches "drop").
+    _ITEM_USAGE_RE = re.compile(
+        r"(dropped|found|got)\b.{0,80}\b(how\s+should\s+I\s+use|seeking\s+advice|what\s+(should|do)\s+I\s+do|which\s+character)"
+        r"|\b(how\s+should\s+I\s+use|seeking\s+advice)\b.{0,80}\b(dropped|found|got)\b",
+        re.I,
+    )
+    if _ITEM_USAGE_RE.search(s):
         return "build_advice"
 
     # Heuristic: gear evaluation / item comparison questions.
