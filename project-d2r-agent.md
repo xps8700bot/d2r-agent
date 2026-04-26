@@ -728,3 +728,33 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `6f164aa`. Push: success.
 - **Benchmark status:** 45 passed, 0 failed, 17 pending (62 total).
   Next: `reddit_1sarczh`, `reddit_1sn08mo`, `reddit_1sjxy2t`, `reddit_1ss2es0`.
+
+## 2026-04-26
+
+- **Questions processed (3 passed, 0 failed):**
+  - `reddit_1sarczh` (Eth Griffon's Eye usage) — failed initially (intent misclassified as
+    drop_rate; mechanics DB didn't find Griffon's Eye). Fixed: added item-usage heuristic to
+    intent classifier, added Diadem alias to Griffon's Eye entry, added ethereal items
+    mechanics fact, added build_advice to mechanics search intents. Passed after fix.
+  - `reddit_1sn08mo` (Herald farming builds) — failed initially (no Herald build knowledge).
+    Fixed: added Herald farming build tier list (Barb Find Item doubles loot) and PTR meta
+    change facts to farming.jsonl. Also fixed fact_type validation (strategy→note). Passed.
+  - `reddit_1sjxy2t` (SSF Enigma base: Archon vs Mage Plate) — passed on first attempt.
+    Strategy cards correctly recommended Mage Plate for multi-char SSF use.
+- **Regression tests:** 2 random passed questions re-verified (reddit_1s2qjvb, reddit_1s7nm7p) — both pass.
+  Fixed 2 regression case failures in existing test suite (mechanics_claim warlock levitate;
+  affix_level_rule ilvl) by adding intent classifier heuristics. 11/11 regression cases pass.
+- **Code changes:**
+  - `src/d2r_agent/intent_classifier.py` — 3 new heuristics: item-usage advice (dropped+how
+    to use → build_advice), mechanics interrogative (能不能+levitate → mechanics_claim),
+    affix+ilvl co-occurrence (→ affix_level_rule). Added BUILD_CONTEXT keywords.
+  - `src/d2r_agent/orchestrator.py` — added build_advice to mechanics DB search intents.
+  - `data/fact_db/mechanics/uniques.jsonl` — updated Griffon's Eye entry (Diadem alias,
+    ethereal usage advice for Javazon).
+  - `data/fact_db/mechanics/item_bases.jsonl` — added ethereal items mechanics fact.
+  - `data/fact_db/mechanics/farming.jsonl` — added Herald farming build tier list + PTR meta.
+  - `reddit_qa_todo.json` — 3 questions → `passed`.
+- **Tests:** 215 pytest passed, 11/11 regression cases passed.
+- **Commit:** `e65f9f3`. Push: success.
+- **Benchmark status:** 48 passed, 0 failed, 14 pending (62 total).
+  Next: `reddit_1ss2es0`, `reddit_1s3eiww`, `reddit_1soigyw`, `reddit_1sf9xjx`.

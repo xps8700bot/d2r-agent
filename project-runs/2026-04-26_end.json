@@ -1,0 +1,52 @@
+{
+  "ts": "2026-04-26T02:15:00+08:00",
+  "changed_files": [
+    "src/d2r_agent/intent_classifier.py",
+    "src/d2r_agent/orchestrator.py",
+    "data/fact_db/mechanics/farming.jsonl",
+    "data/fact_db/mechanics/item_bases.jsonl",
+    "data/fact_db/mechanics/uniques.jsonl",
+    "reddit_qa_todo.json",
+    "data/memory.jsonl"
+  ],
+  "tests": "215 pytest passed, 11/11 regression cases passed",
+  "commit": "e65f9f3",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1sarczh",
+        "question": "Eth Unique Diadem dropped today. How should I use it? (Mosaic Sin, Nova Sorc, Javazon)",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Fixed intent classifier (item-usage heuristic), added Diadem alias to Griffon's Eye, added ethereal mechanics fact, added build_advice to mechanics search intents",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1sn08mo",
+        "question": "Warlock aside, which builds are best at Herald farming? T5 Heralds best build",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added Herald farming build tier list (Barb Find Item doubles loot) and PTR meta change facts. Fixed fact_type validation (strategy→note).",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1sjxy2t",
+        "question": "SSF Found Jah, no Mage Plate - use Archon instead for Enigma?",
+        "result": "passed",
+        "improvement_count": 0,
+        "improvement_notes": "Passed on first attempt — strategy cards correctly recommended Mage Plate for multi-char SSF Enigma",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1s2qjvb", "reddit_1s7nm7p"],
+    "all_passed": true,
+    "regressions": [],
+    "notes": "Also fixed 2 regression case failures (mechanics_claim warlock levitate, affix_level_rule ilvl) by adding intent classifier heuristics. All 11/11 regression cases pass."
+  },
+  "review_instructions": "Intent classifier changes: 3 new heuristics added (item-usage, mechanics interrogative, affix+ilvl). Verify these don't over-trigger on edge cases. Strategy card noise (Summonlock/Countess appearing in Herald farming answer) is a known issue but not blocking."
+}
