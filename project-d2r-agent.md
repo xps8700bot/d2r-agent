@@ -758,3 +758,28 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `e65f9f3`. Push: success.
 - **Benchmark status:** 48 passed, 0 failed, 14 pending (62 total).
   Next: `reddit_1ss2es0`, `reddit_1s3eiww`, `reddit_1soigyw`, `reddit_1sf9xjx`.
+
+### 2026-04-27
+
+- **Questions processed (3 passed):**
+  - `reddit_1ss2es0` (Druid P8 farming) → **passed** (3 improvements: removed build_advice
+    from mechanics search, added class-match boost to strategy cards, added source_url dedup)
+  - `reddit_1s3eiww` (SP/SSF starting strategy) → **passed** (1 improvement: added SP/SSF
+    starting class strategy card — Sorc first, Teleport, LK farming, Enigma progression)
+  - `reddit_1soigyw` (Nightmare wall new player) → **passed** (1 improvement: added Holy Fire
+    Nightmare wall strategy card — Hammerdin transition, Token recipe, reroll alternatives)
+- **Code improvements:**
+  - `src/d2r_agent/orchestrator.py` — removed build_advice from mechanics DB search trigger
+    (was producing irrelevant Herald/Arcane/Tal Rasha evidence for build questions). Increased
+    strategy card search limit to 5 and display limit to 4 for build_advice intent.
+  - `src/d2r_agent/knowledge/strategy_cards.py` — added class-match boost (+8 when query and
+    card share a D2R class name), added source_url dedup to prevent one guide dominating results
+    with multiple card fragments.
+  - `data/strategy_cards.jsonl` — 2 new cards (SP/SSF starting class, Holy Fire NM wall).
+  - `reddit_qa_todo.json` — 3 questions → `passed`.
+- **Regression check:** 2 passed questions re-verified (reddit_1s2qjvb summon warlock points,
+  reddit_1s7nm7p herald spawn rate) — both passed, no regressions.
+- **Tests:** 215 pytest passed.
+- **Commit:** `ba56f38`. Push: success.
+- **Benchmark status:** 51 passed, 0 failed, 11 pending (62 total).
+  Next: `reddit_1sf9xjx`, `reddit_1su6iqt`, `reddit_1sk18fj`.
