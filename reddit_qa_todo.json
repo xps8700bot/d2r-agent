@@ -1436,11 +1436,15 @@
       "only"
     ],
     "reference_answer": "[33↑] Fire is s-tier but you need GG gear.\n[15↑] Druids are not great in end game pvm. They are naturally tanky and deal good single target damage but the area damage is limited, making them excellent PvP chars but mediocre for farming. Tornado is the easiest build to get going. It plays like a hammerdin, just slower. Short range high damage with \n[10↑] Fury druid with reapers can kill everything p8\n[5↑] Fire Druid is it but honestly the build is so clunky: Firestorm is painful to aim need to basically just tele exactly on top of whatever you’re targeting Fissure being semi random is also as pajnful as blizzard targeting. Apocalypse only lasting 50 seconds is so weird. It’s a lot of upkeep. Lastly: \n[3↑] I play a summoner druid on hardcore that I can p8 on. You need an act 5 merc with lawbringer.",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 3,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      "Removed build_advice from mechanics DB search trigger to eliminate irrelevant Herald/Arcane/Tal Rasha noise",
+      "Added class-match boost (+8) to strategy_cards search so Druid-specific cards rank above incidental keyword matches (e.g., Blood Boil Warlock)",
+      "Added source_url dedup to strategy_cards search + increased build_advice display limit to 4 cards → Fury Druid now included alongside Wind Druid and Fissure Druid"
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 19,
@@ -1460,11 +1464,13 @@
       "new"
     ],
     "reference_answer": "[46↑] sorc...teleporting for boss runs is invaluable\n[12↑] Sorc LK Sorc bosses Unfortunately it’s not even close. But you could do a warlock and run chaos or something with a tele staff on P7\n[10↑] I started with a summoning necro.. was painfully slow, got stuck at hell Diablo, then I made a blizz/hydra sorc and I beat the whole thing on p7 and only had to turn it down for bosses lol she is op. Teleport is a must. Get yourself 2 spirits asap and you’ll fly through the game :)\n[4↑] Sorc to start, farm some bosses, do LK farming until first enigma. Then Warlock can farm everywhere\n[4↑] Yeah if you're looking to actually gear up all classes and do it solo, a sorc is likely going to be your best first option just cause of teleport. Basically just farming forever until you can get an enigma going to switch characters lol.",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      "Added SP/SSF starting class strategy card covering Sorc-first consensus, Teleport importance, Blizzard Sorc progression path, and key early runewords"
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 14,
@@ -1484,11 +1490,13 @@
       "player"
     ],
     "reference_answer": "[7↑] Holy fire through normal and blessed hammer once you reach travincal nightmare is a very consistent path and one of the easiest play throughs across all classes. Blessed hammer takes a bit to get used to but deals a shitton of damage. Magic immune monsters exist but you can simply ignore them until \n[5↑] Summon Necro with curse and corpse explosion is a great build to start out on. Resistances are mostly a non factor and the build still performs great with minimal gear options. May not be the fastest, but it’s the safest way to get all the way through the game\n[3↑] I respec'ed right about where you hit the wall to foh smiter which was a great ssf starter because I could farm meph, trav, and chaos sanctuary from low gear pretty efficiently and had ok tp frames for lower kurast. between those I got infinity and grief which opened up all the other classes. too ba",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      "Added Holy Fire Nightmare wall strategy card covering Hammerdin transition, Token of Absolution recipe, and alternative reroll classes (Summon Necro, Blizzard Sorc, FoH Smiter)"
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 13,

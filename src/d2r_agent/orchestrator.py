@@ -212,7 +212,8 @@ def _compose_answer(
         for m in mechanics_tldr[:2]:
             tldr.append(m)
     elif strategy_tldr:
-        for s in strategy_tldr[:3]:
+        cap = 4 if intent == "build_advice" else 3
+        for s in strategy_tldr[:cap]:
             tldr.append(s)
 
     if retrieval_needed and not evidence and not strategy_tldr:
@@ -386,7 +387,8 @@ def answer(
     strategy_hits_obj = []
     strategy_tldr: list[str] = []
     if True:
-        sh = search_strategy_cards(user_query, path="data/strategy_cards.jsonl", limit=4)
+        card_limit = 5 if gap.intent == "build_advice" else 4
+        sh = search_strategy_cards(user_query, path="data/strategy_cards.jsonl", limit=card_limit)
         for h in sh:
             strategy_hits_obj.append({"topic": h.topic, "source_url": h.source_url, "title_path": h.title_path})
             # TL;DR style line
@@ -428,7 +430,7 @@ def answer(
     ]
     # For mechanics_query, we ONLY want to hit the DB if we actually have some hits.
     # Otherwise we'll fall through to the default scaffold.
-    if gap.intent in {"magic_find_rule", "treasure_class_rule", "affix_level_rule", "charm_rule", "crafting_rule", "mechanics_query", "drop_rate", "build_advice"}:
+    if gap.intent in {"magic_find_rule", "treasure_class_rule", "affix_level_rule", "charm_rule", "crafting_rule", "mechanics_query", "drop_rate"}:
         mechanics_hits = search_mechanics(user_query, paths=mechanics_paths, limit=5)
 
         # Convert mechanics hits to EvidenceSnippet (quotable, structured).

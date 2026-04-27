@@ -122,6 +122,18 @@ def search_strategy_cards(user_query: str, path: str, limit: int = 3) -> list[St
                     score += 10
                     break
 
+        # Class-match bonus: when the query mentions a specific D2R class,
+        # prefer cards about that class over incidental keyword overlap.
+        _CLASS_NAMES = {
+            "druid", "sorceress", "barbarian", "paladin",
+            "amazon", "necromancer", "assassin", "warlock",
+        }
+        query_classes = {c for c in _CLASS_NAMES if c in norm_q}
+        if query_classes:
+            card_classes = {c for c in _CLASS_NAMES if c in hay}
+            if query_classes & card_classes:
+                score += 8
+
         # Require at least a bigram-level match (score >= 6) or 4+ single-token
         # hits to filter out cards that only weakly overlap on generic words.
         if score < 4:
@@ -140,4 +152,17 @@ def search_strategy_cards(user_query: str, path: str, limit: int = 3) -> list[St
         )
 
     scored.sort(key=lambda x: x[0], reverse=True)
-    return [h for _, h in scored[:limit]]
+
+    # Deduplicate: keep only the highest-scoring card per source_url
+    # so one guide doesn't dominate results with multiple card fragments.
+    seen_urls: set[str] = set()
+    deduped: list[tuple[int, StrategyCardHit]] = []
+    for pair in scored:
+        url = pair[1].source_url
+        if url and url in seen_urls:
+            continue
+        if url:
+            seen_urls.add(url)
+        deduped.append(pair)
+
+    return [h for _, h in deduped[:limit]]
