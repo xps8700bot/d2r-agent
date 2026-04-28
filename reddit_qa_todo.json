@@ -1516,7 +1516,7 @@
       "don't"
     ],
     "reference_answer": "[49↑] Farm ber runes lol\n[15↑] Th grind hasn’t even started yet..\n[5↑] Look up an online guide. Certain areas in each zone drop ber’s, but the drop rate is stupidly low. Realistically you’ll be making several runewords before your first ber. It took me 20 years to drop my first, over 3 accounts, and only semi consistent play. I think I logged somewhere between 5k and 1\n[3↑] You need a merc that can help you. Cheapest alternative is either Insight/Tresachery A2 merc, or a Sazabi full set A5 merc You need to bring up your resistances. Make sure you completed Anya’s quest in normal and NM, and use charms with resistances if you must. Check your character sheet to ensure t\n[2↑] What char did you level as your first? If you went sorc I would hit LK p7 chests till your eyes bleed. I made enigma after like 2k runs last week.",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
     "improvement_count": 0,
     "failure_reason": null,
@@ -1526,7 +1526,8 @@
       "score": 12,
       "num_comments": 43,
       "flair": null
-    }
+    },
+    "passed_at": "2026-04-28T02:02:00Z"
   },
   {
     "id": "reddit_1su6iqt",
@@ -1540,17 +1541,24 @@
       "struggle"
     ],
     "reference_answer": "[23↑] Mosaic Sin. 2x mosaic, Enigma, 65 fcr or 102 if you're loaded. rest is luxury enjoy not playing the game\n[11↑] ES Warlock with Hex:Purge maxed. Also max all its synergies including Sigil: Death. For the moment only one point in Bind Demon so you can Bind Ismail Vilehand from the Trav council, he's always cursed. Use Death Mark to teleport him attacking unto enemies, he curses them immediately. Apply Sigil: D\n[11↑] Other than those already mentioned, the current warlock certainly does it. As for after nerf, some YouTubers are already coming up with pretty decent builds, like Abyss. It looks pretty good too.\n[10↑] It's not the fastest, but it's fast enough for me: Demon Warlock. You run with one defiler and one goatman until your merc doesn't keep constantly dying, then you switch to two defilers. Plus your bound demon, naturally. There's no area in the game you can't just waltz through.",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-04-28T02:05:00Z",
+        "category": "knowledge_gap",
+        "summary": "Added 4 strategy cards covering P8 build tier list (Mosaic Sin, ES Warlock with Hex:Purge, Demon Warlock, and overall ranking). Previously agent had no P8-specific build comparison knowledge and returned generic farming advice. After fix, top strategy card directly answers with ranked tier list matching community consensus."
+      }
+    ],
     "meta": {
       "subreddit": "diablo2resurrected",
       "score": 10,
       "num_comments": 55,
       "flair": "Discussion"
-    }
+    },
+    "passed_at": "2026-04-28T02:06:00Z"
   },
   {
     "id": "reddit_1sr6pop",
@@ -1564,17 +1572,24 @@
       "death"
     ],
     "reference_answer": "[5↑] Yeah all these will slap, I'm using obedience and doing 30k-55k\n[6↑] The truth is weapon really doesn't matter for current ES lock. You are one shotting everything with a wirt's leg. So you might just get more fcr/mf/res than damage.\n[4↑] Not Dreadfang. Echoing Strike cannot proc curses (as I understand). If you get a cursed bound demon the whole screen gets cursed with Amp Dmg everywhere you go. I've found Ariocs to be good; Death is likely better but I'm using that on my Fury Druid. The Deadly Strike and 4 all skills on the Ariocs \n[3↑] I run grief/dreadfang on my frenzy barb. I tried dual grief but the amp damage makes this thing absolutely worth keeping, along with a host of other good stats. If they had given it +1-2 barb skills it would be a new bis barb sword",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-04-28T02:07:00Z",
+        "category": "knowledge_gap",
+        "summary": "Added 2 strategy cards: ES Warlock weapon comparison (Arioc's vs Death vs Dreadfang vs Obedience) and ES mechanic (cannot proc on-hit effects). Previously agent returned generic ES build info without addressing the specific weapon comparison. After fix, agent correctly recommends Arioc's for +skills, Death for max damage, and warns against Dreadfang due to ES not proccing curses."
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 8,
       "num_comments": 22,
       "flair": "Discussion"
-    }
+    },
+    "passed_at": "2026-04-28T02:07:00Z"
   },
   {
     "id": "reddit_1sgr03s",

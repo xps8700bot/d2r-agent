@@ -875,7 +875,8 @@ def answer(
         out_lines.append("\nEvidence")
         if evidence:
             for e in evidence[:5]:
-                out_lines.append(f"- {e.source_site} | {e.source_url} | {e.snippet[:140].replace('\n',' ')}")
+                snip = e.snippet[:140].replace('\n', ' ')
+            out_lines.append(f"- {e.source_site} | {e.source_url} | {snip}")
         else:
             out_lines.append("- (none)")
 
@@ -906,7 +907,8 @@ def answer(
     out_lines.append("\nEvidence")
     if evidence:
         for e in evidence[:5]:
-            out_lines.append(f"- {e.source_site} | {e.source_url} | {e.snippet[:140].replace('\n',' ')}")
+            snip = e.snippet[:140].replace('\n', ' ')
+            out_lines.append(f"- {e.source_site} | {e.source_url} | {snip}")
     else:
         out_lines.append("- (none)")
 
