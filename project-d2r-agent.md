@@ -783,3 +783,29 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `ba56f38`. Push: success.
 - **Benchmark status:** 51 passed, 0 failed, 11 pending (62 total).
   Next: `reddit_1sf9xjx`, `reddit_1su6iqt`, `reddit_1sk18fj`.
+
+### 2026-04-28 — Run
+
+- **Questions processed:**
+  1. `reddit_1sf9xjx` "Just got to hell dif lvl 70 what now" → **passed** (first attempt).
+     Agent provided comprehensive hell difficulty advice: farming locations (Travincal, LK,
+     Chaos, Cows, Arcane), budget runewords, merc setup, resistance management.
+  2. `reddit_1su6iqt` "Best P8 Destroyer Build in D2R?" → **passed** (1 improvement).
+     First attempt returned generic farming advice. Added 4 strategy cards for P8 build
+     tier list (Mosaic Sin S-tier non-ladder, ES Warlock S-tier S13, Demon Warlock, Hammerdin).
+  3. `reddit_1sr6pop` "Arioc's Needle vs Dreadfang vs Death for ES Warlock" → **passed** (1 improvement).
+     First attempt returned generic ES build info. Added 2 strategy cards: weapon comparison
+     (Arioc's best +skills, Death best damage, Dreadfang NOT recommended — ES can't proc curses)
+     and ES on-hit proc mechanic explanation.
+- **Code improvements:**
+  - `src/d2r_agent/orchestrator.py` — fixed Python 3.11 f-string backslash compatibility
+    (extracted snippet variable before f-string formatting on 2 lines).
+  - `data/strategy_cards.jsonl` — 6 new cards (P8 tier list, Mosaic Sin, ES Warlock Hex:Purge,
+    Demon Warlock P8, ES weapon comparison, ES on-hit proc mechanic).
+  - `reddit_qa_todo.json` — 3 questions → `passed`.
+- **Regression check:** 2 passed questions re-verified (reddit_1s2qjvb summon warlock points,
+  reddit_1s7nm7p herald spawn rate) — both passed, no regressions.
+- **Tests:** 56 unittest passed (6 pre-existing pytest import errors).
+- **Commit:** `30cb66e`. Push: success.
+- **Benchmark status:** 54 passed, 0 failed, 8 pending (62 total).
+  Next: `reddit_1sgr03s`, `reddit_1suqbec`, `reddit_1s4xudf`.
