@@ -809,3 +809,29 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `30cb66e`. Push: success.
 - **Benchmark status:** 54 passed, 0 failed, 8 pending (62 total).
   Next: `reddit_1sgr03s`, `reddit_1suqbec`, `reddit_1s4xudf`.
+
+---
+
+### 2026-04-30 — Tesladin/Dragondin, P1 fun builds, TZ alternative farming
+
+- **Questions processed (3 passed):**
+  1. `reddit_1sgr03s` (Dragondin/Tesladin viability for SP 99 grind) — **passed**
+     after 1 improvement. Root cause: no knowledge of Dream/Dragon aura builds.
+     Fix: added 3 strategy cards (aura stacking mechanics, viability assessment
+     with dual-item requirement + P8 for 99, level 99 XP scaling).
+  2. `reddit_1suqbec` (Favorite P1 solo farming build) — **passed** after 1 improvement.
+     Root cause: no fun/non-meta build suggestions. Fix: added strategy card covering
+     IK Barb, Barb Trav (Hork doesn't scale with player count), Trang Necro, etc.
+  3. `reddit_1s4xudf` (Where to farm when TZ zones suck) — **passed** after 1 improvement.
+     Root cause: no knowledge of alternative farming when TZ is bad. Fix: added card
+     prioritizing key runs, Chaos, Trav+Meph, LK, Arcane, Pit/AT.
+- **Code improvements:**
+  - `data/strategy_cards.jsonl` — 5 new cards (Tesladin/Dragondin mechanics,
+    Tesladin viability, level 99 XP scaling, P1 fun builds, TZ alternative farming).
+  - `reddit_qa_todo.json` — 3 questions → `passed`.
+- **Regression check:** 2 passed questions re-verified (reddit_1rw6ccy Enigma base,
+  reddit_1s7mbm1 best boss to farm) — both passed, no regressions.
+- **Tests:** 205 passed (4 pre-existing failures in test_item_bases*.py).
+- **Commit:** `e28e1fa`. Push: success.
+- **Benchmark status:** 57 passed, 0 failed, 5 pending (62 total).
+  Next: `reddit_1sr4hww`, `reddit_1subp2n`, `reddit_1slkojx`.
