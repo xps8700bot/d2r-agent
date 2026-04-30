@@ -1603,11 +1603,16 @@
       "player"
     ],
     "reference_answer": "[20↑] Dream is a “fun” build, but in single player where you don’t ever want to be in P1, it isn’t all that good, especially when you compare it to hammers. Also you’d want two, not one. I think if you do this and set your enigma back several dozen hours, you’re going to feel really bad\n[10↑] Tbh if you want 99,you need some p8 at this stage. P1-p3 will not cut it in terms of exp\n[4↑] Dual dragon or dual dream, not one of each. Then self conviction aura (no need for sunders).\n[4↑] The aura stacking is usually what makes the build strong, it's like a 300% dmg increase stack them. Sunder charm shouldn't matter, use conviction when doing spell dmg, fnata/might/conc with grief (depends on what auras you have from gear/on merc)",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-04-30T00:00:00Z",
+        "notes": "Added 3 strategy cards: Tesladin/Dragondin build mechanics, viability assessment (updated to include dual-item requirement and P8 for level 99), and level 99 XP scaling. After update, agent correctly advises: do not mix Dream+Dragon, need P7-P8 for 99, keep Hammerdin for progression."
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 5,
@@ -1627,11 +1632,16 @@
       "really"
     ],
     "reference_answer": "[5↑] You can get through a decent amount of stuff on a barbarian using the IK set honestly.\n[3↑] Barb is actually the best Trav farmer on P1. Item Find doesn't scale with player count. Any build can do it well, but I prefer WW with grief or support/gf barb &amp; let A5 merc kill everything.\n[1↑] I play SCNL online so it's mostly p1. I like to clear Hell with every class set too, but I don't keep farming with them beyond that. Barb IK WW and Necro Trang poison with Dweb were very easy so my favorites. Mavina fire/ice hybrid was ok too. Aldur is one of the worst sets, as expected. I did Bear \n[1↑] Barb is the best P1 farmer.\n[1↑] I completed a grail primarily on p1. I used a combination of characters and just played them as I felt like playing them. I did the last part of the grail, the last 5 items, on a lightning sorc because it was easy to build her up with lots of mf and still maintain enough damage. The thing that I lov",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-04-30T00:00:00Z",
+        "notes": "Added strategy card for fun P1 non-meta builds (IK Barb, Trav farming, Trang Necro, Fury Druid, Bowazon, etc). Passed on first attempt after card addition."
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 5,
@@ -1651,11 +1661,16 @@
       "much"
     ],
     "reference_answer": "[12↑] Usually a few keyruns. 30 mins are over in no time.\n[8↑] Keys. But seemingly I am cursed because never really see it drop\n[5↑] Chaos always best , lk for runes arcane for runes, pit ancient tunnels for different places to farm. And if anything shard tz.\n[3↑] I’ve been doing trav + Mephisto runs with my best magic find gear on my warlock. Really enjoying the quick simple runs and it’s filling out my collection log like crazy\n[2↑] are you playing offline? If your gaming time is limited.... you can change your pc clock in settings to choose which zone is terrorized. It is \"cheating,\" but if you are playing offline solo then the only thing that matters is having fun [https://www.d2emu.com/tz-sp](https://www.d2emu.com/tz-sp)",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-04-30T00:00:00Z",
+        "notes": "Added strategy card for alternative farming when TZ is bad (keys, chaos, trav+meph, LK, arcane, pit/AT, warlock tips). Passed on first attempt after card addition."
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 4,
