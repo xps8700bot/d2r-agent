@@ -38,6 +38,14 @@ def search_strategy_cards(user_query: str, path: str, limit: int = 3) -> list[St
 
     import re
 
+    _PRIMARY_SUBJECT_RE = re.compile(
+        r"should\s+I\s+(?:make|build|level|push|play|try|start|go)\s+"
+        r"(?:my\s+|a\s+|the\s+)?(\w+)",
+        re.I,
+    )
+    _primary_subject_match = _PRIMARY_SUBJECT_RE.search(q)
+    _primary_subject = _primary_subject_match.group(1).lower() if _primary_subject_match else None
+
     norm_q = re.sub(r"[^0-9a-zA-Z_\u4e00-\u9fff\+\-]+", " ", q)
     tokens = [t for t in norm_q.split() if len(t) >= 3]
 
@@ -127,12 +135,25 @@ def search_strategy_cards(user_query: str, path: str, limit: int = 3) -> list[St
         _CLASS_NAMES = {
             "druid", "sorceress", "barbarian", "paladin",
             "amazon", "necromancer", "assassin", "warlock",
+            "javazon", "bowazon", "hammerdin", "zealot", "smiter",
+            "fishymancer", "bladesin", "trapsin", "kicksin",
+            "fury druid", "wind druid", "summoner necro",
+            "throw barb", "whirlwind barb", "frenzy barb",
         }
         query_classes = {c for c in _CLASS_NAMES if c in norm_q}
         if query_classes:
             card_classes = {c for c in _CLASS_NAMES if c in hay}
-            if query_classes & card_classes:
+            overlap = query_classes & card_classes
+            if overlap:
                 score += 8
+                topic_lower = topic.lower()
+                if any(c in topic_lower for c in overlap):
+                    score += 12
+
+        if _primary_subject and _primary_subject in hay:
+            score += 15
+            if _primary_subject in topic.lower():
+                score += 10
 
         # Require at least a bigram-level match (score >= 6) or 4+ single-token
         # hits to filter out cards that only weakly overlap on generic words.

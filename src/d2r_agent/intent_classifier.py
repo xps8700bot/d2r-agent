@@ -292,6 +292,36 @@ def classify_intent_rules(q: str) -> str:
         for cn in _CLASS_NAMES
     )
     _has_build_ctx = any(bc in s for bc in _BUILD_CONTEXT)
+
+    # Heuristic: "should I make/build/level/push [class/archetype]" pattern.
+    # This is build_advice even when rune names or "farm" appear incidentally
+    # in the narrative (e.g. "dropped 3x Sur ... should I make my javazon?").
+    # Must fire BEFORE _item_farming to avoid false drop_rate classification.
+    _CLASS_AND_ARCHETYPES = _CLASS_NAMES | {
+        "javazon", "bowazon", "hammerdin", "zealot", "smiter",
+        "fishymancer", "bladesin", "trapsin", "kicksin",
+        "wind druid", "fury druid", "summoner",
+    }
+    _SHOULD_I_BUILD_RE = re.compile(
+        r"should\s+I\s+(make|build|level|push|play|respec|start|try|go)\b"
+        r".{0,80}\b(" + "|".join(re.escape(c) for c in _CLASS_AND_ARCHETYPES) + r")\b"
+        r"|\b(" + "|".join(re.escape(c) for c in _CLASS_AND_ARCHETYPES) + r")\b"
+        r".{0,80}\bshould\s+I\s+(make|build|level|push|play|respec|start|try|go)\b",
+        re.I,
+    )
+    if _SHOULD_I_BUILD_RE.search(s):
+        return "build_advice"
+
+    # Heuristic: "best/what build for rune farming" — user wants build advice,
+    # not drop locations. Must fire before _item_farming.
+    _BUILD_FOR_FARMING_RE = re.compile(
+        r"\b(best|what|which|good)\b.{0,30}\bbuild\b.{0,40}\b(farm|farming|find|hunt)\b"
+        r"|\b(farm|farming|find|hunt)\b.{0,30}\bbuild\b",
+        re.I,
+    )
+    if _BUILD_FOR_FARMING_RE.search(s):
+        return "build_advice"
+
     # Don't let class+farming trigger build_advice when the question is about
     # item/rune farming locations (e.g. "rune farming for paladin").
     _item_farming = bool(re.search(

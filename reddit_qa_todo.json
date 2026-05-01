@@ -1690,11 +1690,17 @@
       "build"
     ],
     "reference_answer": "[2↑] Single target can never compete with AOE I would say. Melee will also always lose on survival, especially for hardcore.\n[1↑] Fury Druid might have a lot more damage, but it's a melee build on hardcore. Bladesin is a (relatively) ranged build that has AoE and, importantly for HC, crowd control. I'd choose Bladesin. Actually no, I'd choose a completely different build instead of these two ))\n[1↑] Probs Javazon or warlock with an SS\n[1↑] I’d be hesitant to get too invested in either. HC melee and you want to TZ farm it’s just a matter of when you’ll die not if. Safest and most fun HC build I have is a throw barb. Huge HP pool, find item, ranged attack, and can stab with your weapons too if you want. Grim ward is also prob the best C",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "date": "2026-05-01",
+        "action": "Added strategy cards: Bladesin build overview, HC TZ farming criteria, Fury Druid vs Bladesin comparison, Throw Barb HC overview",
+        "result": "Agent now correctly recommends Bladesin over Fury Druid for HC TZ farming with proper reasoning"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 4,
@@ -1714,11 +1720,17 @@
       "decision"
     ],
     "reference_answer": "[15↑] If RNG already gave you Griffons + Titans, the game is basically yelling \"make the javazon already\" :D\n[5↑] How are you gonna gear and spec your barb after finding your Lo? I assume you’re making PB Grief. I’m just curious, i also have a 83 barb (but with Grief) and i still feel he stinks … 😆\n[5↑] Sunder isnt a necessity for cows. If you can get an infinity as well, youll clear pretty much everything except maybe lightning enchanted TZs\n[5↑] Amazon was and still is the Queen of Cows, with or without sunder. Aside from the CowKing or some random roll on Elites, there are now Lightning immunes and the more enemies the more damage she can cause. If your goal is to farm Runes, LK is, unfortunately, your best bet. The high density of cows ma",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "date": "2026-05-01",
+        "action": "Fixed intent classifier: added should-I-build-X heuristic before item_farming check; added Javazon strategy card; improved strategy card search with archetype class matching and primary subject detection",
+        "result": "Agent now correctly identifies build_advice intent and surfaces Javazon-specific knowledge as top result"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 4,
@@ -1738,11 +1750,17 @@
       "wondering"
     ],
     "reference_answer": "[14↑] One Lo rune and you can make a trav barb that is arguably the best rune finder\n[10↑] Nova sorc\n[9↑] Lightning fury Amazon is generally regarded as the fastest zone clearer, it's just her cast animation is slow, so teleport isn't as smooth to use. She has good passives for survivability and valkyrie helps draw agro. If you don't have infinity you can just farm cows, which is pretty good for rune fa\n[7↑] Players 7 Cows and Chaos Sanctuary are best rune farming areas if you still want chances for other items to drop. Otherwise the best spot is lower kurast super chest farming on Players 7. LK runs will also net good charms and jewels. Correct on no MF. google LK runs if you want more details. Lightni\n[3↑] I would have to assume a nova sorc with infinity and energy shield and a Merc with insight. Sunder charm to boost damage on immunes.",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "date": "2026-05-01",
+        "action": "Fixed intent classifier: added build-for-farming heuristic before item_farming; added rune farming builds strategy card (Trav Barb, Nova Sorc, Javazon, Blizz Sorc)",
+        "result": "Agent now correctly identifies build_advice intent and recommends top rune farming builds"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 2,
