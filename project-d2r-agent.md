@@ -835,3 +835,36 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `e28e1fa`. Push: success.
 - **Benchmark status:** 57 passed, 0 failed, 5 pending (62 total).
   Next: `reddit_1sr4hww`, `reddit_1subp2n`, `reddit_1slkojx`.
+
+### 2026-05-01 run
+- **Questions processed:** 3 passed (all required 1 improvement each).
+  1. `reddit_1sr4hww` (HC TZ farming: Fury Druid vs Bladesin) — **passed** after 1 improvement.
+     Root cause: no Bladesin knowledge, no HC build safety analysis. Fix: added 4 strategy
+     cards (Bladesin build overview, HC TZ farming criteria, Fury Druid vs Bladesin
+     comparison, Throw Barb HC overview).
+  2. `reddit_1subp2n` (Should I make my Javazon?) — **passed** after 1 improvement.
+     Root cause: intent misclassified as `drop_rate` (rune names in narrative triggered
+     `_item_farming`); no Javazon strategy card; Warlock context drowned out Javazon in
+     search. Fix: (a) intent classifier — added `should-I-build-X` heuristic before
+     `_item_farming`, (b) added Javazon strategy card, (c) strategy card search —
+     extended archetype class matching, added primary-subject detection (+25 score) and
+     topic-match bonus (+12).
+  3. `reddit_1sex4qf` (Best rune find build with 0 MF) — **passed** after 1 improvement.
+     Root cause: intent misclassified as `drop_rate` instead of `build_advice`; no rune
+     farming build card. Fix: (a) intent classifier — added `build-for-farming` heuristic
+     before `_item_farming`, (b) added rune farming builds strategy card (Trav Barb, Nova
+     Sorc, Javazon, Blizz Sorc).
+- **Code improvements:**
+  - `src/d2r_agent/intent_classifier.py` — 2 new heuristics: `should-I-build-X` and
+    `build-for-farming`, both fire before `_item_farming` to prevent false `drop_rate`.
+  - `src/d2r_agent/knowledge/strategy_cards.py` — extended class matching with archetype
+    names; added primary-subject detection; added topic-match bonus.
+  - `data/strategy_cards.jsonl` — 6 new cards (Bladesin, HC TZ farming, Fury vs Bladesin,
+    Throw Barb HC, Javazon, rune farming builds).
+  - `reddit_qa_todo.json` — 3 questions → `passed`.
+- **Regression check:** 2 passed questions re-verified (reddit_1mgq3cl Fury Druid vs Zealot,
+  reddit_1slfh1e High Rune Trade Logic) — both passed, no regressions.
+- **Tests:** 207 passed (3 pre-existing failures in test_item_bases_manual.py).
+- **Commit:** `1d98395`. Push: success.
+- **Benchmark status:** 60 passed, 0 failed, 2 pending (62 total).
+  Next: `reddit_1sha9fb`, `reddit_1shp3vy`.
