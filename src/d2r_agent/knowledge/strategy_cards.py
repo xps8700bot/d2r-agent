@@ -140,7 +140,17 @@ def search_strategy_cards(user_query: str, path: str, limit: int = 3) -> list[St
             "fury druid", "wind druid", "summoner necro",
             "throw barb", "whirlwind barb", "frenzy barb",
         }
-        query_classes = {c for c in _CLASS_NAMES if c in norm_q}
+        _NEG_PATTERNS = re.compile(
+            r"(?:don'?t|didn'?t|not|never|hate|dislike|boring|too passive|don't enjoy|didn't enjoy|don't like|didn't like|tired of|bored)"
+            r".{0,40}",
+            re.I,
+        )
+        neg_spans = [m.group(0).lower() for m in _NEG_PATTERNS.finditer(q)]
+        negated_classes = set()
+        for c in _CLASS_NAMES:
+            if any(c in span for span in neg_spans):
+                negated_classes.add(c)
+        query_classes = {c for c in _CLASS_NAMES if c in norm_q} - negated_classes
         if query_classes:
             card_classes = {c for c in _CLASS_NAMES if c in hay}
             overlap = query_classes & card_classes

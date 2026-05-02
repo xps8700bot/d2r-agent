@@ -47,15 +47,11 @@ def extract_keywords(text: str, n: int = 5) -> list[str]:
 
 def load_queue() -> dict:
     if QUEUE_PATH.exists():
-        return json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
-    return {
-        "version": 1,
-        "description": (
-            "D2R question benchmark set, sourced from Reddit. "
-            "State machine: pending -> in_progress -> passed | failed."
-        ),
-        "questions": [],
-    }
+        raw = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
+        if isinstance(raw, list):
+            return {"questions": raw, "_flat": True}
+        return raw
+    return {"questions": [], "_flat": True}
 
 
 def summarize_top_comments(comments_listing: list, max_chars: int = 700) -> str:
@@ -158,8 +154,9 @@ def main(argv: list[str]) -> int:
         added += 1
         print(f"added: {entry['id']} — {entry['question'][:80]}")
 
+    out = queue["questions"] if queue.get("_flat") else queue
     QUEUE_PATH.write_text(
-        json.dumps(queue, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     print(f"\ntotal added: {added}; queue size: {len(queue['questions'])}")
     return 0

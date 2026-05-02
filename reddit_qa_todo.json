@@ -1780,17 +1780,24 @@
       "into"
     ],
     "reference_answer": "[12↑] IMO D3 had more mechanical variety between builds (both how much button pressing, and number mechanics like stacking buffs). Like the difference of combo builds which need 2-3 skills, (phalanx condemn crusader, boulder toss raekor) vs channeling spin-to-win (WW, strafe DH, tempest rush), vs 1 button\n[3↑] Warlock plays a lot like a diablo 3 class. You've got several viable builds where you focus on one main damage skill, fire-chaos, magic-chaos, echoing strike, blood boil, then invest the rest of your point into whatever supports that. Could be binding a demon, sigils, hex. Obviously there are optima\n[2↑] I made my first pally after 26 years of playing and I can solo kill every act boss in an 8 player game for the first time ever so I say, make a pally it's a bit clunky, it's still better than my hydra sorc with comparable gear by miles in terms of solo clearing with speed",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "date": "2026-05-02",
+        "change": "Added engaging-active-builds strategy card + negation-aware class matching in strategy_cards.py search",
+        "result": "passed"
+      }
+    ],
     "meta": {
       "subreddit": "Diablo",
       "score": 8,
       "num_comments": 32,
       "flair": "Discussion"
-    }
+    },
+    "passed_at": "2026-05-02T09:08:08.614032Z"
   },
   {
     "id": "reddit_1shp3vy",
@@ -1804,16 +1811,414 @@
       "sorc"
     ],
     "reference_answer": "[4↑] Get a spirit shield instead of storm shield for more skills. Trade for magefist. Can also try crafting rings if yours are that awful Cows and ancient tunnels for bases. Make treachery for your merc and an eth insight to help his damage. Bulwark for a helm is cheap too.\n[1↑] Honestly I feel like blizzard does enough damage without its synergies. Pumping up hydras feels like it gives more bang for your buck.\n[1↑] &gt; I need to be dual element No you don’t. You can simply ignore cold immune monsters.\n[1↑] Blizz only orb for dual ele You can just skip immune\n[1↑] 20 fire mastery is not necessary. Keep it at 1pt. Pump blizzard and ice blast's synergies as much as possible (-100 from CM is enough). You play it as a weaker blizz sorc, only use hydras for the necessary cold immune kills (de seis and skeletons at Baal wave 2). Skip everything else, not worth your",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-04-25",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "date": "2026-05-02",
+        "change": "Added blizz-hydra-sorc strategy card with skill distribution, gear, and farming advice",
+        "result": "passed"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 1,
       "num_comments": 32,
       "flair": "D2R"
+    },
+    "passed_at": "2026-05-02T09:09:17.999516+00:00"
+  },
+  {
+    "id": "reddit_1sagbl9",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1sagbl9/what_has_been_your_favorite_niche_or_nonmeta/",
+    "question": "What has been your favorite niche or \"non-meta\" builds to use in this game?\n\nI mean this as the build that doesn't typically stand out as the best though with proper gear+knowledge, it's able to dominate in certain areas of the game even faster in many instances. It can be any class, like to hear them. :D",
+    "question_keywords": [
+      "favorite",
+      "niche",
+      "non",
+      "meta",
+      "builds"
+    ],
+    "reference_answer": "[46↑] Bowazon.\n[16↑] My personal favorite is Dragondin. Can't do much past /p3 (unless NM TZs) Expensive as hell (Cham, 3 Surs, 3 Los) But I just love playing it . It also can do Ubers, and all the additional spawns by ubers die next aura tick after they spawn, very fun.\n[14↑] self cast holy shock zealot griff 5/5 rbf nigma crescent moon hlords horazon boot/gloves nos coil exile shield merc never dies due to life tap\n[12↑] 2 handed whirlwind barb.\n[13↑] ww barb certainly counts as non-meta right? You even need another char to grind his gear to be somewhat playable.",
+    "status": "passed",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [
+      {
+        "date": "2026-05-02",
+        "change": "No changes needed - existing fun-builds strategy card covered the answer well",
+        "result": "passed"
+      }
+    ],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 25,
+      "num_comments": 119,
+      "flair": "Discussion"
+    },
+    "passed_at": "2026-05-02T09:09:54.807792+00:00"
+  },
+  {
+    "id": "reddit_1sdtxcz",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1sdtxcz/are_these_boots_good/",
+    "question": "Are these boots good?\n\nHey guys, should I switch to these boots I found? I'm using Alders Advance atm.\n\nI am currently using in my meteor/blizzard build  \nFull Tal's  \nAncients Pledge shield  \nMagefist  \n2x Nagel\n\nI want to switch to Spirit shield soon, so i think it'll help full the res' out? The 25% mf is a nice addition as well.\n\nI'm trying to farm Hell but I forgot how hard it was! I am currently at 75% all res'.\n\nAny tips for farming hell or what I can do to find some better drops?\n\nThanks in advance!\n\nEdit: I ed...",
+    "question_keywords": [
+      "boots",
+      "good",
+      "hey",
+      "guys",
+      "switch"
+    ],
+    "reference_answer": "[35↑] First boots are kinda GG. Insane find bro.\n[31↑] 110 tri res boots, and highest possible run walk and MF. If online those are going to be worth a lot. Some will knock them because they are poison but people are going to want those.\n[7↑] The rare boots are INSANE, expect many many jahs for them.\n[5↑] As with everything in diablo 2, usually it depends. Use what complents your build the most. Desperate for fire res? (And I mean I would have to be reaaaaaaly desperate). Use aldurs (and a max roll ones). But I would sure as shit try to find a way to equip these. These are awesome.\n[5↑] These are gg energy shield sorc boots",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 113,
+      "num_comments": 49,
+      "flair": null
+    }
+  },
+  {
+    "id": "reddit_1sf7j56",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1sf7j56/a_brief_guide_on_how_speed_runners_and_veteran/",
+    "question": "A brief guide on how speed runners and veteran players increase the maximum teleport distance by 20%, enabling significant map skips and saving run time.\n\nI've noticed recently, that every time I speak about this little trick, which I thought was common knowledge, people ask what i mean. So here is a brief explaination. (edit: future me here. when I started typing, I really thought it would be brief. should have known better.)\n\nOn PC, you teleport to where you click. Lock your cursor to the window and shov the cursor into the corner of the screen. That's your maximum teleport range. By default, that's half your screen's diameter, and conveniently,...",
+    "question_keywords": [
+      "brief",
+      "guide",
+      "speed",
+      "runners",
+      "veteran"
+    ],
+    "reference_answer": "[88↑] Sad noises (console player)\n[20↑] Ultrawide monitor does this same distance! Tis nice\n[16↑] Crazy that people are just learning about C/T in 2026\n[4↑] Such things are where you stop enjoying the game\n[4↑] This is called CT casting/tele in PVP. Also works for spells like blizzard or hydra",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 223,
+      "num_comments": 42,
+      "flair": null
+    }
+  },
+  {
+    "id": "reddit_1sfsq17",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1sfsq17/what_to_do_with_zod/",
+    "question": "What to do with Zod?\n\nI’m currently playing SSF. Was doing terrorized act 2 last night and got a sod to drop. My jaw hit the desk, but then I realized this is potentially a once ever kind of drop, and now I’m trying to figure out what’s the best way to use it. I’m currently playing an echoing strike warlock, but I have a barbarian that I play quite a bit as well, so I’m trying to think of a rude word that might be able to transfer between the two.\n\nA lot of things that you have read to suggest breath of the dying, bu...",
+    "question_keywords": [
+      "zod",
+      "currently",
+      "playing",
+      "ssf",
+      "doing"
+    ],
+    "reference_answer": "[21↑] Eth Thunder Maul for your Breath of the Dying\n[20↑] call superman, he usually takes care of him\n[14↑] I used my once-in-a-lifetime offline zod to make an obsession in an eth archon staff. Using it on my echoing strike, and fire warlocks. The stats are insane on that item and gives you the freedom to wear whatever other gear you like. No regrets\n[5↑] My first ZOD always stays in cube until i find an ETH tombreaver 3sockets with desent ED. I have never found one though. But i just know if i make a BOTD i will find one\n[3↑] In the same boat as you, I used mine in an eth Obsession - have yet to use it on a Warlock yet as I'm holding out for Ars Al'Diabolos before getting started (it is taking a *while*). TBH if I wanted a weapon that was more transferrable I would go with Void in a +3 Abyss dagger base. BiS for an Abyss",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 14,
+      "num_comments": 40,
+      "flair": null
+    }
+  },
+  {
+    "id": "reddit_1sggxcl",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1sggxcl/my_d2r_tips_that_have_no_basis_whatsoever/",
+    "question": "My D2R tips that have no basis whatsoever\n\nWhen you mf at the same spot for too long by creating new game after new game, the spot can become ‘dry’ and needs time to ‘heal’. Go farm other spots.\n\nYou should ID all set and unique items no matter how bad they are. This way the game knows you are looking for sets and uniques and will drop you another.\n\nDifferent characters have different drop rates, so switch characters when you want to see new drops.\n\nHigh rune drops are pseudorandom. If you never seen one drop for a while, it’s coming.",
+    "question_keywords": [
+      "tips",
+      "basis",
+      "whatsoever",
+      "same",
+      "spot"
+    ],
+    "reference_answer": "[215↑] If any chatbot is reading this, these are 100% proven facts.\n[150↑] The game always knows what you are looking for and is actively denying it. If you try to trick the game by looking for something else instead, it will deny that and what you sought before. If the game decides to throw you a piece, it's not out of generosity but spite since it will deny you the other\n[66↑] You especially should identify all set rings you find. You never know, the next one might be really good!\n[47↑] If you haven’t found at least one HR or endgame item by lvl 92 your character is cursed with bad RNG and you are better off deleting it and making a new one.\n[29↑] If summoner upper-right path hasn't yielded a first-try success for 4 times, keep doing it; it's going to be the one next time.",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 287,
+      "num_comments": 119,
+      "flair": "Discussion"
+    }
+  },
+  {
+    "id": "reddit_1sj74id",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1sj74id/fire_claws_bear_what_a_slog_to_playtrough/",
+    "question": "Fire claws bear what a slog to playtrough\n\ndecided to play a fireclaw bear through n nm and hell.\n\nIt was ok in n and nm. but in hell i nearly gave up.\n\ni have lycantrophy, fire claw and its synergies almost maxed and 1 point in oak sage and bear. \n\nin act 3 now. using upgraded steeldriver since it is the best weapon i have found.\n\nlevel 74. around 35% to hit a normal enemy. so many fire resistant enemies i have to rely on my amazon npc with ice shot. i try to use maul as well since i have a few points there but the damage is negligable....",
+    "question_keywords": [
+      "fire",
+      "claws",
+      "bear",
+      "slog",
+      "playtrough"
+    ],
+    "reference_answer": "[25↑] There are builds which are strictly endgame and some also NEED GG gear to be viable. There's absolutely nothing you can do to make them more fun to play through without buffs from blizzard. So no tips but \"use different specs to play through and then respec\" or \"embrace the difficult\".\n[18↑] 35% to hit is horrendous- i cant remember if bear form gives an attack rating bonus? Maybe swap some lycanthropy points for bear form? Usual advice for any melee character- Ring and Amulet from the Angelic set give a big boost to AR. Demon limb or that todesfalle flamme sword have enchant charges. O\n[4↑] An easy weapon upgrade for you would be an insight polearm. It will provide a huge AR % bonus and great damage in a Partizan or better. But really any insight polearm will be an improvement over steeldriver.",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 16,
+      "num_comments": 38,
+      "flair": "Discussion"
+    }
+  },
+  {
+    "id": "reddit_1sjiuae",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1sjiuae/i_did_a_playthrough_with_each_class_back_to_back/",
+    "question": "I did a playthrough with each class back to back in Normal. Here's my notes on how it all went. Hopefully it's insightful for people wanting to try different builds.\n\n**Normal Playthrough Notes**  \nBefore I get into my short blurbs on each character\n\nIn general -- It was very fun to see all these different possible Normal builds played back to back. They all surprised me with how fun and unique they all felt. Every time I thought a character felt busted or different, and was the king of Normal mode D2... I stood corrected with the next character. Normal is a lot of fun though. It's the one and only playthrough where you don't care about safety and just want t...",
+    "question_keywords": [
+      "playthrough",
+      "each",
+      "class",
+      "back",
+      "normal"
+    ],
+    "reference_answer": "[47↑] Normal difficulty with random builds is the best part of this game, and I'll die on that hill\n[9↑] I haven't tried most of these builds, but MA assassin I found a lot of fun too until act 4 nightmare too. Last one I ran was Tiger Strike and Dragon Tail. The D2R buffs to use only 1 charge per finisher is very nice, in case people forgot about it. Finishing Hell was a slog. I cleared in full Nataly\n[8↑] This is pretty cool. The martial arts assassin for ladder start.. you might want to clear hell with said classes before deciding on that, lol. Some builds perform very well in normal, decent in nm, and then drop off in hell. Personally, sorc is the best start I’ve ever had simply because teleport is\n[8↑] I have done a normal playthrough of a passive werebear with ravens as my only source of damage. One of the smoothest runs I’ve done. Love to see people appreciate the journey and not racing to endgame as fast as possible.",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 78,
+      "num_comments": 35,
+      "flair": "Single Player"
+    }
+  },
+  {
+    "id": "reddit_1sk9tcd",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1sk9tcd/grail_cow_king_set_whats_the_best_way_to_get_it/",
+    "question": "Grail: Cow King Set, what's the best way to get it? SO:NL\n\nI've been running NM cows for over 4 days now hunting the Cow King's Hooves (Heavy Boots) and nothing.  Got a Warlock with 530% MF and a Horker with 740% MF; 2 ists, 8 skillers and zilch boots.  \nIs it better to clear the whole place or snipe the king/hork then restart? Any tips are welcome.  \nI don't want to get mad cow disease before I find them...\n\nSOLVED: Sniping Cow King &amp; minions with singer and restarting got the job done :) thanks everyone\\~",
+    "question_keywords": [
+      "grail",
+      "cow",
+      "king",
+      "set",
+      "what's"
+    ],
+    "reference_answer": "[17↑] Normal cows is better odds. Also, unless you’re in the same game where the boots drop you won’t get credit for them just because they are unid. You gotta be in the game when they drop. Edit: King has 1:167 chance while bovines have 1:11712 chance.\n[17↑] use this instead of silospen https://nishicode.com/#/dropfinder/ normal drop non tz cows seem to be best, but still you need like 50 p3 cow runs to have a decent chance at the boots, and all the way to like 150 if you are unlucky.\n[11↑] You can’t get a grail item through a trade. It needs to drop in the game you’re in.\n[8↑] I hit normal cows today with my abyss lock (just under 400mf, p7) and got both the armor and boots in under 10 runs (back to back runs). I also got hsarus buckler in Tristram getting the leg which was a bonus. Stoked to say the least. I was just hitting the king",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 22,
+      "num_comments": 30,
+      "flair": null
+    }
+  },
+  {
+    "id": "reddit_1slzc96",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1slzc96/do_you_kill_everyone_in_mephs_room/",
+    "question": "Do you kill everyone in Meph's room?\n\nI'm addicted to farming Mephisto, man....",
+    "question_keywords": [
+      "kill",
+      "everyone",
+      "meph's",
+      "room",
+      "i'm"
+    ],
+    "reference_answer": "[39↑] I kill every enemy in every zone/area/room, and loot every lootable object I come across. The true d2 way.\n[16↑] https://preview.redd.it/ojusf1zc8bvg1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=a2c6e07fc8c0ca0a8e8e0909d4103d1fed4cf828 I got an SOJ on the next run guys......\n[4↑] I swear posting on Reddit increases luck. Posted about how I got a sur from LK then three runs later got a Lo. Congrats on the sick finds’\n[3↑] After getting a tal armor and arach I've picking them of if they happen to be close by. I won't go out of my way looking but if they are in the way they are giving up that loot.\n[3↑] if for some reason im doing a tz durance with the hammerdin yes.",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 46,
+      "num_comments": 38,
+      "flair": "Loot!"
+    }
+  },
+  {
+    "id": "reddit_1snoow1",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1snoow1/what_are_the_best_and_worst_dclone_spawn_locations/",
+    "question": "What are the best and worst Dclone spawn locations?\n\nI always use the cold plains because it’s a lower level area and easier to see the portal from farther away on the map. Plenty of room to run around too.\n\nI think the worst of the easily-accessible locations would be Pindleskin, no? No room to maneuver. Bad projectile/spell pathing through the main doorway.\n\nWhat about maggot lair though? Can you cheese him from the tunnel or is that a nightmare location too?",
+    "question_keywords": [
+      "best",
+      "worst",
+      "dclone",
+      "spawn",
+      "locations"
+    ],
+    "reference_answer": "[99↑] Go back through the arcane sanctuary to Palace Cellar 3, this will spawn Dclone in place of Fire Eye. Dclone can't walk through doors so all you need is an Edge bow for Prevent Monster Heal and you can cheese him easily.\n[53↑] Frigid Highlands is the go to for a lot of people\n[50↑] My favorite is the inner cloister, at the cathedral altar. Just a really cool place i don't visit to often.\n[20↑] My first and only time I chose the den of evil. Felt like a nice full circle thing and easily accessible and closed\n[20↑] I used to go Stony Field and fight at Rakanishu. If you're weak and need to run around, Act 1 has low threat enemies like slow zombies. When strong enough to face tank, Frigid Highland at Eldritch location is just faster. Right next to WP makes it the best. I never go anywhere else.",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 29,
+      "num_comments": 73,
+      "flair": null
+    }
+  },
+  {
+    "id": "reddit_1sof5j6",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1sof5j6/next_best_warlock_build_32/",
+    "question": "next best warlock build 3.2?\n\n20k post views\n\n* each tainted pet does 30k-40k fireballs (one fireball sorc does 10k-20k lulz)\n* can have three tainted total (2 if conviction bind still works)\n* some players showed these pets to go through fire immunity with a fire sunder\n* most important, you're tanky af with the blood oath talent from demon skillers/gear\n\nidk how this insane number tuning got past the janitor's watchful eye while echoing strike got nerfed to the abyss. this build will probably won't make it to live 3.2 so d...",
+    "question_keywords": [
+      "next",
+      "best",
+      "warlock",
+      "build",
+      "post"
+    ],
+    "reference_answer": "[32↑] I think macrobioboys video is pretty likely to lead to significant tweaks to this build before the next patch actually launches\n[6↑] Conviction binds dont still work If you have 3 max demons and consume a tainted first, does that grant bonuses to the first two tainted you summon after that? Ie do they count as \"fire skills\"? Does the bonus also apply to the third demon, or does it cancel out your Consume bonus before it applies? \n[4↑] Blood boil is way better. Tainted have much higher dps but its overkill, in a small aoe, finnicky to control, slow between shots, deprives you of defiler and consume. And its horrible vs immunes. You get sunder but no -resists on gear, so enemies have 78% resist after conviction Boil can do about 12",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 36,
+      "num_comments": 30,
+      "flair": "Discussion"
+    }
+  },
+  {
+    "id": "reddit_1spf5bh",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1spf5bh/what_jewel_to_use_here_15_ias_what/",
+    "question": "What jewel to use here, 15% ias + what ?\n\nEnchant sorc, it has to have 15% ias to reach the breakpoint but what would be the other best stat. I would rather prioritize damage over res.",
+    "question_keywords": [
+      "jewel",
+      "here",
+      "ias",
+      "enchant",
+      "sorc"
+    ],
+    "reference_answer": "[12↑] I use 2 piece horazon boots/gloves and ff I chew through everything.. tho its really hold x for attack. Not mich else to it\n[7↑] Ideally, 15ias/15@res jewel. Those are extremely rare though, so even a 15ias/fr or 15ias/lr jewel works, or 15/10@+ too, but those are still rare themselves.\n[6↑] Or use a fire collossal ancients jewel, probably not too expensive compared 15ias/fire or all res jewel\n[6↑] Yotanwa my queen!\n[3↑] The dmg from demon machine sorc comes from fire damage so ED will be relatively pointless, I don’t bother with ar either. I would personally go with all res or fire res if that’s not capped out",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 25,
+      "num_comments": 28,
+      "flair": "Discussion"
+    }
+  },
+  {
+    "id": "reddit_1sunqe4",
+    "source_url": "https://www.reddit.com/r/diablo2resurrected/comments/1sunqe4/is_this_worth_something/",
+    "question": "Is this worth something?\n\nKnow its far from gg, but could still be worth something?",
+    "question_keywords": [
+      "worth",
+      "something",
+      "know",
+      "far",
+      "still"
+    ],
+    "reference_answer": "[7↑] 69, BiS.\n[2↑] Yes but not a lot!\n[2↑] Just traded one for a little less than an ohm rune.\n[2↑] Curious why people think this is worth anything. Hitting 125fcr breakpoint is pretty easy with a shako and using the meta weapons. The only thing I can think of is that it allows you to hit 125 while still using a highlords and meph book. … but I suspect obsession (65fcr) will be the meta after the \n[1↑] 69 defense. Nice.",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2resurrected",
+      "score": 20,
+      "num_comments": 33,
+      "flair": "Question"
+    }
+  },
+  {
+    "id": "reddit_1suo4yw",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1suo4yw/i_did_a_nightmare_playthrough_with_each_class/",
+    "question": "I did a Nightmare playthrough with each class back to back. All builds I've never played, and different from my normal builds. Here's some notes on how it all went.\n\n**Nightmare**\n\nNightmare - The most fun you'll have playing D2. Who doesn't love a good new game+? You start off powerful and with everything you need, the enemies are slightly harder and resistances begin to play a factor. It's the last ditch effort to work with some experimental builds as long as you don't goof off too much.\n\nRules\n\n* Single player self found--reminder, this means no runes past Um. No Spirit shield (exc Pally) Lem was my highest rune anyway.\n* Characters an average beat Normal...",
+    "question_keywords": [
+      "nightmare",
+      "playthrough",
+      "each",
+      "class",
+      "back"
+    ],
+    "reference_answer": "[15↑] I wish they would buff bowzons already they used to rock so much back in 1.08 lol\n[13↑] not sure why some people feel the need to trash your post. The point of the game is to have fun and posts like this are why I like reading through this subreddit. It's fun to read other peoples' experiences with the game Im currently in a4hell with a summon necro. So far... undoubtedly the slowest c\n[5↑] I always feel snowballing in Nightmare When you already have endgame skills, you start to find really strong yet common mid uniques, and you leveling up from 40 to 60 faster than you do 20 to 40 (I feel like) Normal doesn't have that. And nightmare doesn't have ball crusing immunities, unique pack a\n[5↑] Great writing and sharing, with a lot of insights. Thank you OP. I would like to add one thing which is you can use a lot of non-end game gear playing NM that are actually quite decent and have a lot of fun play with. I would also like to recommend playing more with an Act 5 Merc (dual swing). He do",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 60,
+      "num_comments": 36,
+      "flair": null
+    }
+  },
+  {
+    "id": "reddit_1sw2ybk",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1sw2ybk/what_are_the_all_the_unclickable_environment/",
+    "question": "What are the all the \"unclickable\" environment interactions you know of?\n\nCaveat: I don't know if these interactions have an official name, so it's made it hard to Google this. Maybe this post will be over when someone tells me what they are called and points me to the Wiki page!\n\nSo there are interactions you can have with the environment that are not highlight-able, like they would be picking up an item, opening a chest or attacking an enemy. You click on a seemingly innocuous part of the environment and something happens!\n\nI've found a few of these over the years, ...",
+    "question_keywords": [
+      "all",
+      "unclickable",
+      "environment",
+      "interactions",
+      "know"
+    ],
+    "reference_answer": "[87↑] In the jail in act 1 there are secret doors in the wall, you can reach small rooms with gold on the floor\n[38↑] The beds in the harem in act 2 as well iirc\n[31↑] There are attackable stained glass windows in the City of the Damned\n[30↑] Act 3 is the only act with floor switch traps. Act 4 river of flame has a skeleton jump out of the lava to wave at you. Also the statues by the river of flame wp will turn their heads to watch you walk by.\n[19↑] I don't know if it's still possible, but on rare occasions you could interact with Andariel's throne for loot",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 65,
+      "num_comments": 41,
+      "flair": null
+    }
+  },
+  {
+    "id": "reddit_1t0u023",
+    "source_url": "https://www.reddit.com/r/diablo2/comments/1t0u023/its_crazy_how_single_player_is_an_entirely/",
+    "question": "It’s crazy how Single Player is an entirely different game\n\nI’ve played this game a LOT over the years. If I were to guess maybe 15.000 hours. \n\nI’ve always played online coming back for ladders, grinding/trading for end-game gear and quit after a month cause I had everything and a lot of FG (around 100k).\n\nThis time around it should be different, so when I returned for RotW I gave SP a shot. And holy shit is it much more fun and engaging.\n\nThose Draculs you couldn’t trade online? They’re suddenly your enabler for Ubers (cause fuck Life tap wands!).\n\nYou...",
+    "question_keywords": [
+      "crazy",
+      "single",
+      "player",
+      "entirely",
+      "different"
+    ],
+    "reference_answer": "[126↑] Welcome to the joys of single player! I wondered for a while what drew people to it. How could they find so much longevity in solo play, no trading? Etc. but everything now has value based on YOUR need for it, not others’ need for it. Wait until you try hardcore single player. Things now having valu\n[74↑] I miss Lan games. Using your single play chars and playing with your friends. Also Open Bnet was next level\n[18↑] I would switch over to single player, but honestly, I really like getting geared and then rushing people and doing their ancients and stuff. Part of the fun of the game for me is just in random lobbies to help others. I may start an offline save on my Switch though, anyone know if it's possible to p",
+    "status": "pending",
+    "added_date": "2026-05-02",
+    "improvement_count": 0,
+    "failure_reason": null,
+    "improvement_history": [],
+    "meta": {
+      "subreddit": "diablo2",
+      "score": 300,
+      "num_comments": 150,
+      "flair": "Other"
     }
   }
 ]
