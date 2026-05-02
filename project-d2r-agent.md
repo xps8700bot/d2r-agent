@@ -868,3 +868,31 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `1d98395`. Push: success.
 - **Benchmark status:** 60 passed, 0 failed, 2 pending (62 total).
   Next: `reddit_1sha9fb`, `reddit_1shp3vy`.
+
+### 2026-05-02 — Run
+
+- **Goal:** Collect new Reddit questions (only 2 pending), process up to 3 questions.
+- **Reddit collection:** Fetched 18 posts from r/diablo2 and r/diablo2resurrected via
+  `curl` JSON endpoints. `reddit_collect.py` added 16 new questions (78 total, 16 pending).
+  Fixed flat-list format handling in `reddit_collect.py` (was expecting dict wrapper).
+- **Questions processed (3 passed):**
+  1. `reddit_1sha9fb` — "Easy but Engaging D2R Builds?" → **passed** (1 improvement).
+     Issue: strategy card search gave necro-specific results because "necro" appeared
+     in question negatively ("summoner necro too passive"). Fix: added negation-aware
+     class matching + new "engaging active builds" strategy card.
+  2. `reddit_1shp3vy` — "Build advice for Blizz/Hydra sorc" → **passed** (1 improvement).
+     Issue: no card for Blizz/Hydra hybrid skill distribution. Fix: added strategy card
+     covering Fire Mastery at 1pt, cold synergy priority, gear, and farming advice.
+  3. `reddit_1sagbl9` — "Favorite niche/non-meta builds" → **passed** (0 improvements).
+     Existing "Fun P1 Solo Farming Builds" card covered it well.
+- **Code improvements:**
+  - `src/d2r_agent/knowledge/strategy_cards.py` — negation detection: when query says
+    "don't enjoy necro" or "too passive", necromancer class-match bonus is suppressed.
+  - `data/strategy_cards.jsonl` — 2 new cards (engaging active builds, blizz/hydra sorc).
+  - `scripts/reddit_collect.py` — handle flat-list queue format.
+- **Regression check:** 2 passed questions re-verified (reddit_1s2qjvb summon warlock,
+  reddit_1s7nm7p herald farming) — both passed, no regressions.
+- **Tests:** 54 passed, 1 pre-existing failure (test_item_base_archon_plate).
+- **Commit:** `3a2c659`. Push: success.
+- **Benchmark status:** 63 passed, 0 failed, 15 pending (78 total).
+  Next: `reddit_1sdtxcz` (Are these boots good?), `reddit_1sf7j56` (teleport distance guide).

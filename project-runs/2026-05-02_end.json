@@ -1,0 +1,49 @@
+{
+  "ts": "2026-05-02T09:15:00Z",
+  "changed_files": [
+    "src/d2r_agent/knowledge/strategy_cards.py",
+    "data/strategy_cards.jsonl",
+    "scripts/reddit_collect.py",
+    "reddit_qa_todo.json",
+    "project-runs/2026-05-02_start.json"
+  ],
+  "tests": "54 passed, 1 failed (pre-existing: test_item_base_archon_plate — unrelated to today's changes)",
+  "commit": "3a2c659",
+  "reddit_fetch": "success",
+  "reddit_fetch_tool": "curl",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1sha9fb",
+        "question": "Easy but Engaging D2R Builds?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added engaging-active-builds strategy card + negation-aware class matching in strategy_cards.py",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1shp3vy",
+        "question": "Build advice for Blizz/Hydra sorc needed",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added blizz-hydra-sorc strategy card with skill distribution, gear, and farming advice",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1sagbl9",
+        "question": "What has been your favorite niche or non-meta builds?",
+        "result": "passed",
+        "improvement_count": 0,
+        "improvement_notes": "Passed without changes — existing fun-builds strategy card covered it well",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1s2qjvb", "reddit_1s7nm7p"],
+    "all_passed": true,
+    "regressions": []
+  },
+  "review_instructions": "Pre-existing test failure: test_item_base_archon_plate (Archon Plate not surfacing in answer text) — not caused by today's changes. Consider fixing the item_bases mechanics search."
+}
