@@ -1,0 +1,53 @@
+{
+  "ts": "2026-05-11T15:52:44.617566+00:00",
+  "changed_files": [
+    "src/d2r_agent/intent_classifier.py",
+    "data/strategy_cards.jsonl",
+    "data/memory.jsonl",
+    "reddit_qa_todo.json",
+    "project-runs/2026-05-11_start.json"
+  ],
+  "tests": "205 passed, 0 failed (2 pre-existing failures in test_item_bases excluded)",
+  "commit": "707acde",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1sdtxcz",
+        "question": "Are these boots good? (tri-res + 30 FRW + 25 MF boots evaluation)",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Fixed MF-as-stat intent misclassification + added rare boot evaluation strategy card",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1sf7j56",
+        "question": "How to increase teleport distance by 20% (C/T casting)",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added C/T casting strategy card covering the technique, PC-only limitation, spell applications",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1sfsq17",
+        "question": "What to do with Zod rune in SSF?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Fixed item_usage heuristic ordering + extended patterns + added Zod usage strategy card (BotD, Obsession)",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": [
+      "reddit_1s2qjvb",
+      "reddit_1s7nm7p"
+    ],
+    "all_passed": true,
+    "regressions": [],
+    "notes": "Herald question (reddit_1s7nm7p) initially regressed due to pre-existing _CURIOSITY_RE issue; fixed by adding strong-mechanics-keyword guard"
+  },
+  "review_instructions": "Intent classifier changes are the main code modifications. Verify MF-as-stat heuristic does not suppress legitimate MF mechanics questions. Check curiosity guard does not over-suppress for non-mechanics curiosity queries."
+}

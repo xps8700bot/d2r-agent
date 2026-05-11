@@ -896,3 +896,29 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `3a2c659`. Push: success.
 - **Benchmark status:** 63 passed, 0 failed, 15 pending (78 total).
   Next: `reddit_1sdtxcz` (Are these boots good?), `reddit_1sf7j56` (teleport distance guide).
+
+---
+
+## 2026-05-11 — Daily run
+
+- **Questions processed:** 3 passed
+  - `reddit_1sdtxcz` — "Are these boots good?" (tri-res + FRW + MF boot evaluation)
+    - Fixed: MF-as-stat intent misclassification (magic_find_rule → build_advice)
+    - Added: rare boot evaluation strategy card
+  - `reddit_1sf7j56` — "C/T casting teleport trick" (speed running technique)
+    - Added: C/T casting strategy card
+  - `reddit_1sfsq17` — "What to do with Zod rune in SSF?"
+    - Fixed: item_usage heuristic ordering (moved before _item_farming)
+    - Added: Zod rune usage strategy card (BotD, Obsession, indestructible)
+- **Intent classifier improvements (4 fixes):**
+  1. MF-as-stat heuristic: "25 MF" on items no longer triggers magic_find_rule
+  2. Gear eval patterns: "should I switch", "are these X good" → build_advice
+  3. Item usage ordering: "what to do with" fires before rune+drop → drop_rate
+  4. Curiosity guard: "is that normal?" defers to mechanics_query when herald/sunder/TZ keywords present
+- **Regression check:** 2 passed questions re-verified (reddit_1s2qjvb summon warlock,
+  reddit_1s7nm7p herald farming) — both passed. Herald question initially regressed
+  due to pre-existing _CURIOSITY_RE issue; fixed with strong-mechanics-keyword guard.
+- **Tests:** 205 passed, 2 pre-existing failures (test_item_base_archon_plate x2).
+- **Commit:** `707acde`. Push: success.
+- **Benchmark status:** 66 passed, 0 failed, 12 pending (78 total).
+  Next: `reddit_1sggxcl` (D2R tips with no basis), `reddit_1sj74id` (fire claws bear).
