@@ -230,6 +230,13 @@ def classify_intent_rules(q: str) -> str:
         r"\b(no|without|zero|0)\s+(magic\s*find|mf)\b", s
     ))
 
+    # Heuristic: MF mentioned as a stat value on an item ("25 mf", "30% mf",
+    # "mf 25") rather than asking about MF mechanics.  Treat the same as
+    # negated — let the real intent surface instead of magic_find_rule.
+    _mf_as_stat = bool(re.search(
+        r"\d+\s*%?\s*\bmf\b|\bmf\s+\d+", s
+    )) and not re.search(r"(how|does|do|what|why|when)\b.{0,20}\b(mf|magic\s*find)\b", s)
+
     # Heuristic: item-farming pattern — "finding X", "trouble finding",
     # "can't find", "where to find" should map to drop_rate before generic
     # keyword matching (which might be hijacked by incidental MF mention).
@@ -322,6 +329,22 @@ def classify_intent_rules(q: str) -> str:
     if _BUILD_FOR_FARMING_RE.search(s):
         return "build_advice"
 
+    # Heuristic: item-found + usage advice questions.
+    # "I found X / X dropped / got X — how should I use it / seeking advice"
+    # "what to do with X" / "best uses for X"
+    # These are build_advice, not drop_rate (even though "dropped" matches "drop").
+    # Must fire BEFORE _item_farming to avoid false drop_rate classification
+    # when the user already has the item and asks what to do with it.
+    _ITEM_USAGE_RE = re.compile(
+        r"(dropped|found|got)\b.{0,80}\b(how\s+should\s+I\s+use|seeking\s+advice|what\s+(should|do)\s+I\s+do|which\s+character)"
+        r"|\b(how\s+should\s+I\s+use|seeking\s+advice)\b.{0,80}\b(dropped|found|got)\b"
+        r"|\bwhat\s+to\s+do\s+with\b"
+        r"|\bbest\s+uses?\s+(for|of)\b",
+        re.I,
+    )
+    if _ITEM_USAGE_RE.search(s):
+        return "build_advice"
+
     # Don't let class+farming trigger build_advice when the question is about
     # item/rune farming locations (e.g. "rune farming for paladin").
     _item_farming = bool(re.search(
@@ -334,17 +357,6 @@ def classify_intent_rules(q: str) -> str:
     if _has_class and _has_build_ctx:
         return "build_advice"
 
-    # Heuristic: item-found + usage advice questions.
-    # "I found X / X dropped / got X — how should I use it / seeking advice"
-    # These are build_advice, not drop_rate (even though "dropped" matches "drop").
-    _ITEM_USAGE_RE = re.compile(
-        r"(dropped|found|got)\b.{0,80}\b(how\s+should\s+I\s+use|seeking\s+advice|what\s+(should|do)\s+I\s+do|which\s+character)"
-        r"|\b(how\s+should\s+I\s+use|seeking\s+advice)\b.{0,80}\b(dropped|found|got)\b",
-        re.I,
-    )
-    if _ITEM_USAGE_RE.search(s):
-        return "build_advice"
-
     # Heuristic: gear evaluation / item comparison questions.
     # Patterns like "which shield is better", "when should I switch gear",
     # "how do I know when an item is better" are build_advice even when a
@@ -354,6 +366,8 @@ def classify_intent_rules(q: str) -> str:
     _GEAR_EVAL_RE = re.compile(
         r"which\b.{0,30}\b(better|best)"
         r"|when\b.{0,20}\bswitch"
+        r"|should\s+I\s+(switch|swap|change|use|equip|wear)\b"
+        r"|are\s+(these|those|this|my)\s+\w+\s+(good|worth|decent|great|any\s+good|gg|insane|bad|trash|usable)"
         r"|is\b.{0,30}\bbetter\s+than"
         r"|how\s+(do|can)\s+I\s+know\b.{0,30}\bbetter"
         r"|how\s+to\s+(compare|evaluate|tell)\b.{0,20}\b(gear|item|equip|shield|armor|weapon)"
@@ -380,7 +394,12 @@ def classify_intent_rules(q: str) -> str:
         r"|what\s+is\s+th(at|is)\b.{0,20}\bdoing",
         re.I,
     )
-    if _CURIOSITY_RE.search(s):
+    # Only apply curiosity routing when no strong mechanics keyword is present;
+    # "is that normal?" + "herald" = mechanics question, not idle curiosity.
+    _STRONG_MECHANICS_KW = {"herald", "heralds", "sunder", "terror zone", "dclone",
+                            "uber", "ubers", "annihilus", "anni"}
+    _has_strong_mech = any(mk in s for mk in _STRONG_MECHANICS_KW)
+    if _CURIOSITY_RE.search(s) and not _has_strong_mech:
         return "general"
 
     # Heuristic: DClone / Annihilus / Uber Diablo questions.
@@ -415,8 +434,8 @@ def classify_intent_rules(q: str) -> str:
                     continue
             elif kw_lower not in s:
                 continue
-            # Skip magic_find_rule when MF is only mentioned in negation
-            if intent == "magic_find_rule" and _mf_negated:
+            # Skip magic_find_rule when MF is only mentioned in negation or as a stat value
+            if intent == "magic_find_rule" and (_mf_negated or _mf_as_stat):
                 break
             return intent
 

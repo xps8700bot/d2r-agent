@@ -1873,11 +1873,17 @@
       "switch"
     ],
     "reference_answer": "[35↑] First boots are kinda GG. Insane find bro.\n[31↑] 110 tri res boots, and highest possible run walk and MF. If online those are going to be worth a lot. Some will knock them because they are poison but people are going to want those.\n[7↑] The rare boots are INSANE, expect many many jahs for them.\n[5↑] As with everything in diablo 2, usually it depends. Use what complents your build the most. Desperate for fire res? (And I mean I would have to be reaaaaaaly desperate). Use aldurs (and a max roll ones). But I would sure as shit try to find a way to equip these. These are awesome.\n[5↑] These are gg energy shield sorc boots",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-02",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "date": "2026-05-11",
+        "change": "Fixed intent classifier: added MF-as-stat heuristic to prevent incidental MF mentions from triggering magic_find_rule; added gear evaluation patterns (should I switch, are these X good) to _GEAR_EVAL_RE; added rare boot evaluation strategy card",
+        "result": "passed"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 113,
@@ -1897,11 +1903,17 @@
       "veteran"
     ],
     "reference_answer": "[88↑] Sad noises (console player)\n[20↑] Ultrawide monitor does this same distance! Tis nice\n[16↑] Crazy that people are just learning about C/T in 2026\n[4↑] Such things are where you stop enjoying the game\n[4↑] This is called CT casting/tele in PVP. Also works for spells like blizzard or hydra",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-02",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "date": "2026-05-11",
+        "change": "Added C/T casting strategy card covering the teleport distance trick, PC-only limitation, ultrawide equivalent, and spell applications (Blizzard/Hydra)",
+        "result": "passed"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 223,
@@ -1921,11 +1933,17 @@
       "doing"
     ],
     "reference_answer": "[21↑] Eth Thunder Maul for your Breath of the Dying\n[20↑] call superman, he usually takes care of him\n[14↑] I used my once-in-a-lifetime offline zod to make an obsession in an eth archon staff. Using it on my echoing strike, and fire warlocks. The stats are insane on that item and gives you the freedom to wear whatever other gear you like. No regrets\n[5↑] My first ZOD always stays in cube until i find an ETH tombreaver 3sockets with desent ED. I have never found one though. But i just know if i make a BOTD i will find one\n[3↑] In the same boat as you, I used mine in an eth Obsession - have yet to use it on a Warlock yet as I'm holding out for Ars Al'Diabolos before getting started (it is taking a *while*). TBH if I wanted a weapon that was more transferrable I would go with Void in a +3 Abyss dagger base. BiS for an Abyss",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-02",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "date": "2026-05-11",
+        "change": "Fixed item_usage heuristic ordering (moved before _item_farming); added what-to-do-with/best-uses-for patterns; added Zod rune usage strategy card covering BotD, Obsession, indestructible socketing",
+        "result": "passed"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 14,
