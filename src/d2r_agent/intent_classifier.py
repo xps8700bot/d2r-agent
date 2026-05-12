@@ -223,6 +223,29 @@ def classify_intent_rules(q: str) -> str:
         if re.search(r"\S+\s*(还是|vs|对比|比较)\s*\S+", q):
             return "build_compare"
 
+    # Heuristic: myth / superstition / debunk framing.
+    # Posts explicitly about D2R myths, superstitions, or "tips with no basis"
+    # should route to general so curated strategy cards (myth-debunk) take
+    # priority over irrelevant mechanics DB hits or drop_rate scaffolding.
+    # Must fire very early — before any keyword-based heuristics that would
+    # match incidental drop/farm/rune tokens inside the myth descriptions.
+    _MYTH_RE = re.compile(
+        r"no\s+basis"
+        r"|superstition"
+        r"|\bmyths?\b"
+        r"|placebo"
+        r"|true\s+or\s+false"
+        r"|fact\s+or\s+fiction"
+        r"|old\s+wives?\s+tale"
+        r"|proven\s+facts?"
+        r"|debunk"
+        r"|misconception"
+        r"|urban\s+legend",
+        re.I,
+    )
+    if _MYTH_RE.search(s):
+        return "general"
+
     # Heuristic: "magic find" / "mf" mentioned only in negation context
     # ("no magic find", "without mf", "zero mf", "0 mf") is NOT asking
     # about MF mechanics — skip magic_find_rule so the real intent surfaces.
