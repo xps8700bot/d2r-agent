@@ -922,3 +922,21 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `707acde`. Push: success.
 - **Benchmark status:** 66 passed, 0 failed, 12 pending (78 total).
   Next: `reddit_1sggxcl` (D2R tips with no basis), `reddit_1sj74id` (fire claws bear).
+
+### 2026-05-12 — Daily Run
+- **Questions processed (3/3 passed):**
+  - `reddit_1sggxcl` — "My D2R tips that have no basis whatsoever" (myth/superstition debunk)
+    - Fixed: Added early myth/superstition detection heuristic in intent_classifier
+    - Added: D2R common myths debunked strategy card (gambler's fallacy, ID myth, character drops, HR pity timer)
+  - `reddit_1sj74id` — "Fire claws bear what a slog to playthrough"
+    - Added: Fire Claws Bear Hell difficulty guide + Melee Attack Rating solutions cards
+  - `reddit_1sjiuae` — "Normal playthrough with each class" (discussion post)
+    - Passed first attempt — open-ended discussion, no specific mechanics question
+- **Intent classifier improvements (1 fix):**
+  1. Myth/superstition heuristic: "no basis", "myth", "superstition", "debunk" etc. → general (fires early, before keyword rules that would match incidental drop/farm/rune tokens)
+- **Regression check:** 2 passed questions re-verified (reddit_1rz3qt9 Fortitude merc,
+  reddit_1rx3wei Void runeword) — both passed. Intent classifier 28/28 pass.
+- **Tests:** 209 passed, 6 pre-existing item_bases failures.
+- **Commit:** `7a38065`. Push: success.
+- **Benchmark status:** 69 passed, 0 failed, 9 pending (78 total).
+  Next: `reddit_1sk9tcd` (Cow King set grail), `reddit_1slzc96` (Meph room clearing).
