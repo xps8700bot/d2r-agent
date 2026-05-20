@@ -22,11 +22,25 @@ STRONG_FACT_PATTERNS = [
 ]
 
 
+_STOPWORDS = frozenset({
+    "the", "what", "which", "where", "when", "how", "who", "why",
+    "are", "was", "were", "been", "being", "have", "has", "had",
+    "does", "did", "will", "would", "shall", "should", "may", "might",
+    "can", "could", "that", "this", "these", "those", "with", "from",
+    "into", "about", "than", "then", "also", "just", "only", "very",
+    "some", "any", "all", "each", "every", "both", "few", "more",
+    "most", "other", "such", "here", "there", "not", "but", "and",
+    "for", "nor", "yet", "its", "your", "their", "his", "her", "our",
+    "way", "best", "worst", "good", "better", "much", "many", "been",
+    "over", "still", "got", "get", "got", "use", "used", "run",
+    "running", "nothing", "whole", "place", "really", "always",
+})
+
+
 def _extract_entities(q: str) -> list[str]:
-    # MVP：非常粗糙。阶段 B 会接实体词表/别名表
     candidates = []
     m = re.findall(r"\b([A-Za-z]{3,})\b", q)
-    candidates.extend(m)
+    candidates.extend(w for w in m if w.lower() not in _STOPWORDS)
     # 中文括号里的英文名：谜团(Enigma)
     m2 = re.findall(r"\(([A-Za-z]{3,})\)", q)
     candidates.extend(m2)

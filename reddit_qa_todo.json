@@ -2052,11 +2052,18 @@
       "what's"
     ],
     "reference_answer": "[17↑] Normal cows is better odds. Also, unless you’re in the same game where the boots drop you won’t get credit for them just because they are unid. You gotta be in the game when they drop. Edit: King has 1:167 chance while bovines have 1:11712 chance.\n[17↑] use this instead of silospen https://nishicode.com/#/dropfinder/ normal drop non tz cows seem to be best, but still you need like 50 p3 cow runs to have a decent chance at the boots, and all the way to like 150 if you are unlucky.\n[11↑] You can’t get a grail item through a trade. It needs to drop in the game you’re in.\n[8↑] I hit normal cows today with my abyss lock (just under 400mf, p7) and got both the armor and boots in under 10 runs (back to back runs). I also got hsarus buckler in Tristram getting the leg which was a bonus. Stoked to say the least. I was just hitting the king",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-02",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-05-20T12:00:00Z",
+        "category": "knowledge_gap",
+        "summary": "Added farming.jsonl entry for Cow King set drop rates (Normal vs NM, 1:167 vs 1:11712). Also fixed retrieval_router stopword filter to prevent common English words from being used as search keywords.",
+        "regression_result": "passed"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 22,
@@ -2076,11 +2083,18 @@
       "i'm"
     ],
     "reference_answer": "[39↑] I kill every enemy in every zone/area/room, and loot every lootable object I come across. The true d2 way.\n[16↑] https://preview.redd.it/ojusf1zc8bvg1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=a2c6e07fc8c0ca0a8e8e0909d4103d1fed4cf828 I got an SOJ on the next run guys......\n[4↑] I swear posting on Reddit increases luck. Posted about how I got a sur from LK then three runs later got a Lo. Congrats on the sick finds’\n[3↑] After getting a tal armor and arach I've picking them of if they happen to be close by. I won't go out of my way looking but if they are in the way they are giving up that loot.\n[3↑] if for some reason im doing a tz durance with the hammerdin yes.",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-02",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-05-20T12:00:00Z",
+        "category": "knowledge_gap",
+        "summary": "Added farming.jsonl entry for Mephisto room clearing strategy (kill Council Members for their independent drop tables).",
+        "regression_result": "passed"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 46,
@@ -2100,11 +2114,18 @@
       "locations"
     ],
     "reference_answer": "[99↑] Go back through the arcane sanctuary to Palace Cellar 3, this will spawn Dclone in place of Fire Eye. Dclone can't walk through doors so all you need is an Edge bow for Prevent Monster Heal and you can cheese him easily.\n[53↑] Frigid Highlands is the go to for a lot of people\n[50↑] My favorite is the inner cloister, at the cathedral altar. Just a really cool place i don't visit to often.\n[20↑] My first and only time I chose the den of evil. Felt like a nice full circle thing and easily accessible and closed\n[20↑] I used to go Stony Field and fight at Rakanishu. If you're weak and need to run around, Act 1 has low threat enemies like slow zombies. When strong enough to face tank, Frigid Highland at Eldritch location is just faster. Right next to WP makes it the best. I never go anywhere else.",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-02",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-05-20T12:00:00Z",
+        "category": "knowledge_gap",
+        "summary": "Added farming.jsonl entry for Dclone spawn locations ranking (Palace Cellar 3 doorway cheese, Frigid Highlands, etc.).",
+        "regression_result": "passed"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 29,
