@@ -940,3 +940,32 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `7a38065`. Push: success.
 - **Benchmark status:** 69 passed, 0 failed, 9 pending (78 total).
   Next: `reddit_1sk9tcd` (Cow King set grail), `reddit_1slzc96` (Meph room clearing).
+
+---
+
+### 2026-05-20 — Run 14
+
+- **Questions processed (3 passed):**
+  - `reddit_1sk9tcd` — "Cow King Set grail, best way to get it?"
+    - First attempt: answer dumped Tal Rasha's Wrappings and rune farming — completely off-topic
+    - Root cause: retrieval keywords included stopwords ("what", "the", "best", "way") → broad search matched irrelevant "set" content
+    - Fix 1: Added stopword filter to `retrieval_router._extract_entities()` (40+ common English words)
+    - Fix 2: Added farming.jsonl entry for Cow King set drop rates (Normal vs NM, 1:167 vs 1:11712)
+    - After fix: correctly recommends Normal cows, gives specific drop rates, /players 3, nishicode.com
+  - `reddit_1slzc96` — "Do you kill everyone in Meph's room?"
+    - First attempt: Moat Trick + Gold Find Barb — doesn't answer the actual question
+    - Fix: Added farming.jsonl entry for Mephisto room clearing strategy
+    - After fix: correctly says kill Council Members (independent drop tables, SOJ/Tal/Arach reports)
+  - `reddit_1snoow1` — "Best and worst Dclone spawn locations?"
+    - First attempt: Diablo Fire Storm mechanics + Cow King portals — completely irrelevant
+    - Fix: Added farming.jsonl entry for Dclone spawn locations ranking
+    - After fix: correctly lists Palace Cellar 3 (#1, doorway cheese), Frigid Highlands, Inner Cloister, Pindleskin as worst
+- **Code changes (2 files):**
+  1. `retrieval_router.py`: Stopword filter for `_extract_entities()` — prevents common words from becoming search keywords
+  2. `farming.jsonl`: 3 new entries (Cow King drops, Meph room strategy, Dclone locations)
+- **Regression check:** 2 passed questions re-verified (reddit_1sjxy2t SSF Enigma base: pass,
+  reddit_1rx3wei Void runeword: marginal pass — recipe in evidence but TL;DR cluttered, pre-existing).
+- **Tests:** 54 passed, 1 pre-existing failure (test_item_base_archon_plate).
+- **Commit:** `81786d8`. Push: success.
+- **Benchmark status:** 72 passed, 0 failed, 6 pending (78 total).
+  Next: `reddit_1sof5j6` (warlock build 3.2), `reddit_1spf5bh` (jewel for enchant sorc).

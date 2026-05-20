@@ -1,0 +1,49 @@
+{
+  "ts": "2026-05-20T12:10:00+08:00",
+  "changed_files": [
+    "data/fact_db/mechanics/farming.jsonl",
+    "src/d2r_agent/retrieval_router.py",
+    "reddit_qa_todo.json",
+    "data/memory.jsonl"
+  ],
+  "tests": "54 passed, 1 failed (test_item_base_archon_plate — pre-existing failure, confirmed not caused by today's changes)",
+  "commit": "81786d8",
+  "reddit_fetch": "skipped_sufficient",
+  "reddit_fetch_tool": "none",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1sk9tcd",
+        "question": "Cow King Set grail - best way to farm Cow King's Hooves?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added farming.jsonl entry for Cow King set drop rates (Normal vs NM, 1:167 vs 1:11712). Fixed retrieval_router stopword filter.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1slzc96",
+        "question": "Do you kill everyone in Meph's room?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added farming.jsonl entry for Mephisto room clearing strategy (Council Members have independent drop tables).",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1snoow1",
+        "question": "Best and worst Dclone spawn locations?",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added farming.jsonl entry for Dclone spawn locations ranking (Palace Cellar 3 doorway cheese #1, Frigid Highlands, etc.).",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1sjxy2t", "reddit_1rx3wei"],
+    "all_passed": true,
+    "regressions": [],
+    "notes": "reddit_1sjxy2t (SSF Enigma base): full pass. reddit_1rx3wei (Void runeword): marginal pass — recipe found in evidence but TL;DR cluttered with irrelevant strategy cards. Pre-existing answer composition issue, not caused by today's changes."
+  },
+  "review_instructions": "Pre-existing test failure: test_item_base_archon_plate — mechanics_db search returns Mage Plate instead of Archon Plate for 'Archon Plate max sockets and qlvl?' query. Answer composition prioritizes strategy cards over structured evidence in TL;DR (affects Void runeword question). Both are pre-existing issues."
+}
