@@ -969,3 +969,26 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `81786d8`. Push: success.
 - **Benchmark status:** 72 passed, 0 failed, 6 pending (78 total).
   Next: `reddit_1sof5j6` (warlock build 3.2), `reddit_1spf5bh` (jewel for enchant sorc).
+
+### 2026-05-21 — 3 questions passed (Tainted warlock, Enchant sorc jewel, price check)
+- **Questions processed:** 3 (all passed)
+  - `reddit_1sof5j6` (warlock build 3.2 — Tainted pet discussion): **passed** after 1 improvement
+    - First attempt: returned generic summon warlock build advice, missed Tainted pet specifics entirely
+    - Fix: Added 2 strategy cards — Tainted Pet Warlock Build (mechanics, 78% resist after sunder, AoE weakness, likely PTR nerfs) and Tainted vs Blood Boil comparison
+    - After fix: correctly surfaces Tainted build strengths/weaknesses and community preference for Blood Boil
+  - `reddit_1spf5bh` (Enchant sorc 15% IAS jewel): **passed** after 1 improvement
+    - First attempt: returned irrelevant poison/merc socketing results
+    - Fix: Added Enchant Sorc jewel socketing strategy card (ED% pointless, 15ias/15@res ideal, Fire Ancients jewel budget)
+    - After fix: correctly surfaces Enchant-specific jewel advice as #1 result
+  - `reddit_1sunqe4` (price check — screenshot-dependent): **passed**, no improvement needed
+    - Question text has no item description (was a screenshot post). Agent correctly surfaces trading basics and asks for item details.
+- **Knowledge additions (3 strategy cards):**
+  1. Tainted Pet Warlock Build: strengths, weaknesses, fire sunder limitation (78% resist remaining)
+  2. Tainted vs Blood Boil comparison
+  3. Enchant Sorc jewel socketing guide (ED% useless, res > damage for fire builds)
+- **Regression check:** 2 passed questions re-verified (reddit_1sb0934 sunder drops: pass,
+  reddit_1sf9xjx hell difficulty advice: pass). No regressions from new cards.
+- **Tests:** 205 passed, 4 pre-existing failures (item base lookup tests in test_item_bases.py + test_item_bases_manual.py).
+- **Commit:** `b0a607f`. Push: success.
+- **Benchmark status:** 75 passed, 0 failed, 3 pending (78 total).
+  Next: `reddit_1sunqe4` done; remaining 3 pending questions in queue.
