@@ -2145,17 +2145,25 @@
       "post"
     ],
     "reference_answer": "[32↑] I think macrobioboys video is pretty likely to lead to significant tweaks to this build before the next patch actually launches\n[6↑] Conviction binds dont still work If you have 3 max demons and consume a tainted first, does that grant bonuses to the first two tainted you summon after that? Ie do they count as \"fire skills\"? Does the bonus also apply to the third demon, or does it cancel out your Consume bonus before it applies? \n[4↑] Blood boil is way better. Tainted have much higher dps but its overkill, in a small aoe, finnicky to control, slow between shots, deprives you of defiler and consume. And its horrible vs immunes. You get sunder but no -resists on gear, so enemies have 78% resist after conviction Boil can do about 12",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-02",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-05-21T01:05:00Z",
+        "category": "knowledge_gap",
+        "summary": "Added 2 strategy cards: (1) Tainted Pet Warlock Build covering mechanics, strengths, weaknesses (small AoE, 78% resist after sunder, opportunity cost of losing Defiler/Consume, likely PTR nerfs). (2) Tainted vs Blood Boil comparison card. Agent now correctly surfaces Tainted build specifics and community consensus favoring Blood Boil.",
+        "regression_result": "pending"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 36,
       "num_comments": 30,
       "flair": "Discussion"
-    }
+    },
+    "passed_at": "2026-05-21T01:05:00+00:00"
   },
   {
     "id": "reddit_1spf5bh",
@@ -2169,17 +2177,25 @@
       "sorc"
     ],
     "reference_answer": "[12↑] I use 2 piece horazon boots/gloves and ff I chew through everything.. tho its really hold x for attack. Not mich else to it\n[7↑] Ideally, 15ias/15@res jewel. Those are extremely rare though, so even a 15ias/fr or 15ias/lr jewel works, or 15/10@+ too, but those are still rare themselves.\n[6↑] Or use a fire collossal ancients jewel, probably not too expensive compared 15ias/fire or all res jewel\n[6↑] Yotanwa my queen!\n[3↑] The dmg from demon machine sorc comes from fire damage so ED will be relatively pointless, I don’t bother with ar either. I would personally go with all res or fire res if that’s not capped out",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-02",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-05-21T01:10:00Z",
+        "category": "knowledge_gap",
+        "summary": "Added strategy card for Enchant Sorc jewel socketing: 15% IAS + best secondary stats (15ias/15@res ideal, ED% pointless since damage is fire, Fire Ancients jewel budget option, Horazon 2-piece alternative). Previously returned irrelevant poison/merc socketing results.",
+        "regression_result": "pending"
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 25,
       "num_comments": 28,
       "flair": "Discussion"
-    }
+    },
+    "passed_at": "2026-05-21T01:10:00+00:00"
   },
   {
     "id": "reddit_1sunqe4",
@@ -2193,7 +2209,7 @@
       "still"
     ],
     "reference_answer": "[7↑] 69, BiS.\n[2↑] Yes but not a lot!\n[2↑] Just traded one for a little less than an ohm rune.\n[2↑] Curious why people think this is worth anything. Hitting 125fcr breakpoint is pretty easy with a shako and using the meta weapons. The only thing I can think of is that it allows you to hit 125 while still using a highlords and meph book. … but I suspect obsession (65fcr) will be the meta after the \n[1↑] 69 defense. Nice.",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-02",
     "improvement_count": 0,
     "failure_reason": null,
@@ -2203,7 +2219,8 @@
       "score": 20,
       "num_comments": 33,
       "flair": "Question"
-    }
+    },
+    "passed_at": "2026-05-21T01:15:00+00:00"
   },
   {
     "id": "reddit_1suo4yw",
