@@ -380,6 +380,44 @@ def classify_intent_rules(q: str) -> str:
     if _has_class and _has_build_ctx:
         return "build_advice"
 
+    # Heuristic: runeword base selection questions.
+    # "what item to put Leaf into", "best base for Spirit", "which staff
+    # for Leaf" etc. should route to runeword_recipe, not build_advice.
+    # Must fire BEFORE _GEAR_EVAL_RE which would steal "should I use" as
+    # a generic gear evaluation question.
+    _RUNEWORD_NAMES = {
+        "leaf", "spirit", "insight", "infinity", "enigma", "grief",
+        "fortitude", "treachery", "obedience", "rhyme", "lore",
+        "stealth", "smoke", "splendor", "harmony", "melody",
+        "ancients' pledge", "ancients pledge", "call to arms", "cta",
+        "chains of honor", "coh", "heart of the oak", "hoto",
+        "breath of the dying", "botd", "death's fathom",
+        "crescent moon", "holy thunder", "hustle", "mania",
+        "flickering flame", "hand of justice", "hoj",
+        "kingslayer", "lawbringer", "last wish", "exile",
+        "plague", "pride", "phoenix", "destruction", "doom",
+        "dragon", "dream", "duress", "famine", "fury",
+        "gloom", "honor", "hysteria", "king's grace",
+        "lionheart", "malice", "memory", "metamorphosis",
+        "mist", "mosaic", "myth", "nadir", "oath",
+        "obsession", "passion", "pattern", "prudence",
+        "radiance", "rain", "rift", "ritual", "sanctuary",
+        "silence", "strength", "temper", "unbending will",
+        "venom", "vigilance", "voice of reason", "void",
+        "wealth", "white", "wind", "wisdom", "wrath",
+        "zephyr", "brand", "beast", "edge", "faith",
+        "delirium", "eternity", "cure", "bulwark", "hearth",
+        "ground", "coven", "authority", "ice",
+    }
+    _BASE_SELECTION_RE = re.compile(
+        r"\b(put|make|socket|item\s+(?:to|for))\b.{0,30}\b(into|in|for)\b"
+        r"|\b(base|bases)\b.{0,20}\b(for|to)\b"
+        r"|\b(which|what|best)\b.{0,15}\b(staff|weapon|armor|helm|shield|polearm|sword|mace)\b.{0,20}\b(for|to)\b",
+        re.I,
+    )
+    if any(rw in s for rw in _RUNEWORD_NAMES) and _BASE_SELECTION_RE.search(s):
+        return "runeword_recipe"
+
     # Heuristic: gear evaluation / item comparison questions.
     # Patterns like "which shield is better", "when should I switch gear",
     # "how do I know when an item is better" are build_advice even when a

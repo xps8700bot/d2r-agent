@@ -210,6 +210,11 @@ def search_runewords(user_query: str, path: str, limit: int = 3) -> list[Runewor
         "meant", "looking", "selling", "wondering", "completion", "proposition",
         "extra", "feels", "wasteful", "willing", "pretty", "really", "maybe",
         "some", "any", "put", "good", "over", "few", "left",
+        # Meta-words about runewords — these match "(Rune Word)" suffixes in
+        # DB entry names and cause false positives when the user says "which
+        # runeword" generically.
+        "runeword", "runewords", "rune", "word", "runes", "recipe",
+        "make", "base", "viable", "best", "item",
     })
     import re as _re
     tokens = [
@@ -220,14 +225,21 @@ def search_runewords(user_query: str, path: str, limit: int = 3) -> list[Runewor
     resolved_terms.extend(tokens)
 
     entries = _load_runewords(path)
+    # Strip disambiguation suffixes for matching (e.g. "Crescent Moon (Rune Word)" → "crescent moon")
+    def _clean_name(n: str) -> str:
+        return _re.sub(r"\s*\(.*?\)\s*$", "", n).lower().strip()
+
     hits: list[RunewordHit] = []
     for entry in entries:
         name_lower = entry.name.lower()
+        name_clean = _clean_name(entry.name)
         score = 0
         for term in resolved_terms:
-            if term in name_lower:
-                score += 2  # name match is stronger
-            elif name_lower in term:
+            if term == name_clean:
+                score += 5  # exact name match is strongest
+            elif term in name_clean:
+                score += 2
+            elif name_clean in term:
                 score += 1
         if score > 0:
             hits.append(RunewordHit(entry=entry, score=score))
