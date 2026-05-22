@@ -992,3 +992,32 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `b0a607f`. Push: success.
 - **Benchmark status:** 75 passed, 0 failed, 3 pending (78 total).
   Next: `reddit_1sunqe4` done; remaining 3 pending questions in queue.
+
+### 2026-05-22
+
+- **Reddit fetch:** success (curl + .json endpoints). Collected 18 new questions from r/diablo2, r/diablo2resurrected, r/Diablo. Queue now 96 total.
+- **Questions processed (3 passed, 0 failed):**
+  - `reddit_1t90xuk` (Leaf base selection for fire sorc): **passed**, improvement_count=1
+    - First attempt: classified as build_advice (sorceress + "should I use" triggered class-name heuristic), returned Sorc build guides instead of Leaf info
+    - Fix: (1) Added runeword base selection intent heuristic in intent_classifier.py — detects known runeword name + base selection language, fires before _GEAR_EVAL_RE. (2) Added Leaf base selection strategy card.
+    - After fix: correctly identifies +3 Fireball as ideal Leaf base with explanation
+  - `reddit_1taplnn` (Zenith vs Mist runeword for bowazon): **passed**, improvement_count=1
+    - First attempt: returned Crescent Moon instead of Mist. Root cause: "runeword" token scored +2 on "Crescent Moon (Rune Word)" name, tying with "Mist" match; DB order broke tie wrong.
+    - Fix: (1) Added meta-word stop words in runeword_db.py (runeword, rune, word, recipe, etc.). (2) Added exact-name match boost (+5 vs +2). (3) Changed matching to use cleaned names stripping disambiguation suffixes. (4) Added Mist runeword strategy card noting Zenith is non-existent.
+    - After fix: correctly finds Mist, flags Zenith as non-existent, identifies GMB as ideal base
+  - `reddit_1svntn6` (Javazon IAS jewel vs Guardian's Thunder in Griffon): **passed**, improvement_count=1
+    - First attempt: confused "Guardian's Thunder" (jewel) with "Holy Thunder" (runeword), didn't address IAS breakpoint tradeoff
+    - Fix: Added Javazon IAS breakpoint and Griffon socketing strategy card (52 IAS BP, T-Stroke solution, Guardian Thunder tradeoff)
+    - After fix: correctly recommends T-Stroke solution, covers all reference answer alternatives
+- **Code improvements (2 files):**
+  1. `intent_classifier.py`: Runeword base selection heuristic with ~100 runeword names
+  2. `runeword_db.py`: Meta-word stop words, exact-name match boost, clean name matching
+- **Knowledge additions (3 strategy cards):**
+  1. Leaf Runeword Base Selection (staff auto-mods stack, prioritize +Fireball)
+  2. Mist Runeword for Bowazon (GMB best base, Zenith doesn't exist, Faith vs Mist comparison)
+  3. Javazon IAS Breakpoints and Griffon Socketing (52 IAS BP, T-Stroke solution, Guardian Thunder tradeoff)
+- **Regression check:** 2 passed questions re-verified (reddit_1sf7j56 C/T casting: pass, reddit_1s7tgbh Arcane Sanctuary: pass). No regressions.
+- **Tests:** 205 passed, 4 pre-existing failures (item base lookup tests).
+- **Commit:** `abbdb96`. Push: success.
+- **Benchmark status:** 78 passed, 0 failed, 18 pending (96 total).
+  Next: 18 pending questions in queue covering builds, runewords, game mechanics.

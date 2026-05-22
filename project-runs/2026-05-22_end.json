@@ -1,0 +1,50 @@
+{
+  "ts": "2026-05-22T11:30:00+08:00",
+  "changed_files": [
+    "src/d2r_agent/intent_classifier.py",
+    "src/d2r_agent/knowledge/runeword_db.py",
+    "data/strategy_cards.jsonl",
+    "data/memory.jsonl",
+    "reddit_qa_todo.json"
+  ],
+  "tests": "205 passed, 4 failed (test_item_base_archon_plate x2, test_item_base_monarch, test_item_base_gmb — all pre-existing, not caused by today's changes)",
+  "commit": "abbdb96",
+  "reddit_fetch": "success",
+  "reddit_fetch_tool": "curl",
+  "push_status": "success",
+  "qa_summary": {
+    "questions_processed": [
+      {
+        "id": "reddit_1t90xuk",
+        "question": "Help with what item to put Leaf into (fire Sorceress staff base selection)",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added runeword base selection intent heuristic in intent_classifier.py (fires before _GEAR_EVAL_RE). Added Leaf base selection strategy card. Root cause: 'sorceress' + 'should I use' triggered build_advice via class-name + _GEAR_EVAL_RE heuristics; 'leaf' wasn't in runeword_recipe keywords.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1taplnn",
+        "question": "Which runeword: Zenith or Mist (bowazon, GMB, offline)",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Fixed runeword_db.py search: (1) added meta-word stop words ('runeword', 'rune', 'word', 'recipe', etc.) to prevent '(Rune Word)' suffix false matches, (2) added exact-name match boost (+5 vs +2 substring), (3) match against cleaned names stripping disambiguation suffixes. Added Mist runeword strategy card covering Zenith non-existence. Root cause: 'runeword' token scored +2 on 'Crescent Moon (Rune Word)' tying with 'Mist' match, DB order broke tie wrong.",
+        "failure_reason": null
+      },
+      {
+        "id": "reddit_1svntn6",
+        "question": "Javazon IAS jewel or Guardian's Thunder jewel in Griffon's Eye",
+        "result": "passed",
+        "improvement_count": 1,
+        "improvement_notes": "Added Javazon IAS breakpoint and Griffon socketing strategy card covering: 52 IAS breakpoint, T-Stroke alternative, Guardian Thunder tradeoff. Agent now correctly surfaces T-Stroke solution and all alternative approaches matching community consensus.",
+        "failure_reason": null
+      }
+    ]
+  },
+  "regression_check": {
+    "tested_ids": ["reddit_1sf7j56", "reddit_1s7tgbh"],
+    "all_passed": true,
+    "regressions": [],
+    "notes": "reddit_1sf7j56 (C/T casting teleport distance): correctly explains technique. reddit_1s7tgbh (Arcane Sanctuary order): correctly describes 4-path layout and random Summoner placement. No regressions from today's intent classifier and runeword search changes."
+  },
+  "review_instructions": "Pre-existing test failures unchanged: test_item_base_archon_plate (x2), test_item_base_monarch, test_item_base_gmb — all in item base lookup tests, root cause is retrieval_router misclassifying item base queries as treasure_class_rule intent. 18 pending questions remain in queue. The runeword base selection heuristic in intent_classifier.py contains a large set of runeword names — consider loading from runewords.json dynamically if maintenance becomes an issue."
+}
