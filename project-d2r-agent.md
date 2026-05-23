@@ -1021,3 +1021,29 @@ daily automated runs — not the project's own development history (see
 - **Commit:** `abbdb96`. Push: success.
 - **Benchmark status:** 78 passed, 0 failed, 18 pending (96 total).
   Next: 18 pending questions in queue covering builds, runewords, game mechanics.
+
+### 2026-05-23 Run
+- **Questions processed: 3 (all passed on first improvement)**
+  1. reddit_1swa6jf — "5os eth Rune Master for Tesladin?" → **passed** (improvement_count: 1)
+    - First attempt: classified as 'general' intent — 'tesladin' not in class/archetype keyword lists
+    - Fix: Added compound Paladin build names (tesladin, auradin, dragondin, fohdin, charger) and other archetypes (horker, pitzerker, singer, strafezon, frostazon, multizon, summonlock, throw barb) to intent classifier. Added Rune Master unique sword strategy card covering Tesladin use, Grief Zerk Barb offhand, niche collector status.
+    - After fix: correctly surfaces Rune Master strategy card as #1 result with all reference answer points
+  2. reddit_1tbeuqw — "Are there other strong lazy builds?" → **passed** (improvement_count: 1)
+    - First attempt: strategy card search returned irrelevant cards (Hell struggles, summoner warlock, HC TZ farming) instead of lazy/passive build concepts
+    - Fix: Added lazy/auto-aim/passive builds strategy card covering Auradin (Dream+Dragon), Dragondin, Trapsin, Strafezon, Throw Barb on controller
+    - After fix: lazy builds card surfaces as #1, matching reference answer (Auradin, Dragondin, Throw Barb)
+  3. reddit_1tc5d5l — "Good enough for a Faith Base? (matriarchal bow +3)" → **passed** (improvement_count: 1)
+    - First attempt: Mist card partially relevant but no Faith-specific base selection guidance (Mat Bow vs GMB tradeoffs)
+    - Fix: Added Faith runeword bow base selection strategy card (Mat Bow guarantees fastest IAS BP at any Fanat roll, GMB needs high Fanat, practical advice for +3 Mat Bow)
+    - After fix: Faith base card surfaces as #1, correctly advising "just send it" matching reference answer consensus
+- **Code improvements (1 file):**
+  1. intent_classifier.py: Added 13 compound build names to build_advice keywords and _CLASS_AND_ARCHETYPES set
+- **Knowledge additions (3 strategy cards):**
+  1. Rune Master Unique Sword — Tesladin and Other Uses
+  2. Lazy Auto-Aim Passive Builds in D2R (Auradin, Dragondin, Trapsin, Throw Barb)
+  3. Faith Runeword Bow Base Selection — Matriarchal Bow vs GMB
+- **Regression check:** 2 passed questions re-verified (reddit_1rz3qt9 Fortitude merc: pass, reddit_1rx3wei Void runeword: pass). No regressions.
+- **Tests:** 205 passed, 4 pre-existing failures (item base lookup tests).
+- **Commit:** 5421b3c. Push: success.
+- **Benchmark status:** 81 passed, 0 failed, 15 pending (96 total).
+  Next: 15 pending questions in queue.
