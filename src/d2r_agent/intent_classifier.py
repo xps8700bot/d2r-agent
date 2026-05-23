@@ -121,6 +121,9 @@ INTENT_RULES: list[tuple[str, list[str]]] = [
         "bone necro", "summoner necro", "trap sin", "kick sin",
         "blizzard sorc", "blizz sorc", "lightning sorc", "fire sorc",
         "cold sorc", "meteorb", "frenzy", "blessed hammer",
+        "tesladin", "auradin", "dragondin", "fohdin", "charger",
+        "horker", "pitzerker", "singer", "strafezon", "frostazon",
+        "multizon", "summonlock", "throw barb",
         # English — leveling / gearing phrases
         "leveling", "gearing", "gear setup", "end game gear", "endgame gear",
         "starter build", "beginner build", "build advice", "build help",
@@ -331,6 +334,9 @@ def classify_intent_rules(q: str) -> str:
         "javazon", "bowazon", "hammerdin", "zealot", "smiter",
         "fishymancer", "bladesin", "trapsin", "kicksin",
         "wind druid", "fury druid", "summoner",
+        "tesladin", "auradin", "dragondin", "fohdin", "charger",
+        "horker", "pitzerker", "singer", "strafezon", "frostazon",
+        "multizon", "summonlock", "throw barb",
     }
     _SHOULD_I_BUILD_RE = re.compile(
         r"should\s+I\s+(make|build|level|push|play|respec|start|try|go)\b"

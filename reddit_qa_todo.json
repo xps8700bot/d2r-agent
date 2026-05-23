@@ -2351,17 +2351,25 @@
       "tesladin"
     ],
     "reference_answer": "[27↑] https://preview.redd.it/mvmlntjr1kxg1.jpeg?width=2048&amp;format=pjpg&amp;auto=webp&amp;s=b4c52e3ef782212fc977c2edbca78b94f52e8978 This what I’m using\n[12↑] A herald skeleton archer killed me in the Palace Cellar and it was not easy to recover my gear, but this handsome boy dropping made my revenge all the sweeter. Bonus pic: the same herald dropped my first latent sunder charm! It rolled.. fine.\n[7↑] The consensus seems to be that maxing this thing would be bonkers expensive and still just be sorta comparable to Grief. That’s all pre-RotW and the uber ancients jewels, though. A Tesladin typically doesn’t have jewel-able gear slots, but with Zod + 4os I could potentially get +/-25% lightning skil\n[4↑] the best use ive seen for these is an offhand for a grief zerk barb. its basically just for cannot be frozen and then you throw 5 lem or ist in it for mf/gf",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-22",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-05-23T09:05:00+08:00",
+        "category": "intent_classification+knowledge_gap",
+        "summary": "Added tesladin/auradin/dragondin and other compound Paladin build names to intent_classifier.py _CLASS_AND_ARCHETYPES and build_advice keyword list. Added Rune Master unique sword strategy card covering Tesladin use (Zod + 4 jewels, expensive vs Grief), Grief Zerk Barb offhand (CBF + Ist/Lem), and niche collector status. Root cause: tesladin not in class/archetype lists, classified as general.",
+        "regression_result": "205 passed, 4 pre-existing item_base failures. Regression on reddit_1rz3qt9 (Fortitude merc) and reddit_1rx3wei (Void runeword) both pass."
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 41,
       "num_comments": 34,
       "flair": null
-    }
+    },
+    "passed_at": "2026-05-23T09:10:00+08:00"
   },
   {
     "id": "reddit_1swq7s5",
@@ -2571,17 +2579,25 @@
       "builds"
     ],
     "reference_answer": "[26↑] Auradin, but its expensive.\n[23↑] Someone mentioned throw barb on controller as an auto aim.\n[11↑] dragondin, ya can be expensive but just holding curser to move while everything just dies from fire dmg is the funnest, lazy build ive ever done. you might get the odd zeal battle if you upp the player count but merc can handle most of the extra work if you truly want a hands off approach to the gam\n[5↑] I wouldn't consider a strafezon powerful, and a multi shot zon would better fit your description I think\n[7↑] Auradin, specifically fire. Just click to move/hold analog. Put on headphones, mute all sounds minus items. Can just watch Netflix and look when an item drops that you’re specially farming for. The best ‘AFK’ spot would probably be cows with its very limited obstructed tile sets.",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-22",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-05-23T09:05:00+08:00",
+        "category": "knowledge_gap",
+        "summary": "Added lazy/auto-aim/passive builds strategy card covering Auradin (fire, Dream+Dragon), Dragondin, Trapsin, Strafezon/Multishot, Throw Barb on controller. Root cause: no strategy card for lazy/passive playstyle concept. Existing cards about active/engaging builds and Hell strategies surfaced instead.",
+        "regression_result": "Covered by same test run as reddit_1swa6jf."
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 31,
       "num_comments": 68,
       "flair": "Discussion"
-    }
+    },
+    "passed_at": "2026-05-23T09:10:00+08:00"
   },
   {
     "id": "reddit_1tc5d5l",
@@ -2595,17 +2611,25 @@
       "perfect"
     ],
     "reference_answer": "[168↑] dont listen to all these plebs, iam a bow mains since buriza was king back in the days and you have two paths. 1. Go matriarchal bow and even if you roll the lowest fanatism aura you still reach the fastest breakpoint 2. Go GMB (offers more dmg but is way slower) and you need to hit those high fana \n[19↑] I got cold feet (and remembered I don't have a bone break yet but I have 2 cold sunders) https://preview.redd.it/clh3rmcpdz0h1.png?width=1891&amp;format=png&amp;auto=webp&amp;s=82cb2c35acceac0640c96972c8c4feadaa235fd7\n[17↑] I think mat bow suits better an ICE bow.\n[14↑] In an absolutely perfect world where you can guarantee a high fanat roll, you want a GMB. In the realistic world, this is great and will increase your farm speed to find the perfect GMB base and reroll it until you have fanat perfectly rolled as well.",
-    "status": "pending",
+    "status": "passed",
     "added_date": "2026-05-22",
-    "improvement_count": 0,
+    "improvement_count": 1,
     "failure_reason": null,
-    "improvement_history": [],
+    "improvement_history": [
+      {
+        "ts": "2026-05-23T09:05:00+08:00",
+        "category": "knowledge_gap",
+        "summary": "Added Faith runeword bow base selection strategy card covering Mat Bow vs GMB tradeoffs: Mat Bow guarantees fastest IAS breakpoint regardless of Fanat roll, GMB offers more damage but needs high Fanat. Practical advice: +3 Mat Bow is excellent, just use it. Root cause: Mist card partially relevant but no Faith-specific base selection guidance.",
+        "regression_result": "Covered by same test run as reddit_1swa6jf."
+      }
+    ],
     "meta": {
       "subreddit": "diablo2",
       "score": 220,
       "num_comments": 95,
       "flair": "Loot!"
-    }
+    },
+    "passed_at": "2026-05-23T09:10:00+08:00"
   },
   {
     "id": "reddit_1tcsg09",
